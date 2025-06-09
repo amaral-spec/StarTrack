@@ -17,8 +17,8 @@
 		6621EBBD2DF71AEC00381752 /* SourcePlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBBC2DF71AEC00381752 /* SourcePlaceholder.swift */; };
 		6621EBBF2DF71B0300381752 /* ViewModelPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBBE2DF71B0300381752 /* ViewModelPlaceholder.swift */; };
 		6621EBC12DF71B1900381752 /* ModelPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBC02DF71B1900381752 /* ModelPlaceholder.swift */; };
-		6621EBC52DF71C4100381752 /* StarTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBC42DF71C4100381752 /* StarTrackApp.swift */; };
-		6621EBC72DF71C7600381752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6621EBC62DF71C7600381752 /* Launch Screen.storyboard */; };
+		6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBC92DF71F0000381752 /* StarTrackApp.swift */; };
+		6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		6621EBBC2DF71AEC00381752 /* SourcePlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePlaceholder.swift; sourceTree = "<group>"; };
 		6621EBBE2DF71B0300381752 /* ViewModelPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelPlaceholder.swift; sourceTree = "<group>"; };
 		6621EBC02DF71B1900381752 /* ModelPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPlaceholder.swift; sourceTree = "<group>"; };
-		6621EBC42DF71C4100381752 /* StarTrackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTrackApp.swift; sourceTree = "<group>"; };
-		6621EBC62DF71C7600381752 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		6621EBC92DF71F0000381752 /* StarTrackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTrackApp.swift; sourceTree = "<group>"; };
+		6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +103,13 @@
 		6621EB882DF7180200381752 /* StarTrack */ = {
 			isa = PBXGroup;
 			children = (
+				6621EBC82DF71F0000381752 /* Launcher */,
 				6621EBB92DF7190400381752 /* Services */,
 				6621EBB82DF718DA00381752 /* Resources */,
 				6621EBB72DF7187900381752 /* Source */,
 				6621EBB62DF7185C00381752 /* ViewModel */,
 				6621EBB52DF7185500381752 /* View */,
 				6621EBB42DF7184A00381752 /* Model */,
-				6621EBC32DF71C0E00381752 /* Launcher */,
 				6621EB8F2DF7180400381752 /* Preview Content */,
 			);
 			path = StarTrack;
@@ -197,14 +197,13 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		6621EBC32DF71C0E00381752 /* Launcher */ = {
+		6621EBC82DF71F0000381752 /* Launcher */ = {
 			isa = PBXGroup;
 			children = (
-				6621EBC42DF71C4100381752 /* StarTrackApp.swift */,
-				6621EBC62DF71C7600381752 /* Launch Screen.storyboard */,
+				6621EBC92DF71F0000381752 /* StarTrackApp.swift */,
+				6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */,
 			);
-			name = Launcher;
-			path = App/Launcher;
+			path = Launcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6621EBC72DF71C7600381752 /* Launch Screen.storyboard in Resources */,
+				6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */,
 				6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */,
 				6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */,
 			);
@@ -340,8 +339,8 @@
 			files = (
 				6621EB8C2DF7180200381752 /* ContentView.swift in Sources */,
 				6621EBBB2DF71AD000381752 /* ServicePlaceholder.swift in Sources */,
-				6621EBC52DF71C4100381752 /* StarTrackApp.swift in Sources */,
 				6621EBBD2DF71AEC00381752 /* SourcePlaceholder.swift in Sources */,
+				6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */,
 				6621EBC12DF71B1900381752 /* ModelPlaceholder.swift in Sources */,
 				6621EBBF2DF71B0300381752 /* ViewModelPlaceholder.swift in Sources */,
 			);
