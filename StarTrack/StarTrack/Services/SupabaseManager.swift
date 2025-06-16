@@ -13,8 +13,8 @@ class SupabaseManager {
 	static let shared = SupabaseManager()
 
 	// --- Configuração ---
-	private let supabaseURL = URL(string: "SUA_URL_AQUI")!
-	private let supabaseKey = "SUA_CHAVE_ANON_AQUI"
+	private let supabaseURL = URL(string: "https://ixuunehjmldwuapahrea.supabase.co")!
+	private let supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml4dXVuZWhqbWxkd3VhcGFocmVhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAwNzgwOTUsImV4cCI6MjA2NTY1NDA5NX0.ioJs7UGEY0NjaOM_Lqev452vVx3KIxZiE-v0nUGqMqk"
 	
 	private let session: URLSession
 	
