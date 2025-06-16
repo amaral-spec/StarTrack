@@ -11,16 +11,12 @@
 		661057E02E005EF0004D95FA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057DF2E005EF0004D95FA /* Event.swift */; };
 		661057E22E006229004D95FA /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057E12E006229004D95FA /* EventViewModel.swift */; };
 		661057E42E006268004D95FA /* SupabaseEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057E32E006268004D95FA /* SupabaseEventsView.swift */; };
-		6621EB8C2DF7180200381752 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EB8B2DF7180200381752 /* ContentView.swift */; };
 		6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB8D2DF7180400381752 /* Assets.xcassets */; };
 		6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB902DF7180400381752 /* Preview Assets.xcassets */; };
 		6621EB9B2DF7180500381752 /* StarTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EB9A2DF7180500381752 /* StarTrackTests.swift */; };
 		6621EBA52DF7180500381752 /* StarTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBA42DF7180500381752 /* StarTrackUITests.swift */; };
 		6621EBA72DF7180500381752 /* StarTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBA62DF7180500381752 /* StarTrackUITestsLaunchTests.swift */; };
-		6621EBBB2DF71AD000381752 /* ServicePlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBBA2DF71AD000381752 /* ServicePlaceholder.swift */; };
 		6621EBBD2DF71AEC00381752 /* SourcePlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBBC2DF71AEC00381752 /* SourcePlaceholder.swift */; };
-		6621EBBF2DF71B0300381752 /* ViewModelPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBBE2DF71B0300381752 /* ViewModelPlaceholder.swift */; };
-		6621EBC12DF71B1900381752 /* ModelPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBC02DF71B1900381752 /* ModelPlaceholder.swift */; };
 		6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBC92DF71F0000381752 /* StarTrackApp.swift */; };
 		6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */; };
 		667A2F972DF87F08005CA46F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667A2F962DF87F08005CA46F /* Constants.swift */; };
@@ -49,7 +45,6 @@
 		661057E12E006229004D95FA /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		661057E32E006268004D95FA /* SupabaseEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseEventsView.swift; sourceTree = "<group>"; };
 		6621EB862DF7180200381752 /* StarTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6621EB8B2DF7180200381752 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6621EB8D2DF7180400381752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6621EB902DF7180400381752 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6621EB962DF7180500381752 /* StarTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,10 +52,7 @@
 		6621EBA02DF7180500381752 /* StarTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6621EBA42DF7180500381752 /* StarTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarTrackUITests.swift; sourceTree = "<group>"; };
 		6621EBA62DF7180500381752 /* StarTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		6621EBBA2DF71AD000381752 /* ServicePlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePlaceholder.swift; sourceTree = "<group>"; };
 		6621EBBC2DF71AEC00381752 /* SourcePlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePlaceholder.swift; sourceTree = "<group>"; };
-		6621EBBE2DF71B0300381752 /* ViewModelPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelPlaceholder.swift; sourceTree = "<group>"; };
-		6621EBC02DF71B1900381752 /* ModelPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPlaceholder.swift; sourceTree = "<group>"; };
 		6621EBC92DF71F0000381752 /* StarTrackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTrackApp.swift; sourceTree = "<group>"; };
 		6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		667A2F962DF87F08005CA46F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -154,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				661057DF2E005EF0004D95FA /* Event.swift */,
-				6621EBC02DF71B1900381752 /* ModelPlaceholder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,7 +153,6 @@
 		6621EBB52DF7185500381752 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6621EB8B2DF7180200381752 /* ContentView.swift */,
 				661057E32E006268004D95FA /* SupabaseEventsView.swift */,
 			);
 			path = View;
@@ -171,7 +161,6 @@
 		6621EBB62DF7185C00381752 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				6621EBBE2DF71B0300381752 /* ViewModelPlaceholder.swift */,
 				661057E12E006229004D95FA /* EventViewModel.swift */,
 			);
 			path = ViewModel;
@@ -197,7 +186,6 @@
 		6621EBB92DF7190400381752 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				6621EBBA2DF71AD000381752 /* ServicePlaceholder.swift */,
 				661057DD2E005EB2004D95FA /* SupabaseManager.swift */,
 			);
 			path = Services;
@@ -356,17 +344,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6621EB8C2DF7180200381752 /* ContentView.swift in Sources */,
 				661057E22E006229004D95FA /* EventViewModel.swift in Sources */,
-				6621EBBB2DF71AD000381752 /* ServicePlaceholder.swift in Sources */,
 				6621EBBD2DF71AEC00381752 /* SourcePlaceholder.swift in Sources */,
 				6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */,
 				661057E02E005EF0004D95FA /* Event.swift in Sources */,
 				667A2F972DF87F08005CA46F /* Constants.swift in Sources */,
 				661057E42E006268004D95FA /* SupabaseEventsView.swift in Sources */,
 				661057DE2E005EB2004D95FA /* SupabaseManager.swift in Sources */,
-				6621EBC12DF71B1900381752 /* ModelPlaceholder.swift in Sources */,
-				6621EBBF2DF71B0300381752 /* ViewModelPlaceholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
