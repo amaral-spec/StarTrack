@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		661057D42E004FA9004D95FA /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057D32E004FA9004D95FA /* Supabase.swift */; };
-		661057D62E004FCF004D95FA /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057D52E004FCF004D95FA /* Todo.swift */; };
-		661057D92E004FF2004D95FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057D82E004FF2004D95FA /* ContentView.swift */; };
+		661057DE2E005EB2004D95FA /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057DD2E005EB2004D95FA /* SupabaseManager.swift */; };
+		661057E02E005EF0004D95FA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057DF2E005EF0004D95FA /* Event.swift */; };
+		661057E22E006229004D95FA /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057E12E006229004D95FA /* EventViewModel.swift */; };
+		661057E42E006268004D95FA /* SupabaseEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057E32E006268004D95FA /* SupabaseEventsView.swift */; };
 		6621EB8C2DF7180200381752 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EB8B2DF7180200381752 /* ContentView.swift */; };
 		6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB8D2DF7180400381752 /* Assets.xcassets */; };
 		6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB902DF7180400381752 /* Preview Assets.xcassets */; };
@@ -43,9 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		661057D32E004FA9004D95FA /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
-		661057D52E004FCF004D95FA /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
-		661057D82E004FF2004D95FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		661057DD2E005EB2004D95FA /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
+		661057DF2E005EF0004D95FA /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		661057E12E006229004D95FA /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		661057E32E006268004D95FA /* SupabaseEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseEventsView.swift; sourceTree = "<group>"; };
 		6621EB862DF7180200381752 /* StarTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6621EB8B2DF7180200381752 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6621EB8D2DF7180400381752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,16 +91,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		661057D22E004F8F004D95FA /* Supabase */ = {
-			isa = PBXGroup;
-			children = (
-				661057D32E004FA9004D95FA /* Supabase.swift */,
-				661057D52E004FCF004D95FA /* Todo.swift */,
-				661057D82E004FF2004D95FA /* ContentView.swift */,
-			);
-			path = Supabase;
-			sourceTree = "<group>";
-		};
 		6621EB7D2DF7180200381752 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +153,7 @@
 		6621EBB42DF7184A00381752 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				661057DF2E005EF0004D95FA /* Event.swift */,
 				6621EBC02DF71B1900381752 /* ModelPlaceholder.swift */,
 			);
 			path = Model;
@@ -170,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				6621EB8B2DF7180200381752 /* ContentView.swift */,
+				661057E32E006268004D95FA /* SupabaseEventsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				6621EBBE2DF71B0300381752 /* ViewModelPlaceholder.swift */,
+				661057E12E006229004D95FA /* EventViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -203,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				6621EBBA2DF71AD000381752 /* ServicePlaceholder.swift */,
-				661057D22E004F8F004D95FA /* Supabase */,
+				661057DD2E005EB2004D95FA /* SupabaseManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -242,6 +237,8 @@
 			dependencies = (
 			);
 			name = StarTrack;
+			packageProductDependencies = (
+			);
 			productName = StarTrack;
 			productReference = 6621EB862DF7180200381752 /* StarTrack.app */;
 			productType = "com.apple.product-type.application";
@@ -314,6 +311,8 @@
 				Base,
 			);
 			mainGroup = 6621EB7D2DF7180200381752;
+			packageReferences = (
+			);
 			productRefGroup = 6621EB872DF7180200381752 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,13 +357,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6621EB8C2DF7180200381752 /* ContentView.swift in Sources */,
+				661057E22E006229004D95FA /* EventViewModel.swift in Sources */,
 				6621EBBB2DF71AD000381752 /* ServicePlaceholder.swift in Sources */,
 				6621EBBD2DF71AEC00381752 /* SourcePlaceholder.swift in Sources */,
 				6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */,
-				661057D62E004FCF004D95FA /* Todo.swift in Sources */,
+				661057E02E005EF0004D95FA /* Event.swift in Sources */,
 				667A2F972DF87F08005CA46F /* Constants.swift in Sources */,
-				661057D92E004FF2004D95FA /* ContentView.swift in Sources */,
-				661057D42E004FA9004D95FA /* Supabase.swift in Sources */,
+				661057E42E006268004D95FA /* SupabaseEventsView.swift in Sources */,
+				661057DE2E005EB2004D95FA /* SupabaseManager.swift in Sources */,
 				6621EBC12DF71B1900381752 /* ModelPlaceholder.swift in Sources */,
 				6621EBBF2DF71B0300381752 /* ViewModelPlaceholder.swift in Sources */,
 			);
