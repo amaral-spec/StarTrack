@@ -1,0 +1,51 @@
+//
+//  SpaceMission.swift
+//  StarTrack
+//
+//  Created by Gabriel Rugeri on 17/06/25.
+//
+
+import SwiftUI
+
+// MARK: - Enum para Tipos de Missão Espacial
+enum SpaceMissionType: String {
+	case flyby = "mission_type_flyby"
+	case orbiter = "mission_type_orbiter"
+	case lander = "mission_type_lander"
+	case rover = "mission_type_rover"
+	case impactor = "mission_type_impactor"
+	case sampleReturn = "mission_type_sample_return"
+	case spaceTelescope = "mission_type_space_telescope"
+	case humanMission = "mission_type_human_mission"
+	
+	var displayName: String {
+		return NSLocalizedString(self.rawValue, comment: "The name of a type of space mission")
+	}
+}
+
+struct SpaceMission {
+	let fact: Fact
+	var id: UUID { fact.id }
+	let launchLocation: String
+	let missionType:SpaceMissionType
+	let distanceTraveled: Measurement<UnitLength>
+	let date: DateTime
+	let objetives: [String]
+	let techEnvolved: [String]?
+	
+	init(fact: Fact,
+		 launchLocation: String,
+		 missionType:SpaceMissionType,
+		 distanceTraveled: Measurement<UnitLength>,
+		 date: DateTime,
+		 objetives: [String],
+		 techEnvolved: [String]? = nil) {
+		self.fact = fact
+		self.launchLocation = launchLocation
+		self.missionType = missionType
+		self.distanceTraveled = distanceTraveled
+		self.date = date
+		self.objetives = objetives
+		self.techEnvolved = techEnvolved
+	}
+}
