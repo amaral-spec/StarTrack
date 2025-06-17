@@ -1,0 +1,21 @@
+//
+//  Fact.swift
+//  StarTrack
+//
+//  Created by Gabriel Rugeri on 17/06/25.
+//
+
+import SwiftUI
+
+struct Fact: Identifiable {
+	let id = UUID()
+	let name: String
+	let image: AccessibleImage
+	let mascotComment: String?
+	
+	init(name: String, image: AccessibleImage, mascotComment: String?) {
+		self.name = name
+		self.image = image
+		self.mascotComment = mascotComment
+	}
+}
