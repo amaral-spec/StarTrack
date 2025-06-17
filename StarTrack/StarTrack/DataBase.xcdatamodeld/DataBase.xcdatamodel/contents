@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G1427" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Constellations" representedClassName="Constellations" syncable="YES" codeGenerationType="class">
+        <attribute name="attribute" optional="YES"/>
+        <attribute name="attribute1" optional="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Constellations" inverseName="relationship" inverseEntity="Constellations"/>
+    </entity>
+    <entity name="Fav" representedClassName="Fav" syncable="YES" codeGenerationType="class"/>
+    <elements>
+        <element name="Constellations" positionX="-232.081298828125" positionY="-377.1984252929688" width="229.277099609375" height="88"/>
+        <element name="Fav" positionX="-130.8287353515625" positionY="-79.08282470703125" width="190.046875" height="29"/>
+    </elements>
+</model>

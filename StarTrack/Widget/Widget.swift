@@ -74,26 +74,37 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct WidgetEntryView : View {
+    @ObservedObject var networkMonitor = NetworkMonitor()
     var entry: Provider.Entry
+    
     var body: some View {
         GeometryReader { geometry in //Pega o tamanho certinho do container, o widget nesse cado
-                    ZStack(alignment: .bottomLeading) {
-                        entry.image
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: geometry.size.width, height: geometry.size.height)
-                            .clipped()
+            ZStack(alignment: .bottomLeading) {
+                if networkMonitor.isConnected {
+                    entry.image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .clipped()
                         
-                        Text(entry.title)
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .shadow(color: Color.black.opacity(0.8), radius: 3, x: 0, y: 1)
-                            .padding(.leading, 12)
-                            .padding(.bottom, 8)
-                    }
-                    .frame(width: geometry.size.width, height: geometry.size.height)
-                    .clipped()
-                    .cornerRadius(10)
+                    Text(entry.title)
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .shadow(color: Color.black.opacity(0.8), radius: 3, x: 0, y: 1)
+                        .padding(.leading, 12)
+                        .padding(.bottom, 8)
+                } else {
+                    //código para o widget sem conexão com a internet
+                    Image("cao_maior")
+                        .resizable()
+                        .scaledToFill() // teste com as imagens da ana
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .clipped()
+                }
+            }
+            .frame(width: geometry.size.width, height: geometry.size.height)
+            .clipped()
+            .cornerRadius(10)
         }.ignoresSafeArea()
     }
 }

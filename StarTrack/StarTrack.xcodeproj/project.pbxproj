@@ -31,6 +31,8 @@
 		E66275472DFAF6D6009F0733 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E87C2DF9A16200927339 /* NetworkManager.swift */; };
 		E66275482DFAF6DE009F0733 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8822DF9ACED00927339 /* PhotoInfo.swift */; };
 		E663E8852DF9CAE100927339 /* SelectDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8842DF9CAE000927339 /* SelectDateView.swift */; };
+		E6ACD1AC2E0192750041D0E1 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ACD1AB2E0192750041D0E1 /* NetworkMonitor.swift */; };
+		E6ACD1AD2E0192750041D0E1 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ACD1AB2E0192750041D0E1 /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,7 @@
 		E663E8802DF9A3DE00927339 /* url helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "url helper.swift"; sourceTree = "<group>"; };
 		E663E8822DF9ACED00927339 /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
 		E663E8842DF9CAE000927339 /* SelectDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateView.swift; sourceTree = "<group>"; };
+		E6ACD1AB2E0192750041D0E1 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,9 +217,8 @@
 		6621EBB62DF7185C00381752 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				E663E87C2DF9A16200927339 /* NetworkManager.swift */,
-				E663E87E2DF9A24700927339 /* Constants.swift */,
-				E663E8802DF9A3DE00927339 /* url helper.swift */,
+				E6ACD1AA2E01925C0041D0E1 /* Network Monitor */,
+				E6ACD1A92E0190C60041D0E1 /* Nasa API */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +282,24 @@
 				E661AC562DF87199000844EC /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6ACD1A92E0190C60041D0E1 /* Nasa API */ = {
+			isa = PBXGroup;
+			children = (
+				E663E8802DF9A3DE00927339 /* url helper.swift */,
+				E663E87E2DF9A24700927339 /* Constants.swift */,
+				E663E87C2DF9A16200927339 /* NetworkManager.swift */,
+			);
+			path = "Nasa API";
+			sourceTree = "<group>";
+		};
+		E6ACD1AA2E01925C0041D0E1 /* Network Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				E6ACD1AB2E0192750041D0E1 /* NetworkMonitor.swift */,
+			);
+			path = "Network Monitor";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +469,7 @@
 				6621EBBB2DF71AD000381752 /* ServicePlaceholder.swift in Sources */,
 				E66275452DFAF6CC009F0733 /* url helper.swift in Sources */,
 				6621EBBD2DF71AEC00381752 /* SourcePlaceholder.swift in Sources */,
+				E6ACD1AC2E0192750041D0E1 /* NetworkMonitor.swift in Sources */,
 				E66275472DFAF6D6009F0733 /* NetworkManager.swift in Sources */,
 				E66275462DFAF6D1009F0733 /* Constants.swift in Sources */,
 				6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */,
@@ -478,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E609CA732DFB08BC00A2A5E2 /* NetworkManager.swift in Sources */,
+				E6ACD1AD2E0192750041D0E1 /* NetworkMonitor.swift in Sources */,
 				E609CA692DFB031100A2A5E2 /* Widget.swift in Sources */,
 				E609CA752DFB08C200A2A5E2 /* url helper.swift in Sources */,
 				E609CA742DFB08BE00A2A5E2 /* Constants.swift in Sources */,
