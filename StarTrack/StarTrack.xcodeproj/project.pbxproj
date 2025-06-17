@@ -24,6 +24,7 @@
 		66810DDE2E018BDF001BCB1B /* AccessibleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DDD2E018BDF001BCB1B /* AccessibleImageView.swift */; };
 		66810DE02E018C70001BCB1B /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DDF2E018C70001BCB1B /* Fact.swift */; };
 		66810DE22E018E07001BCB1B /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DE12E018E07001BCB1B /* DateTime.swift */; };
+		66C165852E0194EC0081F42D /* CulturalParallel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165842E0194EC0081F42D /* CulturalParallel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		66810DDD2E018BDF001BCB1B /* AccessibleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleImageView.swift; sourceTree = "<group>"; };
 		66810DDF2E018C70001BCB1B /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
 		66810DE12E018E07001BCB1B /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
+		66C165842E0194EC0081F42D /* CulturalParallel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulturalParallel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				66810DDB2E018A5E001BCB1B /* AccessibleImage.swift */,
 				66810DDF2E018C70001BCB1B /* Fact.swift */,
 				66810DE12E018E07001BCB1B /* DateTime.swift */,
+				66C165842E0194EC0081F42D /* CulturalParallel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				66810DE02E018C70001BCB1B /* Fact.swift in Sources */,
 				661057E42E006268004D95FA /* SupabaseEventsView.swift in Sources */,
 				661057DE2E005EB2004D95FA /* SupabaseManager.swift in Sources */,
+				66C165852E0194EC0081F42D /* CulturalParallel.swift in Sources */,
 				66810DE22E018E07001BCB1B /* DateTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
