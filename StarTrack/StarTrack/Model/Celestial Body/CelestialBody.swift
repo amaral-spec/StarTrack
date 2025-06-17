@@ -56,5 +56,13 @@ struct CelestialBody {
 	let popularName: String?
 	let type: CelestialBodyType
 	
+	init(fact: Fact,
+		 type: CelestialBodyType,
+		 popularName: String? = nil) {
+		self.fact = fact
+		self.type = type
+		self.popularName = popularName
+	}
+	
 }
 

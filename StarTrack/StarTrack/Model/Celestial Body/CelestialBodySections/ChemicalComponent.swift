@@ -23,4 +23,9 @@ enum ChemicalElement: String {
 struct ChemicalComponent {
 	let element: ChemicalElement
 	let percentage: Double
+	
+	init(element: ChemicalElement, percentage: Double) {
+		self.element = element
+		self.percentage = percentage
+	}
 }
