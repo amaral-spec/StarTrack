@@ -12,10 +12,4 @@ struct Fact: Identifiable {
 	let name: String
 	let image: AccessibleImage
 	let mascotComment: String?
-	
-	init(name: String, image: AccessibleImage, mascotComment: String?) {
-		self.name = name
-		self.image = image
-		self.mascotComment = mascotComment
-	}
 }

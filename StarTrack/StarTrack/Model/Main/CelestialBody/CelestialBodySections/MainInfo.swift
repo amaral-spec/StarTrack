@@ -14,18 +14,4 @@ struct MainInfo {
 	let visibility: ViewingMethod
 	let rotationPeriod: TimePeriod?
 	let translationPeriod: TimePeriod?
-	
-	init(location: String,
-		 diameter: Measurement<UnitLength>,
-		 distanceFromEarth: Measurement<UnitLength>,
-		 visibility: ViewingMethod,
-		 rotationPeriod: TimePeriod? = nil,
-		 translationPeriod: TimePeriod? = nil) {
-		self.location = location
-		self.diameter = diameter
-		self.distanceFromEarth = distanceFromEarth
-		self.visibility = visibility
-		self.rotationPeriod = rotationPeriod
-		self.translationPeriod = translationPeriod
-	}
 }

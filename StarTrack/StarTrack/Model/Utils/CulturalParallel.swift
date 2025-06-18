@@ -10,9 +10,4 @@ import Foundation
 struct CulturalParallel {
 	let culture: String
 	let interpretation: String
-	
-	init(culture: String, interpretation: String) {
-		self.culture = culture
-		self.interpretation = interpretation
-	}
 }

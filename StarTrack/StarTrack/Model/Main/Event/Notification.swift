@@ -8,11 +8,6 @@
 import SwiftUI
 
 struct Notification {
-	let event: Event
+	let event: ObservableEvent
 	let description: String
-	
-	init(event: Event, description: String) {
-		self.event = event
-		self.description = description
-	}
 }

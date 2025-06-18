@@ -13,7 +13,7 @@ struct DateTime {
 	let endAt: Date
 	
 	/// A duração calculada entre 'startAt' e 'endAt'.
-	var duration: TimeInterval? {
+	var duration: TimeInterval? {	// duration = segundos!
 		get {
 			guard endAt != Date.distantFuture else {
 				return nil

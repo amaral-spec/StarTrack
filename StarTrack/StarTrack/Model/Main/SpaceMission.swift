@@ -32,20 +32,4 @@ struct SpaceMission {
 	let date: DateTime
 	let objetives: [String]
 	let techEnvolved: [String]?
-	
-	init(fact: Fact,
-		 launchLocation: String,
-		 missionType:SpaceMissionType,
-		 distanceTraveled: Measurement<UnitLength>,
-		 date: DateTime,
-		 objetives: [String],
-		 techEnvolved: [String]? = nil) {
-		self.fact = fact
-		self.launchLocation = launchLocation
-		self.missionType = missionType
-		self.distanceTraveled = distanceTraveled
-		self.date = date
-		self.objetives = objetives
-		self.techEnvolved = techEnvolved
-	}
 }

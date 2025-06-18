@@ -31,11 +31,4 @@ struct ObservableEvent: Identifiable {
 	let date: DateTime
 	let type: ObservableEventType
 	let explanation: String
-	
-	init(fact: Fact, date: DateTime, type: ObservableEventType, explanation: String) {
-		self.fact = fact
-		self.date = date
-		self.type = type
-		self.explanation = explanation
-	}
 }

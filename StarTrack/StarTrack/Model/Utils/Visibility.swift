@@ -7,24 +7,16 @@
 
 import Foundation
 
-// MARK: - Enum para o Método de Visualização
-enum ViewingMethod: Equatable {
-	case nakedEye
-	case binoculars
-	case telescope
-	case other(String) // Permite outros instrumentos específicos.
-
+// MARK: - Enum para o Método de Visualização (Padrão Novo)
+enum ViewingMethod: String {
+	case nakedEye = "viewing_method_naked_eye"
+	case binoculars = "viewing_method_binoculars"
+	case telescope = "viewing_method_telescope"
+	
+	// Propriedade computada para obter o nome localizado.
 	var displayName: String {
-		switch self {
-		case .nakedEye:
-			return NSLocalizedString("viewing_method_naked_eye", comment: "Display name for naked eye viewing method")
-		case .binoculars:
-			return NSLocalizedString("viewing_method_binoculars", comment: "Display name for binoculars viewing method")
-		case .telescope:
-			return NSLocalizedString("viewing_method_telescope", comment: "Display name for telescope viewing method")
-		case .other(let instrument):
-			return instrument // Strings customizadas não são localizadas por padrão.
-		}
+		// Usa o rawValue da própria enum como a chave para o NSLocalizedString.
+		return NSLocalizedString(self.rawValue, comment: "The name of a viewing method for a celestial object")
 	}
 }
 

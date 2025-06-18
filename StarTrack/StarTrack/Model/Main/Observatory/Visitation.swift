@@ -11,10 +11,4 @@ struct Visitation {
 	let openToPublic: Bool
 	let bookingNeeded: Bool
 	let tickets: [String]?
-	
-	init(openToPublic: Bool, bookingNeeded: Bool, tickets: [String]? = nil) {
-		self.openToPublic = openToPublic
-		self.bookingNeeded = bookingNeeded
-		self.tickets = tickets
-	}
 }

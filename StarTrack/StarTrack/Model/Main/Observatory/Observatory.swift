@@ -14,16 +14,4 @@ struct Observatory: Identifiable {
 	let visitation: Visitation
 	let cientificHighlight: [String]?
 	let technologiesAvailable: [String]?
-	
-	init(fact: Fact,
-		 location: String,
-		 visitation: Visitation,
-		 cientificHighlight: [String]? = nil,
-		 technologiesAvailable: [String]? = nil) {
-		self.fact = fact
-		self.location = location
-		self.visitation = visitation
-		self.cientificHighlight = cientificHighlight
-		self.technologiesAvailable = technologiesAvailable
-	}
 }

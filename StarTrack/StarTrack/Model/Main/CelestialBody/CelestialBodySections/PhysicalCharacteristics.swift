@@ -13,16 +13,4 @@ struct PhysicalCharacteristics {
 	let gravity: Measurement<UnitAcceleration>
 	let density: Measurement<UnitConcentrationMass> // talvez não seja o mais adequado para astros
 	let chemicalComposition: [ChemicalComponent]?
-	
-	init(mass: Measurement<UnitMass>,
-		 temperature: Measurement<UnitTemperature>,
-		 gravity: Measurement<UnitAcceleration>,
-		 density: Measurement<UnitConcentrationMass>,
-		 chemicalComposition: [ChemicalComponent]?) {
-		self.mass = mass
-		self.temperature = temperature
-		self.gravity = gravity
-		self.density = density
-		self.chemicalComposition = chemicalComposition
-	}
 }

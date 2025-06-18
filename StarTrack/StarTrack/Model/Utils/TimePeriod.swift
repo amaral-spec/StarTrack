@@ -7,28 +7,17 @@
 
 import Foundation
 
-// Enum para definir as unidades de tempo de forma segura.
-enum TimeUnit: Equatable {
-	case hours
-	case days
-	case earthYears
-	case millionYears
-	case other(String) // Permite outros períodos específicos.
-	
+// MARK: - Enum para Unidades de Tempo
+enum TimeUnit: String {
+	case hours = "time_unit_hours"
+	case days = "time_unit_days"
+	case earthYears = "time_unit_earth_years"
+	case millionYears = "time_unit_million_years"
+
+	// Propriedade computada para obter o nome localizado.
 	var displayName: String {
-		switch self {
-		case .hours:
-			return NSLocalizedString("hours", comment: "Display name for hours")
-		case .days:
-			return NSLocalizedString("days", comment: "Display name for day")
-		case .earthYears:
-			return NSLocalizedString("earth-years", comment: "Display name for earth years")
-		case .millionYears:
-			return NSLocalizedString("million-years", comment: "Display name for million years")
-		case .other(let customType):
-			// Strings customizadas não são localizadas por padrão, pois são dinâmicas.
-			return customType
-		}
+		// Usa o rawValue da própria enum como a chave para o NSLocalizedString.
+		return NSLocalizedString(self.rawValue, comment: "The name of a unit of time")
 	}
 }
 

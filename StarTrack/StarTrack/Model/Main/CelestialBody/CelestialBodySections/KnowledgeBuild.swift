@@ -10,10 +10,4 @@ import Foundation
 struct KnowledgeBuild {
 	let culturalParallels: [CulturalParallel]?
 	let spaceMisions: [SpaceMission]?
-	
-	init(culturalParallels: [CulturalParallel]? = nil,
-		 spaceMisions: [SpaceMission]? = nil) {
-		self.culturalParallels = culturalParallels
-		self.spaceMisions = spaceMisions
-	}
 }

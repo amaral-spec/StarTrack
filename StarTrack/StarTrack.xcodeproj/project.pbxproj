@@ -279,7 +279,6 @@
 			children = (
 				66C165B42E01A87A0081F42D /* MainInfo.swift */,
 				66C165BA2E01B19D0081F42D /* PhysicalCharacteristics.swift */,
-				66C165BC2E01B4510081F42D /* ChemicalComponent.swift */,
 				66C165BE2E01B5600081F42D /* KnowledgeBuild.swift */,
 			);
 			path = CelestialBodySections;
@@ -297,6 +296,7 @@
 		66C3E8CB2E02E3550070C518 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				66C165BC2E01B4510081F42D /* ChemicalComponent.swift */,
 				66810DE12E018E07001BCB1B /* DateTime.swift */,
 				66C165B62E01A9C20081F42D /* TimePeriod.swift */,
 				66C165842E0194EC0081F42D /* CulturalParallel.swift */,

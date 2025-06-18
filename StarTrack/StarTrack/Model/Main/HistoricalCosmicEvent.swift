@@ -32,22 +32,4 @@ struct HistoricalCosmicEvent: Identifiable {
 	let timePeriod: TimePeriod
 	let type: CosmologicalEventType
 	let scale: String
-
-	init(
-		fact: Fact,
-		type: CosmologicalEventType,
-		timePeriod: TimePeriod,
-		scale: String,
-		explanation: String,
-		evidence: String,
-		culturalParallels: [CulturalParallel]? = nil
-	) {
-		self.fact = fact
-		self.culturalParallels = culturalParallels
-		self.explanation = explanation
-		self.evidence = evidence
-		self.timePeriod = timePeriod
-		self.type = type
-		self.scale = scale
-	}
 }
