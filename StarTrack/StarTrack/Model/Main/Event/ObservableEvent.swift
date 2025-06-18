@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CloudKit
 
 // MARK: - Enum para Tipos de Eventos Cósmicos Observáveis
 enum ObservableEventType: String {
@@ -31,4 +32,21 @@ struct ObservableEvent: Identifiable {
 	let date: DateTime
 	let type: ObservableEventType
 	let explanation: String
+	
+	// Integracao CloudKit
+	fileprivate let record: CKRecord
+	static let recordType = "ObservableEvent"
+	
+	// Inicializador CKRecord -> ObservableEvent
+	init?(from record: CKRecord) {
+		// Valida que o campo "name" existe e é uma String.
+		guard let name = record["name"] as? String else {
+		   return nil
+		}
+
+		// O ID do nosso objeto é o nome do registo do CloudKit.
+		self.id = UUID(uuidString: record.recordID.recordName) ?? UUID()
+		self.name = name
+		self.record = record
+	}
 }

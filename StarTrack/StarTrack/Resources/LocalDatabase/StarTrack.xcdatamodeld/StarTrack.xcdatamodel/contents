@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G1427" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AccessibleImageEntity" representedClassName="AccessibleImageEntity" syncable="YES">
+        <attribute name="alternativeText" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="imageFilename" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="AccessibleImageEntity" positionX="-63" positionY="-18" width="128" height="74"/>
+    </elements>
+</model>
