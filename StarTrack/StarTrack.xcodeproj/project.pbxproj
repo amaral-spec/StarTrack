@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		661057DE2E005EB2004D95FA /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057DD2E005EB2004D95FA /* SupabaseManager.swift */; };
-		661057E02E005EF0004D95FA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057DF2E005EF0004D95FA /* Event.swift */; };
+		661057E02E005EF0004D95FA /* ObservableEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057DF2E005EF0004D95FA /* ObservableEvent.swift */; };
 		661057E22E006229004D95FA /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057E12E006229004D95FA /* EventViewModel.swift */; };
 		661057E42E006268004D95FA /* SupabaseEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057E32E006268004D95FA /* SupabaseEventsView.swift */; };
 		6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB8D2DF7180400381752 /* Assets.xcassets */; };
@@ -20,6 +20,26 @@
 		6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBC92DF71F0000381752 /* StarTrackApp.swift */; };
 		6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */; };
 		667A2F972DF87F08005CA46F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667A2F962DF87F08005CA46F /* Constants.swift */; };
+		66810DDC2E018A5E001BCB1B /* AccessibleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DDB2E018A5E001BCB1B /* AccessibleImage.swift */; };
+		66810DDE2E018BDF001BCB1B /* AccessibleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DDD2E018BDF001BCB1B /* AccessibleImageView.swift */; };
+		66810DE02E018C70001BCB1B /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DDF2E018C70001BCB1B /* Fact.swift */; };
+		66810DE22E018E07001BCB1B /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DE12E018E07001BCB1B /* DateTime.swift */; };
+		66C165852E0194EC0081F42D /* CulturalParallel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165842E0194EC0081F42D /* CulturalParallel.swift */; };
+		66C165872E0196FD0081F42D /* Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165862E0196FD0081F42D /* Visibility.swift */; };
+		66C165982E019AFF0081F42D /* StarTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165962E019AFF0081F42D /* StarTrackApp.swift */; };
+		66C165992E019AFF0081F42D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C165972E019AFF0081F42D /* Launch Screen.storyboard */; };
+		66C165AC2E019B710081F42D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66C165AE2E019B710081F42D /* Localizable.strings */; };
+		66C165B22E019E070081F42D /* CelestialBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165B12E019E070081F42D /* CelestialBody.swift */; };
+		66C165B52E01A87A0081F42D /* MainInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165B42E01A87A0081F42D /* MainInfo.swift */; };
+		66C165B72E01A9C20081F42D /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165B62E01A9C20081F42D /* TimePeriod.swift */; };
+		66C165BB2E01B19D0081F42D /* PhysicalCharacteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165BA2E01B19D0081F42D /* PhysicalCharacteristics.swift */; };
+		66C165BD2E01B4510081F42D /* ChemicalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165BC2E01B4510081F42D /* ChemicalComponent.swift */; };
+		66C165BF2E01B5600081F42D /* KnowledgeBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165BE2E01B5600081F42D /* KnowledgeBuild.swift */; };
+		66C165C32E01B6D80081F42D /* SpaceMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165C22E01B6D80081F42D /* SpaceMission.swift */; };
+		66C3E8C42E02DA020070C518 /* HistoricalCosmicEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8C32E02DA020070C518 /* HistoricalCosmicEvent.swift */; };
+		66C3E8C62E02DEEC0070C518 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8C52E02DEEC0070C518 /* Notification.swift */; };
+		66C3E8C82E02E0DC0070C518 /* Observatory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8C72E02E0DC0070C518 /* Observatory.swift */; };
+		66C3E8CA2E02E1B20070C518 /* Visitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8C92E02E1B20070C518 /* Visitation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +61,7 @@
 
 /* Begin PBXFileReference section */
 		661057DD2E005EB2004D95FA /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
-		661057DF2E005EF0004D95FA /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		661057DF2E005EF0004D95FA /* ObservableEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableEvent.swift; sourceTree = "<group>"; };
 		661057E12E006229004D95FA /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		661057E32E006268004D95FA /* SupabaseEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseEventsView.swift; sourceTree = "<group>"; };
 		6621EB862DF7180200381752 /* StarTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +76,28 @@
 		6621EBC92DF71F0000381752 /* StarTrackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTrackApp.swift; sourceTree = "<group>"; };
 		6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		667A2F962DF87F08005CA46F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		66810DDB2E018A5E001BCB1B /* AccessibleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleImage.swift; sourceTree = "<group>"; };
+		66810DDD2E018BDF001BCB1B /* AccessibleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleImageView.swift; sourceTree = "<group>"; };
+		66810DDF2E018C70001BCB1B /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		66810DE12E018E07001BCB1B /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
+		66C165842E0194EC0081F42D /* CulturalParallel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulturalParallel.swift; sourceTree = "<group>"; };
+		66C165862E0196FD0081F42D /* Visibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visibility.swift; sourceTree = "<group>"; };
+		66C165962E019AFF0081F42D /* StarTrackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTrackApp.swift; sourceTree = "<group>"; };
+		66C165972E019AFF0081F42D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		66C165AD2E019B710081F42D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		66C165AF2E019B730081F42D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		66C165B02E019B740081F42D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		66C165B12E019E070081F42D /* CelestialBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialBody.swift; sourceTree = "<group>"; };
+		66C165B42E01A87A0081F42D /* MainInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfo.swift; sourceTree = "<group>"; };
+		66C165B62E01A9C20081F42D /* TimePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePeriod.swift; sourceTree = "<group>"; };
+		66C165BA2E01B19D0081F42D /* PhysicalCharacteristics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalCharacteristics.swift; sourceTree = "<group>"; };
+		66C165BC2E01B4510081F42D /* ChemicalComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemicalComponent.swift; sourceTree = "<group>"; };
+		66C165BE2E01B5600081F42D /* KnowledgeBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeBuild.swift; sourceTree = "<group>"; };
+		66C165C22E01B6D80081F42D /* SpaceMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMission.swift; sourceTree = "<group>"; };
+		66C3E8C32E02DA020070C518 /* HistoricalCosmicEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalCosmicEvent.swift; sourceTree = "<group>"; };
+		66C3E8C52E02DEEC0070C518 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		66C3E8C72E02E0DC0070C518 /* Observatory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observatory.swift; sourceTree = "<group>"; };
+		66C3E8C92E02E1B20070C518 /* Visitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +128,7 @@
 		6621EB7D2DF7180200381752 = {
 			isa = PBXGroup;
 			children = (
+				66C165942E019AFF0081F42D /* Launcher */,
 				6621EB882DF7180200381752 /* StarTrack */,
 				6621EBC22DF71BC900381752 /* Tests */,
 				6621EB872DF7180200381752 /* Products */,
@@ -145,7 +188,9 @@
 		6621EBB42DF7184A00381752 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				661057DF2E005EF0004D95FA /* Event.swift */,
+				66C3E8D02E02E3D80070C518 /* Root */,
+				66C3E8CB2E02E3550070C518 /* Utils */,
+				66C3E8CD2E02E38A0070C518 /* Main */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				6621EBBC2DF71AEC00381752 /* SourcePlaceholder.swift */,
+				66810DDD2E018BDF001BCB1B /* AccessibleImageView.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -179,6 +225,7 @@
 			children = (
 				6621EB8D2DF7180400381752 /* Assets.xcassets */,
 				667A2F962DF87F08005CA46F /* Constants.swift */,
+				66C165AE2E019B710081F42D /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -207,6 +254,94 @@
 				6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */,
 			);
 			path = Launcher;
+			sourceTree = "<group>";
+		};
+		66C165942E019AFF0081F42D /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				66C165952E019AFF0081F42D /* Localizable Strings */,
+				66C165962E019AFF0081F42D /* StarTrackApp.swift */,
+				66C165972E019AFF0081F42D /* Launch Screen.storyboard */,
+			);
+			name = Launcher;
+			path = StarTrack/Launcher;
+			sourceTree = "<group>";
+		};
+		66C165952E019AFF0081F42D /* Localizable Strings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Localizable Strings";
+			sourceTree = "<group>";
+		};
+		66C165B32E01A8460081F42D /* CelestialBodySections */ = {
+			isa = PBXGroup;
+			children = (
+				66C165B42E01A87A0081F42D /* MainInfo.swift */,
+				66C165BA2E01B19D0081F42D /* PhysicalCharacteristics.swift */,
+				66C165BE2E01B5600081F42D /* KnowledgeBuild.swift */,
+			);
+			path = CelestialBodySections;
+			sourceTree = "<group>";
+		};
+		66C165C12E01B5CB0081F42D /* CelestialBody */ = {
+			isa = PBXGroup;
+			children = (
+				66C165B12E019E070081F42D /* CelestialBody.swift */,
+				66C165B32E01A8460081F42D /* CelestialBodySections */,
+			);
+			path = CelestialBody;
+			sourceTree = "<group>";
+		};
+		66C3E8CB2E02E3550070C518 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				66C165BC2E01B4510081F42D /* ChemicalComponent.swift */,
+				66810DE12E018E07001BCB1B /* DateTime.swift */,
+				66C165B62E01A9C20081F42D /* TimePeriod.swift */,
+				66C165842E0194EC0081F42D /* CulturalParallel.swift */,
+				66C165862E0196FD0081F42D /* Visibility.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		66C3E8CC2E02E36E0070C518 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				661057DF2E005EF0004D95FA /* ObservableEvent.swift */,
+				66C3E8C52E02DEEC0070C518 /* Notification.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		66C3E8CD2E02E38A0070C518 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				66C3E8CC2E02E36E0070C518 /* Event */,
+				66C3E8CF2E02E3B10070C518 /* Observatory */,
+				66C3E8C32E02DA020070C518 /* HistoricalCosmicEvent.swift */,
+				66C165C22E01B6D80081F42D /* SpaceMission.swift */,
+				66C165C12E01B5CB0081F42D /* CelestialBody */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		66C3E8CF2E02E3B10070C518 /* Observatory */ = {
+			isa = PBXGroup;
+			children = (
+				66C3E8C72E02E0DC0070C518 /* Observatory.swift */,
+				66C3E8C92E02E1B20070C518 /* Visitation.swift */,
+			);
+			path = Observatory;
+			sourceTree = "<group>";
+		};
+		66C3E8D02E02E3D80070C518 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				66810DDB2E018A5E001BCB1B /* AccessibleImage.swift */,
+				66810DDF2E018C70001BCB1B /* Fact.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +432,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
+				es,
 			);
 			mainGroup = 6621EB7D2DF7180200381752;
 			packageReferences = (
@@ -317,8 +454,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C165AC2E019B710081F42D /* Localizable.strings in Resources */,
 				6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */,
 				6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */,
+				66C165992E019AFF0081F42D /* Launch Screen.storyboard in Resources */,
 				6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,12 +484,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				661057E22E006229004D95FA /* EventViewModel.swift in Sources */,
+				66810DDE2E018BDF001BCB1B /* AccessibleImageView.swift in Sources */,
 				6621EBBD2DF71AEC00381752 /* SourcePlaceholder.swift in Sources */,
+				66C3E8C62E02DEEC0070C518 /* Notification.swift in Sources */,
+				66C3E8C82E02E0DC0070C518 /* Observatory.swift in Sources */,
+				66C165BF2E01B5600081F42D /* KnowledgeBuild.swift in Sources */,
 				6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */,
-				661057E02E005EF0004D95FA /* Event.swift in Sources */,
+				66C165C32E01B6D80081F42D /* SpaceMission.swift in Sources */,
+				661057E02E005EF0004D95FA /* ObservableEvent.swift in Sources */,
 				667A2F972DF87F08005CA46F /* Constants.swift in Sources */,
+				66810DDC2E018A5E001BCB1B /* AccessibleImage.swift in Sources */,
+				66810DE02E018C70001BCB1B /* Fact.swift in Sources */,
 				661057E42E006268004D95FA /* SupabaseEventsView.swift in Sources */,
+				66C3E8C42E02DA020070C518 /* HistoricalCosmicEvent.swift in Sources */,
+				66C165982E019AFF0081F42D /* StarTrackApp.swift in Sources */,
+				66C3E8CA2E02E1B20070C518 /* Visitation.swift in Sources */,
+				66C165B52E01A87A0081F42D /* MainInfo.swift in Sources */,
 				661057DE2E005EB2004D95FA /* SupabaseManager.swift in Sources */,
+				66C165872E0196FD0081F42D /* Visibility.swift in Sources */,
+				66C165BB2E01B19D0081F42D /* PhysicalCharacteristics.swift in Sources */,
+				66C165BD2E01B4510081F42D /* ChemicalComponent.swift in Sources */,
+				66C165B22E019E070081F42D /* CelestialBody.swift in Sources */,
+				66C165852E0194EC0081F42D /* CulturalParallel.swift in Sources */,
+				66810DE22E018E07001BCB1B /* DateTime.swift in Sources */,
+				66C165B72E01A9C20081F42D /* TimePeriod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,11 +543,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		66C165AE2E019B710081F42D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66C165AD2E019B710081F42D /* en */,
+				66C165AF2E019B730081F42D /* pt-BR */,
+				66C165B02E019B740081F42D /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		6621EBA82DF7180500381752 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -452,6 +623,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
