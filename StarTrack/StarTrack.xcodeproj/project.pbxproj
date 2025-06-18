@@ -19,6 +19,10 @@
 		6621EBC12DF71B1900381752 /* ModelPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBC02DF71B1900381752 /* ModelPlaceholder.swift */; };
 		6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBC92DF71F0000381752 /* StarTrackApp.swift */; };
 		6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */; };
+		E7D4FFE32E0065E700CABB2C /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE22E0065E700CABB2C /* CatalogView.swift */; };
+		E7D4FFE52E0065F900CABB2C /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE42E0065F900CABB2C /* CalendarView.swift */; };
+		E7D4FFE72E00660C00CABB2C /* ObservatoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE62E00660C00CABB2C /* ObservatoriesView.swift */; };
+		E7D4FFE92E00661D00CABB2C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE82E00661D00CABB2C /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		6621EBC02DF71B1900381752 /* ModelPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPlaceholder.swift; sourceTree = "<group>"; };
 		6621EBC92DF71F0000381752 /* StarTrackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTrackApp.swift; sourceTree = "<group>"; };
 		6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E7D4FFE22E0065E700CABB2C /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		E7D4FFE42E0065F900CABB2C /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E7D4FFE62E00660C00CABB2C /* ObservatoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservatoriesView.swift; sourceTree = "<group>"; };
+		E7D4FFE82E00661D00CABB2C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +159,11 @@
 		6621EBB52DF7185500381752 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7D4FFE12E0065C900CABB2C /* Catalog */,
+				E7D4FFE02E0065B000CABB2C /* Calendar */,
+				E7D4FFDF2E00659F00CABB2C /* Observatories */,
 				6621EB8B2DF7180200381752 /* ContentView.swift */,
+				E7D4FFE82E00661D00CABB2C /* TabBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +216,30 @@
 				6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */,
 			);
 			path = Launcher;
+			sourceTree = "<group>";
+		};
+		E7D4FFDF2E00659F00CABB2C /* Observatories */ = {
+			isa = PBXGroup;
+			children = (
+				E7D4FFE62E00660C00CABB2C /* ObservatoriesView.swift */,
+			);
+			path = Observatories;
+			sourceTree = "<group>";
+		};
+		E7D4FFE02E0065B000CABB2C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				E7D4FFE42E0065F900CABB2C /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		E7D4FFE12E0065C900CABB2C /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				E7D4FFE22E0065E700CABB2C /* CatalogView.swift */,
+			);
+			path = Catalog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,11 +374,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6621EB8C2DF7180200381752 /* ContentView.swift in Sources */,
+				E7D4FFE32E0065E700CABB2C /* CatalogView.swift in Sources */,
+				E7D4FFE52E0065F900CABB2C /* CalendarView.swift in Sources */,
 				6621EBBB2DF71AD000381752 /* ServicePlaceholder.swift in Sources */,
 				6621EBBD2DF71AEC00381752 /* SourcePlaceholder.swift in Sources */,
 				6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */,
 				6621EBC12DF71B1900381752 /* ModelPlaceholder.swift in Sources */,
 				6621EBBF2DF71B0300381752 /* ViewModelPlaceholder.swift in Sources */,
+				E7D4FFE72E00660C00CABB2C /* ObservatoriesView.swift in Sources */,
+				E7D4FFE92E00661D00CABB2C /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
