@@ -17,6 +17,7 @@
 		6621EBBD2DF71AEC00381752 /* SourcePlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBBC2DF71AEC00381752 /* SourcePlaceholder.swift */; };
 		6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBC92DF71F0000381752 /* StarTrackApp.swift */; };
 		6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */; };
+		665E56952E099D9500E67C34 /* CoreDataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665E56942E099D9500E67C34 /* CoreDataSeeder.swift */; };
 		667A2F972DF87F08005CA46F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667A2F962DF87F08005CA46F /* Constants.swift */; };
 		66810DDC2E018A5E001BCB1B /* AccessibleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DDB2E018A5E001BCB1B /* AccessibleImage.swift */; };
 		66810DDE2E018BDF001BCB1B /* AccessibleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DDD2E018BDF001BCB1B /* AccessibleImageView.swift */; };
@@ -43,7 +44,6 @@
 		66C3E8DC2E02FCA40070C518 /* AccessibleImageEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8DA2E02FCA40070C518 /* AccessibleImageEntity+CoreDataClass.swift */; };
 		66C3E8DD2E02FCA40070C518 /* AccessibleImageEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8DB2E02FCA40070C518 /* AccessibleImageEntity+CoreDataProperties.swift */; };
 		66C3E8DE2E02FE350070C518 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C3E8D32E02F33B0070C518 /* CloudKit.framework */; };
-		66C3E8E62E0309560070C518 /* LocalImageStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8E52E0309560070C518 /* LocalImageStorageManager.swift */; };
 		66C3E8E82E030C710070C518 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8E72E030C710070C518 /* Persistance.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +78,7 @@
 		6621EBBC2DF71AEC00381752 /* SourcePlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePlaceholder.swift; sourceTree = "<group>"; };
 		6621EBC92DF71F0000381752 /* StarTrackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTrackApp.swift; sourceTree = "<group>"; };
 		6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		665E56942E099D9500E67C34 /* CoreDataSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSeeder.swift; sourceTree = "<group>"; };
 		667A2F962DF87F08005CA46F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		66810DDB2E018A5E001BCB1B /* AccessibleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleImage.swift; sourceTree = "<group>"; };
 		66810DDD2E018BDF001BCB1B /* AccessibleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleImageView.swift; sourceTree = "<group>"; };
@@ -107,7 +108,6 @@
 		66C3E8D82E02FC0C0070C518 /* StarTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarTrack.xcdatamodel; sourceTree = "<group>"; };
 		66C3E8DA2E02FCA40070C518 /* AccessibleImageEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessibleImageEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		66C3E8DB2E02FCA40070C518 /* AccessibleImageEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessibleImageEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		66C3E8E52E0309560070C518 /* LocalImageStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageStorageManager.swift; sourceTree = "<group>"; };
 		66C3E8E72E030C710070C518 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,7 +249,7 @@
 			children = (
 				66C3E8D52E02F42E0070C518 /* CloudKitManager.swift */,
 				66C3E8E72E030C710070C518 /* Persistance.swift */,
-				66C3E8E52E0309560070C518 /* LocalImageStorageManager.swift */,
+				665E56942E099D9500E67C34 /* CoreDataSeeder.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -522,11 +522,11 @@
 				6621EBBD2DF71AEC00381752 /* SourcePlaceholder.swift in Sources */,
 				66C3E8C62E02DEEC0070C518 /* Notification.swift in Sources */,
 				66C3E8C82E02E0DC0070C518 /* Observatory.swift in Sources */,
-				66C3E8E62E0309560070C518 /* LocalImageStorageManager.swift in Sources */,
 				66C165BF2E01B5600081F42D /* KnowledgeBuild.swift in Sources */,
 				6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */,
 				66C165C32E01B6D80081F42D /* SpaceMission.swift in Sources */,
 				661057E02E005EF0004D95FA /* ObservableEvent.swift in Sources */,
+				665E56952E099D9500E67C34 /* CoreDataSeeder.swift in Sources */,
 				667A2F972DF87F08005CA46F /* Constants.swift in Sources */,
 				66C3E8E82E030C710070C518 /* Persistance.swift in Sources */,
 				66C3E8DC2E02FCA40070C518 /* AccessibleImageEntity+CoreDataClass.swift in Sources */,

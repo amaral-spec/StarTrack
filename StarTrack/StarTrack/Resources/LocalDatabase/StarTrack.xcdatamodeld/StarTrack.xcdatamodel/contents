@@ -3,9 +3,94 @@
     <entity name="AccessibleImageEntity" representedClassName="AccessibleImageEntity" syncable="YES">
         <attribute name="alternativeText" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <attribute name="imageFilename" optional="YES" attributeType="String"/>
+        <attribute name="localImage" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CelestialBodyEntity" representedClassName="CelestialBodyEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="popularName" optional="YES"/>
+        <attribute name="type" optional="YES"/>
+        <relationship name="fact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FactEntity"/>
+    </entity>
+    <entity name="ChemicalCompositionEntity" representedClassName="ChemicalCompositionEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="element" optional="YES" attributeType="String"/>
+        <attribute name="percentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CulturalParallelEntity" representedClassName="CulturalParallelEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="culture" optional="YES" attributeType="String"/>
+        <attribute name="interpretation" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DateTimeEntity" representedClassName="DateTimeEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="endAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="FactEntity" representedClassName="FactEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="mascotComment" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="image" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="AccessibleImageEntity"/>
+    </entity>
+    <entity name="KnowledgeBuildEntity" representedClassName="KnowledgeBuildEntity" syncable="YES" codeGenerationType="class">
+        <relationship name="culturalParallels" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CulturalParallelEntity"/>
+        <relationship name="spaceMissions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SpaceMissionEntity"/>
+    </entity>
+    <entity name="MainInfoCelestialBodyEntity" representedClassName="MainInfoCelestialBodyEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="diameter" optional="YES"/>
+        <attribute name="location" optional="YES"/>
+        <relationship name="rotationPeriod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimePeriodEntity"/>
+        <relationship name="translationPeriod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimePeriodEntity"/>
+        <relationship name="visibility" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VisibilityEntity"/>
+    </entity>
+    <entity name="ObservatoryEntity" representedClassName="ObservatoryEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="cientificHighlight" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="technologiesAvailable" optional="YES" attributeType="String"/>
+        <relationship name="fact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FactEntity"/>
+        <relationship name="visitation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VisitationEntity"/>
+    </entity>
+    <entity name="PhysicalCharacteristicsEntity" representedClassName="PhysicalCharacteristicsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="density" optional="YES"/>
+        <attribute name="gravity" optional="YES"/>
+        <attribute name="mass" optional="YES"/>
+        <attribute name="temperature" optional="YES"/>
+        <relationship name="chemicalComposition" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ChemicalCompositionEntity"/>
+    </entity>
+    <entity name="SpaceMissionEntity" representedClassName="SpaceMissionEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="distanceTraveled" optional="YES" attributeType="String"/>
+        <attribute name="launchLocation" optional="YES" attributeType="String"/>
+        <attribute name="missionType" optional="YES" attributeType="String"/>
+        <attribute name="objectives" optional="YES" attributeType="String"/>
+        <attribute name="techEnvolved" optional="YES" attributeType="String"/>
+        <relationship name="date" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DateTimeEntity"/>
+        <relationship name="fact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FactEntity"/>
+    </entity>
+    <entity name="TimePeriodEntity" representedClassName="TimePeriodEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="unit" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="VisibilityEntity" representedClassName="VisibilityEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="bestSubzone" optional="YES" attributeType="String"/>
+        <attribute name="instructions" optional="YES" attributeType="String"/>
+        <attribute name="observationZone" optional="YES" attributeType="String"/>
+        <attribute name="viewingMethod" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="VisitationEntity" representedClassName="VisitationEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="bookingNeeded" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="openToPublic" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tickets" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="AccessibleImageEntity" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="AccessibleImageEntity" positionX="-13.0577392578125" positionY="-93.24862670898438" width="128" height="74"/>
+        <element name="FactEntity" positionX="290.8372802734375" positionY="-201.4171142578125" width="128" height="89"/>
+        <element name="ObservatoryEntity" positionX="556.7711181640625" positionY="-38.97998046875" width="128" height="14"/>
+        <element name="SpaceMissionEntity" positionX="-45" positionY="54" width="128" height="14"/>
+        <element name="VisitationEntity" positionX="335.4428100585938" positionY="172.666259765625" width="154.2923583984375" height="88"/>
+        <element name="CelestialBodyEntity" positionX="162" positionY="-36" width="128" height="14"/>
+        <element name="MainInfoCelestialBodyEntity" positionX="171" positionY="-27" width="128" height="14"/>
+        <element name="VisibilityEntity" positionX="180" positionY="-18" width="128" height="14"/>
+        <element name="TimePeriodEntity" positionX="189" positionY="-9" width="128" height="14"/>
+        <element name="PhysicalCharacteristicsEntity" positionX="198" positionY="0" width="128" height="14"/>
+        <element name="ChemicalCompositionEntity" positionX="207" positionY="9" width="128" height="14"/>
+        <element name="KnowledgeBuildEntity" positionX="216" positionY="18" width="128" height="14"/>
+        <element name="CulturalParallelEntity" positionX="180" positionY="-18" width="128" height="14"/>
+        <element name="DateTimeEntity" positionX="189" positionY="-9" width="128" height="14"/>
     </elements>
 </model>
