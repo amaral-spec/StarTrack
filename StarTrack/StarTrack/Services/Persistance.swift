@@ -32,5 +32,9 @@ struct PersistenceController {
 				fatalError("Unresolved error \(error), \(error.userInfo)")
 			}
 		})
+		
+		// Chama o seeder para popular os dados se for a primeira vez
+		let seeder = CoreDataSeeder(context: container.viewContext)
+		seeder.seedDatabaseIfNeeded()
 	}
 }
