@@ -9,11 +9,11 @@ import Foundation
 
 struct DecodableMeasurement<Unit: Dimension>: Decodable {
 	let value: Double
-	let unitSymbol: String // Descodificado a partir da chave "unit" do JSON
+	let unit: String // Descodificado a partir da chave "unit" do JSON
 
 	// Uma propriedade computada que faz a conversão para o tipo real.
 	var measurement: Measurement<Unit> {
-		let unit = Unit(symbol: unitSymbol)
+		let unit = Unit(symbol: unit)
 		return Measurement(value: value, unit: unit)
 	}
 }

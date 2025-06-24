@@ -232,7 +232,7 @@
 		6621EBB82DF718DA00381752 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				66C3E8E92E030DE50070C518 /* LocalDatabase */,
+				66C3E8D72E02FC0C0070C518 /* StarTrack.xcdatamodeld */,
 				6621EB8D2DF7180400381752 /* Assets.xcassets */,
 				667A2F962DF87F08005CA46F /* Constants.swift */,
 				66C165AE2E019B710081F42D /* Localizable.strings */,
@@ -245,7 +245,7 @@
 			children = (
 				66C3E8D52E02F42E0070C518 /* CloudKitManager.swift */,
 				66C3E8E72E030C710070C518 /* Persistance.swift */,
-				665E56942E099D9500E67C34 /* CoreDataSeeder.swift */,
+				6624E7992E0AFAEE0022C874 /* CoreData */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -266,6 +266,15 @@
 				6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */,
 			);
 			path = Launcher;
+			sourceTree = "<group>";
+		};
+		6624E7992E0AFAEE0022C874 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6624E7972E0AE6E70022C874 /* DecodableMeasurement.swift */,
+				665E56942E099D9500E67C34 /* CoreDataSeeder.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		66C165942E019AFF0081F42D /* Launcher */ = {
@@ -312,7 +321,6 @@
 				66C165B62E01A9C20081F42D /* TimePeriod.swift */,
 				66C165842E0194EC0081F42D /* CulturalParallel.swift */,
 				66C165862E0196FD0081F42D /* Visibility.swift */,
-				6624E7972E0AE6E70022C874 /* DecodableMeasurement.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -362,14 +370,6 @@
 				66C3E8D32E02F33B0070C518 /* CloudKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		66C3E8E92E030DE50070C518 /* LocalDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				66C3E8D72E02FC0C0070C518 /* StarTrack.xcdatamodeld */,
-			);
-			path = LocalDatabase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
