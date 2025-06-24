@@ -12,33 +12,9 @@ struct ContentView: View {
     @State private var showSwitchDate: Bool = false
     
     var body: some View {
-        VStack(alignment: .center, spacing: 20){
-            Button(action: {
-                self.showSwitchDate.toggle()
-            }) {
-                Image(systemName: "calendar").foregroundColor(.black)
-                Text("Switch day").foregroundColor(.black)
-            }
-            .padding(.trailing)
-            .frame(maxWidth: .infinity, alignment: .trailing)
-            .popover(isPresented: $showSwitchDate) {
-                SelectDateView(manager: self.manager)
-            }
-            
-            if manager.image != nil {
-                Image(uiImage: self.manager.image!)
-                    .resizable()
-                    .scaledToFit()
-            }
-            
-            ScrollView{
-                VStack(alignment: .leading, spacing: 10){
-                    Text(manager.photoInfo.title).font(.title)
-                    Text(manager.photoInfo.date).font(.headline)
-                    Text(manager.photoInfo.description )
-                }
-            }.padding()
-        }
+
+        TabBar()
+
     }
 }
 
