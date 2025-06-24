@@ -26,8 +26,20 @@ struct Card:View{
     }
 }
 
+struct PerfilView : View {
+    var body : some View {
+        
+        Image(systemName: "person.crop.circle")
+            .resizable()
+            .frame(width: 50, height: 50, alignment: .topTrailing)
+            .foregroundColor(.gray)
+            .padding(.horizontal, 24)
+        
+    }
+}
 
-struct CardViewCatalog: View {
+
+struct CatalogView: View {
      
     
     var body: some View{
@@ -36,17 +48,15 @@ struct CardViewCatalog: View {
             HStack{
                 
                 Text("Catálogo") // colocar o titulo com uma navigationtitle, mas quando tiver a navigation view.
-                    .frame(alignment: .topTrailing)
-                    .font(.title)
+                    .frame(alignment: .topLeading)
+                    .font(.title
+                            .bold())
                     .padding(.horizontal, 24)
                 
                 Spacer()
-
-                Image(systemName: "person.crop.circle")
-                    .resizable()
-                    .frame(width: 50, height: 50, alignment: .topTrailing)
-                    .foregroundColor(.gray)
-                    .padding(.horizontal, 24)
+                
+                PerfilView()
+               
             }
             
                 
@@ -81,13 +91,13 @@ struct CardViewCatalog: View {
     }
 }
 
-struct CatalogView: View {
-    var body: some View {
-        
-        
-        CardViewCatalog()
-    }
-}
+//struct CatalogView: View {
+//    var body: some View {
+//
+//
+//        CardViewCatalog()
+//    }
+//}
 
 
 struct CatalogView_Previews: PreviewProvider {
