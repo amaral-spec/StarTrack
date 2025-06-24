@@ -8,7 +8,7 @@
 import SwiftUI
 
 // MARK: - Enum para Tipos de Missão Espacial
-enum SpaceMissionType: String {
+enum SpaceMissionType: String, Decodable {
 	case flyby = "mission_type_flyby"
 	case orbiter = "mission_type_orbiter"
 	case lander = "mission_type_lander"
@@ -23,7 +23,7 @@ enum SpaceMissionType: String {
 	}
 }
 
-struct SpaceMission {
+struct SpaceMission: Decodable {
 	let fact: Fact
 	var id: UUID { fact.id }
 	let launchLocation: String

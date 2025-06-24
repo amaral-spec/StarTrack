@@ -8,7 +8,7 @@
 import SwiftUI
 
 // MARK: - Enum para Tipo de Astro (Padrão Novo)
-enum CelestialBodyType: String {
+enum CelestialBodyType: String, Decodable {
 	case planet = "body_type_planet"
 	case naturalSatellite = "body_type_natural_satellite"
 	case star = "body_type_star"
@@ -27,10 +27,13 @@ enum CelestialBodyType: String {
 	}
 }
 
-struct CelestialBody {
+struct CelestialBody: Identifiable, Decodable {
 	let fact: Fact
 	var id: UUID { fact.id }
 	let popularName: String?
 	let type: CelestialBodyType
+	let mainInfo: MainInfo
+	let physicalCharacteristics: PhysicalCharacteristics
+	let knowledgeBuild: KnowledgeBuild
 }
 

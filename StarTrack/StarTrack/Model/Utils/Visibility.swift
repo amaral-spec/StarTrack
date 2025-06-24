@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Enum para o Método de Visualização (Padrão Novo)
-enum ViewingMethod: String {
+enum ViewingMethod: String, Decodable {
 	case nakedEye = "viewing_method_naked_eye"
 	case binoculars = "viewing_method_binoculars"
 	case telescope = "viewing_method_telescope"
@@ -22,11 +22,11 @@ enum ViewingMethod: String {
 
 
 // MARK: - Estrutura Principal de Visibilidade
-struct VisibilityInfo {
+struct VisibilityInfo: Decodable {
 	
 	let viewingMethod: ViewingMethod
 	
-	// A região geral onde a observação é possível (ex: "Hemisfério Sul").
+	// A região geral onde a obsviewervação é possível (ex: "Hemisfério Sul").
 	let observationZone: String
 	
 	// Uma sub-região mais específica para a melhor experiência (opcional).

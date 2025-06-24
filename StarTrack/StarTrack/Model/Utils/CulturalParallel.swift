@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CulturalParallel {
+struct CulturalParallel: Decodable {
 	let culture: String
 	let interpretation: String
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct KnowledgeBuild {
+struct KnowledgeBuild: Decodable {
 	let culturalParallels: [CulturalParallel]?
 	let spaceMisions: [SpaceMission]?
 }

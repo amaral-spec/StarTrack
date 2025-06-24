@@ -9,7 +9,7 @@ import SwiftUI
 import CloudKit
 
 // MARK: - Enum para Tipos de Eventos Cósmicos Observáveis
-enum ObservableEventType: String {
+enum ObservableEventType: String, Decodable {
 	case meteorShower = "observable_event_meteor_shower"
 	case eclipse = "observable_event_eclipse"
 	case conjunction = "observable_event_conjunction"
@@ -26,7 +26,7 @@ enum ObservableEventType: String {
 	}
 }
 
-struct ObservableEvent: Identifiable {
+struct ObservableEvent: Identifiable, Decodable {
 	var id: UUID { fact.id }
 	let fact: Fact
 	let date: DateTime

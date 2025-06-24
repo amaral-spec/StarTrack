@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Enum para Unidades de Tempo
-enum TimeUnit: String {
+enum TimeUnit: String, Decodable {
 	case hours = "time_unit_hours"
 	case days = "time_unit_days"
 	case earthYears = "time_unit_earth_years"
@@ -22,7 +22,7 @@ enum TimeUnit: String {
 }
 
 // Estrutura para armazenar um valor e sua unidade de tempo correspondente.
-struct TimePeriod {
+struct TimePeriod: Decodable {
 	let value: Double
 	let unit: TimeUnit
 	

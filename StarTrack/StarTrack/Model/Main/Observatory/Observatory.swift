@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Observatory: Identifiable {
+struct Observatory: Identifiable, Decodable {
 	var id: UUID { fact.id }
 	let fact: Fact
 	let location: String //deveria ser localização?

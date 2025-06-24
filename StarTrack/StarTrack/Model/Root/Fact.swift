@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Fact: Identifiable {
+struct Fact: Identifiable, Decodable {
 	let id = UUID()
 	let name: String
 	let image: AccessibleImage

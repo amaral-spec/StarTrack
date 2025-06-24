@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G1427" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="AccessibleImageEntity" representedClassName="AccessibleImageEntity" syncable="YES">
+    <entity name="AccessibleImageEntity" representedClassName="AccessibleImageEntity" syncable="YES" codeGenerationType="class">
         <attribute name="alternativeText" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="localImage" optional="YES" attributeType="String"/>
     </entity>
     <entity name="CelestialBodyEntity" representedClassName="CelestialBodyEntity" syncable="YES" codeGenerationType="class">
-        <attribute name="popularName" optional="YES"/>
-        <attribute name="type" optional="YES"/>
+        <attribute name="popularName" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <relationship name="fact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FactEntity"/>
     </entity>
     <entity name="ChemicalCompositionEntity" representedClassName="ChemicalCompositionEntity" syncable="YES" codeGenerationType="class">
@@ -33,8 +33,8 @@
         <relationship name="spaceMissions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SpaceMissionEntity"/>
     </entity>
     <entity name="MainInfoCelestialBodyEntity" representedClassName="MainInfoCelestialBodyEntity" syncable="YES" codeGenerationType="class">
-        <attribute name="diameter" optional="YES"/>
-        <attribute name="location" optional="YES"/>
+        <attribute name="diameter" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="location" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="rotationPeriod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimePeriodEntity"/>
         <relationship name="translationPeriod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimePeriodEntity"/>
         <relationship name="visibility" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VisibilityEntity"/>
@@ -47,10 +47,10 @@
         <relationship name="visitation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VisitationEntity"/>
     </entity>
     <entity name="PhysicalCharacteristicsEntity" representedClassName="PhysicalCharacteristicsEntity" syncable="YES" codeGenerationType="class">
-        <attribute name="density" optional="YES"/>
-        <attribute name="gravity" optional="YES"/>
-        <attribute name="mass" optional="YES"/>
-        <attribute name="temperature" optional="YES"/>
+        <attribute name="density" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mass" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="temperature" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="chemicalComposition" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ChemicalCompositionEntity"/>
     </entity>
     <entity name="SpaceMissionEntity" representedClassName="SpaceMissionEntity" syncable="YES" codeGenerationType="class">
@@ -79,18 +79,18 @@
     </entity>
     <elements>
         <element name="AccessibleImageEntity" positionX="-13.0577392578125" positionY="-93.24862670898438" width="128" height="74"/>
-        <element name="FactEntity" positionX="290.8372802734375" positionY="-201.4171142578125" width="128" height="89"/>
-        <element name="ObservatoryEntity" positionX="556.7711181640625" positionY="-38.97998046875" width="128" height="14"/>
-        <element name="SpaceMissionEntity" positionX="-45" positionY="54" width="128" height="14"/>
-        <element name="VisitationEntity" positionX="335.4428100585938" positionY="172.666259765625" width="154.2923583984375" height="88"/>
-        <element name="CelestialBodyEntity" positionX="162" positionY="-36" width="128" height="14"/>
-        <element name="MainInfoCelestialBodyEntity" positionX="171" positionY="-27" width="128" height="14"/>
-        <element name="VisibilityEntity" positionX="180" positionY="-18" width="128" height="14"/>
-        <element name="TimePeriodEntity" positionX="189" positionY="-9" width="128" height="14"/>
-        <element name="PhysicalCharacteristicsEntity" positionX="198" positionY="0" width="128" height="14"/>
+        <element name="CelestialBodyEntity" positionX="162" positionY="-36" width="128" height="74"/>
         <element name="ChemicalCompositionEntity" positionX="207" positionY="9" width="128" height="14"/>
-        <element name="KnowledgeBuildEntity" positionX="216" positionY="18" width="128" height="14"/>
         <element name="CulturalParallelEntity" positionX="180" positionY="-18" width="128" height="14"/>
         <element name="DateTimeEntity" positionX="189" positionY="-9" width="128" height="14"/>
+        <element name="FactEntity" positionX="290.8372802734375" positionY="-201.4171142578125" width="128" height="89"/>
+        <element name="KnowledgeBuildEntity" positionX="216" positionY="18" width="128" height="14"/>
+        <element name="MainInfoCelestialBodyEntity" positionX="171" positionY="-27" width="128" height="104"/>
+        <element name="ObservatoryEntity" positionX="556.7711181640625" positionY="-38.97998046875" width="128" height="14"/>
+        <element name="PhysicalCharacteristicsEntity" positionX="198" positionY="0" width="128" height="104"/>
+        <element name="SpaceMissionEntity" positionX="-45" positionY="54" width="128" height="14"/>
+        <element name="TimePeriodEntity" positionX="189" positionY="-9" width="128" height="14"/>
+        <element name="VisibilityEntity" positionX="180" positionY="-18" width="128" height="14"/>
+        <element name="VisitationEntity" positionX="335.4428100585938" positionY="172.666259765625" width="154.2923583984375" height="88"/>
     </elements>
 </model>

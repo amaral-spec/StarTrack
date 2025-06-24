@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainInfo {
+struct MainInfo: Decodable {
 	let location: String
 	let diameter: Measurement<UnitLength>
 	let distanceFromEarth: Measurement<UnitLength>

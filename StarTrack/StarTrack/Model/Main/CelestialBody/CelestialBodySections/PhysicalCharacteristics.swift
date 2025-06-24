@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PhysicalCharacteristics {
+struct PhysicalCharacteristics: Decodable {
 	let mass: Measurement<UnitMass>
 	let temperature: Measurement<UnitTemperature>
 	let gravity: Measurement<UnitAcceleration>

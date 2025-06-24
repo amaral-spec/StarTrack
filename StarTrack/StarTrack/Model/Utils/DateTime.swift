@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DateTime {
+struct DateTime: Decodable {
 	
 	let startAt: Date
 	let endAt: Date

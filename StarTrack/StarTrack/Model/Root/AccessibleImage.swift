@@ -8,7 +8,7 @@
 import SwiftUI
 import CloudKit
 
-struct AccessibleImage: Identifiable {
+struct AccessibleImage: Identifiable, Decodable {
 	let id: UUID
 	let alternativeText: String
 	

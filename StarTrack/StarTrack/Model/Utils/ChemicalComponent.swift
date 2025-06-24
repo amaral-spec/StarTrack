@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ChemicalElement: String {
+enum ChemicalElement: String, Decodable {
 	case hydrogen = "element_hydrogen"
 	case helium = "element_helium"
 	case oxygen = "element_oxygen"
@@ -20,7 +20,7 @@ enum ChemicalElement: String {
 	}
 }
 
-struct ChemicalComponent {
+struct ChemicalComponent: Decodable {
 	let element: ChemicalElement
 	let percentage: Double
 }

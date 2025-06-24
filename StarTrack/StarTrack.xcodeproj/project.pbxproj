@@ -41,8 +41,6 @@
 		66C3E8CA2E02E1B20070C518 /* Visitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8C92E02E1B20070C518 /* Visitation.swift */; };
 		66C3E8D62E02F42E0070C518 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8D52E02F42E0070C518 /* CloudKitManager.swift */; };
 		66C3E8D92E02FC0C0070C518 /* StarTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8D72E02FC0C0070C518 /* StarTrack.xcdatamodeld */; };
-		66C3E8DC2E02FCA40070C518 /* AccessibleImageEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8DA2E02FCA40070C518 /* AccessibleImageEntity+CoreDataClass.swift */; };
-		66C3E8DD2E02FCA40070C518 /* AccessibleImageEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8DB2E02FCA40070C518 /* AccessibleImageEntity+CoreDataProperties.swift */; };
 		66C3E8DE2E02FE350070C518 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C3E8D32E02F33B0070C518 /* CloudKit.framework */; };
 		66C3E8E82E030C710070C518 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8E72E030C710070C518 /* Persistance.swift */; };
 /* End PBXBuildFile section */
@@ -106,8 +104,6 @@
 		66C3E8D32E02F33B0070C518 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		66C3E8D52E02F42E0070C518 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		66C3E8D82E02FC0C0070C518 /* StarTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarTrack.xcdatamodel; sourceTree = "<group>"; };
-		66C3E8DA2E02FCA40070C518 /* AccessibleImageEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessibleImageEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		66C3E8DB2E02FCA40070C518 /* AccessibleImageEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessibleImageEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		66C3E8E72E030C710070C518 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -372,8 +368,6 @@
 			isa = PBXGroup;
 			children = (
 				66C3E8D72E02FC0C0070C518 /* StarTrack.xcdatamodeld */,
-				66C3E8DA2E02FCA40070C518 /* AccessibleImageEntity+CoreDataClass.swift */,
-				66C3E8DB2E02FCA40070C518 /* AccessibleImageEntity+CoreDataProperties.swift */,
 			);
 			path = LocalDatabase;
 			sourceTree = "<group>";
@@ -529,12 +523,10 @@
 				665E56952E099D9500E67C34 /* CoreDataSeeder.swift in Sources */,
 				667A2F972DF87F08005CA46F /* Constants.swift in Sources */,
 				66C3E8E82E030C710070C518 /* Persistance.swift in Sources */,
-				66C3E8DC2E02FCA40070C518 /* AccessibleImageEntity+CoreDataClass.swift in Sources */,
 				66810DDC2E018A5E001BCB1B /* AccessibleImage.swift in Sources */,
 				66C3E8D92E02FC0C0070C518 /* StarTrack.xcdatamodeld in Sources */,
 				66810DE02E018C70001BCB1B /* Fact.swift in Sources */,
 				66C3E8D62E02F42E0070C518 /* CloudKitManager.swift in Sources */,
-				66C3E8DD2E02FCA40070C518 /* AccessibleImageEntity+CoreDataProperties.swift in Sources */,
 				66C3E8C42E02DA020070C518 /* HistoricalCosmicEvent.swift in Sources */,
 				66C165982E019AFF0081F42D /* StarTrackApp.swift in Sources */,
 				66C3E8CA2E02E1B20070C518 /* Visitation.swift in Sources */,
