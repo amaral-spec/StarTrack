@@ -8,7 +8,7 @@
 import Foundation
 
 struct Visitation: Decodable {
-	let openToPublic: Bool
-	let bookingNeeded: Bool
-	let tickets: [String]?
+	let openToPublic: String
+	let tickets: String?
+	let activities: String?
 }

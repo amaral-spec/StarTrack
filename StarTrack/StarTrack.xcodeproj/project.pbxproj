@@ -32,7 +32,6 @@
 		66C165B52E01A87A0081F42D /* MainInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165B42E01A87A0081F42D /* MainInfo.swift */; };
 		66C165B72E01A9C20081F42D /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165B62E01A9C20081F42D /* TimePeriod.swift */; };
 		66C165BB2E01B19D0081F42D /* PhysicalCharacteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165BA2E01B19D0081F42D /* PhysicalCharacteristics.swift */; };
-		66C165BD2E01B4510081F42D /* ChemicalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165BC2E01B4510081F42D /* ChemicalComponent.swift */; };
 		66C165BF2E01B5600081F42D /* KnowledgeBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165BE2E01B5600081F42D /* KnowledgeBuild.swift */; };
 		66C165C32E01B6D80081F42D /* SpaceMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165C22E01B6D80081F42D /* SpaceMission.swift */; };
 		66C3E8C42E02DA020070C518 /* HistoricalCosmicEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8C32E02DA020070C518 /* HistoricalCosmicEvent.swift */; };
@@ -93,7 +92,6 @@
 		66C165B42E01A87A0081F42D /* MainInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfo.swift; sourceTree = "<group>"; };
 		66C165B62E01A9C20081F42D /* TimePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePeriod.swift; sourceTree = "<group>"; };
 		66C165BA2E01B19D0081F42D /* PhysicalCharacteristics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalCharacteristics.swift; sourceTree = "<group>"; };
-		66C165BC2E01B4510081F42D /* ChemicalComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemicalComponent.swift; sourceTree = "<group>"; };
 		66C165BE2E01B5600081F42D /* KnowledgeBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeBuild.swift; sourceTree = "<group>"; };
 		66C165C22E01B6D80081F42D /* SpaceMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMission.swift; sourceTree = "<group>"; };
 		66C3E8C32E02DA020070C518 /* HistoricalCosmicEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalCosmicEvent.swift; sourceTree = "<group>"; };
@@ -308,7 +306,6 @@
 		66C3E8CB2E02E3550070C518 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				66C165BC2E01B4510081F42D /* ChemicalComponent.swift */,
 				66810DE12E018E07001BCB1B /* DateTime.swift */,
 				66C165B62E01A9C20081F42D /* TimePeriod.swift */,
 				66C165842E0194EC0081F42D /* CulturalParallel.swift */,
@@ -533,7 +530,6 @@
 				66C165B52E01A87A0081F42D /* MainInfo.swift in Sources */,
 				66C165872E0196FD0081F42D /* Visibility.swift in Sources */,
 				66C165BB2E01B19D0081F42D /* PhysicalCharacteristics.swift in Sources */,
-				66C165BD2E01B4510081F42D /* ChemicalComponent.swift in Sources */,
 				66C165B22E019E070081F42D /* CelestialBody.swift in Sources */,
 				66C165852E0194EC0081F42D /* CulturalParallel.swift in Sources */,
 				66810DE22E018E07001BCB1B /* DateTime.swift in Sources */,
