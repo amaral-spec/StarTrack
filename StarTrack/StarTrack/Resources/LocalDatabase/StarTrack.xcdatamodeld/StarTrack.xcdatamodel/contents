@@ -2,7 +2,6 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G1427" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="AccessibleImageEntity" representedClassName="AccessibleImageEntity" syncable="YES" codeGenerationType="class">
         <attribute name="alternativeText" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="localImage" optional="YES" attributeType="String"/>
     </entity>
     <entity name="CelestialBodyEntity" representedClassName="CelestialBodyEntity" syncable="YES" codeGenerationType="class">
@@ -25,6 +24,10 @@
         <attribute name="endAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="startAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
+    <entity name="DecodableMeasurementEntity" representedClassName="DecodableMeasurementEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="unitSymbol" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
     <entity name="FactEntity" representedClassName="FactEntity" syncable="YES" codeGenerationType="class">
         <attribute name="mascotComment" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
@@ -44,11 +47,11 @@
         <relationship name="culturalParallels" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CulturalParallelEntity"/>
     </entity>
     <entity name="MainInfoCelestialBodyEntity" representedClassName="MainInfoCelestialBodyEntity" syncable="YES" codeGenerationType="class">
-        <attribute name="diameter" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="distanceFromEarth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="location" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
         <attribute name="typeDescriptive" optional="YES" attributeType="String"/>
         <attribute name="visibilityDescriptive" optional="YES" attributeType="String"/>
+        <relationship name="diameter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DecodableMeasurementEntity"/>
+        <relationship name="distanceFromEarth" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DecodableMeasurementEntity"/>
         <relationship name="rotationPeriod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimePeriodEntity"/>
         <relationship name="translationPeriod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimePeriodEntity"/>
         <relationship name="visibility" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VisibilityEntity"/>
@@ -63,12 +66,12 @@
     <entity name="PhysicalCharacteristicsEntity" representedClassName="PhysicalCharacteristicsEntity" syncable="YES" codeGenerationType="class">
         <attribute name="atmosphere" optional="YES" attributeType="String"/>
         <attribute name="atmPressure" optional="YES" attributeType="String"/>
-        <attribute name="density" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="gravity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="mass" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="moons" optional="YES" attributeType="String"/>
         <attribute name="surface" optional="YES" attributeType="String"/>
         <attribute name="temperature" optional="YES" attributeType="String"/>
+        <relationship name="density" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DecodableMeasurementEntity"/>
+        <relationship name="gravity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DecodableMeasurementEntity"/>
+        <relationship name="mass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DecodableMeasurementEntity"/>
     </entity>
     <entity name="SpaceMissionEntity" representedClassName="SpaceMissionEntity" syncable="YES" codeGenerationType="class">
         <attribute name="distanceTraveled" optional="YES" attributeType="String"/>
@@ -96,7 +99,7 @@
         <attribute name="tickets" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="AccessibleImageEntity" positionX="-13.0577392578125" positionY="-93.24862670898438" width="128" height="74"/>
+        <element name="AccessibleImageEntity" positionX="-13.0577392578125" positionY="-93.24862670898438" width="128" height="59"/>
         <element name="CelestialBodyEntity" positionX="162" positionY="-36" width="128" height="164"/>
         <element name="CulturalParallelEntity" positionX="180" positionY="-18" width="128" height="14"/>
         <element name="DateTimeEntity" positionX="189" positionY="-9" width="128" height="74"/>
@@ -110,5 +113,6 @@
         <element name="VisibilityEntity" positionX="180" positionY="-18" width="128" height="74"/>
         <element name="VisitationEntity" positionX="335.4428100585938" positionY="172.666259765625" width="154.2923583984375" height="74"/>
         <element name="HistoricalCosmicEventEntity" positionX="162" positionY="-45" width="128" height="134"/>
+        <element name="DecodableMeasurementEntity" positionX="171" positionY="-36" width="128" height="59"/>
     </elements>
 </model>
