@@ -11,7 +11,9 @@ struct MainInfo: Decodable {
 	let location: String
 	let diameter: Measurement<UnitLength>
 	let distanceFromEarth: Measurement<UnitLength>
+	let typeDescriptive: String?
 	let visibility: ViewingMethod
+	let visibilityDescriptive: String
 	let rotationPeriod: TimePeriod?
 	let translationPeriod: TimePeriod?
 }

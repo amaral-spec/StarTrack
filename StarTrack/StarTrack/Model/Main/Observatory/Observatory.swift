@@ -10,8 +10,8 @@ import SwiftUI
 struct Observatory: Identifiable, Decodable {
 	var id: UUID { fact.id }
 	let fact: Fact
-	let location: String //deveria ser localização?
+	let location: String
 	let visitation: Visitation
-	let cientificHighlight: [String]?
-	let technologiesAvailable: [String]?
+	let cientificHighlight: [String]
+	let technologiesAvailable: [String]
 }

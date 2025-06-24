@@ -8,9 +8,12 @@
 import Foundation
 
 struct PhysicalCharacteristics: Decodable {
-	let mass: Measurement<UnitMass>
-	let temperature: Measurement<UnitTemperature>
-	let gravity: Measurement<UnitAcceleration>
-	let density: Measurement<UnitConcentrationMass> // talvez não seja o mais adequado para astros
-	let chemicalComposition: [ChemicalComponent]?
+	let mass: Measurement<UnitMass>?
+	let temperature: String?
+	let atmosphere: String?
+	let atmPressure: String?
+	let surface: String?
+	let gravity: Measurement<UnitAcceleration>?
+	let density: Measurement<UnitConcentrationMass>?
+	let moons: String?
 }

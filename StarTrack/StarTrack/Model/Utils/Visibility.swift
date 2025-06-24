@@ -29,9 +29,6 @@ struct VisibilityInfo: Decodable {
 	// A região geral onde a obsviewervação é possível (ex: "Hemisfério Sul").
 	let observationZone: String
 	
-	// Uma sub-região mais específica para a melhor experiência (opcional).
-	let bestSubzone: String?
-	
 	// Instruções detalhadas sobre como e quando observar.
 	let instructions: String
 }

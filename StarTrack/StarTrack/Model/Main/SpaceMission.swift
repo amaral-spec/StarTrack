@@ -27,9 +27,9 @@ struct SpaceMission: Decodable {
 	let fact: Fact
 	var id: UUID { fact.id }
 	let launchLocation: String
-	let missionType:SpaceMissionType
+	let missionType: SpaceMissionType
 	let distanceTraveled: Measurement<UnitLength>
 	let date: DateTime
 	let objetives: [String]
-	let techEnvolved: [String]?
+	let techEnvolved: [String]
 }

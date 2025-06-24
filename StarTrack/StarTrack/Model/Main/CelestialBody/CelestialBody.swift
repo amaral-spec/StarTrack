@@ -34,6 +34,9 @@ struct CelestialBody: Identifiable, Decodable {
 	let type: CelestialBodyType
 	let mainInfo: MainInfo
 	let physicalCharacteristics: PhysicalCharacteristics
-	let knowledgeBuild: KnowledgeBuild
+	let historyAndObservation: [String]
+	let exploringAndMissions: [String]
+	let triviaAndMiths: KnowledgeBuild
+	let learnMore: [String]
 }
 
