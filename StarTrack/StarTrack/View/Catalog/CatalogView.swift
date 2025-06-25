@@ -26,18 +26,6 @@ struct Card:View{
     }
 }
 
-struct PerfilView : View {
-    var body : some View {
-        
-        Image(systemName: "person.crop.circle")
-            .resizable()
-            .frame(width: 50, height: 50, alignment: .topTrailing)
-            .foregroundColor(.gray)
-            .padding(.horizontal, 24)
-        
-    }
-}
-
 
 struct CatalogView: View {
      
