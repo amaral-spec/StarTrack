@@ -183,11 +183,11 @@ class CoreDataSeeder {
 			entity.physicalCharacteristics?.moons = data.physicalCharacteristics.moons
 			
 			// --- Carrega TriviaAndMiths ---
-			entity.triviaAndMiths?.culturalParallels = parseString(from: data.triviaAndMiths.culturalParallels)
-			entity.triviaAndMiths?.trivia = parseString(from: data.triviaAndMiths.trivia)
+			entity.triviaAndMiths?.culturalParallels = data.triviaAndMiths.culturalParallels
+			entity.triviaAndMiths?.trivia = data.triviaAndMiths.trivia
 			
 			// --- Carrega LearnMore ---
-			entity.learnMore = parseString(from: data.learnMore)
+			entity.learnMore = data.learnMore
 		}
 		
 		historicalEventsData.forEach { data in
@@ -201,13 +201,13 @@ class CoreDataSeeder {
 			entity.fact?.mascotComment = data.fact.mascotComment
 			
 			// --- Carrega CulturalParallels ---
-			entity.culturalParallels = parseString(from: data.culturalParallels)
+			entity.culturalParallels = data.culturalParallels
 			
 			// --- Carrega Explanation ---
-			entity.explanation = parseString(from: data.explanation)
+			entity.explanation = data.explanation
 			
 			// --- Carrega Evidence ---
-			entity.evidence = parseString(from: data.evidence)
+			entity.evidence = data.evidence
 			
 			// --- Carrega TimePeriod ---
 			entity.timePeriod?.value = data.timePeriod.value
@@ -230,17 +230,17 @@ class CoreDataSeeder {
 			entity.launchLocation = data.launchLocation
 			entity.missionType = data.missionType
 				let distanceTraveled = data.distanceTravaled.measurement
-				entity.distanceTraveled.value = distanceTraveled.value
-				entity.distanceTraveled.unit = distanceTraveled.unit.symbol
+				entity.distanceTraveled?.value = distanceTraveled.value
+				entity.distanceTraveled?.unit = distanceTraveled.unit.symbol
 			
 			// ESTA FALTANDO AQUELE CASO DO STARTAT, ENDAT, DURATION
 			entity.date?.startAt = data.date.startAt
 			
 			// --- Carrega strings finais ---
-			entity.objectives = parseString(from: data.objectives)
-			entity.techEnvolved = parseString(from: data.techEnvolved)
-			entity.results = parseString(from: data.results)
-			entity.highlights = parseString(from: data.highlights)
+			entity.objectives = data.objectives
+			entity.techEnvolved = data.techEnvolved
+			entity.results = data.results
+			entity.highlights = data.highlights
 		}
 		
 		observatoryData.forEach { data in
@@ -258,12 +258,12 @@ class CoreDataSeeder {
 			
 			// --- Carrega visitation ---
 			entity.visitation?.openToPublic = data.visitation.openToPublic
-			entity.visitation?.tickets = parseString(from: data.visitation.tickets)
+			entity.visitation?.tickets = data.visitation.tickets
 			entity.visitation?.activities = data.visitation.activities
 			
 			// --- Carrega strings finais ---
-			entity.cientificHighlight = parseString(from: data.cientificHighlights)
-			entity.technologiesAvailable = parseString(from: data.technologiesAvailable)
+			entity.cientificHighlight = data.cientificHighlights
+			entity.technologiesAvailable = data.technologiesAvailable
 		}
 		
 		// MARK: - Salva o contexto
@@ -277,17 +277,6 @@ class CoreDataSeeder {
 	}
 	
 	// MARK: - Funções Auxiliares Privadas
-	
-	// Converte uma string opcional, delimitada por ponto e vírgula, num array de Strings.
-	private func parseString(from string: String?) -> [String] {
-		// 1. Garante que a string não é nula, senão retorna um array vazio.
-		guard let tagsString = string else { return [] }
-		
-		// 2. Quebra a string e remove espaços em branco de cada substring.
-		return tagsString.components(separatedBy: ";").map {
-			$0.trimmingCharacters(in: .whitespaces)
-		}
-	}
 	
 	// Já não precisa de nenhuma lógica complexa de descodificação de unidades.
 	private func load<T: Decodable>(_ filename: String) -> T {

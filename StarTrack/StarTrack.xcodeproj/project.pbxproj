@@ -40,9 +40,9 @@
 		66C3E8C82E02E0DC0070C518 /* Observatory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8C72E02E0DC0070C518 /* Observatory.swift */; };
 		66C3E8CA2E02E1B20070C518 /* Visitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8C92E02E1B20070C518 /* Visitation.swift */; };
 		66C3E8D62E02F42E0070C518 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8D52E02F42E0070C518 /* CloudKitManager.swift */; };
-		66C3E8D92E02FC0C0070C518 /* StarTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8D72E02FC0C0070C518 /* StarTrack.xcdatamodeld */; };
 		66C3E8DE2E02FE350070C518 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C3E8D32E02F33B0070C518 /* CloudKit.framework */; };
 		66C3E8E82E030C710070C518 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8E72E030C710070C518 /* Persistance.swift */; };
+		66E183082E0C3E6900E585F9 /* StarTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66E183062E0C3E6900E585F9 /* StarTrack.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,8 +103,8 @@
 		66C3E8D12E02F24F0070C518 /* StarTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StarTrack.entitlements; sourceTree = "<group>"; };
 		66C3E8D32E02F33B0070C518 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		66C3E8D52E02F42E0070C518 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
-		66C3E8D82E02FC0C0070C518 /* StarTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarTrack.xcdatamodel; sourceTree = "<group>"; };
 		66C3E8E72E030C710070C518 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		66E183072E0C3E6900E585F9 /* StarTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarTrack.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,7 +232,7 @@
 		6621EBB82DF718DA00381752 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				66C3E8D72E02FC0C0070C518 /* StarTrack.xcdatamodeld */,
+				66E183062E0C3E6900E585F9 /* StarTrack.xcdatamodeld */,
 				6621EB8D2DF7180400381752 /* Assets.xcassets */,
 				667A2F962DF87F08005CA46F /* Constants.swift */,
 				66C165AE2E019B710081F42D /* Localizable.strings */,
@@ -525,7 +525,6 @@
 				667A2F972DF87F08005CA46F /* Constants.swift in Sources */,
 				66C3E8E82E030C710070C518 /* Persistance.swift in Sources */,
 				66810DDC2E018A5E001BCB1B /* AccessibleImage.swift in Sources */,
-				66C3E8D92E02FC0C0070C518 /* StarTrack.xcdatamodeld in Sources */,
 				66810DE02E018C70001BCB1B /* Fact.swift in Sources */,
 				66C3E8D62E02F42E0070C518 /* CloudKitManager.swift in Sources */,
 				66C3E8C42E02DA020070C518 /* HistoricalCosmicEvent.swift in Sources */,
@@ -533,6 +532,7 @@
 				66C3E8CA2E02E1B20070C518 /* Visitation.swift in Sources */,
 				66C165B52E01A87A0081F42D /* MainInfo.swift in Sources */,
 				66C165872E0196FD0081F42D /* Visibility.swift in Sources */,
+				66E183082E0C3E6900E585F9 /* StarTrack.xcdatamodeld in Sources */,
 				66C165BB2E01B19D0081F42D /* PhysicalCharacteristics.swift in Sources */,
 				66C165B22E019E070081F42D /* CelestialBody.swift in Sources */,
 				66C165852E0194EC0081F42D /* CulturalParallel.swift in Sources */,
@@ -885,12 +885,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		66C3E8D72E02FC0C0070C518 /* StarTrack.xcdatamodeld */ = {
+		66E183062E0C3E6900E585F9 /* StarTrack.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				66C3E8D82E02FC0C0070C518 /* StarTrack.xcdatamodel */,
+				66E183072E0C3E6900E585F9 /* StarTrack.xcdatamodel */,
 			);
-			currentVersion = 66C3E8D82E02FC0C0070C518 /* StarTrack.xcdatamodel */;
+			currentVersion = 66E183072E0C3E6900E585F9 /* StarTrack.xcdatamodel */;
 			path = StarTrack.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
