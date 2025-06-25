@@ -16,6 +16,7 @@ class CoreDataSeeder {
 	
 	// MARK: - Estruturas Intermediárias
 	private struct FactData: Codable {
+		let id: UUID
 		let name: String
 		let image: ImageData
 		let mascotComment: String?
@@ -35,7 +36,7 @@ class CoreDataSeeder {
 		let historyAndObservation: String?
 		let exploringAndMissions: String?
 		let triviaAndMiths: TriviaAndMithsData
-		let learnMore: String
+		let learnMore: String?
 	}
 	
 	private struct MainInfoData: Codable {
@@ -70,18 +71,13 @@ class CoreDataSeeder {
 	}
 	
 	private struct TriviaAndMithsData: Codable {
-		let culturalParallels: CulturalParallelData
+		let culturalParallels: String?
 		let trivia: String?
-	}
-	
-	private struct CulturalParallelData: Codable {
-		let culture: String
-		let interpretation: String
 	}
 	
 	private struct HistoricalCosmicEventData: Codable {
 		let fact: FactData
-		let culturalParallels: CulturalParallelData
+		let culturalParallels: String?
 		let explanation: String?
 		let evidence: String?
 		let timePeriod: TimePeriodData
@@ -92,6 +88,7 @@ class CoreDataSeeder {
 	private struct SpaceMissionData: Codable {
 		let fact: FactData
 		let launchLocation: String
+		let missionType: String
 		let distanceTravaled: DecodableMeasurement<UnitLength>
 		let date: DateTimeData
 		let objectives: String?
@@ -138,61 +135,138 @@ class CoreDataSeeder {
 		let spaceMissionData: [SpaceMissionData] = load("space_mission.json")
 		let observatoryData: [ObservatoryData] = load("observatory.json")
 		
-		// A PARTIR DAQUI ESTÁ DESATUALIZADO!!!
-		
-		// --- Cria dicionários para busca rápida de entidades ---
-		let imageEntities = Dictionary(uniqueKeysWithValues: imagesData.map { data -> (UUID, AccessibleImageEntity) in
-			let entity = AccessibleImageEntity(context: context)
-			entity.id = data.id
-			entity.imageName = data.imageName
-			entity.alternativeText = data.alternativeText
-			return (data.id, entity)
-		})
-		
-		let factEntities = Dictionary(uniqueKeysWithValues: factsData.map { data -> (UUID, FactEntity) in
-			let entity = FactEntity(context: context)
-			entity.id = data.id
-			entity.name = data.name
-			entity.mascotComment = data.mascotComment
-			if let imageEntity = imageEntities[data.image_id] {
-				entity.image = imageEntity
-			}
-			return (data.id, entity)
-		})
-		
-		// --- Itera e popula as entidades principais ---
+		// MARK: - Converte JSON -> CD
 		bodiesData.forEach { data in
 			let entity = CelestialBodyEntity(context: context)
-			entity.id = data.id
-			entity.type = data.type.rawValue
 			
-			// --- Populando os dados de Measurement (Agora muito mais limpo) ---
-			// A conversão acontece dentro da propriedade computada .measurement.
-			let radius = data.physicalInfo.radius.measurement
-			let mass = data.physicalInfo.mass.measurement
-			let distanceFromEarth = data.observationalInfo.distanceFromEarth.measurement
+			// --- Carrega fact ---
+			entity.fact?.id = data.fact.id
+			entity.fact?.name = data.fact.name
+				entity.fact?.image?.localImage = data.fact.image.localImage
+				entity.fact?.image?.alternativeText = data.fact.image.alternativeText
+			entity.fact?.mascotComment = data.fact.mascotComment
 			
-			entity.radiusValue = radius.value
-			entity.radiusUnitSymbol = radius.unit.symbol
+			// --- Carrega campos soltos ---
+			entity.popularName = data.popularName
+			entity.type = data.type
 			
-			entity.massValue = mass.value
-			entity.massUnitSymbol = mass.unit.symbol
+			// --- Carrega Main Info ---
+			entity.mainInfo?.location = data.mainInfo.location
+				let diameter = data.mainInfo.diameter.measurement
+				entity.mainInfo?.diameter?.value = diameter.value
+			entity.mainInfo?.diameter?.unit = diameter.unit.symbol
+			entity.mainInfo?.typeDescriptive = data.mainInfo.typeDescriptive
+				entity.mainInfo?.visibility?.viewingMethod = data.mainInfo.visibility.viewingMethod
+				entity.mainInfo?.visibility?.instructions = data.mainInfo.visibility.instructions
+			entity.mainInfo?.visibilityDescriptive = data.mainInfo.visibilityDescriptive
+				entity.mainInfo?.rotationPeriod?.value = data.mainInfo.rotationPeriod.value
+				entity.mainInfo?.rotationPeriod?.unit = data.mainInfo.rotationPeriod.unit
+				entity.mainInfo?.translationPeriod?.value = data.mainInfo.translationPeriod.value
+				entity.mainInfo?.translationPeriod?.unit = data.mainInfo.translationPeriod.unit
 			
-			entity.distanceFromEarthValue = distanceFromEarth.value
-			entity.distanceFromEarthUnitSymbol = distanceFromEarth.unit.symbol
+			// --- Carrega PhysicalCharacteristics ---
+				let mass = data.physicalCharacteristics.mass.measurement
+				entity.physicalCharacteristics?.mass?.value = mass.value
+			entity.physicalCharacteristics?.mass?.unit = mass.unit.symbol
+			entity.physicalCharacteristics?.temperature = data.physicalCharacteristics.temperature
+			entity.physicalCharacteristics?.atmosphere = data.physicalCharacteristics.atmosphere
+				let atmPressure = data.physicalCharacteristics.atmPressure.measurement
+				entity.physicalCharacteristics?.atmPressure?.value = atmPressure.value
+			entity.physicalCharacteristics?.atmPressure?.unit = atmPressure.unit.symbol
+			entity.physicalCharacteristics?.surface = data.physicalCharacteristics.surface
+				let gravity = data.physicalCharacteristics.gravity.measurement
+				entity.physicalCharacteristics?.gravity?.value = gravity.value
+			entity.physicalCharacteristics?.gravity?.unit = gravity.unit.symbol
+				let density = data.physicalCharacteristics.density.measurement
+				entity.physicalCharacteristics?.density?.value = density.value
+			entity.physicalCharacteristics?.density?.unit = density.unit.symbol
+			entity.physicalCharacteristics?.moons = data.physicalCharacteristics.moons
 			
-			if let densityData = data.physicalInfo.density {
-				let density = densityData.measurement
-				entity.densityValue = density.value
-				entity.densityUnitSymbol = density.unit.symbol
-			}
+			// --- Carrega TriviaAndMiths ---
+			entity.triviaAndMiths?.culturalParallels = parseString(from: data.triviaAndMiths.culturalParallels)
+			entity.triviaAndMiths?.trivia = parseString(from: data.triviaAndMiths.trivia)
 			
-			// Liga a entidade Fact correspondente
-			if let factEntity = factEntities[data.fact_id] {
-				entity.fact = factEntity
-			}
+			// --- Carrega LearnMore ---
+			entity.learnMore = parseString(from: data.learnMore)
 		}
 		
+		historicalEventsData.forEach { data in
+			let entity = HistoricalCosmicEventEntity(context: context)
+			
+			// --- Carrega fact ---
+			entity.fact?.id = data.fact.id
+			entity.fact?.name = data.fact.name
+				entity.fact?.image?.localImage = data.fact.image.localImage
+				entity.fact?.image?.alternativeText = data.fact.image.alternativeText
+			entity.fact?.mascotComment = data.fact.mascotComment
+			
+			// --- Carrega CulturalParallels ---
+			entity.culturalParallels = parseString(from: data.culturalParallels)
+			
+			// --- Carrega Explanation ---
+			entity.explanation = parseString(from: data.explanation)
+			
+			// --- Carrega Evidence ---
+			entity.evidence = parseString(from: data.evidence)
+			
+			// --- Carrega TimePeriod ---
+			entity.timePeriod?.value = data.timePeriod.value
+			entity.timePeriod?.unit = data.timePeriod.unit
+			
+			// --- Carrega Type ---
+			entity.type = data.type
+		}
+		
+		spaceMissionData.forEach { data in
+			let entity = SpaceMissionEntity(context: context)
+			
+			// --- Carrega fact ---
+			entity.fact?.id = data.fact.id
+			entity.fact?.name = data.fact.name
+				entity.fact?.image?.localImage = data.fact.image.localImage
+				entity.fact?.image?.alternativeText = data.fact.image.alternativeText
+			entity.fact?.mascotComment = data.fact.mascotComment
+			
+			entity.launchLocation = data.launchLocation
+			entity.missionType = data.missionType
+				let distanceTraveled = data.distanceTravaled.measurement
+				entity.distanceTraveled.value = distanceTraveled.value
+				entity.distanceTraveled.unit = distanceTraveled.unit.symbol
+			
+			// ESTA FALTANDO AQUELE CASO DO STARTAT, ENDAT, DURATION
+			entity.date?.startAt = data.date.startAt
+			
+			// --- Carrega strings finais ---
+			entity.objectives = parseString(from: data.objectives)
+			entity.techEnvolved = parseString(from: data.techEnvolved)
+			entity.results = parseString(from: data.results)
+			entity.highlights = parseString(from: data.highlights)
+		}
+		
+		observatoryData.forEach { data in
+			let entity = ObservatoryEntity(context: context)
+			
+			// --- Carrega fact ---
+			entity.fact?.id = data.fact.id
+			entity.fact?.name = data.fact.name
+				entity.fact?.image?.localImage = data.fact.image.localImage
+				entity.fact?.image?.alternativeText = data.fact.image.alternativeText
+			entity.fact?.mascotComment = data.fact.mascotComment
+			
+			// --- Carrega location ---
+			entity.location = data.location
+			
+			// --- Carrega visitation ---
+			entity.visitation?.openToPublic = data.visitation.openToPublic
+			entity.visitation?.tickets = parseString(from: data.visitation.tickets)
+			entity.visitation?.activities = data.visitation.activities
+			
+			// --- Carrega strings finais ---
+			entity.cientificHighlight = parseString(from: data.cientificHighlights)
+			entity.technologiesAvailable = parseString(from: data.technologiesAvailable)
+		}
+		
+		// MARK: - Salva o contexto
 		do {
 			try context.save()
 			defaults.set(true, forKey: "isDatabaseSeeded")
