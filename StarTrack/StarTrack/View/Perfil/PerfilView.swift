@@ -9,7 +9,11 @@ import SwiftUI
 
 struct PerfilView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(systemName: "person.crop.circle")
+            .resizable()
+            .frame(width: 50, height: 50, alignment: .topTrailing)
+            .foregroundColor(.gray)
+            .padding(.horizontal, 24)
     }
 }
 
