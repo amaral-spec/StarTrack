@@ -31,6 +31,7 @@ struct CatalogView: View {
      
     
     var body: some View{
+        
         VStack(alignment: .leading ){
             VStack(spacing: 0){
             HStack{
