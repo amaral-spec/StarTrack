@@ -43,6 +43,7 @@
 		66C3E8DE2E02FE350070C518 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C3E8D32E02F33B0070C518 /* CloudKit.framework */; };
 		66C3E8E82E030C710070C518 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E8E72E030C710070C518 /* Persistance.swift */; };
 		66E183082E0C3E6900E585F9 /* StarTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66E183062E0C3E6900E585F9 /* StarTrack.xcdatamodeld */; };
+		66E1830A2E0C482900E585F9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E183092E0C482900E585F9 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		66C3E8D52E02F42E0070C518 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		66C3E8E72E030C710070C518 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		66E183072E0C3E6900E585F9 /* StarTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarTrack.xcdatamodel; sourceTree = "<group>"; };
+		66E183092E0C482900E585F9 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				6624E7972E0AE6E70022C874 /* DecodableMeasurement.swift */,
+				66E183092E0C482900E585F9 /* CoreDataManager.swift */,
 				665E56942E099D9500E67C34 /* CoreDataSeeder.swift */,
 			);
 			path = CoreData;
@@ -537,6 +540,7 @@
 				66C165B22E019E070081F42D /* CelestialBody.swift in Sources */,
 				66C165852E0194EC0081F42D /* CulturalParallel.swift in Sources */,
 				66810DE22E018E07001BCB1B /* DateTime.swift in Sources */,
+				66E1830A2E0C482900E585F9 /* CoreDataManager.swift in Sources */,
 				66C165B72E01A9C20081F42D /* TimePeriod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
