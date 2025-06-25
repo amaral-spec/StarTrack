@@ -44,29 +44,55 @@ struct CardCalendar:View {
 }
 
 struct CalendarView: View {
+    @State private var selected = "Calendar"
+    let options = ["Calendar", "Favorites"]
+    
     var body: some View {
-        VStack{
-            VStack(spacing: 0){
-            HStack(){
-                Text("Calendário")
-                    .frame(alignment: .topLeading)
-                    .font(.title
-                            .bold())
-                    .padding(.horizontal, 24)
-                
-                Spacer()
-                
-                PerfilView()
+        NavigationView{
+            
+            VStack{
                     
-                }
-            }
-            ScrollView{
-                VStack{
-                    ForEach(0..<6){ _ in
-                        CardCalendar()
+                    Picker("Escolha uma opção", selection: $selected){
+                        ForEach(options, id: \.self) { option in
+                            Text(option)
+                        }
                     }
-                }
+                    .pickerStyle(.segmented)
+                    .frame(width: 344, height: 32, alignment: .center)
+
+                if selected == "Calendar" {
+                                    // Conteúdo do Calendário
+                                    ScrollView {
+                                        VStack {
+                                            ForEach(0..<6) { _ in
+                                                CardCalendar()
+                                            }
+                                        }
+                                    }
+                                } else {
+                                    // Tela de Favoritos
+                                    FavoritesView()
+                                }
+                
+//                    Group {
+//                        if selected == "Calendar" {
+//                            CalendarScreen()
+//                        } else if selected == "Favorites"{
+//                            FavoritesView()
+//                        }
+//                    }
+//
+//
+//                ScrollView{
+//                    VStack{
+//                        ForEach(0..<6){ _ in
+//                            CardCalendar()
+//                        }
+//                    }
+//                }
             }
+            .navigationTitle("Calendário")
+
         }
     }
 }
