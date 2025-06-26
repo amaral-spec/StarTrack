@@ -9,7 +9,10 @@ import SwiftUI
 
 struct FavoritesView: View {
     var body: some View {
-        Text("Tela favoritos")
+        VStack{
+            Text("Tela mudou")
+            ScrollCardView()
+        }
     }
 }
 

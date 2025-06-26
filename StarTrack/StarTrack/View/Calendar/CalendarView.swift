@@ -43,53 +43,53 @@ struct CardCalendar:View {
     }
 }
 
-struct CalendarView: View {
+struct choicesUserView: View {
     @State private var selected = "Calendar"
     let options = ["Calendar", "Favorites"]
+    
+    var body: some View{
+        
+        
+    Picker("", selection: $selected){
+        ForEach(options, id: \.self) { option in
+            Text(option)
+        }
+    }
+    .pickerStyle(.segmented)
+    .frame(width: 344, height: 32, alignment: .center)
+
+if selected == "Calendar" {
+                    // Conteúdo do Calendário
+                    ScrollCardView()
+                } else {
+                    // Tela de Favoritos
+                    FavoritesView()
+                }
+    }
+}
+
+struct ScrollCardView: View {
+    var body: some View{
+        ScrollView {
+            VStack {
+                ForEach(0..<6) { _ in
+                    CardCalendar()
+                }
+            }
+        }
+    }
+}
+
+struct CalendarView: View {
+   
     
     var body: some View {
         NavigationView{
             
             VStack{
-                    
-                    Picker("Escolha uma opção", selection: $selected){
-                        ForEach(options, id: \.self) { option in
-                            Text(option)
-                        }
-                    }
-                    .pickerStyle(.segmented)
-                    .frame(width: 344, height: 32, alignment: .center)
+                    choicesUserView()
 
-                if selected == "Calendar" {
-                                    // Conteúdo do Calendário
-                                    ScrollView {
-                                        VStack {
-                                            ForEach(0..<6) { _ in
-                                                CardCalendar()
-                                            }
-                                        }
-                                    }
-                                } else {
-                                    // Tela de Favoritos
-                                    FavoritesView()
-                                }
-                
-//                    Group {
-//                        if selected == "Calendar" {
-//                            CalendarScreen()
-//                        } else if selected == "Favorites"{
-//                            FavoritesView()
-//                        }
-//                    }
-//
-//
-//                ScrollView{
-//                    VStack{
-//                        ForEach(0..<6){ _ in
-//                            CardCalendar()
-//                        }
-//                    }
-//                }
+
             }
             .navigationTitle("Calendário")
 
