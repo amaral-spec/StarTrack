@@ -11,6 +11,7 @@
 		661057E22E006229004D95FA /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057E12E006229004D95FA /* EventViewModel.swift */; };
 		66117D3E2E0D69F600FC05BB /* ModelsInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66117D3D2E0D69F600FC05BB /* ModelsInitializers.swift */; };
 		66117D402E0D728800FC05BB /* FuncLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66117D3F2E0D728800FC05BB /* FuncLib.swift */; };
+		66117D422E0D98A000FC05BB /* CodeSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66117D412E0D98A000FC05BB /* CodeSample.swift */; };
 		6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB8D2DF7180400381752 /* Assets.xcassets */; };
 		6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB902DF7180400381752 /* Preview Assets.xcassets */; };
 		6621EB9B2DF7180500381752 /* StarTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EB9A2DF7180500381752 /* StarTrackTests.swift */; };
@@ -69,6 +70,7 @@
 		661057E12E006229004D95FA /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventViewModel.swift; path = StarTrack/ViewModel/EventViewModel.swift; sourceTree = SOURCE_ROOT; };
 		66117D3D2E0D69F600FC05BB /* ModelsInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsInitializers.swift; sourceTree = "<group>"; };
 		66117D3F2E0D728800FC05BB /* FuncLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncLib.swift; sourceTree = "<group>"; };
+		66117D412E0D98A000FC05BB /* CodeSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSample.swift; sourceTree = "<group>"; };
 		6621EB862DF7180200381752 /* StarTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6621EB8D2DF7180400381752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6621EB902DF7180400381752 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 		6621EBB62DF7185C00381752 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				66117D412E0D98A000FC05BB /* CodeSample.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				66C3E8C62E02DEEC0070C518 /* Notification.swift in Sources */,
 				66C3E8C82E02E0DC0070C518 /* Observatory.swift in Sources */,
 				66C165BF2E01B5600081F42D /* KnowledgeBuild.swift in Sources */,
+				66117D422E0D98A000FC05BB /* CodeSample.swift in Sources */,
 				6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */,
 				66C165C32E01B6D80081F42D /* SpaceMission.swift in Sources */,
 				6624E7982E0AE6E70022C874 /* DecodableMeasurement.swift in Sources */,
