@@ -12,6 +12,7 @@
 		66117D3E2E0D69F600FC05BB /* ModelsInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66117D3D2E0D69F600FC05BB /* ModelsInitializers.swift */; };
 		66117D402E0D728800FC05BB /* FuncLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66117D3F2E0D728800FC05BB /* FuncLib.swift */; };
 		66117D422E0D98A000FC05BB /* CodeSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66117D412E0D98A000FC05BB /* CodeSample.swift */; };
+		66117D442E0DC14B00FC05BB /* celestial_bodies.json in Resources */ = {isa = PBXBuildFile; fileRef = 66117D432E0DC14B00FC05BB /* celestial_bodies.json */; };
 		6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB8D2DF7180400381752 /* Assets.xcassets */; };
 		6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB902DF7180400381752 /* Preview Assets.xcassets */; };
 		6621EB9B2DF7180500381752 /* StarTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EB9A2DF7180500381752 /* StarTrackTests.swift */; };
@@ -71,6 +72,7 @@
 		66117D3D2E0D69F600FC05BB /* ModelsInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsInitializers.swift; sourceTree = "<group>"; };
 		66117D3F2E0D728800FC05BB /* FuncLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncLib.swift; sourceTree = "<group>"; };
 		66117D412E0D98A000FC05BB /* CodeSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSample.swift; sourceTree = "<group>"; };
+		66117D432E0DC14B00FC05BB /* celestial_bodies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = celestial_bodies.json; sourceTree = "<group>"; };
 		6621EB862DF7180200381752 /* StarTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6621EB8D2DF7180400381752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6621EB902DF7180400381752 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				66E183062E0C3E6900E585F9 /* StarTrack.xcdatamodeld */,
+				66117D432E0DC14B00FC05BB /* celestial_bodies.json */,
 				6621EB8D2DF7180400381752 /* Assets.xcassets */,
 				667A2F962DF87F08005CA46F /* Constants.swift */,
 				66117D3F2E0D728800FC05BB /* FuncLib.swift */,
@@ -494,6 +497,7 @@
 				66C165AC2E019B710081F42D /* Localizable.strings in Resources */,
 				6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */,
 				6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */,
+				66117D442E0DC14B00FC05BB /* celestial_bodies.json in Resources */,
 				66C165992E019AFF0081F42D /* Launch Screen.storyboard in Resources */,
 				6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */,
 			);
