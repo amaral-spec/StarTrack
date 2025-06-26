@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		661057E02E005EF0004D95FA /* ObservableEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057DF2E005EF0004D95FA /* ObservableEvent.swift */; };
 		661057E22E006229004D95FA /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661057E12E006229004D95FA /* EventViewModel.swift */; };
+		66117D3E2E0D69F600FC05BB /* ModelsInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66117D3D2E0D69F600FC05BB /* ModelsInitializers.swift */; };
+		66117D402E0D728800FC05BB /* FuncLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66117D3F2E0D728800FC05BB /* FuncLib.swift */; };
 		6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB8D2DF7180400381752 /* Assets.xcassets */; };
 		6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB902DF7180400381752 /* Preview Assets.xcassets */; };
 		6621EB9B2DF7180500381752 /* StarTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EB9A2DF7180500381752 /* StarTrackTests.swift */; };
@@ -24,7 +26,6 @@
 		66810DDE2E018BDF001BCB1B /* AccessibleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DDD2E018BDF001BCB1B /* AccessibleImageView.swift */; };
 		66810DE02E018C70001BCB1B /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DDF2E018C70001BCB1B /* Fact.swift */; };
 		66810DE22E018E07001BCB1B /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66810DE12E018E07001BCB1B /* DateTime.swift */; };
-		66C165852E0194EC0081F42D /* CulturalParallel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165842E0194EC0081F42D /* CulturalParallel.swift */; };
 		66C165872E0196FD0081F42D /* Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165862E0196FD0081F42D /* Visibility.swift */; };
 		66C165982E019AFF0081F42D /* StarTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C165962E019AFF0081F42D /* StarTrackApp.swift */; };
 		66C165992E019AFF0081F42D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C165972E019AFF0081F42D /* Launch Screen.storyboard */; };
@@ -66,6 +67,8 @@
 /* Begin PBXFileReference section */
 		661057DF2E005EF0004D95FA /* ObservableEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableEvent.swift; sourceTree = "<group>"; };
 		661057E12E006229004D95FA /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventViewModel.swift; path = StarTrack/ViewModel/EventViewModel.swift; sourceTree = SOURCE_ROOT; };
+		66117D3D2E0D69F600FC05BB /* ModelsInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsInitializers.swift; sourceTree = "<group>"; };
+		66117D3F2E0D728800FC05BB /* FuncLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncLib.swift; sourceTree = "<group>"; };
 		6621EB862DF7180200381752 /* StarTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6621EB8D2DF7180400381752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6621EB902DF7180400381752 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -84,7 +87,6 @@
 		66810DDD2E018BDF001BCB1B /* AccessibleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleImageView.swift; sourceTree = "<group>"; };
 		66810DDF2E018C70001BCB1B /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
 		66810DE12E018E07001BCB1B /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
-		66C165842E0194EC0081F42D /* CulturalParallel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulturalParallel.swift; sourceTree = "<group>"; };
 		66C165862E0196FD0081F42D /* Visibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visibility.swift; sourceTree = "<group>"; };
 		66C165962E019AFF0081F42D /* StarTrackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTrackApp.swift; sourceTree = "<group>"; };
 		66C165972E019AFF0081F42D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				66E183062E0C3E6900E585F9 /* StarTrack.xcdatamodeld */,
 				6621EB8D2DF7180400381752 /* Assets.xcassets */,
 				667A2F962DF87F08005CA46F /* Constants.swift */,
+				66117D3F2E0D728800FC05BB /* FuncLib.swift */,
 				66C165AE2E019B710081F42D /* Localizable.strings */,
 			);
 			path = Resources;
@@ -273,8 +276,8 @@
 		6624E7992E0AFAEE0022C874 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				6624E7972E0AE6E70022C874 /* DecodableMeasurement.swift */,
 				66E183092E0C482900E585F9 /* CoreDataManager.swift */,
+				66117D3D2E0D69F600FC05BB /* ModelsInitializers.swift */,
 				665E56942E099D9500E67C34 /* CoreDataSeeder.swift */,
 			);
 			path = CoreData;
@@ -322,7 +325,7 @@
 			children = (
 				66810DE12E018E07001BCB1B /* DateTime.swift */,
 				66C165B62E01A9C20081F42D /* TimePeriod.swift */,
-				66C165842E0194EC0081F42D /* CulturalParallel.swift */,
+				6624E7972E0AE6E70022C874 /* DecodableMeasurement.swift */,
 				66C165862E0196FD0081F42D /* Visibility.swift */,
 			);
 			path = Utils;
@@ -529,16 +532,17 @@
 				66C3E8E82E030C710070C518 /* Persistance.swift in Sources */,
 				66810DDC2E018A5E001BCB1B /* AccessibleImage.swift in Sources */,
 				66810DE02E018C70001BCB1B /* Fact.swift in Sources */,
+				66117D3E2E0D69F600FC05BB /* ModelsInitializers.swift in Sources */,
 				66C3E8D62E02F42E0070C518 /* CloudKitManager.swift in Sources */,
 				66C3E8C42E02DA020070C518 /* HistoricalCosmicEvent.swift in Sources */,
 				66C165982E019AFF0081F42D /* StarTrackApp.swift in Sources */,
 				66C3E8CA2E02E1B20070C518 /* Visitation.swift in Sources */,
 				66C165B52E01A87A0081F42D /* MainInfo.swift in Sources */,
+				66117D402E0D728800FC05BB /* FuncLib.swift in Sources */,
 				66C165872E0196FD0081F42D /* Visibility.swift in Sources */,
 				66E183082E0C3E6900E585F9 /* StarTrack.xcdatamodeld in Sources */,
 				66C165BB2E01B19D0081F42D /* PhysicalCharacteristics.swift in Sources */,
 				66C165B22E019E070081F42D /* CelestialBody.swift in Sources */,
-				66C165852E0194EC0081F42D /* CulturalParallel.swift in Sources */,
 				66810DE22E018E07001BCB1B /* DateTime.swift in Sources */,
 				66E1830A2E0C482900E585F9 /* CoreDataManager.swift in Sources */,
 				66C165B72E01A9C20081F42D /* TimePeriod.swift in Sources */,
