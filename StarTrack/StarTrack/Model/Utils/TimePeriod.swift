@@ -33,4 +33,9 @@ struct TimePeriod: Decodable {
 		// Retorna a string completa, ex: "365.25 dias"
 		return "\(formattedValue) \(unit.displayName)"
 	}
+	
+	init(value: Double, unit: TimeUnit) {
+		self.value = value
+		self.unit = unit
+	}
 }

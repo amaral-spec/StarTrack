@@ -30,7 +30,7 @@ struct SpaceMission: Decodable {
 	let missionType: String
 	let distanceTraveled: Measurement<UnitLength>
 	let date: DateTime
-	let objetives: [String]
+	let objectives: [String]
 	let results: [String]
 	let highlights: [String]
 	let techEnvolved: [String]

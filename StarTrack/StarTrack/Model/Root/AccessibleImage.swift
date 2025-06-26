@@ -8,8 +8,7 @@
 import SwiftUI
 import CloudKit
 
-struct AccessibleImage: Identifiable, Decodable {
-	let id: UUID
+struct AccessibleImage {
 	let alternativeText: String
 	
 	// Propriedade para imagens locais (guardadas nos Assets).
@@ -21,16 +20,14 @@ struct AccessibleImage: Identifiable, Decodable {
 	let cloudImage: CKAsset?
 	
 	// Inicializador para uma IMAGEM LOCAL (Core Data).
-	init(id: UUID, alternativeText: String, localImage: String) {
-		self.id = id
+	init(alternativeText: String, localImage: String) {
 		self.alternativeText = alternativeText
 		self.localImage = localImage
 		self.cloudImage = nil // Garante que a outra fonte é nula.
 	}
 	
 	// Inicializador para uma IMAGEM REMOTA (CloudKit).
-	init(id: UUID, alternativeText: String, cloudImage: CKAsset) {
-		self.id = id
+	init(alternativeText: String, cloudImage: CKAsset) {
 		self.alternativeText = alternativeText
 		self.localImage = nil // Garante que a outra fonte é nula.
 		self.cloudImage = cloudImage

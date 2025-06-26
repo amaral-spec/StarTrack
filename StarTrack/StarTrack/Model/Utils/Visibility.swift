@@ -30,5 +30,5 @@ struct VisibilityInfo: Decodable {
 	let observationZone: String
 	
 	// Instruções detalhadas sobre como e quando observar.
-	let instructions: String
+	let instructions: [String]
 }

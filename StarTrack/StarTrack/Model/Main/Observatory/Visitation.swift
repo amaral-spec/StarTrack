@@ -9,6 +9,6 @@ import Foundation
 
 struct Visitation: Decodable {
 	let openToPublic: String
-	let tickets: String?
+	let tickets: [String]
 	let activities: String?
 }

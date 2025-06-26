@@ -8,6 +8,6 @@
 import Foundation
 
 struct KnowledgeBuild: Decodable {
-	let culturalParallels: [CulturalParallel]
+	let culturalParallels: [String]
 	let trivia: [String]
 }

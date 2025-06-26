@@ -10,10 +10,8 @@ import SwiftUI
 struct MainInfo: Decodable {
 	let location: String
 	let diameter: Measurement<UnitLength>
-	let distanceFromEarth: Measurement<UnitLength>
 	let typeDescriptive: String?
-	let visibility: ViewingMethod
-	let visibilityDescriptive: String
+	let visibility: VisibilityInfo
 	let rotationPeriod: TimePeriod?
 	let translationPeriod: TimePeriod?
 }

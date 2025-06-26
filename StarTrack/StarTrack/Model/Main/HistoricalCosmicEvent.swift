@@ -26,10 +26,9 @@ enum CosmologicalEventType: String, Decodable {
 struct HistoricalCosmicEvent: Identifiable, Decodable {
 	var id: UUID { fact.id }
 	let fact: Fact
-	let culturalParallels: [CulturalParallel]?
-	let explanation: String
-	let evidence: String
+	let culturalParallels: [String]
+	let explanation: [String]
+	let evidence: [String]
 	let timePeriod: TimePeriod
 	let type: CosmologicalEventType
-	let scale: String
 }

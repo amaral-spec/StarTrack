@@ -11,7 +11,7 @@ struct PhysicalCharacteristics: Decodable {
 	let mass: Measurement<UnitMass>?
 	let temperature: String?
 	let atmosphere: String?
-	let atmPressure: String?
+	let atmPressure: Measurement<UnitPressure>?
 	let surface: String?
 	let gravity: Measurement<UnitAcceleration>?
 	let density: Measurement<UnitConcentrationMass>?
