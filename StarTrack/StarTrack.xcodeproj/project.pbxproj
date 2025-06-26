@@ -141,6 +141,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66117D462E0DC97D00FC05BB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				66E183062E0C3E6900E585F9 /* StarTrack.xcdatamodeld */,
+				66117D432E0DC14B00FC05BB /* celestial_bodies.json */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		6621EB7D2DF7180200381752 = {
 			isa = PBXGroup;
 			children = (
@@ -241,8 +250,7 @@
 		6621EBB82DF718DA00381752 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				66E183062E0C3E6900E585F9 /* StarTrack.xcdatamodeld */,
-				66117D432E0DC14B00FC05BB /* celestial_bodies.json */,
+				66117D462E0DC97D00FC05BB /* CoreData */,
 				6621EB8D2DF7180400381752 /* Assets.xcassets */,
 				667A2F962DF87F08005CA46F /* Constants.swift */,
 				66117D3F2E0D728800FC05BB /* FuncLib.swift */,
