@@ -185,9 +185,6 @@ class CoreDataSeeder {
 			// --- Carrega TriviaAndMiths ---
 			entity.triviaAndMiths?.culturalParallels = data.triviaAndMiths.culturalParallels
 			entity.triviaAndMiths?.trivia = data.triviaAndMiths.trivia
-			
-			// --- Carrega LearnMore ---
-			entity.learnMore = data.learnMore
 		}
 		
 		historicalEventsData.forEach { data in
