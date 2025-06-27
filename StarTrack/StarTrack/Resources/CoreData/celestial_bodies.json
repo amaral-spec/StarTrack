@@ -9,7 +9,7 @@
 	  },
 	  "mascotComment": "Se eu corresse tão rápido quanto Mercúrio gira ao redor do Sol, daria 4 voltas por ano! Ainda bem que não fico tonto 😵‍💫"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_planet",
    "mainInfo": {
 	  "location": "Sistema Solar",
@@ -39,7 +39,7 @@
 	  "temperature": "De -173 °C a +427 °C",
 	  "atmosphere": "Exosfera com traços de hélio, sódio, oxigênio",
 	  "atmPressure": {
-		 "value": "10e-11",
+		 "value": 10e-11,
 		 "unit": "atm"
 	  },
 	  "surface": "Cheia de crateras, parecida com a da Lua",
@@ -48,7 +48,7 @@
 		 "unit": "m/s²"
 	  },
 	  "density": {
-		 "value": "5430",
+		 "value": 5430,
 		 "unit": "g/L"
 	  },
 	  "moons": "Não tem"
@@ -70,7 +70,7 @@
 	  },
 	  "mascotComment": "Vênus é tipo um forno cósmico com nuvens de ácido... melhor só visitar com traje especial! Mas brilha lindamente no céu!"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_planet",
    "mainInfo": {
 	  "location": "Sistema Solar",
@@ -131,7 +131,7 @@
 	  },
 	  "mascotComment": "É o nosso lar!"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_planet",
    "mainInfo": {
 	  "location": "Sistema Solar",
@@ -192,7 +192,7 @@
 	  },
 	  "mascotComment": "Se eu fosse para Marte, teria que usar um supertraje para aguentar o frio e a atmosfera fina! Mas imagina só ver um pôr do sol azul no planeta vermelho!"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_planet",
    "mainInfo": {
 	  "location": "Sistema Solar",
@@ -253,7 +253,7 @@
 	  },
 	  "mascotComment": "Júpiter é um verdadeiro gigante! Com tempestades maiores que a Terra e um campo magnético monstruoso, ele é o rei do Sistema Solar — e um show de luzes para os cientistas!"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_planet",
    "mainInfo": {
 	  "location": "Sistema Solar",
@@ -314,7 +314,7 @@
 	  },
 	  "mascotComment": "Saturno é o rei dos anéis! Com seus ventos velozes e luas misteriosas, ele é um dos planetas mais fascinantes para explorar — mesmo que eu precise de um casaco bem quente para encarar aquele frio!"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_planet",
    "mainInfo": {
 	  "location": "Sistema Solar",
@@ -353,7 +353,7 @@
 		 "unit": "m/s²"
 	  },
 	  "density": {
-		 "value": "687",
+		 "value": 687,
 		 "unit": "g/L"
 	  },
 	  "moons": "Pelo menos 146 confirmadas; destaque para Titã (com atmosfera espessa e lagos de metano) e Encelado (gêiseres de água e potencial astrobiológico)"
@@ -375,7 +375,7 @@
 	  },
 	  "mascotComment": "Urano é o planeta mais frio e ‘diferentão’ do Sistema Solar, girando de lado e com anéis discretos — um verdadeiro mistério azul no céu!"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_planet",
    "mainInfo": {
 	  "location": "Sistema Solar",
@@ -405,7 +405,7 @@
 	  "temperature": "Média de aproximadamente -197 °C",
 	  "atmosphere": "Azul-esverdeada devido à absorção de luz vermelha pelo metano; composta por camadas de gases sobrepostas a um manto fluido",
 	  "atmPressure": {
-		 "value": "100",
+		 "value": 100,
 		 "unit": "atm"
 	  },
 	  "surface": "Não possui — transição gradual entre gases e líquidos; manto profundo chamado de “oceano de água-amônia\"",
@@ -414,7 +414,7 @@
 		 "unit": "m/s²"
 	  },
 	  "density": {
-		 "value": "1270",
+		 "value": 1270,
 		 "unit": "g/L"
 	  },
 	  "moons": "27 conhecidas, nomeadas a partir de obras de Shakespeare e Pope (ex: Titânia, Ariel, Miranda)"
@@ -436,7 +436,7 @@
 	  },
 	  "mascotComment": "Netuno é o gigante azul do Sistema Solar, com ventos que poderiam derrubar qualquer um e uma lua que parece um vulcão congelado! Um planeta cheio de surpresas geladas lá no fim do nosso quintal cósmico."
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_planet",
    "mainInfo": {
 	  "location": "Sistema Solar",
@@ -466,7 +466,7 @@
 	  "temperature": "Média de -201 °C",
 	  "atmosphere": "Instável e turbulenta, com os ventos mais rápidos do Sistema Solar (até 2.000 km/h)",
 	  "atmPressure": {
-		 "value": "1.000.00",
+		 "value": 1.0e+5,
 		 "unit": "atm"
 	  },
 	  "surface": "Não possui superfície sólida; estrutura interna com núcleo rochoso do tamanho da Terra, envolto por manto de água, amônia e metano em forma de “gelo quente”",
@@ -475,7 +475,7 @@
 		 "unit": "m/s²"
 	  },
 	  "density": {
-		 "value": "1638",
+		 "value": 1638,
 		 "unit": "g/L"
 	  },
 	  "moons": "Pelo menos 14 conhecidas, incluindo Tritão (geologicamente ativo, com gêiseres de nitrogênio)"
@@ -497,12 +497,12 @@
 	  },
 	  "mascotComment": "Você sabia que a energia que o Sol emite em 1 segundo daria para abastecer a Terra por 500 mil anos?"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_star",
    "mainInfo": {
 	  "location": "Centro do sistema solar",
 	  "diameter": {
-		 "value": 1392700,
+		 "value": 1.3927e+6,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Estrela anã amarela",
@@ -512,11 +512,11 @@
 	  },
 	  "rotationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "translationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  }
    },
    "physicalCharacteristics": {
@@ -525,27 +525,27 @@
 		 "unit": "kg"
 	  },
 	  "temperature": "Superfície (fotosfera): ~5.550 °C\nNúcleo: ~15.000.000 °C",
-	  "atmosphere": "",
+	  "atmosphere": null,
 	  "atmPressure": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "surface": "",
+	  "surface": null,
 	  "gravity": {
 		 "value": 274,
 		 "unit": "m/s²"
 	  },
 	  "density": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "moons": ""
+	  "moons": null
    },
    "historyAndObservation": "O Sol sempre foi visível, não houve uma \"descoberta\".\nA luz do Sol leva cerca de 8 minutos e 20 segundos para chegar à Terra.\nO Sol tem cerca de 4,6 bilhões de anos e tem combustível para mais 5 bilhões.\nApesar de sua importância, é uma estrela mediana entre bilhões na Via Láctea.\nPode ser visto a olho nu, mas nunca deve ser olhado diretamente.-",
-   "exploringAndMissions": "",
+   "exploringAndMissions": null,
    "triviaAndMiths": {
-	  "culturalParallels": "",
-	  "trivia": ""
+	  "culturalParallels": null,
+	  "trivia": null
    }
 },
  {
@@ -558,7 +558,7 @@
 	  },
 	  "mascotComment": "A estrela mais brilhante do céu vem correndo na frente como um farol cósmico — impossível não notar esse brilho todo! 🐾✨"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_star",
    "mainInfo": {
 	  "location": "Constelação de Cão Maior (Canis Major)",
@@ -573,11 +573,11 @@
 	  },
 	  "rotationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "translationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  }
    },
    "physicalCharacteristics": {
@@ -586,24 +586,24 @@
 		 "unit": "kg"
 	  },
 	  "temperature": "~9.940 °C",
-	  "atmosphere": "",
+	  "atmosphere": null,
 	  "atmPressure": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "surface": "",
+	  "surface": null,
 	  "gravity": {
 		 "value": 196,
 		 "unit": "m/s²"
 	  },
 	  "density": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "moons": ""
+	  "moons": null
    },
    "historyAndObservation": "Conhecida desde a Antiguidade por diversas civilizações (egípcios, gregos, povos africanos, indígenas).\nConsiderada a estrela mais brilhante do céu noturno (magnitude aparente -1,46).\nMuito usada para navegação e marcação de calendários astronômicos.",
-   "exploringAndMissions": "",
+   "exploringAndMissions": null,
    "triviaAndMiths": {
 	  "culturalParallels": "Egípcios: Sirius (chamada de Sothis) marcava a cheia do Nilo, sinalizando o início do ano novo. \nPovos indígenas brasileiros: atribuíam grande importância a Sirius nos ciclos de plantio.\nGregos: fazia parte dos cães de caça de Orion.",
 	  "trivia": "Seu brilho às vezes parece cintilar em várias cores por causa da turbulência da atmosfera terrestre."
@@ -619,12 +619,12 @@
 	  },
 	  "mascotComment": "Betelgeuse é tão grande que se estivesse no lugar do Sol, engoliria a Terra, Marte e talvez até Júpiter! E o mais louco: um dia ela vai explodir em um espetáculo cósmico incrível — mas não se preocupe, estamos longe o bastante!"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_star",
    "mainInfo": {
 	  "location": "Constelação de Órion",
 	  "diameter": {
-		 "value": 1200000000,
+		 "value": 1.2e+9,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Estrela supergigante vermelha",
@@ -634,11 +634,11 @@
 	  },
 	  "rotationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "translationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  }
    },
    "physicalCharacteristics": {
@@ -647,24 +647,24 @@
 		 "unit": "kg"
 	  },
 	  "temperature": "~3.500 °C",
-	  "atmosphere": "",
+	  "atmosphere": null,
 	  "atmPressure": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "surface": "",
+	  "surface": null,
 	  "gravity": {
 		 "value": 1.37,
 		 "unit": "m/s²"
 	  },
 	  "density": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "moons": ""
+	  "moons": null
    },
    "historyAndObservation": "Conhecida desde a Antiguidade; nome vem do árabe (Yad al-Jawzā’, “a mão de Gêmeos” ou “mão de Orion”)\nUma das estrelas mais brilhantes do céu (normalmente a 10ª mais brilhante, mas varia)\nApresenta variabilidade no brilho, o que gerou especulações recentes sobre uma possível explosão como supernova\nObservada com telescópios modernos e até diretamente com interferometria, o que permitiu obter imagens do disco estelar",
-   "exploringAndMissions": "",
+   "exploringAndMissions": null,
    "triviaAndMiths": {
 	  "culturalParallels": "Gregos: compõe o caçador Órion\n ",
 	  "trivia": "Povos indígenas australianos, havaianos, maias e outros também reconheciam a constelação de Órion com significados próprios\nA variação recente de brilho em 2019 chamou atenção do mundo científico — o “escurecimento” foi provavelmente causado por uma nuvem de poeira estelar\n"
@@ -680,12 +680,12 @@
 	  },
 	  "mascotComment": "Antares parece uma joia vermelha brilhando no céu noturno! E você sabia que ela é tão grande que se fosse colocada no lugar do Sol, engoliria a Terra"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_star",
    "mainInfo": {
 	  "location": "Constelação de Escorpião",
 	  "diameter": {
-		 "value": 1200000000,
+		 "value": 1.2e+9,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Estrela supergigante vermelha",
@@ -695,11 +695,11 @@
 	  },
 	  "rotationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "translationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  }
    },
    "physicalCharacteristics": {
@@ -708,24 +708,24 @@
 		 "unit": "kg"
 	  },
 	  "temperature": "~3.500 °C",
-	  "atmosphere": "",
+	  "atmosphere": null,
 	  "atmPressure": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "surface": "",
+	  "surface": null,
 	  "gravity": {
 		 "value": 0.1,
 		 "unit": "m/s²"
 	  },
 	  "density": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "moons": ""
+	  "moons": null
    },
    "historyAndObservation": "Conhecida desde a Antiguidade; o nome \"Antares\" vem do grego \"anti-Ares\" (rival de Marte), por sua cor avermelhada\nÉ a estrela mais brilhante da constelação de Escorpião e uma das mais brilhantes do céu noturno\nObservada em muitas culturas como estrela importante em calendários e mitos astronômicos- ",
-   "exploringAndMissions": "",
+   "exploringAndMissions": null,
    "triviaAndMiths": {
 	  "culturalParallels": "Gregos: representa o coração do escorpião; o escorpião teria matado Órion, e por isso, as constelações de Escorpião e Órion nunca aparecem juntas no céu\n ",
 	  "trivia": "Em diversas culturas antigas, era associada a  guerras, sangue e proteção\nAssim como Betelgeuse, Antares está  próxima do fim de sua vida estelar e pode explodir como supernova em algum momento nos próximos milhões de anos\nÉ uma estrela variável, ou seja, seu brilho muda levemente com o tempo"
@@ -741,12 +741,12 @@
 	  },
 	  "mascotComment": "Vega brilha azul como uma joia gelada no céu de verão, encantando quem olha para cima! 💎🌌"
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_star",
    "mainInfo": {
 	  "location": "Constelação de Lira",
 	  "diameter": {
-		 "value": 2362000,
+		 "value": 2.362e+6,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Estrela branca-azulada",
@@ -756,11 +756,11 @@
 	  },
 	  "rotationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "translationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  }
    },
    "physicalCharacteristics": {
@@ -769,24 +769,24 @@
 		 "unit": "kg"
 	  },
 	  "temperature": "~9.600 °C",
-	  "atmosphere": "",
+	  "atmosphere": null,
 	  "atmPressure": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "surface": "",
+	  "surface": null,
 	  "gravity": {
 		 "value": 21,
 		 "unit": "m/s²"
 	  },
 	  "density": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "moons": ""
+	  "moons": null
    },
    "historyAndObservation": "Vega é uma das estrelas mais brilhantes do céu noturno e foi a estrela polar há cerca de 12.000 anos\nFoi a primeira estrela (depois do Sol) a ser fotografada e a ter seu espectro registrado\nJunto com Altair e Deneb, forma o famoso Triângulo de Verão (visível no inverno do hemisfério sul)",
-   "exploringAndMissions": "",
+   "exploringAndMissions": null,
    "triviaAndMiths": {
 	  "culturalParallels": "Gregos: Vega representa a harpa de Orfeu, colocada no céu por Apolo\nChineses e japoneses: representa a princesa celestial  Orihime, separada de seu amado por um rio (a Via Láctea), só podendo vê-lo uma vez por ano (festival de Tanabata)",
 	  "trivia": "Vega é considerada um modelo padrão para calibrar o brilho de outras estrelas (magnitudes)\nSuspeita-se da presença de um disco de poeira ao seu redor, o que pode indicar formação planetária"
@@ -800,15 +800,15 @@
 		 "localImage": "cruzeiro do sul",
 		 "alternativeText": "Foto do céu noturno com várias estrelas pequenas visíveis. No centro, destaca-se a formação característica de cruz, composta por quatro estrelas principais bem brilhantes e uma quinta menos visível, formando o Cruzeiro do Sul, famosa constelação do hemisfério sul."
 	  },
-	  "mascotComment": ""
+	  "mascotComment": null
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_constellation",
    "mainInfo": {
 	  "location": "Hemisfério Sul celeste",
 	  "diameter": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "typeDescriptive": "Constelação",
 	  "visibility": {
@@ -817,37 +817,37 @@
 	  },
 	  "rotationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "translationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  }
    },
    "physicalCharacteristics": {
 	  "mass": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
-	  "temperature": "",
-	  "atmosphere": "",
+	  "temperature": null,
+	  "atmosphere": null,
 	  "atmPressure": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "surface": "",
+	  "surface": null,
 	  "gravity": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "density": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "moons": ""
+	  "moons": null
    },
    "historyAndObservation": "Muito importante para culturas indígenas sul-americanas, como os Tupi-guarani\nReconhecida oficialmente como constelação apenas no século XVI\nPresente em diversas bandeiras (Brasil, Austrália, Nova Zelândia, Papua-Nova Guiné, Samoa)\n",
-   "exploringAndMissions": "",
+   "exploringAndMissions": null,
    "triviaAndMiths": {
 	  "culturalParallels": "Povos originários: Associada a figuras como a “ema do céu” (no Brasil) ou a cruz de ancestrais",
 	  "trivia": "Navegação: Usada historicamente por navegadores portugueses e espanhóis para se orientar no mar\nÉ a constelação mais emblemática do Hemisfério Sul, símbolo nacional em países como o Brasil"
@@ -861,15 +861,15 @@
 		 "localImage": "cao maior",
 		 "alternativeText": "Imagem de um céu estrelado ao entardecer, com um grupo de estrelas formando a constelação do Cão Maior. As estrelas estão conectadas por linhas imaginárias em forma de um “gancho” ou “L” invertido. A estrela mais brilhante (Sirius) se destaca nitidamente."
 	  },
-	  "mascotComment": ""
+	  "mascotComment": null
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_constellation",
    "mainInfo": {
 	  "location": "Hemisfério Sul celeste",
 	  "diameter": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "typeDescriptive": "Constelação",
 	  "visibility": {
@@ -878,40 +878,40 @@
 	  },
 	  "rotationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "translationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  }
    },
    "physicalCharacteristics": {
 	  "mass": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
-	  "temperature": "",
-	  "atmosphere": "",
+	  "temperature": null,
+	  "atmosphere": null,
 	  "atmPressure": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "surface": "",
+	  "surface": null,
 	  "gravity": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "density": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "moons": ""
+	  "moons": null
    },
    "historyAndObservation": "Nome associado ao grande cão que acompanha o caçador Orion no céu",
-   "exploringAndMissions": "",
+   "exploringAndMissions": null,
    "triviaAndMiths": {
 	  "culturalParallels": "Mitologia grega: Canis Major era o cão de caça de Orion\nMitologia egípcia: Sirius era associada à deusa Ísis e à fertilidade trazida pela inundação do Nilo\nCulturas indígenas brasileiras: A constelação representa um cachorro caçador, ligado a mitos sobre caça e proteção",
-	  "trivia": ""
+	  "trivia": null
    }
 },
  {
@@ -922,15 +922,15 @@
 		 "localImage": "orion",
 		 "alternativeText": "Céu muito estrelado com destaque para a constelação de Órion. As estrelas mais notáveis são três alinhadas no centro (o Cinturão de Órion). A imagem também mostra a Nebulosa de Órion (região esbranquiçada envolta por um retângulo), com estrelas azuladas ao redor."
 	  },
-	  "mascotComment": ""
+	  "mascotComment": null
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_constellation",
    "mainInfo": {
 	  "location": "Região equatorial celeste",
 	  "diameter": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "typeDescriptive": "Constelação",
 	  "visibility": {
@@ -939,40 +939,40 @@
 	  },
 	  "rotationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "translationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  }
    },
    "physicalCharacteristics": {
 	  "mass": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
-	  "temperature": "",
-	  "atmosphere": "",
+	  "temperature": null,
+	  "atmosphere": null,
 	  "atmPressure": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "surface": "",
+	  "surface": null,
 	  "gravity": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "density": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "moons": ""
+	  "moons": null
    },
    "historyAndObservation": "Conhecida desde a Antiguidade por várias civilizações\nUma das constelações mais fáceis de identificar\nAs “Três Marias” são um dos padrões estelares mais reconhecíveis no céu\nMuito utilizada como ponto de referência para localizar outras estrelas e constelações",
-   "exploringAndMissions": "",
+   "exploringAndMissions": null,
    "triviaAndMiths": {
 	  "culturalParallels": "Mitologia Grega: Órion era um caçador gigante, orgulhoso, morto por um escorpião (constelação de Escorpião surge quando Órion se põe)\nMitologia Egípcia: Associada ao deus Osíris, e alinhada com as pirâmides de Gizé\nCulturas indígenas brasileiras: Em várias, as “Três Marias” são vistas como instrumentos ou figuras mitológicas específicas",
-	  "trivia": ""
+	  "trivia": null
    }
 },
  {
@@ -983,15 +983,15 @@
 		 "localImage": "triangulo austral",
 		 "alternativeText": "Céu estrelado com muitas estrelas pequenas. Três estrelas mais brilhantes, próximas entre si, formam um triângulo destacado no centro inferior da imagem"
 	  },
-	  "mascotComment": ""
+	  "mascotComment": null
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_constellation",
    "mainInfo": {
 	  "location": "Hemisfério Sul celeste",
 	  "diameter": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "typeDescriptive": "Constelação",
 	  "visibility": {
@@ -1000,39 +1000,39 @@
 	  },
 	  "rotationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "translationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  }
    },
    "physicalCharacteristics": {
 	  "mass": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
-	  "temperature": "",
-	  "atmosphere": "",
+	  "temperature": null,
+	  "atmosphere": null,
 	  "atmPressure": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "surface": "",
+	  "surface": null,
 	  "gravity": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "density": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "moons": ""
+	  "moons": null
    },
    "historyAndObservation": "Criada no século XVI por navegadores europeus (Plancius e Keyser) durante explorações ao hemisfério sul.\nO nome significa “Triângulo do Sul”, em contraponto ao Triângulo do hemisfério norte.\nOficializada no atlas estelar de Bayer em 1603.",
-   "exploringAndMissions": "",
+   "exploringAndMissions": null,
    "triviaAndMiths": {
-	  "culturalParallels": "",
+	  "culturalParallels": null,
 	  "trivia": "Foi muito usada como ponto de navegação por exploradores no sul.\nPor sua forma marcante e isolada, é uma constelação frequentemente usada para ensinar iniciantes a identificar figuras no céu.\n"
    }
 },
@@ -1044,15 +1044,15 @@
 		 "localImage": "scorpius",
 		 "alternativeText": "Imagem da constelação de Escorpião, com estrelas ligadas por traços finos formando a silhueta curva do escorpião celeste. As estrelas são mais concentradas na parte inferior esquerda e se estendem em curva até a parte superior direita da imagem."
 	  },
-	  "mascotComment": ""
+	  "mascotComment": null
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_constellation",
    "mainInfo": {
 	  "location": "Hemisfério Sul celeste",
 	  "diameter": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "typeDescriptive": "Constelação",
 	  "visibility": {
@@ -1061,11 +1061,11 @@
 	  },
 	  "rotationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "translationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  }
    },
    "physicalCharacteristics": {
@@ -1073,25 +1073,25 @@
 		 "value": 1.989e+30,
 		 "unit": "kg"
 	  },
-	  "temperature": "",
-	  "atmosphere": "",
+	  "temperature": null,
+	  "atmosphere": null,
 	  "atmPressure": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "surface": "",
+	  "surface": null,
 	  "gravity": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "density": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "moons": ""
+	  "moons": null
    },
    "historyAndObservation": "Representa um escorpião com o corpo arqueado e a cauda curvada.\nÉ uma das 88 constelações modernas e uma das mais proeminentes do zodíaco.\nPresente em obras clássicas de astronomia, como o Almagesto de Ptolomeu.",
-   "exploringAndMissions": "",
+   "exploringAndMissions": null,
    "triviaAndMiths": {
 	  "culturalParallels": "Mitologia grega: O escorpião foi enviado por Gaia (ou Ártemis) para matar o caçador Órion. Após a morte de Órion, ambos foram colocados no céu, mas em lados opostos — quando Escorpião sobe, Órion se põe.",
 	  "trivia": "Nome: “Antares” significa \"rival de Ares\" (Marte), pela semelhança em cor e brilho com o planeta vermelho.\nEscorpião é a única constelação do zodíaco com forma que realmente lembra o animal que representa.\n"
@@ -1105,14 +1105,14 @@
 		 "localImage": "saggitarius",
 		 "alternativeText": "A imagem mostra um anel brilhante de luz em tons de laranja e amarelo, com um centro escuro — a \"sombra\" do buraco negro. O fundo é preto, realçando o contraste."
 	  },
-	  "mascotComment": ""
+	  "mascotComment": null
    },
-   "popularName": "",
+   "popularName": null,
    "type": "body_type_black_hole",
    "mainInfo": {
 	  "location": "Centro da Via Láctea",
 	  "diameter": {
-		 "value": 44000000,
+		 "value": 4.4e+7,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Buraco negro supermassivo",
@@ -1122,11 +1122,11 @@
 	  },
 	  "rotationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "translationPeriod": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  }
    },
    "physicalCharacteristics": {
@@ -1135,21 +1135,21 @@
 		 "unit": "kg"
 	  },
 	  "temperature": "~10⁶ K (horizonte de eventos)",
-	  "atmosphere": "",
+	  "atmosphere": null,
 	  "atmPressure": {
-		 "value": "",
-		 "unit": ""
+		 "value": null,
+		 "unit": null
 	  },
-	  "surface": "",
+	  "surface": null,
 	  "gravity": {
 		 "value": null,
-		 "unit": ""
+		 "unit": null
 	  },
 	  "density": {
-		 "value": "1,20e+12",
+		 "value": 1.20e+12,
 		 "unit": "g/L"
 	  },
-	  "moons": ""
+	  "moons": null
    },
    "historyAndObservation": "Sagitário A* foi identificado como uma forte fonte de rádio em 1974. \nObservações subsequentes, especialmente de movimentos de estrelas próximas, confirmaram que se trata de um buraco negro supermassivo. \nEm 2022, o Event Horizon Telescope (EHT) revelou a primeira imagem direta de sua sombra.",
    "exploringAndMissions": "Event Horizon Telescope (EHT) – capturou a primeira imagem em 2022\nGRAVITY (ESO) – rastreou estrelas orbitando o buraco negro\nResultados: Prova direta da existência do buraco negro supermassivo no centro da nossa galáxia",
