@@ -1,0 +1,1161 @@
+[
+ {
+   "fact": {
+	  "id": "81e9f212-6d80-4e22-9ad6-53c892288b4f",
+	  "name": "Mercúrio",
+	  "image": {
+		 "localImage": "mercury",
+		 "alternativeText": "Imagem do planeta Mercúrio com superfície acinzentada, cheia de crateras, parecida com a da Lua, em destaque contra o fundo escuro do espaço."
+	  },
+	  "mascotComment": "Se eu corresse tão rápido quanto Mercúrio gira ao redor do Sol, daria 4 voltas por ano! Ainda bem que não fico tonto 😵‍💫"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+	  "location": "Sistema Solar",
+	  "diameter": {
+		 "value": 4879,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Planeta rochoso",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Ao amanhecer ou entardecer, procure um ponto perto do Sol"
+	  },
+	  "rotationPeriod": {
+		 "value": 59,
+		 "unit": "time_unit_days"
+	  },
+	  "translationPeriod": {
+		 "value": 88,
+		 "unit": "time_unit_days"
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 3.3e+23,
+		 "unit": "kg"
+	  },
+	  "temperature": "De -173 °C a +427 °C",
+	  "atmosphere": "Exosfera com traços de hélio, sódio, oxigênio",
+	  "atmPressure": {
+		 "value": 10e-11,
+		 "unit": "atm"
+	  },
+	  "surface": "Cheia de crateras, parecida com a da Lua",
+	  "gravity": {
+		 "value": 3.7,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": 5430,
+		 "unit": "g/L"
+	  },
+	  "moons": "Não tem"
+   },
+   "historyAndObservation": "Conhecido desde a Antiguidade, visível a olho nu.\nFoi confundido com dois corpos celestes: “Hermes” ao amanhecer e “Apolo” ao entardecer.\nDifícil de observar porque está sempre perto do Sol no céu.\nMelhor visto durante suas máximas elongações (quando está mais afastado visualmente do Sol).",
+   "exploringAndMissions": "Mariner 10 (1974–75): primeira visita.\nMESSENGER (2004–2015): mapeou a superfície e revelou segredos da estrutura interna\nBepiColombo (em curso): missão conjunta ESA/JAXA, deve entrar em órbita em 2025.",
+   "triviaAndMiths": {
+	  "culturalParallels": "Romanos: Mercúrio era o mensageiro dos deuses, por isso o planeta mais rápido recebeu esse nome",
+	  "trivia": "Apesar de ser o mais próximo do Sol, não é o mais quente (esse título é de Vênus)\nSeu núcleo ocupa 85% do raio do planeta!"
+   }
+},
+ {
+   "fact": {
+	  "id": "8ba6c47c-1d43-4836-850e-88f685dd6bd0",
+	  "name": "Vênus",
+	  "image": {
+		 "localImage": "venus",
+		 "alternativeText": "Foto de Vênus com coloração amarelada e atmosfera densa e opaca, sem detalhes visíveis da superfície, envolta por nuvens de ácido sulfúrico."
+	  },
+	  "mascotComment": "Vênus é tipo um forno cósmico com nuvens de ácido... melhor só visitar com traje especial! Mas brilha lindamente no céu!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+	  "location": "Sistema Solar",
+	  "diameter": {
+		 "value": 12104,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Planeta rochoso",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Visível ao amanhecer ou entardecer, próximo ao horizonte; é o mais brilhante após o Sol e a Lua."
+	  },
+	  "rotationPeriod": {
+		 "value": 243,
+		 "unit": "time_unit_days"
+	  },
+	  "translationPeriod": {
+		 "value": 225,
+		 "unit": "time_unit_days"
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 4.86e+24,
+		 "unit": "kg"
+	  },
+	  "temperature": "De 462 °C a 467 °C",
+	  "atmosphere": "96,5% dióxido de carbono, 3,5% nitrogênio, com nuvens de ácido sulfúrico",
+	  "atmPressure": {
+		 "value": 92,
+		 "unit": "atm"
+	  },
+	  "surface": "Coberta por planícies basálticas, com muitos vulcões, poucos relevos elevados e traços de atividade vulcânica recente (há cerca de 500 milhões de anos)",
+	  "gravity": {
+		 "value": 8.87,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": 8870,
+		 "unit": "g/L"
+	  },
+	  "moons": "Não tem"
+   },
+   "historyAndObservation": "Conhecido desde a Antiguidade, visível a olho nu.\nChamado de “estrela d’alva” ou “estrela vespertina” por aparecer brilhante perto do Sol ao amanhecer ou entardecer Sempre envolto em espessas nuvens, o que dificultou o estudo da superfície até a era das sondas espaciais\nObservado por várias culturas antigas, frequentemente associado a deuses do amor e da beleza.",
+   "exploringAndMissions": "Venera (URSS, 1961–1984): primeiras sondas a pousar e transmitir dados da superfície hostil de Vênus.\nMagellan (NASA, 1989–1994): mapeou a superfície por radar, revelando detalhes geológicos \nVenus Express (ESA, 2006–2014): estudou atmosfera e clima.\\\nAkatsuki (JAXA, em operação): observa atmosfera e meteorologia.\nBepiColombo (ESA/JAXA, em curso): fará sobrevoos de Vênus a caminho de Mercúrio",
+   "triviaAndMiths": {
+	  "culturalParallels": "Romanos: Vênus era a deusa do amor e da beleza, nomeando o planeta mais brilhante do céu noturno",
+	  "trivia": "Apesar de ser “gêmea” da Terra em tamanho e massa, as condições em Vênus são extremamente hostis, com temperaturas que derretem chumbo e pressão esmagadora\nRotação retrógrada: gira no sentido oposto ao da maioria dos planetas do Sistema Solar\nUm dia em Vênus é mais longo que seu ano!"
+   }
+},
+ {
+   "fact": {
+	  "id": "addf7e1c-4827-471e-9826-da0381cb83cd",
+	  "name": "Terra",
+	  "image": {
+		 "localImage": "earth",
+		 "alternativeText": "Imagem da Terra vista do espaço, mostrando continentes, oceanos e nuvens brancas sobre a atmosfera azul vibrante."
+	  },
+	  "mascotComment": "É o nosso lar!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+	  "location": "Sistema Solar",
+	  "diameter": {
+		 "value": 6371,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Planeta rochoso",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Procure uma “estrela” muito brilhante no céu leste após as 20h — ele se move lentamente ao longo das semana"
+	  },
+	  "rotationPeriod": {
+		 "value": 23.93,
+		 "unit": "time_unit_hours"
+	  },
+	  "translationPeriod": {
+		 "value": 364.25,
+		 "unit": "time_unit_days"
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 5.97e+27,
+		 "unit": "kg"
+	  },
+	  "temperature": "Média de 15 °C (varia de cerca de -89 °C a +58 °C em extremos naturais)",
+	  "atmosphere": "78% nitrogênio, 21% oxigênio, traços de argônio, dióxido de carbono e outros gases",
+	  "atmPressure": {
+		 "value": 1,
+		 "unit": "atm"
+	  },
+	  "surface": "71% coberta por água e 29% por continentes, com sete massas continentais e quatro oceanos; placas tectônicas ativas",
+	  "gravity": {
+		 "value": 9.8,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": 5510,
+		 "unit": "g/L"
+	  },
+	  "moons": "Um satélite natural — a Lua, a 384.400 km de distância"
+   },
+   "historyAndObservation": "Único planeta conhecido com vida, estudado desde a Antiguidade e base de todas as civilizações humanas.\nObservado e monitorado por milhares de satélites e missões científicas, como as da NASA, que acompanham clima, oceanos, atmosfera e mudanças ambientais.\nA superfície é dinâmica, com ciclos de erosão, sedimentação, formação de montanhas e renovação do solo.\nA atmosfera é dividida em cinco camadas principais: troposfera, estratosfera, mesosfera, termosfera e exosfera, cada uma com características distintas.",
+   "exploringAndMissions": "Inúmeras missões tripuladas e não tripuladas à órbita terrestre e à Lua.\nSatélites de observação monitoram clima, vegetação, oceanos, poluição, desastres naturais e mudanças ambientais em tempo real\nEstações espaciais, como a ISS, servem de laboratório para pesquisas sobre a Terra e o espaço.",
+   "triviaAndMiths": {
+	  "culturalParallels": "Romanos: O nome vem da deusa romana Tellus (ou Terra Mater), divindade que representava a Mãe Terra, a fertilidade e o solo que sustenta a vida.",
+	  "trivia": "A Terra é o maior dos planetas rochosos do Sistema Solar e o único conhecido com água líquida abundante em sua superfície.\nO nome “Terra” deriva do latim e não segue a tradição de nomes de deuses greco-romanos.\nO planeta é chamado de “ponto azul” quando visto do espaço, expressão popularizada pela missão Voyager 1.\nSua atmosfera rica em oxigênio é resultado da atividade biológica ao longo de bilhões de anos.\nO ciclo da água e a tectônica de placas são processos únicos entre os planetas conhecidos."
+   }
+},
+ {
+   "fact": {
+	  "id": "22764b76-9ef2-42b2-aad0-b37e8ece0dbf",
+	  "name": "Marte",
+	  "image": {
+		 "localImage": "mars",
+		 "alternativeText": "Foto de Marte com sua superfície avermelhada e árida, marcada por montanhas, crateras e vales profundos."
+	  },
+	  "mascotComment": "Se eu fosse para Marte, teria que usar um supertraje para aguentar o frio e a atmosfera fina! Mas imagina só ver um pôr do sol azul no planeta vermelho!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+	  "location": "Sistema Solar",
+	  "diameter": {
+		 "value": 6794,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Planeta rochoso",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Possui coloração avermelhada"
+	  },
+	  "rotationPeriod": {
+		 "value": 24.02,
+		 "unit": "time_unit_hours"
+	  },
+	  "translationPeriod": {
+		 "value": 687,
+		 "unit": "time_unit_days"
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 6.42e+23,
+		 "unit": "kg"
+	  },
+	  "temperature": "Média de -62,77 °C",
+	  "atmosphere": "95% dióxido de carbono, além de nitrogênio e argônio",
+	  "atmPressure": {
+		 "value": "6.00e-03",
+		 "unit": "atm"
+	  },
+	  "surface": "Sólida e rochosa, rica em óxidos de ferro (coloração avermelhada); calotas polares de água e dióxido de carbono; grandes vulcões (como o Monte Olimpo) e extensos cânions (como Valles Marineris); sem placas tectônicas ativas atualmente",
+	  "gravity": {
+		 "value": 3.71,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": "3900",
+		 "unit": "g/L"
+	  },
+	  "moons": "Dois satélites naturais — Phobos e Deimos, provavelmente asteroides capturados"
+   },
+   "historyAndObservation": "Conhecido desde a Antiguidade, é observado por diversas culturas.\nChamado de “planeta vermelho” devido à coloração do solo\nAlvo de intensas pesquisas sobre possibilidade de vida passada e presente\nObservações modernas feitas por telescópios e missões orbitais e de superfície (rovers)",
+   "exploringAndMissions": "Missões históricas: Viking 1 e 2 (NASA, 1976), primeiras a pousar e enviar dados da superfície\nMars Pathfinder, Spirit, Opportunity, Curiosity, Perseverance (rovers da NASA): análise do solo, atmosfera e busca por sinais de vida.\nMars Express (ESA), Mars Reconnaissance Orbiter, MAVEN, InSight (NASA): mapeamento, estudo da atmosfera, interior e clima.",
+   "triviaAndMiths": {
+	  "culturalParallels": "Romanos: Marte era o deus da guerra, nomeando o planeta pela cor avermelhada, associada ao sangue",
+	  "trivia": "Marte tem calotas polares, estações do ano e dias de duração semelhante aos da Terra\nApesar de sua semelhança com a Terra, é muito mais frio, árido e com atmosfera rarefeita\nPhobos, a lua mais próxima, está se aproximando de Marte e pode se despedaçar no futuro.\nMeteoritos marcianos já foram encontrados na Terra"
+   }
+},
+ {
+   "fact": {
+	  "id": "b108f9c9-a8e8-43b8-8edc-d29cfb493400",
+	  "name": "Júpiter",
+	  "image": {
+		 "localImage": "jupiter",
+		 "alternativeText": "Imagem de Júpiter com faixas coloridas em tons de marrom, branco e bege, além da icônica Grande Mancha Vermelha, uma tempestade gigante."
+	  },
+	  "mascotComment": "Júpiter é um verdadeiro gigante! Com tempestades maiores que a Terra e um campo magnético monstruoso, ele é o rei do Sistema Solar — e um show de luzes para os cientistas!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+	  "location": "Sistema Solar",
+	  "diameter": {
+		 "value": 142984,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Planeta gigante gasoso",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Procure uma “estrela” muito brilhante no céu leste após as 20h"
+	  },
+	  "rotationPeriod": {
+		 "value": 9.03,
+		 "unit": "time_unit_hours"
+	  },
+	  "translationPeriod": {
+		 "value": 11.86,
+		 "unit": "time_unit_earthYears"
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 1.9e+27,
+		 "unit": "kg"
+	  },
+	  "temperature": "-145 °C",
+	  "atmosphere": "Faixas de nuvens chamadas zonas e cinturões, com ventos de até milhares de km/h; Grande Mancha Vermelha — tempestade ciclônica gigante",
+	  "atmPressure": {
+		 "value": "1000",
+		 "unit": "atm"
+	  },
+	  "surface": "Sem superfície sólida — transição gradual da atmosfera para camadas líquidas e gasosas",
+	  "gravity": {
+		 "value": 24.79,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": "1330",
+		 "unit": "g/L"
+	  },
+	  "moons": "Pelo menos 97 confirmadas, incluindo Io, Europa, Ganimedes e Calisto"
+   },
+   "historyAndObservation": "Observado desde a antiguidade, foi o primeiro planeta a ser estudado com telescópio por Galileu em 1610, que descobriu suas maiores luas.\nMissões espaciais, como as sondas Pioneer, Voyager, Galileo e Juno, revelaram detalhes da atmosfera, estrutura interna e magnetosfera.\nA missão Juno, em órbita desde 2016, tem fornecido dados inéditos sobre a composição, dinâmica atmosférica e campo gravitacional do planeta.",
+   "exploringAndMissions": "Pioneer 10 e 11 (anos 1970): primeiras sondas a sobrevoar Júpiter.\nVoyager 1 e 2 (1979): imagens detalhadas da atmosfera e luas.\nGalileo (1995–2003): orbitador que estudou o planeta e suas luas.\nJuno (2016–presente): missão em órbita que investiga a estrutura interna, campo magnético e atmosfera profunda.",
+   "triviaAndMiths": {
+	  "culturalParallels": "Romanos: Nomeado em homenagem ao deus romano Júpiter, rei dos deuses, refletindo seu status como o maior planeta",
+	  "trivia": "A Grande Mancha Vermelha é uma tempestade contínua há pelo menos 300 anos.\nSua magnetosfera é tão poderosa que gera emissões de rádio detectáveis da Terra, superando o Sol em algumas frequências.\nGanimedes, uma das luas, é maior que o planeta Mercúrio.\nO planeta emite mais calor do que recebe do Sol devido à contração gravitacional interna."
+   }
+},
+ {
+   "fact": {
+	  "id": "c30c446c-8870-45ef-ac23-2ebd729e5d73",
+	  "name": "Saturno",
+	  "image": {
+		 "localImage": "saturn",
+		 "alternativeText": "Foto de Saturno destacando seus impressionantes anéis formados por partículas de gelo e rocha, com o planeta dourado ao centro."
+	  },
+	  "mascotComment": "Saturno é o rei dos anéis! Com seus ventos velozes e luas misteriosas, ele é um dos planetas mais fascinantes para explorar — mesmo que eu precise de um casaco bem quente para encarar aquele frio!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+	  "location": "Sistema Solar",
+	  "diameter": {
+		 "value": 116464,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Planeta gigante gasoso",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Aparece como um ponto amarelado no céu leste ou sudeste entre 20h e 22h"
+	  },
+	  "rotationPeriod": {
+		 "value": 10.11,
+		 "unit": "time_unit_hours"
+	  },
+	  "translationPeriod": {
+		 "value": 29.4,
+		 "unit": "time_unit_earthYears"
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 5.68e+26,
+		 "unit": "kg"
+	  },
+	  "temperature": "Média de -138 °C na atmosfera superior",
+	  "atmosphere": "Faixas de nuvens em tons amarelados, marrons e brancos;",
+	  "atmPressure": {
+		 "value": "1400",
+		 "unit": "atm"
+	  },
+	  "surface": "Não possui superfície sólida — camadas externas compostas por gases e líquidos; núcleo denso e sólido, cercado por hidrogênio metálico e molecular líquidos",
+	  "gravity": {
+		 "value": 11.19,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": 687,
+		 "unit": "g/L"
+	  },
+	  "moons": "Pelo menos 146 confirmadas; destaque para Titã (com atmosfera espessa e lagos de metano) e Encelado (gêiseres de água e potencial astrobiológico)"
+   },
+   "historyAndObservation": "Observado desde a antiguidade, Saturno foi o primeiro planeta com anéis descobertos, inicialmente por Galileu em 1610, que os viu como “orelhas”.\nMissões espaciais como Pioneer 11, Voyager 1 e 2 e, principalmente, Cassini-Huygens (1997–2017) trouxeram informações detalhadas sobre sua atmosfera, anéis e luas.\nCassini foi a primeira a orbitar Saturno e pousou a sonda Huygens em Titã, revelando dados inéditos sobre sua superfície e atmosfera.",
+   "exploringAndMissions": "Pioneer 11 (1979): primeiro sobrevoo de Saturno.\nVoyager 1 e 2 (1980–1981): imagens detalhadas dos anéis e luas.\nCassini-Huygens (1997–2017): missão orbital que revolucionou o conhecimento sobre Saturno e suas luas.",
+   "triviaAndMiths": {
+	  "culturalParallels": "Romanos: Nomeado em homenagem a Saturno, o deus romano da agricultura e do tempo.",
+	  "trivia": "Apesar de ser o segundo maior planeta, sua densidade é a menor do Sistema Solar.\nSaturno irradia mais energia do que recebe do Sol, devido a processos internos como a precipitação de hélio.\nSeu sistema de anéis é o mais extenso e brilhante do Sistema Solar, visível até com telescópios amadores.\nTitã é maior que o planeta Mercúrio e possui uma atmosfera densa rica em nitrogênio."
+   }
+},
+ {
+   "fact": {
+	  "id": "f1dc57eb-9f94-4bf2-9987-0e3273936094",
+	  "name": "Urano",
+	  "image": {
+		 "localImage": "uranus",
+		 "alternativeText": "Imagem de Urano em tom azul-esverdeado uniforme, sem grandes detalhes visíveis, girando de lado com anéis tênues ao redor."
+	  },
+	  "mascotComment": "Urano é o planeta mais frio e ‘diferentão’ do Sistema Solar, girando de lado e com anéis discretos — um verdadeiro mistério azul no céu!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+	  "location": "Sistema Solar",
+	  "diameter": {
+		 "value": 51800,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Planeta gigante gasoso",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "É um ponto pálido azul-esverdeado"
+	  },
+	  "rotationPeriod": {
+		 "value": 17.23,
+		 "unit": "time_unit_hours"
+	  },
+	  "translationPeriod": {
+		 "value": 84,
+		 "unit": "time_unit_earthYears"
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 8.68e+25,
+		 "unit": "kg"
+	  },
+	  "temperature": "Média de aproximadamente -197 °C",
+	  "atmosphere": "Azul-esverdeada devido à absorção de luz vermelha pelo metano; composta por camadas de gases sobrepostas a um manto fluido",
+	  "atmPressure": {
+		 "value": 100,
+		 "unit": "atm"
+	  },
+	  "surface": "Não possui — transição gradual entre gases e líquidos; manto profundo chamado de “oceano de água-amônia\"",
+	  "gravity": {
+		 "value": 8.87,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": 1270,
+		 "unit": "g/L"
+	  },
+	  "moons": "27 conhecidas, nomeadas a partir de obras de Shakespeare e Pope (ex: Titânia, Ariel, Miranda)"
+   },
+   "historyAndObservation": "Descoberto em 1781 por William Herschel, foi o primeiro planeta identificado com o uso de telescópio.\nVisível a olho nu em condições favoráveis, mas com brilho baixo e cor azulada.\nObservado detalhadamente pela sonda Voyager 2 em 1986, que revelou sua atmosfera, anéis e luas.\nTelescópios modernos e o Telescópio Espacial Hubble continuam a estudar o planeta.",
+   "exploringAndMissions": "Voyager 2 (1986): única missão a visitar Urano, fornecendo imagens e dados essenciais sobre sua atmosfera, anéis e luas.\nFuturas missões propostas para estudar melhor sua composição, magnetosfera e sistema de satélites.",
+   "triviaAndMiths": {
+	  "culturalParallels": "Romanos: Nomeado em homenagem a Urano, deus grego do céu.",
+	  "trivia": "Urano é o planeta com a inclinação axial mais extrema do Sistema Solar, fazendo-o girar praticamente de lado.\nSua atmosfera é a mais fria do Sistema Solar, com temperaturas que podem chegar a -224 °C.\nOs anéis de Urano foram os segundos a serem descobertos, depois dos de Saturno, e são muito menos brilhantes.\nAs luas de Urano têm nomes literários, diferentemente da maioria dos satélites planetários."
+   }
+},
+ {
+   "fact": {
+	  "id": "a3800d07-9b7a-45f2-95d7-054451c44a20",
+	  "name": "Netuno",
+	  "image": {
+		 "localImage": "neptune",
+		 "alternativeText": "Foto de Netuno com coloração azul intensa e atmosfera com faixas sutis, às vezes com manchas escuras que indicam tempestades."
+	  },
+	  "mascotComment": "Netuno é o gigante azul do Sistema Solar, com ventos que poderiam derrubar qualquer um e uma lua que parece um vulcão congelado! Um planeta cheio de surpresas geladas lá no fim do nosso quintal cósmico."
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+	  "location": "Sistema Solar",
+	  "diameter": {
+		 "value": 49244,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Planeta gigante gasoso",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_telescope",
+		 "instructions": "Invisível a olho nu"
+	  },
+	  "rotationPeriod": {
+		 "value": 16,
+		 "unit": "time_unit_hours"
+	  },
+	  "translationPeriod": {
+		 "value": 165,
+		 "unit": "time_unit_earthYears"
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 1.02e+27,
+		 "unit": "kg"
+	  },
+	  "temperature": "Média de -201 °C",
+	  "atmosphere": "Instável e turbulenta, com os ventos mais rápidos do Sistema Solar (até 2.000 km/h)",
+	  "atmPressure": {
+		 "value": 1.0e+5,
+		 "unit": "atm"
+	  },
+	  "surface": "Não possui superfície sólida; estrutura interna com núcleo rochoso do tamanho da Terra, envolto por manto de água, amônia e metano em forma de “gelo quente”",
+	  "gravity": {
+		 "value": 11.15,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": 1638,
+		 "unit": "g/L"
+	  },
+	  "moons": "Pelo menos 14 conhecidas, incluindo Tritão (geologicamente ativo, com gêiseres de nitrogênio)"
+   },
+   "historyAndObservation": "Descoberto em 1846 por Johann Galle, após previsões matemáticas baseadas em perturbações na órbita de Urano.\nObservado inicialmente por Galileu em 1612, mas sem reconhecimento como planeta.\nEstudado detalhadamente pela sonda Voyager 2 em 1989, que revelou seus anéis, luas e atmosfera.",
+   "exploringAndMissions": "Voyager 2 (1989): única missão a visitar Netuno, fornecendo imagens e dados essenciais sobre o planeta, seus anéis e luas.",
+   "triviaAndMiths": {
+	  "culturalParallels": "Romanos: Nomeado em homenagem a Netuno, deus romano do mar, refletindo sua cor azul e atmosfera turbulenta",
+	  "trivia": "O campo magnético de Netuno é cerca de 27 vezes mais forte que o da Terra, inclinado cerca de 47° em relação ao eixo de rotação.\nNetuno tem os ventos mais rápidos do Sistema Solar, com velocidades que podem ultrapassar 2.000 km/h.\nA Grande Mancha Escura, uma tempestade similar à Grande Mancha Vermelha de Júpiter, já foi observada, mas desapareceu e reapareceu em diferentes locais."
+   }
+},
+ {
+   "fact": {
+	  "id": "07579eb4-61f0-4d03-b687-38e2e72397c2",
+	  "name": "Sol",
+	  "image": {
+		 "localImage": "sun",
+		 "alternativeText": "Imagem detalhada do Sol com superfície em tons de laranja e amarelo, mostrando explosões solares e regiões ativas em alto relevo, contrastando com o fundo preto do espaço."
+	  },
+	  "mascotComment": "Você sabia que a energia que o Sol emite em 1 segundo daria para abastecer a Terra por 500 mil anos?"
+   },
+   "popularName": null,
+   "type": "body_type_star",
+   "mainInfo": {
+	  "location": "Centro do sistema solar",
+	  "diameter": {
+		 "value": 1.3927e+6,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Estrela anã amarela",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Nunca olhe diretamente para o Sol sem proteção adequada (como filtros solares próprios para observação astronômica), pois isso pode causar danos permanentes à visão."
+	  },
+	  "rotationPeriod": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "translationPeriod": {
+		 "value": null,
+		 "unit": null
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 3.956e+60,
+		 "unit": "kg"
+	  },
+	  "temperature": "Superfície (fotosfera): ~5.550 °C\nNúcleo: ~15.000.000 °C",
+	  "atmosphere": null,
+	  "atmPressure": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "surface": null,
+	  "gravity": {
+		 "value": 274,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "moons": null
+   },
+   "historyAndObservation": "O Sol sempre foi visível, não houve uma \"descoberta\".\nA luz do Sol leva cerca de 8 minutos e 20 segundos para chegar à Terra.\nO Sol tem cerca de 4,6 bilhões de anos e tem combustível para mais 5 bilhões.\nApesar de sua importância, é uma estrela mediana entre bilhões na Via Láctea.\nPode ser visto a olho nu, mas nunca deve ser olhado diretamente.-",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+	  "culturalParallels": null,
+	  "trivia": null
+   }
+},
+ {
+   "fact": {
+	  "id": "c1efdc3e-5c47-4313-87b5-12421410a9c6",
+	  "name": "Sirius A",
+	  "image": {
+		 "localImage": "sirius",
+		 "alternativeText": "Imagem brilhante em tons de azul e branco de uma estrela com efeito de difração em forma de cruz, indicando grande intensidade de luz; fundo completamente escuro."
+	  },
+	  "mascotComment": "A estrela mais brilhante do céu vem correndo na frente como um farol cósmico — impossível não notar esse brilho todo! 🐾✨"
+   },
+   "popularName": null,
+   "type": "body_type_star",
+   "mainInfo": {
+	  "location": "Constelação de Cão Maior (Canis Major)",
+	  "diameter": {
+		 "value": 2375000,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Estrela anã branca quente",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Procure na direção da constelação de Cão Maior (Canis Major), abaixo de Orion, seguindo a linha das três Marias (cinturão de Orion) para baixo e para a esquerda."
+	  },
+	  "rotationPeriod": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "translationPeriod": {
+		 "value": null,
+		 "unit": null
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 3.978e+30,
+		 "unit": "kg"
+	  },
+	  "temperature": "~9.940 °C",
+	  "atmosphere": null,
+	  "atmPressure": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "surface": null,
+	  "gravity": {
+		 "value": 196,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "moons": null
+   },
+   "historyAndObservation": "Conhecida desde a Antiguidade por diversas civilizações (egípcios, gregos, povos africanos, indígenas).\nConsiderada a estrela mais brilhante do céu noturno (magnitude aparente -1,46).\nMuito usada para navegação e marcação de calendários astronômicos.",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+	  "culturalParallels": "Egípcios: Sirius (chamada de Sothis) marcava a cheia do Nilo, sinalizando o início do ano novo. \nPovos indígenas brasileiros: atribuíam grande importância a Sirius nos ciclos de plantio.\nGregos: fazia parte dos cães de caça de Orion.",
+	  "trivia": "Seu brilho às vezes parece cintilar em várias cores por causa da turbulência da atmosfera terrestre."
+   }
+},
+ {
+   "fact": {
+	  "id": "2b230324-a6ba-4ff4-b210-f944d47ea134",
+	  "name": "Betelgeuse",
+	  "image": {
+		 "localImage": "betelgeuse",
+		 "alternativeText": "A imagem mostra um disco estelar difuso com tons que vão do vermelho intenso nas bordas ao amarelo-branco brilhante no centro, indicando as regiões mais quentes. O fundo é completamente preto, destacando o brilho da estrela."
+	  },
+	  "mascotComment": "Betelgeuse é tão grande que se estivesse no lugar do Sol, engoliria a Terra, Marte e talvez até Júpiter! E o mais louco: um dia ela vai explodir em um espetáculo cósmico incrível — mas não se preocupe, estamos longe o bastante!"
+   },
+   "popularName": null,
+   "type": "body_type_star",
+   "mainInfo": {
+	  "location": "Constelação de Órion",
+	  "diameter": {
+		 "value": 1.2e+9,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Estrela supergigante vermelha",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Encontre a constelação de Órion (as Três Marias ajudam) — Betelgeuse é a estrela avermelhada no \"ombro esquerdo\" da figura do caçador"
+	  },
+	  "rotationPeriod": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "translationPeriod": {
+		 "value": null,
+		 "unit": null
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 2.984e+31,
+		 "unit": "kg"
+	  },
+	  "temperature": "~3.500 °C",
+	  "atmosphere": null,
+	  "atmPressure": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "surface": null,
+	  "gravity": {
+		 "value": 1.37,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "moons": null
+   },
+   "historyAndObservation": "Conhecida desde a Antiguidade; nome vem do árabe (Yad al-Jawzā’, “a mão de Gêmeos” ou “mão de Orion”)\nUma das estrelas mais brilhantes do céu (normalmente a 10ª mais brilhante, mas varia)\nApresenta variabilidade no brilho, o que gerou especulações recentes sobre uma possível explosão como supernova\nObservada com telescópios modernos e até diretamente com interferometria, o que permitiu obter imagens do disco estelar",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+	  "culturalParallels": "Gregos: compõe o caçador Órion\n ",
+	  "trivia": "Povos indígenas australianos, havaianos, maias e outros também reconheciam a constelação de Órion com significados próprios\nA variação recente de brilho em 2019 chamou atenção do mundo científico — o “escurecimento” foi provavelmente causado por uma nuvem de poeira estelar\n"
+   }
+},
+ {
+   "fact": {
+	  "id": "565a828e-1263-4e13-8108-86b87da8e803",
+	  "name": "Antares",
+	  "image": {
+		 "localImage": "antares",
+		 "alternativeText": "Imagem alaranjada e ligeiramente desfocada de uma estrela gigante vermelha, com aparência difusa e textura suave, destacando-se contra o fundo negro do espaço."
+	  },
+	  "mascotComment": "Antares parece uma joia vermelha brilhando no céu noturno! E você sabia que ela é tão grande que se fosse colocada no lugar do Sol, engoliria a Terra"
+   },
+   "popularName": null,
+   "type": "body_type_star",
+   "mainInfo": {
+	  "location": "Constelação de Escorpião",
+	  "diameter": {
+		 "value": 1.2e+9,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Estrela supergigante vermelha",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Aparece no inverno e primavera do hemisfério sul, na constelação de Escorpião, próximo ao horizonte leste logo após o pôr do sol"
+	  },
+	  "rotationPeriod": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "translationPeriod": {
+		 "value": null,
+		 "unit": null
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 2.387e+31,
+		 "unit": "kg"
+	  },
+	  "temperature": "~3.500 °C",
+	  "atmosphere": null,
+	  "atmPressure": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "surface": null,
+	  "gravity": {
+		 "value": 0.1,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "moons": null
+   },
+   "historyAndObservation": "Conhecida desde a Antiguidade; o nome \"Antares\" vem do grego \"anti-Ares\" (rival de Marte), por sua cor avermelhada\nÉ a estrela mais brilhante da constelação de Escorpião e uma das mais brilhantes do céu noturno\nObservada em muitas culturas como estrela importante em calendários e mitos astronômicos- ",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+	  "culturalParallels": "Gregos: representa o coração do escorpião; o escorpião teria matado Órion, e por isso, as constelações de Escorpião e Órion nunca aparecem juntas no céu\n ",
+	  "trivia": "Em diversas culturas antigas, era associada a  guerras, sangue e proteção\nAssim como Betelgeuse, Antares está  próxima do fim de sua vida estelar e pode explodir como supernova em algum momento nos próximos milhões de anos\nÉ uma estrela variável, ou seja, seu brilho muda levemente com o tempo"
+   }
+},
+ {
+   "fact": {
+	  "id": "47dc41d1-347b-4a18-8401-ae3b1c7ce943",
+	  "name": "Vega",
+	  "image": {
+		 "localImage": "vega",
+		 "alternativeText": "Imagem simples de uma estrela brilhante de coloração avermelhada embaçada, com centro intenso e bordas suaves, em um fundo escuro e sem outros objetos visíveis."
+	  },
+	  "mascotComment": "Vega brilha azul como uma joia gelada no céu de verão, encantando quem olha para cima! 💎🌌"
+   },
+   "popularName": null,
+   "type": "body_type_star",
+   "mainInfo": {
+	  "location": "Constelação de Lira",
+	  "diameter": {
+		 "value": 2.362e+6,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Estrela branca-azulada",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "No hemisfério sul, pode ser vista no inverno, baixa no horizonte norte"
+	  },
+	  "rotationPeriod": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "translationPeriod": {
+		 "value": null,
+		 "unit": null
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 4.177e+30,
+		 "unit": "kg"
+	  },
+	  "temperature": "~9.600 °C",
+	  "atmosphere": null,
+	  "atmPressure": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "surface": null,
+	  "gravity": {
+		 "value": 21,
+		 "unit": "m/s²"
+	  },
+	  "density": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "moons": null
+   },
+   "historyAndObservation": "Vega é uma das estrelas mais brilhantes do céu noturno e foi a estrela polar há cerca de 12.000 anos\nFoi a primeira estrela (depois do Sol) a ser fotografada e a ter seu espectro registrado\nJunto com Altair e Deneb, forma o famoso Triângulo de Verão (visível no inverno do hemisfério sul)",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+	  "culturalParallels": "Gregos: Vega representa a harpa de Orfeu, colocada no céu por Apolo\nChineses e japoneses: representa a princesa celestial  Orihime, separada de seu amado por um rio (a Via Láctea), só podendo vê-lo uma vez por ano (festival de Tanabata)",
+	  "trivia": "Vega é considerada um modelo padrão para calibrar o brilho de outras estrelas (magnitudes)\nSuspeita-se da presença de um disco de poeira ao seu redor, o que pode indicar formação planetária"
+   }
+},
+ {
+   "fact": {
+	  "id": "93385fc3-331c-4ce9-a003-96652172c3f3",
+	  "name": "Cruzeiro do Sul",
+	  "image": {
+		 "localImage": "cruzeiro do sul",
+		 "alternativeText": "Foto do céu noturno com várias estrelas pequenas visíveis. No centro, destaca-se a formação característica de cruz, composta por quatro estrelas principais bem brilhantes e uma quinta menos visível, formando o Cruzeiro do Sul, famosa constelação do hemisfério sul."
+	  },
+	  "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_constellation",
+   "mainInfo": {
+	  "location": "Hemisfério Sul celeste",
+	  "diameter": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "typeDescriptive": "Constelação",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "- Procure o formato de cruz, com quatro estrelas principais bem brilhantes\n- Para achar o sul geográfico, projete a linha da cruz (de Gacrux até Acrux) cerca de 4,5 vezes o comprimento da cruz para baixo"
+	  },
+	  "rotationPeriod": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "translationPeriod": {
+		 "value": null,
+		 "unit": null
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "temperature": null,
+	  "atmosphere": null,
+	  "atmPressure": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "surface": null,
+	  "gravity": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "density": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "moons": null
+   },
+   "historyAndObservation": "Muito importante para culturas indígenas sul-americanas, como os Tupi-guarani\nReconhecida oficialmente como constelação apenas no século XVI\nPresente em diversas bandeiras (Brasil, Austrália, Nova Zelândia, Papua-Nova Guiné, Samoa)\n",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+	  "culturalParallels": "Povos originários: Associada a figuras como a “ema do céu” (no Brasil) ou a cruz de ancestrais",
+	  "trivia": "Navegação: Usada historicamente por navegadores portugueses e espanhóis para se orientar no mar\nÉ a constelação mais emblemática do Hemisfério Sul, símbolo nacional em países como o Brasil"
+   }
+},
+ {
+   "fact": {
+	  "id": "e0b3c792-8439-4176-ba59-339e6c006a76",
+	  "name": "Cão Maior",
+	  "image": {
+		 "localImage": "cao maior",
+		 "alternativeText": "Imagem de um céu estrelado ao entardecer, com um grupo de estrelas formando a constelação do Cão Maior. As estrelas estão conectadas por linhas imaginárias em forma de um “gancho” ou “L” invertido. A estrela mais brilhante (Sirius) se destaca nitidamente."
+	  },
+	  "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_constellation",
+   "mainInfo": {
+	  "location": "Hemisfério Sul celeste",
+	  "diameter": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "typeDescriptive": "Constelação",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Encontre o cinturão de Orion (as Três Marias) e siga a linha em direção ao sul do céu — Sirius é a estrela mais brilhante nesse trajeto"
+	  },
+	  "rotationPeriod": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "translationPeriod": {
+		 "value": null,
+		 "unit": null
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "temperature": null,
+	  "atmosphere": null,
+	  "atmPressure": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "surface": null,
+	  "gravity": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "density": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "moons": null
+   },
+   "historyAndObservation": "Nome associado ao grande cão que acompanha o caçador Orion no céu",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+	  "culturalParallels": "Mitologia grega: Canis Major era o cão de caça de Orion\nMitologia egípcia: Sirius era associada à deusa Ísis e à fertilidade trazida pela inundação do Nilo\nCulturas indígenas brasileiras: A constelação representa um cachorro caçador, ligado a mitos sobre caça e proteção",
+	  "trivia": null
+   }
+},
+ {
+   "fact": {
+	  "id": "6cf2fb20-54b0-493b-8eb7-7f9dc5faeae1",
+	  "name": "Órion",
+	  "image": {
+		 "localImage": "orion",
+		 "alternativeText": "Céu muito estrelado com destaque para a constelação de Órion. As estrelas mais notáveis são três alinhadas no centro (o Cinturão de Órion). A imagem também mostra a Nebulosa de Órion (região esbranquiçada envolta por um retângulo), com estrelas azuladas ao redor."
+	  },
+	  "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_constellation",
+   "mainInfo": {
+	  "location": "Região equatorial celeste",
+	  "diameter": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "typeDescriptive": "Constelação",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "- Procure as três estrelas alinhadas (Cinturão de Órion) quase no meio do céu à noite\n- Aponta para outras constelações: a linha do cinturão aponta para Sirius (em Cão Maior) e Aldebarã (em Touro)"
+	  },
+	  "rotationPeriod": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "translationPeriod": {
+		 "value": null,
+		 "unit": null
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "temperature": null,
+	  "atmosphere": null,
+	  "atmPressure": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "surface": null,
+	  "gravity": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "density": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "moons": null
+   },
+   "historyAndObservation": "Conhecida desde a Antiguidade por várias civilizações\nUma das constelações mais fáceis de identificar\nAs “Três Marias” são um dos padrões estelares mais reconhecíveis no céu\nMuito utilizada como ponto de referência para localizar outras estrelas e constelações",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+	  "culturalParallels": "Mitologia Grega: Órion era um caçador gigante, orgulhoso, morto por um escorpião (constelação de Escorpião surge quando Órion se põe)\nMitologia Egípcia: Associada ao deus Osíris, e alinhada com as pirâmides de Gizé\nCulturas indígenas brasileiras: Em várias, as “Três Marias” são vistas como instrumentos ou figuras mitológicas específicas",
+	  "trivia": null
+   }
+},
+ {
+   "fact": {
+	  "id": "3179b104-6d35-41e3-a971-58f5a7ac9ada",
+	  "name": "Triângulo Austral",
+	  "image": {
+		 "localImage": "triangulo austral",
+		 "alternativeText": "Céu estrelado com muitas estrelas pequenas. Três estrelas mais brilhantes, próximas entre si, formam um triângulo destacado no centro inferior da imagem"
+	  },
+	  "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_constellation",
+   "mainInfo": {
+	  "location": "Hemisfério Sul celeste",
+	  "diameter": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "typeDescriptive": "Constelação",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Localiza-se próxima ao Cruzeiro do Sul"
+	  },
+	  "rotationPeriod": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "translationPeriod": {
+		 "value": null,
+		 "unit": null
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "temperature": null,
+	  "atmosphere": null,
+	  "atmPressure": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "surface": null,
+	  "gravity": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "density": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "moons": null
+   },
+   "historyAndObservation": "Criada no século XVI por navegadores europeus (Plancius e Keyser) durante explorações ao hemisfério sul.\nO nome significa “Triângulo do Sul”, em contraponto ao Triângulo do hemisfério norte.\nOficializada no atlas estelar de Bayer em 1603.",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+	  "culturalParallels": null,
+	  "trivia": "Foi muito usada como ponto de navegação por exploradores no sul.\nPor sua forma marcante e isolada, é uma constelação frequentemente usada para ensinar iniciantes a identificar figuras no céu.\n"
+   }
+},
+ {
+   "fact": {
+	  "id": "6668cf19-e53c-4f86-a680-92a5168540e3",
+	  "name": "Scorpius",
+	  "image": {
+		 "localImage": "scorpius",
+		 "alternativeText": "Imagem da constelação de Escorpião, com estrelas ligadas por traços finos formando a silhueta curva do escorpião celeste. As estrelas são mais concentradas na parte inferior esquerda e se estendem em curva até a parte superior direita da imagem."
+	  },
+	  "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_constellation",
+   "mainInfo": {
+	  "location": "Hemisfério Sul celeste",
+	  "diameter": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "typeDescriptive": "Constelação",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_naked_eye",
+		 "instructions": "Olhe para o leste no começo da noite, ou para o norte ao final da noite, e busque uma sequência curva de estrelas com uma brilhante de tom avermelhado no centro — Antares."
+	  },
+	  "rotationPeriod": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "translationPeriod": {
+		 "value": null,
+		 "unit": null
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 1.989e+30,
+		 "unit": "kg"
+	  },
+	  "temperature": null,
+	  "atmosphere": null,
+	  "atmPressure": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "surface": null,
+	  "gravity": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "density": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "moons": null
+   },
+   "historyAndObservation": "Representa um escorpião com o corpo arqueado e a cauda curvada.\nÉ uma das 88 constelações modernas e uma das mais proeminentes do zodíaco.\nPresente em obras clássicas de astronomia, como o Almagesto de Ptolomeu.",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+	  "culturalParallels": "Mitologia grega: O escorpião foi enviado por Gaia (ou Ártemis) para matar o caçador Órion. Após a morte de Órion, ambos foram colocados no céu, mas em lados opostos — quando Escorpião sobe, Órion se põe.",
+	  "trivia": "Nome: “Antares” significa \"rival de Ares\" (Marte), pela semelhança em cor e brilho com o planeta vermelho.\nEscorpião é a única constelação do zodíaco com forma que realmente lembra o animal que representa.\n"
+   }
+},
+ {
+   "fact": {
+	  "id": "9732cd89-c53e-4fb5-9750-4a88942b61cc",
+	  "name": "M87*",
+	  "image": {
+		 "localImage": "saggitarius",
+		 "alternativeText": "A imagem mostra um anel brilhante de luz em tons de laranja e amarelo, com um centro escuro — a \"sombra\" do buraco negro. O fundo é preto, realçando o contraste."
+	  },
+	  "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_black_hole",
+   "mainInfo": {
+	  "location": "Centro da Via Láctea",
+	  "diameter": {
+		 "value": 4.4e+7,
+		 "unit": "km"
+	  },
+	  "typeDescriptive": "Buraco negro supermassivo",
+	  "visibility": {
+		 "viewingMethod": "viewing_method_telescope",
+		 "instructions": "Requer telescópios avançados e instrumentos de captação de ondas de rádio/infravermelho"
+	  },
+	  "rotationPeriod": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "translationPeriod": {
+		 "value": null,
+		 "unit": null
+	  }
+   },
+   "physicalCharacteristics": {
+	  "mass": {
+		 "value": 8.553e+36,
+		 "unit": "kg"
+	  },
+	  "temperature": "~10⁶ K (horizonte de eventos)",
+	  "atmosphere": null,
+	  "atmPressure": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "surface": null,
+	  "gravity": {
+		 "value": null,
+		 "unit": null
+	  },
+	  "density": {
+		 "value": 1.20e+12,
+		 "unit": "g/L"
+	  },
+	  "moons": null
+   },
+   "historyAndObservation": "Sagitário A* foi identificado como uma forte fonte de rádio em 1974. \nObservações subsequentes, especialmente de movimentos de estrelas próximas, confirmaram que se trata de um buraco negro supermassivo. \nEm 2022, o Event Horizon Telescope (EHT) revelou a primeira imagem direta de sua sombra.",
+   "exploringAndMissions": "Event Horizon Telescope (EHT) – capturou a primeira imagem em 2022\nGRAVITY (ESO) – rastreou estrelas orbitando o buraco negro\nResultados: Prova direta da existência do buraco negro supermassivo no centro da nossa galáxia",
+   "triviaAndMiths": {
+	  "culturalParallels": "Culturas indígenas brasileiras associam a região central da Via Láctea à \"Nuvem Escura\" ou à \"Onça Celestial\"",
+	  "trivia": "Uma estrela (S2) orbita o buraco negro a cada 16 anos a velocidades de até 3% da velocidade da luz!\nApesar de gigante, Sagittarius A* é “calmo” (inativo) comparado a buracos negros ativos em outras galáxias"
+   }
+}
+]
