@@ -20,6 +20,7 @@ struct CardCalendar:View {
                 .frame(width: 344, height: 106)
                 .cornerRadius(10)
                 .clipped()
+                
             
             
             VStack(alignment: .leading){
@@ -38,14 +39,15 @@ struct CardCalendar:View {
                     .foregroundColor(.white)
                 
             }
-            .padding(14)
+            .padding(.horizontal,14)
+            
         }
     }
 }
 
 struct choicesUserView: View {
-    @State private var selected = "Calendar"
-    let options = ["Calendar", "Favorites"]
+    @State private var selected = "Eventos"
+    let options = ["Eventos", "Favoritos"]
     
     var body: some View{
         
@@ -57,14 +59,16 @@ struct choicesUserView: View {
     }
     .pickerStyle(.segmented)
     .frame(width: 344, height: 32, alignment: .center)
+    .padding(.vertical,24)
 
-if selected == "Calendar" {
+if selected == "Eventos" {
                     // Conteúdo do Calendário
                     ScrollCardView()
                 } else {
                     // Tela de Favoritos
                     FavoritesView()
                 }
+        
     }
 }
 
@@ -75,6 +79,7 @@ struct ScrollCardView: View {
                 ForEach(0..<6) { _ in
                     CardCalendar()
                 }
+                .padding(.vertical, 12)
             }
         }
     }
@@ -92,7 +97,17 @@ struct CalendarView: View {
 
             }
             .navigationTitle("Calendário")
-
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: PerfilView(), label: {
+                        Image(systemName: "person.crop.circle")
+                            .font(.system(size: 25))
+                            .foregroundColor(.black)
+                            .frame(width: 50)
+                            .padding(.top, 90)
+                    })
+                }
+            }
         }
     }
 }

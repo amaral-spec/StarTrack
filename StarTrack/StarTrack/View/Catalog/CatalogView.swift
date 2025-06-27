@@ -31,20 +31,12 @@ struct CatalogView: View {
      
     
     var body: some View{
-        
+        NavigationView{
         VStack(alignment: .leading ){
             VStack(spacing: 0){
             HStack{
                 
-                Text("Catálogo") // colocar o titulo com uma navigationtitle, mas quando tiver a navigation view.
-                    .frame(alignment: .topLeading)
-                    .font(.title
-                            .bold())
-                    .padding(.horizontal, 24)
-                
-                Spacer()
-                
-                PerfilView()
+               
                
             }
             
@@ -77,6 +69,20 @@ struct CatalogView: View {
                 }
             
         }
+        .navigationBarTitle("Catálogo")
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarTrailing) {
+                NavigationLink(destination: PerfilView(), label: {
+                    Image(systemName: "person.crop.circle")
+                        .font(.system(size: 25))
+                        .foregroundColor(.black)
+                        .frame(width: 50)
+                        .padding(.top, 90)
+                })
+            }
+        }
+        }
+        
     }
 }
 

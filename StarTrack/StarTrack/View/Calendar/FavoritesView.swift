@@ -9,15 +9,17 @@ import SwiftUI
 
 struct FavoritesView: View {
     var body: some View {
-        VStack{
-            Text("Tela mudou")
+            
             ScrollCardView()
-        }
+            
+            
     }
 }
 
 struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesView()
+        
+            FavoritesView()
+        
     }
 }
