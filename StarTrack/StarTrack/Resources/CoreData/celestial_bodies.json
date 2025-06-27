@@ -14,7 +14,7 @@
    "mainInfo": {
 	  "location": "Sistema Solar",
 	  "diameter": {
-		 "value": "4.879",
+		 "value": 4879,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Planeta rochoso",
@@ -23,7 +23,7 @@
 		 "instructions": "Ao amanhecer ou entardecer, procure um ponto perto do Sol"
 	  },
 	  "rotationPeriod": {
-		 "value": "59",
+		 "value": 59,
 		 "unit": "time_unit_days"
 	  },
 	  "translationPeriod": {
@@ -33,13 +33,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "3,30E+23",
+		 "value": 3.3e+23,
 		 "unit": "kg"
 	  },
 	  "temperature": "De -173 °C a +427 °C",
 	  "atmosphere": "Exosfera com traços de hélio, sódio, oxigênio",
 	  "atmPressure": {
-		 "value": "10e-11"
+		 "value": "10e-11",
+		 "unit": "atm"
 	  },
 	  "surface": "Cheia de crateras, parecida com a da Lua",
 	  "gravity": {
@@ -74,7 +75,7 @@
    "mainInfo": {
 	  "location": "Sistema Solar",
 	  "diameter": {
-		 "value": "12.104",
+		 "value": 12104,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Planeta rochoso",
@@ -83,7 +84,7 @@
 		 "instructions": "Visível ao amanhecer ou entardecer, próximo ao horizonte; é o mais brilhante após o Sol e a Lua."
 	  },
 	  "rotationPeriod": {
-		 "value": "243",
+		 "value": 243,
 		 "unit": "time_unit_days"
 	  },
 	  "translationPeriod": {
@@ -93,13 +94,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "4,86E+24",
+		 "value": 4.86e+24,
 		 "unit": "kg"
 	  },
 	  "temperature": "De 462 °C a 467 °C",
 	  "atmosphere": "96,5% dióxido de carbono, 3,5% nitrogênio, com nuvens de ácido sulfúrico",
 	  "atmPressure": {
-		 "value": "92"
+		 "value": 92,
+		 "unit": "atm"
 	  },
 	  "surface": "Coberta por planícies basálticas, com muitos vulcões, poucos relevos elevados e traços de atividade vulcânica recente (há cerca de 500 milhões de anos)",
 	  "gravity": {
@@ -107,7 +109,7 @@
 		 "unit": "m/s²"
 	  },
 	  "density": {
-		 "value": "8870",
+		 "value": 8870,
 		 "unit": "g/L"
 	  },
 	  "moons": "Não tem"
@@ -134,7 +136,7 @@
    "mainInfo": {
 	  "location": "Sistema Solar",
 	  "diameter": {
-		 "value": "6371",
+		 "value": 6371,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Planeta rochoso",
@@ -143,7 +145,7 @@
 		 "instructions": "Procure uma “estrela” muito brilhante no céu leste após as 20h — ele se move lentamente ao longo das semana"
 	  },
 	  "rotationPeriod": {
-		 "value": "23.93",
+		 "value": 23.93,
 		 "unit": "time_unit_hours"
 	  },
 	  "translationPeriod": {
@@ -153,13 +155,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "5,97E+27",
+		 "value": 5.97e+27,
 		 "unit": "kg"
 	  },
 	  "temperature": "Média de 15 °C (varia de cerca de -89 °C a +58 °C em extremos naturais)",
 	  "atmosphere": "78% nitrogênio, 21% oxigênio, traços de argônio, dióxido de carbono e outros gases",
 	  "atmPressure": {
-		 "value": "1"
+		 "value": 1,
+		 "unit": "atm"
 	  },
 	  "surface": "71% coberta por água e 29% por continentes, com sete massas continentais e quatro oceanos; placas tectônicas ativas",
 	  "gravity": {
@@ -167,7 +170,7 @@
 		 "unit": "m/s²"
 	  },
 	  "density": {
-		 "value": "5510",
+		 "value": 5510,
 		 "unit": "g/L"
 	  },
 	  "moons": "Um satélite natural — a Lua, a 384.400 km de distância"
@@ -194,7 +197,7 @@
    "mainInfo": {
 	  "location": "Sistema Solar",
 	  "diameter": {
-		 "value": "6.794",
+		 "value": 6794,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Planeta rochoso",
@@ -203,7 +206,7 @@
 		 "instructions": "Possui coloração avermelhada"
 	  },
 	  "rotationPeriod": {
-		 "value": "24.02",
+		 "value": 24.02,
 		 "unit": "time_unit_hours"
 	  },
 	  "translationPeriod": {
@@ -213,13 +216,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "6,42E+23",
+		 "value": 6.42e+23,
 		 "unit": "kg"
 	  },
 	  "temperature": "Média de -62,77 °C",
 	  "atmosphere": "95% dióxido de carbono, além de nitrogênio e argônio",
 	  "atmPressure": {
-		 "value": "6,00E-03"
+		 "value": "6.00e-03",
+		 "unit": "atm"
 	  },
 	  "surface": "Sólida e rochosa, rica em óxidos de ferro (coloração avermelhada); calotas polares de água e dióxido de carbono; grandes vulcões (como o Monte Olimpo) e extensos cânions (como Valles Marineris); sem placas tectônicas ativas atualmente",
 	  "gravity": {
@@ -254,7 +258,7 @@
    "mainInfo": {
 	  "location": "Sistema Solar",
 	  "diameter": {
-		 "value": "142.984",
+		 "value": 142984,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Planeta gigante gasoso",
@@ -263,7 +267,7 @@
 		 "instructions": "Procure uma “estrela” muito brilhante no céu leste após as 20h"
 	  },
 	  "rotationPeriod": {
-		 "value": "09.03",
+		 "value": 9.03,
 		 "unit": "time_unit_hours"
 	  },
 	  "translationPeriod": {
@@ -273,13 +277,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "1.9E+27",
+		 "value": 1.9e+27,
 		 "unit": "kg"
 	  },
 	  "temperature": "-145 °C",
 	  "atmosphere": "Faixas de nuvens chamadas zonas e cinturões, com ventos de até milhares de km/h; Grande Mancha Vermelha — tempestade ciclônica gigante",
 	  "atmPressure": {
-		 "value": "1000"
+		 "value": "1000",
+		 "unit": "atm"
 	  },
 	  "surface": "Sem superfície sólida — transição gradual da atmosfera para camadas líquidas e gasosas",
 	  "gravity": {
@@ -314,7 +319,7 @@
    "mainInfo": {
 	  "location": "Sistema Solar",
 	  "diameter": {
-		 "value": "116464",
+		 "value": 116464,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Planeta gigante gasoso",
@@ -323,7 +328,7 @@
 		 "instructions": "Aparece como um ponto amarelado no céu leste ou sudeste entre 20h e 22h"
 	  },
 	  "rotationPeriod": {
-		 "value": "10.11",
+		 "value": 10.11,
 		 "unit": "time_unit_hours"
 	  },
 	  "translationPeriod": {
@@ -333,13 +338,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "5.68e+26",
+		 "value": 5.68e+26,
 		 "unit": "kg"
 	  },
 	  "temperature": "Média de -138 °C na atmosfera superior",
 	  "atmosphere": "Faixas de nuvens em tons amarelados, marrons e brancos;",
 	  "atmPressure": {
-		 "value": "1400"
+		 "value": "1400",
+		 "unit": "atm"
 	  },
 	  "surface": "Não possui superfície sólida — camadas externas compostas por gases e líquidos; núcleo denso e sólido, cercado por hidrogênio metálico e molecular líquidos",
 	  "gravity": {
@@ -374,7 +380,7 @@
    "mainInfo": {
 	  "location": "Sistema Solar",
 	  "diameter": {
-		 "value": "51800",
+		 "value": 51800,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Planeta gigante gasoso",
@@ -383,7 +389,7 @@
 		 "instructions": "É um ponto pálido azul-esverdeado"
 	  },
 	  "rotationPeriod": {
-		 "value": "17,23",
+		 "value": 17.23,
 		 "unit": "time_unit_hours"
 	  },
 	  "translationPeriod": {
@@ -393,13 +399,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "8.68e+25",
+		 "value": 8.68e+25,
 		 "unit": "kg"
 	  },
 	  "temperature": "Média de aproximadamente -197 °C",
 	  "atmosphere": "Azul-esverdeada devido à absorção de luz vermelha pelo metano; composta por camadas de gases sobrepostas a um manto fluido",
 	  "atmPressure": {
-		 "value": "100"
+		 "value": "100",
+		 "unit": "atm"
 	  },
 	  "surface": "Não possui — transição gradual entre gases e líquidos; manto profundo chamado de “oceano de água-amônia\"",
 	  "gravity": {
@@ -434,7 +441,7 @@
    "mainInfo": {
 	  "location": "Sistema Solar",
 	  "diameter": {
-		 "value": "49244",
+		 "value": 49244,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Planeta gigante gasoso",
@@ -443,7 +450,7 @@
 		 "instructions": "Invisível a olho nu"
 	  },
 	  "rotationPeriod": {
-		 "value": "16",
+		 "value": 16,
 		 "unit": "time_unit_hours"
 	  },
 	  "translationPeriod": {
@@ -453,13 +460,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "1,02E+27",
+		 "value": 1.02e+27,
 		 "unit": "kg"
 	  },
 	  "temperature": "Média de -201 °C",
 	  "atmosphere": "Instável e turbulenta, com os ventos mais rápidos do Sistema Solar (até 2.000 km/h)",
 	  "atmPressure": {
-		 "value": "1.000,00"
+		 "value": "1.000.00",
+		 "unit": "atm"
 	  },
 	  "surface": "Não possui superfície sólida; estrutura interna com núcleo rochoso do tamanho da Terra, envolto por manto de água, amônia e metano em forma de “gelo quente”",
 	  "gravity": {
@@ -494,7 +502,7 @@
    "mainInfo": {
 	  "location": "Centro do sistema solar",
 	  "diameter": {
-		 "value": "1.392.700",
+		 "value": 1392700,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Estrela anã amarela",
@@ -503,7 +511,7 @@
 		 "instructions": "Nunca olhe diretamente para o Sol sem proteção adequada (como filtros solares próprios para observação astronômica), pois isso pode causar danos permanentes à visão."
 	  },
 	  "rotationPeriod": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "translationPeriod": {
@@ -513,13 +521,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "1,989e+30 kg",
-		 "unit": "massas solares"
+		 "value": 3.956e+60,
+		 "unit": "kg"
 	  },
 	  "temperature": "Superfície (fotosfera): ~5.550 °C\nNúcleo: ~15.000.000 °C",
 	  "atmosphere": "",
 	  "atmPressure": {
-		 "value": ""
+		 "value": "",
+		 "unit": ""
 	  },
 	  "surface": "",
 	  "gravity": {
@@ -554,7 +563,7 @@
    "mainInfo": {
 	  "location": "Constelação de Cão Maior (Canis Major)",
 	  "diameter": {
-		 "value": "2.375.000",
+		 "value": 2375000,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Estrela anã branca quente",
@@ -563,7 +572,7 @@
 		 "instructions": "Procure na direção da constelação de Cão Maior (Canis Major), abaixo de Orion, seguindo a linha das três Marias (cinturão de Orion) para baixo e para a esquerda."
 	  },
 	  "rotationPeriod": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "translationPeriod": {
@@ -573,13 +582,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "2",
-		 "unit": "massas solares"
+		 "value": 3.978e+30,
+		 "unit": "kg"
 	  },
 	  "temperature": "~9.940 °C",
 	  "atmosphere": "",
 	  "atmPressure": {
-		 "value": ""
+		 "value": "",
+		 "unit": ""
 	  },
 	  "surface": "",
 	  "gravity": {
@@ -614,7 +624,7 @@
    "mainInfo": {
 	  "location": "Constelação de Órion",
 	  "diameter": {
-		 "value": "1.200.000.000",
+		 "value": 1200000000,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Estrela supergigante vermelha",
@@ -623,7 +633,7 @@
 		 "instructions": "Encontre a constelação de Órion (as Três Marias ajudam) — Betelgeuse é a estrela avermelhada no \"ombro esquerdo\" da figura do caçador"
 	  },
 	  "rotationPeriod": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "translationPeriod": {
@@ -633,13 +643,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "15",
-		 "unit": "massas solares"
+		 "value": 2.984e+31,
+		 "unit": "kg"
 	  },
 	  "temperature": "~3.500 °C",
 	  "atmosphere": "",
 	  "atmPressure": {
-		 "value": ""
+		 "value": "",
+		 "unit": ""
 	  },
 	  "surface": "",
 	  "gravity": {
@@ -674,7 +685,7 @@
    "mainInfo": {
 	  "location": "Constelação de Escorpião",
 	  "diameter": {
-		 "value": "1.200.000.000",
+		 "value": 1200000000,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Estrela supergigante vermelha",
@@ -683,7 +694,7 @@
 		 "instructions": "Aparece no inverno e primavera do hemisfério sul, na constelação de Escorpião, próximo ao horizonte leste logo após o pôr do sol"
 	  },
 	  "rotationPeriod": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "translationPeriod": {
@@ -693,13 +704,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "12",
-		 "unit": "massas solares"
+		 "value": 2.387e+31,
+		 "unit": "kg"
 	  },
 	  "temperature": "~3.500 °C",
 	  "atmosphere": "",
 	  "atmPressure": {
-		 "value": ""
+		 "value": "",
+		 "unit": ""
 	  },
 	  "surface": "",
 	  "gravity": {
@@ -734,7 +746,7 @@
    "mainInfo": {
 	  "location": "Constelação de Lira",
 	  "diameter": {
-		 "value": "2.362.000",
+		 "value": 2362000,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Estrela branca-azulada",
@@ -743,7 +755,7 @@
 		 "instructions": "No hemisfério sul, pode ser vista no inverno, baixa no horizonte norte"
 	  },
 	  "rotationPeriod": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "translationPeriod": {
@@ -753,13 +765,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "2,1",
-		 "unit": "massas solares"
+		 "value": 4.177e+30,
+		 "unit": "kg"
 	  },
 	  "temperature": "~9.600 °C",
 	  "atmosphere": "",
 	  "atmPressure": {
-		 "value": ""
+		 "value": "",
+		 "unit": ""
 	  },
 	  "surface": "",
 	  "gravity": {
@@ -794,7 +807,7 @@
    "mainInfo": {
 	  "location": "Hemisfério Sul celeste",
 	  "diameter": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "typeDescriptive": "Constelação",
@@ -803,7 +816,7 @@
 		 "instructions": "- Procure o formato de cruz, com quatro estrelas principais bem brilhantes\n- Para achar o sul geográfico, projete a linha da cruz (de Gacrux até Acrux) cerca de 4,5 vezes o comprimento da cruz para baixo"
 	  },
 	  "rotationPeriod": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "translationPeriod": {
@@ -813,13 +826,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "temperature": "",
 	  "atmosphere": "",
 	  "atmPressure": {
-		 "value": ""
+		 "value": "",
+		 "unit": ""
 	  },
 	  "surface": "",
 	  "gravity": {
@@ -854,7 +868,7 @@
    "mainInfo": {
 	  "location": "Hemisfério Sul celeste",
 	  "diameter": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "typeDescriptive": "Constelação",
@@ -863,7 +877,7 @@
 		 "instructions": "Encontre o cinturão de Orion (as Três Marias) e siga a linha em direção ao sul do céu — Sirius é a estrela mais brilhante nesse trajeto"
 	  },
 	  "rotationPeriod": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "translationPeriod": {
@@ -873,13 +887,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "temperature": "",
 	  "atmosphere": "",
 	  "atmPressure": {
-		 "value": ""
+		 "value": "",
+		 "unit": ""
 	  },
 	  "surface": "",
 	  "gravity": {
@@ -914,7 +929,7 @@
    "mainInfo": {
 	  "location": "Região equatorial celeste",
 	  "diameter": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "typeDescriptive": "Constelação",
@@ -923,7 +938,7 @@
 		 "instructions": "- Procure as três estrelas alinhadas (Cinturão de Órion) quase no meio do céu à noite\n- Aponta para outras constelações: a linha do cinturão aponta para Sirius (em Cão Maior) e Aldebarã (em Touro)"
 	  },
 	  "rotationPeriod": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "translationPeriod": {
@@ -933,13 +948,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "temperature": "",
 	  "atmosphere": "",
 	  "atmPressure": {
-		 "value": ""
+		 "value": "",
+		 "unit": ""
 	  },
 	  "surface": "",
 	  "gravity": {
@@ -974,7 +990,7 @@
    "mainInfo": {
 	  "location": "Hemisfério Sul celeste",
 	  "diameter": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "typeDescriptive": "Constelação",
@@ -983,7 +999,7 @@
 		 "instructions": "Localiza-se próxima ao Cruzeiro do Sul"
 	  },
 	  "rotationPeriod": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "translationPeriod": {
@@ -993,13 +1009,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "temperature": "",
 	  "atmosphere": "",
 	  "atmPressure": {
-		 "value": ""
+		 "value": "",
+		 "unit": ""
 	  },
 	  "surface": "",
 	  "gravity": {
@@ -1034,7 +1051,7 @@
    "mainInfo": {
 	  "location": "Hemisfério Sul celeste",
 	  "diameter": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "typeDescriptive": "Constelação",
@@ -1043,7 +1060,7 @@
 		 "instructions": "Olhe para o leste no começo da noite, ou para o norte ao final da noite, e busque uma sequência curva de estrelas com uma brilhante de tom avermelhado no centro — Antares."
 	  },
 	  "rotationPeriod": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "translationPeriod": {
@@ -1053,13 +1070,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "",
-		 "unit": "massa solar"
+		 "value": 1.989e+30,
+		 "unit": "kg"
 	  },
 	  "temperature": "",
 	  "atmosphere": "",
 	  "atmPressure": {
-		 "value": ""
+		 "value": "",
+		 "unit": ""
 	  },
 	  "surface": "",
 	  "gravity": {
@@ -1094,7 +1112,7 @@
    "mainInfo": {
 	  "location": "Centro da Via Láctea",
 	  "diameter": {
-		 "value": "44e+6",
+		 "value": 44000000,
 		 "unit": "km"
 	  },
 	  "typeDescriptive": "Buraco negro supermassivo",
@@ -1103,7 +1121,7 @@
 		 "instructions": "Requer telescópios avançados e instrumentos de captação de ondas de rádio/infravermelho"
 	  },
 	  "rotationPeriod": {
-		 "value": "",
+		 "value": null,
 		 "unit": ""
 	  },
 	  "translationPeriod": {
@@ -1113,13 +1131,14 @@
    },
    "physicalCharacteristics": {
 	  "mass": {
-		 "value": "4.3e+6",
-		 "unit": "massas solares"
+		 "value": 8.553e+36,
+		 "unit": "kg"
 	  },
 	  "temperature": "~10⁶ K (horizonte de eventos)",
 	  "atmosphere": "",
 	  "atmPressure": {
-		 "value": ""
+		 "value": "",
+		 "unit": ""
 	  },
 	  "surface": "",
 	  "gravity": {
@@ -1127,7 +1146,7 @@
 		 "unit": ""
 	  },
 	  "density": {
-		 "value": "1,20E+12",
+		 "value": "1,20e+12",
 		 "unit": "g/L"
 	  },
 	  "moons": ""
@@ -1140,4 +1159,3 @@
    }
 }
 ]
-

@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct Fact: Identifiable, Decodable {
-	let id = UUID()
+struct Fact: Identifiable {
+	let id: UUID
 	let name: String
 	let image: AccessibleImage
 	let mascotComment: String?

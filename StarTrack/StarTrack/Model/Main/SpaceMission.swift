@@ -23,7 +23,7 @@ import SwiftUI
 //	}
 //}
 
-struct SpaceMission: Decodable {
+struct SpaceMission: Identifiable {
 	let fact: Fact
 	var id: UUID { fact.id }
 	let launchLocation: String

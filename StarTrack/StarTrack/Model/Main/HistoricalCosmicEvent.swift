@@ -8,7 +8,7 @@
 import SwiftUI
 
 // MARK: - Enum para Tipos de Eventos Cosmológicos
-enum CosmologicalEventType: String, Decodable {
+enum CosmologicalEventType: String {
 	case bigBang = "cosmological_event_big_bang"
 	case inflation = "cosmological_event_inflation"
 	case recombination = "cosmological_event_recombination"
@@ -23,7 +23,7 @@ enum CosmologicalEventType: String, Decodable {
 	}
 }
 
-struct HistoricalCosmicEvent: Identifiable, Decodable {
+struct HistoricalCosmicEvent: Identifiable {
 	var id: UUID { fact.id }
 	let fact: Fact
 	let culturalParallels: [String]

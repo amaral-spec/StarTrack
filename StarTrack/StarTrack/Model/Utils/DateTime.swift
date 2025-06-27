@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DateTime: Decodable {
+struct DateTime {
 	
 	let startAt: Date
 	let duration: TimeInterval

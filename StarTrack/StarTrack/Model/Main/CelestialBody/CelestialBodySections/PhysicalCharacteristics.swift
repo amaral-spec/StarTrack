@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PhysicalCharacteristics: Decodable {
+struct PhysicalCharacteristics {
 	let mass: Measurement<UnitMass>?
 	let temperature: String?
 	let atmosphere: String?

@@ -13,23 +13,11 @@ struct AccessibleImage {
 	
 	// Propriedade para imagens locais (guardadas nos Assets).
 	// Será preenchida se a imagem vier do Core Data.
-	let localImage: String?
-	
-	// Propriedade para imagens remotas (guardadas no CloudKit).
-	// Será preenchida se a imagem vier do CloudKit.
-	let cloudImage: CKAsset?
+	let localImage: String
 	
 	// Inicializador para uma IMAGEM LOCAL (Core Data).
 	init(alternativeText: String, localImage: String) {
 		self.alternativeText = alternativeText
 		self.localImage = localImage
-		self.cloudImage = nil // Garante que a outra fonte é nula.
-	}
-	
-	// Inicializador para uma IMAGEM REMOTA (CloudKit).
-	init(alternativeText: String, cloudImage: CKAsset) {
-		self.alternativeText = alternativeText
-		self.localImage = nil // Garante que a outra fonte é nula.
-		self.cloudImage = cloudImage
 	}
 }

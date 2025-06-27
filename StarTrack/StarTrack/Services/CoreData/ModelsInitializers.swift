@@ -31,7 +31,6 @@ extension AccessibleImage {
 		
 		self.alternativeText = alternativeText
 		self.localImage = localImage
-		self.cloudImage = nil
 	}
 }
 
@@ -246,8 +245,7 @@ extension CelestialBody {
 			  let historyAndObservation = entity.historyAndObservation,
 			  let exploringAndMission = entity.exploringAndMissions,
 			  let triviaAndMithsEntity = entity.triviaAndMiths,
-			  let triviaAndMiths = KnowledgeBuild(from: triviaAndMithsEntity),
-			  let learnMore = entity.learnMore
+			  let triviaAndMiths = KnowledgeBuild(from: triviaAndMithsEntity)
 		else { return nil }
 		
 		self.fact = fact
@@ -258,6 +256,5 @@ extension CelestialBody {
 		self.historyAndObservation = FuncLib.shared.splitString(fromString: historyAndObservation, by: "\n")
 		self.exploringAndMissions = FuncLib.shared.splitString(fromString: exploringAndMission, by: "\n")
 		self.triviaAndMiths = triviaAndMiths
-		self.learnMore = FuncLib.shared.splitString(fromString: learnMore, by: "\n")
 	}
 }

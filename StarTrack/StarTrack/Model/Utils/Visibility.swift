@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Enum para o Método de Visualização (Padrão Novo)
-enum ViewingMethod: String, Decodable {
+enum ViewingMethod: String {
 	case nakedEye = "viewing_method_naked_eye"
 	case binoculars = "viewing_method_binoculars"
 	case telescope = "viewing_method_telescope"
@@ -22,7 +22,7 @@ enum ViewingMethod: String, Decodable {
 
 
 // MARK: - Estrutura Principal de Visibilidade
-struct VisibilityInfo: Decodable {
+struct VisibilityInfo {
 	
 	let viewingMethod: ViewingMethod
 	

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Notification: Decodable {
+struct Notification {
 	let event: ObservableEvent
 	let description: String
 }

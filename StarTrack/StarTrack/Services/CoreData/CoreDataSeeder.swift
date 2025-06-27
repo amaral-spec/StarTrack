@@ -14,6 +14,7 @@ class CoreDataSeeder {
 	
 	private let context: NSManagedObjectContext
 	
+	
 	// MARK: - Estruturas Intermediárias
 	private struct FactData: Codable {
 		let id: UUID
@@ -24,19 +25,18 @@ class CoreDataSeeder {
 	
 	private struct ImageData: Codable {
 		let localImage: String
-		let alternativeText: String?
+		let alternativeText: String
 	}
 	
 	private struct CelestialBodyData: Codable {
 		let fact: FactData
 		let popularName: String?
-		let type: String
+		let type: String // CelestialBodyType.rawValue
 		let mainInfo: MainInfoData
 		let physicalCharacteristics: PhysicalCharacteristicsData
-		let historyAndObservation: String?
-		let exploringAndMissions: String?
+		let historyAndObservation: String // [String]
+		let exploringAndMissions: String // [String]
 		let triviaAndMiths: TriviaAndMithsData
-		let learnMore: String?
 	}
 	
 	private struct MainInfoData: Codable {
@@ -45,44 +45,44 @@ class CoreDataSeeder {
 		let typeDescriptive: String
 		let visibility: VisibilityData
 		let visibilityDescriptive: String
-		let rotationPeriod: TimePeriodData
-		let translationPeriod: TimePeriodData
+		let rotationPeriod: TimePeriodData?
+		let translationPeriod: TimePeriodData?
 	}
 	
 	private struct PhysicalCharacteristicsData: Codable {
-		let mass: DecodableMeasurement<UnitMass>
-		let temperature: String
-		let atmosphere: String
-		let atmPressure: DecodableMeasurement<UnitPressure>
-		let surface: String
-		let gravity: DecodableMeasurement<UnitAcceleration>
-		let density: DecodableMeasurement<UnitConcentrationMass>
-		let moons: String
+		let mass: DecodableMeasurement<UnitMass>?
+		let temperature: String?
+		let atmosphere: String?
+		let atmPressure: DecodableMeasurement<UnitPressure>?
+		let surface: String?
+		let gravity: DecodableMeasurement<UnitAcceleration>?
+		let density: DecodableMeasurement<UnitConcentrationMass>?
+		let moons: String?
 	}
 	
 	private struct VisibilityData: Codable {
-		let viewingMethod: String
-		let instructions: String?
+		let viewingMethod: String //ViewingMethod.rawValue
+		let observationZone: String
+		let instructions: String //[String]
 	}
 	
 	private struct TimePeriodData: Codable {
 		let value: Double
-		let unit: String
+		let unit: String //TimeUnit.rawValue
 	}
 	
 	private struct TriviaAndMithsData: Codable {
-		let culturalParallels: String?
-		let trivia: String?
+		let culturalParallels: String // [String]
+		let trivia: String // [String]
 	}
 	
 	private struct HistoricalCosmicEventData: Codable {
 		let fact: FactData
-		let culturalParallels: String?
-		let explanation: String?
-		let evidence: String?
+		let culturalParallels: String // [String]
+		let explanation: String // [String]
+		let evidence: String // [String]
 		let timePeriod: TimePeriodData
-		let type: String
-		let scale: String
+		let type: String // CosmologicalEventType.rawValue
 	}
 	
 	private struct SpaceMissionData: Codable {
@@ -91,30 +91,53 @@ class CoreDataSeeder {
 		let missionType: String
 		let distanceTravaled: DecodableMeasurement<UnitLength>
 		let date: DateTimeData
-		let objectives: String?
-		let techEnvolved: String?
-		let results: String?
-		let highlights: String?
+		let objectives: String // [String]
+		let techEnvolved: String // [String]
+		let results: String // [String]
+		let highlights: String // [String]
 	}
 	
 	private struct DateTimeData: Codable {
 		let startAt: Date
-		let endAt: Date?
-		let duration: String // AQUI DEVE SER INTERVALO DE TEMPO E DEVE INCLUIR LOGICA DE OPCIONAL
+		let duration: TimeInterval
 	}
 	
 	private struct ObservatoryData: Codable {
 		let fact: FactData
 		let location: String
 		let visitation: VisitationData
-		let cientificHighlights: String?
-		let technologiesAvailable: String?
+		let cientificHighlights: String // [String]
+		let technologiesAvailable: String // [String]
 	}
 	
 	private struct VisitationData: Codable {
 		let openToPublic: String
-		let tickets: String?
-		let activities: String
+		let tickets: String // [String]
+		let activities: String?
+	}
+	
+	private struct DecodableMeasurement<Unit: Dimension>: Codable {
+		let value: Double
+		let unitSymbol: String
+
+		// Propriedade computada que faz a conversão para o tipo real.
+		var measurement: Measurement<Unit> {
+			let unit = Unit(symbol: unitSymbol)
+			return Measurement(value: value, unit: unit)
+		}
+		
+		// Mapeia a chave "unit" do JSON para a nossa propriedade "unitSymbol".
+		private enum CodingKeys: String, CodingKey {
+			case value, unitSymbol = "unit"
+		}
+
+		// A lógica de descodificação (JSON -> Struct) é gerada automaticamente pelo Swift.
+		// A lógica de codificação (Struct -> JSON) precisa de ser explícita.
+		func encode(to encoder: Encoder) throws {
+			var container = encoder.container(keyedBy: CodingKeys.self)
+			try container.encode(self.value, forKey: .value)
+			try container.encode(self.unitSymbol, forKey: .unitSymbol)
+		}
 	}
 	
 	// MARK: - Inicializador de Contexto
@@ -154,32 +177,32 @@ class CoreDataSeeder {
 			entity.mainInfo?.location = data.mainInfo.location
 				let diameter = data.mainInfo.diameter.measurement
 				entity.mainInfo?.diameter?.value = diameter.value
-			entity.mainInfo?.diameter?.unit = diameter.unit.symbol
+				entity.mainInfo?.diameter?.unit = diameter.unit.symbol
 			entity.mainInfo?.typeDescriptive = data.mainInfo.typeDescriptive
 				entity.mainInfo?.visibility?.viewingMethod = data.mainInfo.visibility.viewingMethod
 				entity.mainInfo?.visibility?.instructions = data.mainInfo.visibility.instructions
 			entity.mainInfo?.visibilityDescriptive = data.mainInfo.visibilityDescriptive
-				entity.mainInfo?.rotationPeriod?.value = data.mainInfo.rotationPeriod.value
-				entity.mainInfo?.rotationPeriod?.unit = data.mainInfo.rotationPeriod.unit
-				entity.mainInfo?.translationPeriod?.value = data.mainInfo.translationPeriod.value
-				entity.mainInfo?.translationPeriod?.unit = data.mainInfo.translationPeriod.unit
+				entity.mainInfo?.rotationPeriod?.value = data.mainInfo.rotationPeriod?.value
+				entity.mainInfo?.rotationPeriod?.unit = data.mainInfo.rotationPeriod?.unit
+				entity.mainInfo?.translationPeriod?.value = data.mainInfo.translationPeriod?.value
+				entity.mainInfo?.translationPeriod?.unit = data.mainInfo.translationPeriod?.unit
 			
 			// --- Carrega PhysicalCharacteristics ---
 				let mass = data.physicalCharacteristics.mass.measurement
 				entity.physicalCharacteristics?.mass?.value = mass.value
-			entity.physicalCharacteristics?.mass?.unit = mass.unit.symbol
+				entity.physicalCharacteristics?.mass?.unit = mass.unit.symbol
 			entity.physicalCharacteristics?.temperature = data.physicalCharacteristics.temperature
 			entity.physicalCharacteristics?.atmosphere = data.physicalCharacteristics.atmosphere
 				let atmPressure = data.physicalCharacteristics.atmPressure.measurement
 				entity.physicalCharacteristics?.atmPressure?.value = atmPressure.value
-			entity.physicalCharacteristics?.atmPressure?.unit = atmPressure.unit.symbol
+				entity.physicalCharacteristics?.atmPressure?.unit = atmPressure.unit.symbol
 			entity.physicalCharacteristics?.surface = data.physicalCharacteristics.surface
 				let gravity = data.physicalCharacteristics.gravity.measurement
 				entity.physicalCharacteristics?.gravity?.value = gravity.value
-			entity.physicalCharacteristics?.gravity?.unit = gravity.unit.symbol
+				entity.physicalCharacteristics?.gravity?.unit = gravity.unit.symbol
 				let density = data.physicalCharacteristics.density.measurement
 				entity.physicalCharacteristics?.density?.value = density.value
-			entity.physicalCharacteristics?.density?.unit = density.unit.symbol
+				entity.physicalCharacteristics?.density?.unit = density.unit.symbol
 			entity.physicalCharacteristics?.moons = data.physicalCharacteristics.moons
 			
 			// --- Carrega TriviaAndMiths ---
@@ -230,8 +253,8 @@ class CoreDataSeeder {
 				entity.distanceTraveled?.value = distanceTraveled.value
 				entity.distanceTraveled?.unit = distanceTraveled.unit.symbol
 			
-			// ESTA FALTANDO AQUELE CASO DO STARTAT, ENDAT, DURATION
 			entity.date?.startAt = data.date.startAt
+			entity.date?.duration = data.date.duration
 			
 			// --- Carrega strings finais ---
 			entity.objectives = data.objectives
