@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainInfo {
 	let location: String
-	let diameter: Measurement<UnitLength>
+	let diameter: Measurement<UnitLength>?
 	let typeDescriptive: String
 	let visibility: VisibilityInfo
 	let rotationPeriod: TimePeriod?

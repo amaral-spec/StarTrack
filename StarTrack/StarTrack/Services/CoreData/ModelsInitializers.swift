@@ -70,13 +70,12 @@ extension VisibilityInfo {
 extension Visitation {
 	init?(from entity: VisitationEntity) {
 		guard let openToPublic = entity.openToPublic,
-			  let tickets = entity.tickets,
-			  let activities = entity.activities
+			  let tickets = entity.tickets
 		else { return nil }
 		
 		self.openToPublic = openToPublic
 		self.tickets = FuncLib.shared.splitString(fromString: tickets, by: "\n")
-		self.activities = activities
+		self.activities = entity.activities
 	}
 }
 
@@ -154,10 +153,6 @@ extension SpaceMission {
 extension MainInfo {
 	init?(from entity: MainInfoCelestialBodyEntity) {
 		guard let location = entity.location,
-			  let diameter = FuncLib.shared.measurementBuild(
-				value: entity.diameter?.value,
-				unitSymbol: entity.diameter?.unit,
-				as: UnitLength.self),
 			  let typeDescriptive = entity.typeDescriptive,
 			  let visibilityEntity = entity.visibility,
 			  let visibility = VisibilityInfo(from: visibilityEntity),
@@ -168,7 +163,10 @@ extension MainInfo {
 		else { return nil }
 		
 		self.location = location
-		self.diameter = diameter
+		self.diameter = FuncLib.shared.measurementBuild(
+			value: entity.diameter?.value,
+			   unitSymbol: entity.diameter?.unit,
+			   as: UnitLength.self)
 		self.typeDescriptive = typeDescriptive
 		self.visibility = visibility
 		self.rotationPeriod = rotation
@@ -178,35 +176,31 @@ extension MainInfo {
 
 extension PhysicalCharacteristics {
 	init?(from entity: PhysicalCharacteristicsEntity) {
-		guard let mass = FuncLib.shared.measurementBuild(
-			value: entity.mass?.value,
-			unitSymbol: entity.mass?.unit,
-			as: UnitMass.self),
-			  let temperature = entity.temperature,
+		guard let temperature = entity.temperature,
 			  let atmosphere = entity.atmosphere,
-			  let atmPressure = FuncLib.shared.measurementBuild(
-				value: entity.atmPressure?.value,
-				unitSymbol: entity.atmPressure?.unit,
-				as: UnitPressure.self),
 			  let surface = entity.surface,
-			  let gravity = FuncLib.shared.measurementBuild(
-				value: entity.gravity?.value,
-				unitSymbol: entity.gravity?.unit,
-				as: UnitAcceleration.self),
-			  let density = FuncLib.shared.measurementBuild(
-				value: entity.density?.value,
-				unitSymbol: entity.density?.unit,
-				as: UnitConcentrationMass.self),
 			  let moons = entity.moons
 		else { return nil }
 		
-		self.mass = mass
+		self.mass = FuncLib.shared.measurementBuild(
+			value: entity.mass?.value,
+			unitSymbol: entity.mass?.unit,
+			as: UnitMass.self)
 		self.temperature = temperature
 		self.atmosphere = atmosphere
-		self.atmPressure = atmPressure
+		self.atmPressure = FuncLib.shared.measurementBuild(
+			value: entity.atmPressure?.value,
+			   unitSymbol: entity.atmPressure?.unit,
+			   as: UnitPressure.self)
 		self.surface = surface
-		self.gravity = gravity
-		self.density = density
+		self.gravity = FuncLib.shared.measurementBuild(
+			value: entity.gravity?.value,
+			   unitSymbol: entity.gravity?.unit,
+			   as: UnitAcceleration.self)
+		self.density = FuncLib.shared.measurementBuild(
+			value: entity.density?.value,
+			   unitSymbol: entity.density?.unit,
+			   as: UnitConcentrationMass.self)
 		self.moons = moons
 	}
 }
