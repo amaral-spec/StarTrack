@@ -1,6 +1,13 @@
 {
   "images" : [
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      "filename" : "Triângulo Austral - Médio.png",
+=======
+>>>>>>> d9ce04c21bc47683645ad3fec7803180bc68bb43
+>>>>>>> subDev
       "idiom" : "universal",
       "scale" : "1x"
     },
