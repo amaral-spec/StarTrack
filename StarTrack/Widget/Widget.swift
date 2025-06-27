@@ -75,32 +75,45 @@ struct SimpleEntry: TimelineEntry {
 
 struct WidgetEntryView : View {
     @ObservedObject var networkMonitor = NetworkMonitor()
+    @Environment(\.widgetFamily) var widgetFamily
+    
+    private func getImageForWidgetSize() -> String {
+        switch widgetFamily {
+        case .systemSmall:
+            return["Cão Maior - Pequeno", "Cruzeiro do Sul - Pequeno", "Órion - Pequeno", "Scorpius - Pequeno", "Triangulo Austral - Pequeno"].randomElement() ?? "Triangulo Austral - Pequeno"
+        case .systemMedium:
+            return["Cão Maior - Médio", "Cruzeiro do Sul - Médio", "Órion - Médio", "Scorpius - Médio", "Triângulo Austral - Médio"].randomElement() ?? "Triângulo Austral - Médio"
+        default:
+            return "default_image"
+        }
+    }
+    
     var entry: Provider.Entry
     
     var body: some View {
         GeometryReader { geometry in //Pega o tamanho certinho do container, o widget nesse cado
             ZStack(alignment: .bottomLeading) {
-//                if networkMonitor.isConnected {
+                if networkMonitor.isConnected {
                     entry.image
                         .resizable()
                         .scaledToFill()
                         .frame(width: geometry.size.width, height: geometry.size.height)
                         .clipped()
-                        
+
                     Text(entry.title)
                         .font(.headline)
                         .foregroundColor(.white)
                         .shadow(color: Color.black.opacity(0.8), radius: 3, x: 0, y: 1)
                         .padding(.leading, 12)
                         .padding(.bottom, 8)
-//                } else {
-//                    //código para o widget sem conexão com a internet
-//                    Image("cao_maior")
-//                        .resizable()
-//                        .scaledToFill() // teste com as imagens da ana
-//                        .frame(width: geometry.size.width, height: geometry.size.height)
-//                        .clipped()
-//                }
+                } else {
+                    //código para o widget sem conexão com a internet
+                    Image(getImageForWidgetSize())
+                        .resizable()
+                        .scaledToFill() // teste com as imagens da ana
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .clipped()
+                }
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
             .clipped()

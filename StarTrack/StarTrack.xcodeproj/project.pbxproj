@@ -25,6 +25,7 @@
 		E609CA742DFB08BE00A2A5E2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E87E2DF9A24700927339 /* Constants.swift */; };
 		E609CA752DFB08C200A2A5E2 /* url helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8802DF9A3DE00927339 /* url helper.swift */; };
 		E609CA762DFB08C500A2A5E2 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8822DF9ACED00927339 /* PhotoInfo.swift */; };
+		E6546F7F2E0EB52000958879 /* WidgetImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6546F7E2E0EB52000958879 /* WidgetImageSize.swift */; };
 		E66275452DFAF6CC009F0733 /* url helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8802DF9A3DE00927339 /* url helper.swift */; };
 		E66275462DFAF6D1009F0733 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E87E2DF9A24700927339 /* Constants.swift */; };
 		E66275472DFAF6D6009F0733 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E87C2DF9A16200927339 /* NetworkManager.swift */; };
@@ -96,7 +97,7 @@
 		E609CA642DFB031100A2A5E2 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E609CA682DFB031100A2A5E2 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 		E609CA6A2DFB031500A2A5E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E609CA6C2DFB031500A2A5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6546F7E2E0EB52000958879 /* WidgetImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetImageSize.swift; sourceTree = "<group>"; };
 		E661AC542DF87199000844EC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E661AC562DF87199000844EC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		E663E87C2DF9A16200927339 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 				6621EB882DF7180200381752 /* StarTrack */,
 				6621EBC22DF71BC900381752 /* Tests */,
 				E609CA672DFB031100A2A5E2 /* Widget */,
+				E609CA6A2DFB031500A2A5E2 /* Assets.xcassets */,
 				E661AC532DF87199000844EC /* Frameworks */,
 				6621EB872DF7180200381752 /* Products */,
 			);
@@ -290,8 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				E609CA682DFB031100A2A5E2 /* Widget.swift */,
-				E609CA6A2DFB031500A2A5E2 /* Assets.xcassets */,
-				E609CA6C2DFB031500A2A5E2 /* Info.plist */,
+				E6546F7E2E0EB52000958879 /* WidgetImageSize.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -579,6 +580,7 @@
 				E609CA732DFB08BC00A2A5E2 /* NetworkManager.swift in Sources */,
 				E6ACD1AD2E0192750041D0E1 /* NetworkMonitor.swift in Sources */,
 				E609CA692DFB031100A2A5E2 /* Widget.swift in Sources */,
+				E6546F7F2E0EB52000958879 /* WidgetImageSize.swift in Sources */,
 				E609CA752DFB08C200A2A5E2 /* url helper.swift in Sources */,
 				E609CA742DFB08BE00A2A5E2 /* Constants.swift in Sources */,
 				E609CA762DFB08C500A2A5E2 /* PhotoInfo.swift in Sources */,
