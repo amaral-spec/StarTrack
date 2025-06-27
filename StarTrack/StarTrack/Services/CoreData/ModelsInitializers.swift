@@ -121,15 +121,6 @@ extension HistoricalCosmicEvent {
 	}
 }
 
-extension DecodableMeasurement {
-	init?(from entity: DecodableMeasurementEntity) {
-		guard let unit = entity.unit else { return nil }
-		
-		self.value = entity.value
-		self.unitSymbol = unit
-	}
-}
-
 extension SpaceMission {
 	init?(from entity: SpaceMissionEntity) {
 		guard let factEntity = entity.fact,

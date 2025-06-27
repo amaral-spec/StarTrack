@@ -41,12 +41,12 @@ class CoreDataSeeder {
 	
 	private struct MainInfoData: Codable {
 		let location: String
-		let diameter: DecodableMeasurement<UnitLength>
+		let diameter: DecodableMeasurement<UnitLength>?
 		let typeDescriptive: String
 		let visibility: VisibilityData
 		let visibilityDescriptive: String
-		let rotationPeriod: TimePeriodData?
-		let translationPeriod: TimePeriodData?
+		let rotationPeriod: TimePeriodData
+		let translationPeriod: TimePeriodData
 	}
 	
 	private struct PhysicalCharacteristicsData: Codable {
@@ -67,8 +67,8 @@ class CoreDataSeeder {
 	}
 	
 	private struct TimePeriodData: Codable {
-		let value: Double
-		let unit: String //TimeUnit.rawValue
+		let value: Double?
+		let unit: String? //TimeUnit.rawValue
 	}
 	
 	private struct TriviaAndMithsData: Codable {
@@ -117,21 +117,15 @@ class CoreDataSeeder {
 	}
 	
 	private struct DecodableMeasurement<Unit: Dimension>: Codable {
-		let value: Double
-		let unitSymbol: String
-
-		// Propriedade computada que faz a conversão para o tipo real.
-		var measurement: Measurement<Unit> {
-			let unit = Unit(symbol: unitSymbol)
-			return Measurement(value: value, unit: unit)
-		}
+		let value: Double?
+		let unitSymbol: String?
 		
 		// Mapeia a chave "unit" do JSON para a nossa propriedade "unitSymbol".
 		private enum CodingKeys: String, CodingKey {
 			case value, unitSymbol = "unit"
 		}
 
-		// A lógica de descodificação (JSON -> Struct) é gerada automaticamente pelo Swift.
+		// A lógica de decodificação (JSON -> Struct) é gerada automaticamente pelo Swift.
 		// A lógica de codificação (Struct -> JSON) precisa de ser explícita.
 		func encode(to encoder: Encoder) throws {
 			var container = encoder.container(keyedBy: CodingKeys.self)
@@ -175,34 +169,22 @@ class CoreDataSeeder {
 			
 			// --- Carrega Main Info ---
 			entity.mainInfo?.location = data.mainInfo.location
-				let diameter = data.mainInfo.diameter.measurement
-				entity.mainInfo?.diameter?.value = diameter.value
-				entity.mainInfo?.diameter?.unit = diameter.unit.symbol
+			entity.mainInfo?.diameter = uploadDecodableMeasurement(from: data.mainInfo.diameter, in: context)
 			entity.mainInfo?.typeDescriptive = data.mainInfo.typeDescriptive
 				entity.mainInfo?.visibility?.viewingMethod = data.mainInfo.visibility.viewingMethod
 				entity.mainInfo?.visibility?.instructions = data.mainInfo.visibility.instructions
 			entity.mainInfo?.visibilityDescriptive = data.mainInfo.visibilityDescriptive
-				entity.mainInfo?.rotationPeriod?.value = data.mainInfo.rotationPeriod?.value
-				entity.mainInfo?.rotationPeriod?.unit = data.mainInfo.rotationPeriod?.unit
-				entity.mainInfo?.translationPeriod?.value = data.mainInfo.translationPeriod?.value
-				entity.mainInfo?.translationPeriod?.unit = data.mainInfo.translationPeriod?.unit
+			entity.mainInfo?.rotationPeriod = uploadTimePeriod(from: data.mainInfo.rotationPeriod, in: context)
+			entity.mainInfo?.translationPeriod = uploadTimePeriod(from: data.mainInfo.translationPeriod, in: context)
 			
 			// --- Carrega PhysicalCharacteristics ---
-				let mass = data.physicalCharacteristics.mass.measurement
-				entity.physicalCharacteristics?.mass?.value = mass.value
-				entity.physicalCharacteristics?.mass?.unit = mass.unit.symbol
+			entity.physicalCharacteristics?.mass = uploadDecodableMeasurement(from: data.physicalCharacteristics.mass, in: context)
 			entity.physicalCharacteristics?.temperature = data.physicalCharacteristics.temperature
 			entity.physicalCharacteristics?.atmosphere = data.physicalCharacteristics.atmosphere
-				let atmPressure = data.physicalCharacteristics.atmPressure.measurement
-				entity.physicalCharacteristics?.atmPressure?.value = atmPressure.value
-				entity.physicalCharacteristics?.atmPressure?.unit = atmPressure.unit.symbol
+			entity.physicalCharacteristics?.atmPressure = uploadDecodableMeasurement(from: data.physicalCharacteristics.atmPressure, in: context)
 			entity.physicalCharacteristics?.surface = data.physicalCharacteristics.surface
-				let gravity = data.physicalCharacteristics.gravity.measurement
-				entity.physicalCharacteristics?.gravity?.value = gravity.value
-				entity.physicalCharacteristics?.gravity?.unit = gravity.unit.symbol
-				let density = data.physicalCharacteristics.density.measurement
-				entity.physicalCharacteristics?.density?.value = density.value
-				entity.physicalCharacteristics?.density?.unit = density.unit.symbol
+			entity.physicalCharacteristics?.gravity = uploadDecodableMeasurement(from: data.physicalCharacteristics.gravity, in: context)
+			entity.physicalCharacteristics?.density = uploadDecodableMeasurement(from: data.physicalCharacteristics.density, in: context)
 			entity.physicalCharacteristics?.moons = data.physicalCharacteristics.moons
 			
 			// --- Carrega TriviaAndMiths ---
@@ -230,8 +212,7 @@ class CoreDataSeeder {
 			entity.evidence = data.evidence
 			
 			// --- Carrega TimePeriod ---
-			entity.timePeriod?.value = data.timePeriod.value
-			entity.timePeriod?.unit = data.timePeriod.unit
+			entity.timePeriod = uploadTimePeriod(from: data.timePeriod, in: context)
 			
 			// --- Carrega Type ---
 			entity.type = data.type
@@ -249,9 +230,7 @@ class CoreDataSeeder {
 			
 			entity.launchLocation = data.launchLocation
 			entity.missionType = data.missionType
-				let distanceTraveled = data.distanceTravaled.measurement
-				entity.distanceTraveled?.value = distanceTraveled.value
-				entity.distanceTraveled?.unit = distanceTraveled.unit.symbol
+			entity.distanceTraveled = uploadDecodableMeasurement(from: data.distanceTravaled, in: context)
 			
 			entity.date?.startAt = data.date.startAt
 			entity.date?.duration = data.date.duration
@@ -297,6 +276,36 @@ class CoreDataSeeder {
 	}
 	
 	// MARK: - Funções Auxiliares Privadas
+	
+	private func uploadDecodableMeasurement<Unit: Dimension>(
+		from data: DecodableMeasurement<Unit>?,
+		in context: NSManagedObjectContext
+	) -> DecodableMeasurementEntity? {
+		guard let _data = data,
+			  let value = _data.value,
+			  let unit = _data.unitSymbol
+		else { return nil }
+		
+		let entity = DecodableMeasurementEntity(context: context)
+		entity.value = value
+		entity.unit = unit
+		return entity
+	}
+	
+	private func uploadTimePeriod(
+		from data: TimePeriodData?,
+		in context: NSManagedObjectContext
+	) -> TimePeriodEntity? {
+		guard let _data = data,
+			  let value = _data.value,
+			  let unit = _data.unit
+		else { return nil }
+		
+		let entity = TimePeriodEntity(context: context)
+		entity.value = value
+		entity.unit = unit
+		return entity
+	}
 	
 	// Já não precisa de nenhuma lógica complexa de descodificação de unidades.
 	private func load<T: Decodable>(_ filename: String) -> T {
