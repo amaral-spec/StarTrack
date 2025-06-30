@@ -8,8 +8,8 @@
 import Foundation
 import CoreLocation
 
-struct Observatory: Identifiable {
-    let id = UUID()
-    let name: String
-    let coordinate: CLLocationCoordinate2D
-}
+//struct Observatory: Identifiable {
+//    let id = UUID()
+//    let name: String
+//    let coordinate: CLLocationCoordinate2D
+//}
