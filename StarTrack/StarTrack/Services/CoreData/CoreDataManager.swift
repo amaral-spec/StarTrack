@@ -104,4 +104,16 @@ class CoreDataManager {
 			return []
 		}
 	}
+	
+	func fetchObservableEvents() -> [ObservableEvent] {
+		let request = NSFetchRequest<ObservableEventEntity>(entityName: "ObservableEventEntity")
+		
+		do {
+			let results = try context.fetch(request)
+			return results.compactMap { ObservableEvent(from: $0) }
+		} catch {
+			print("Erro ao buscar ObservableEvents: \(error)")
+			return []
+		}
+	}
 }

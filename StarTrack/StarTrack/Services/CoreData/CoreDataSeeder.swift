@@ -116,6 +116,13 @@ class CoreDataSeeder {
 		let activities: String?
 	}
 	
+	private struct ObservableEventData: Codable {
+		let fact: FactData
+		let date: DateTimeData
+		let type: String // ObservableEventType.rawValue
+		let explanation: String?
+	}
+	
 	private struct DecodableMeasurement<Unit: Dimension>: Codable {
 		let value: Double?
 		let unitSymbol: String?
@@ -151,6 +158,7 @@ class CoreDataSeeder {
 		let historicalEventsData: [HistoricalCosmicEventData] = load("historical_cosmic_events.json")
 		let spaceMissionData: [SpaceMissionData] = load("space_mission.json")
 		let observatoryData: [ObservatoryData] = load("observatory.json")
+		let eventsData: [ObservableEventData] = load("events.json")
 		
 		// MARK: - Converte JSON -> CD
 		bodiesData.forEach { data in
@@ -263,6 +271,23 @@ class CoreDataSeeder {
 			// --- Carrega strings finais ---
 			entity.cientificHighlight = data.cientificHighlights
 			entity.technologiesAvailable = data.technologiesAvailable
+		}
+		
+		eventsData.forEach { data in
+			let entity = ObservableEventEntity(context: context)
+			
+			// --- Carrega fact ---
+			entity.fact?.id = data.fact.id
+			entity.fact?.name = data.fact.name
+				entity.fact?.image?.localImage = data.fact.image.localImage
+				entity.fact?.image?.alternativeText = data.fact.image.alternativeText
+			entity.fact?.mascotComment = data.fact.mascotComment
+			
+			entity.date?.startAt = data.date.startAt
+			entity.date?.duration = data.date.duration
+			
+			entity.type = data.type
+			entity.explanation = data.explanation
 		}
 		
 		// MARK: - Salva o contexto

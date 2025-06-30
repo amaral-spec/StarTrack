@@ -243,3 +243,22 @@ extension CelestialBody {
 		self.triviaAndMiths = triviaAndMiths
 	}
 }
+
+extension ObservableEvent {
+	init?(from entity: ObservableEventEntity) {
+		guard let factEntity = entity.fact,
+			  let fact = Fact(from: factEntity),
+			  let dateEntity = entity.date,
+			  let date = DateTime(from: dateEntity),
+			  let type = entity.type,
+			  let explanation = entity.explanation
+		else {
+			return nil
+		}
+		
+		self.fact = fact
+		self.date = date
+		self.type = type
+		self.explanation = explanation
+	}
+}
