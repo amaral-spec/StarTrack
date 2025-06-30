@@ -13,7 +13,6 @@
 		66117D422E0D98A000FC05BB /* CodeSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66117D412E0D98A000FC05BB /* CodeSample.swift */; };
 		66117D442E0DC14B00FC05BB /* celestial_bodies.json in Resources */ = {isa = PBXBuildFile; fileRef = 66117D432E0DC14B00FC05BB /* celestial_bodies.json */; };
 		6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB8D2DF7180400381752 /* Assets.xcassets */; };
-		6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB902DF7180400381752 /* Preview Assets.xcassets */; };
 		6621EB9B2DF7180500381752 /* StarTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EB9A2DF7180500381752 /* StarTrackTests.swift */; };
 		6621EBA52DF7180500381752 /* StarTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBA42DF7180500381752 /* StarTrackUITests.swift */; };
 		6621EBA72DF7180500381752 /* StarTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBA62DF7180500381752 /* StarTrackUITestsLaunchTests.swift */; };
@@ -113,7 +112,6 @@
 		66117D432E0DC14B00FC05BB /* celestial_bodies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = celestial_bodies.json; sourceTree = "<group>"; };
 		6621EB862DF7180200381752 /* StarTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6621EB8D2DF7180400381752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6621EB902DF7180400381752 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6621EB962DF7180500381752 /* StarTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6621EB9A2DF7180500381752 /* StarTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarTrackTests.swift; sourceTree = "<group>"; };
 		6621EBA02DF7180500381752 /* StarTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,17 +245,8 @@
 				6621EBB62DF7185C00381752 /* ViewModel */,
 				6621EBB52DF7185500381752 /* View */,
 				6621EBB42DF7184A00381752 /* Model */,
-				6621EB8F2DF7180400381752 /* Preview Content */,
 			);
 			path = StarTrack;
-			sourceTree = "<group>";
-		};
-		6621EB8F2DF7180400381752 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				6621EB902DF7180400381752 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		6621EB992DF7180500381752 /* StarTrackTests */ = {
@@ -668,7 +657,6 @@
 			files = (
 				66C165AC2E019B710081F42D /* Localizable.strings in Resources */,
 				6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */,
-				6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */,
 				66117D442E0DC14B00FC05BB /* celestial_bodies.json in Resources */,
 				66C165992E019AFF0081F42D /* Launch Screen.storyboard in Resources */,
 				6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */,
