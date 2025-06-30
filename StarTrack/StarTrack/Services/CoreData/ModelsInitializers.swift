@@ -255,7 +255,8 @@ extension ObservableEvent {
 			  let fact = Fact(from: factEntity),
 			  let dateEntity = entity.date,
 			  let date = DateTime(from: dateEntity),
-			  let type = entity.type,
+			  let typeRawValue = entity.type,
+			  let type = ObservableEventType(rawValue: typeRawValue),
 			  let explanation = entity.explanation
 		else {
 			return nil
