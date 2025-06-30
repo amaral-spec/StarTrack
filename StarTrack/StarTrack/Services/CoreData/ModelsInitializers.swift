@@ -84,9 +84,7 @@ extension Observatory {
 	init?(from entity: ObservatoryEntity) {
 		guard let factEntity = entity.fact,
 			  let fact = Fact(from: factEntity),
-			  let gpsLocationEntity = entity.gpsLocation,
-			  let latitude = gpsLocationEntity.latitude,
-			  let longitude = gpsLocationEntity.longitude,
+			  let gpsLocation = entity.gpsLocation,
 			  let city = entity.city,
 			  let state = entity.state,
 			  let visitationEntity = entity.visitation,
@@ -98,7 +96,7 @@ extension Observatory {
 		self.fact = fact
 		self.city = city
 		self.state = state
-		self.gpsLocation = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+		self.gpsLocation = CLLocationCoordinate2D(latitude: gpsLocation.latitude, longitude: gpsLocation.longitude)
 		self.visitation = visitation
 		self.cientificHighlight = FuncLib.shared.splitString(fromString: cientificHighlights, by: "\n")
 		self.technologiesAvailable = FuncLib.shared.splitString(fromString: tech, by: "\n")
