@@ -30,5 +30,6 @@ struct ObservableEvent: Identifiable {
 	let fact: Fact
 	let date: DateTime
 	let type: ObservableEventType
+	let visibility: VisibilityInfo
 	let explanation: String
 }

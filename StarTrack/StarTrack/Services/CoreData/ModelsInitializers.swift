@@ -255,6 +255,8 @@ extension ObservableEvent {
 			  let fact = Fact(from: factEntity),
 			  let dateEntity = entity.date,
 			  let date = DateTime(from: dateEntity),
+			  let visibilityEntity = entity.visibility,
+			  let visibility = VisibilityInfo(from: visibilityEntity),
 			  let typeRawValue = entity.type,
 			  let type = ObservableEventType(rawValue: typeRawValue),
 			  let explanation = entity.explanation
@@ -266,5 +268,6 @@ extension ObservableEvent {
 		self.date = date
 		self.type = type
 		self.explanation = explanation
+		self.visibility = visibility
 	}
 }

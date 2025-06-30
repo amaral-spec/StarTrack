@@ -128,6 +128,7 @@ class CoreDataSeeder {
 		let date: DateTimeData
 		let type: String // ObservableEventType.rawValue
 		let explanation: String?
+		let visibility: VisibilityData
 	}
 	
 	private struct DecodableMeasurement<Unit: Dimension>: Codable {
@@ -295,8 +296,14 @@ class CoreDataSeeder {
 				entity.fact?.image?.alternativeText = data.fact.image.alternativeText
 			entity.fact?.mascotComment = data.fact.mascotComment
 			
+			// --- Carrrega datas ---
 			entity.date?.startAt = data.date.startAt
 			entity.date?.duration = data.date.duration
+			
+			// --- Carrega visibility ---
+			entity.visibility?.viewingMethod = data.visibility.viewingMethod
+			entity.visibility?.observationZone = data.visibility.observationZone
+			entity.visibility?.instructions = data.visibility.instructions
 			
 			entity.type = data.type
 			entity.explanation = data.explanation
