@@ -7,6 +7,7 @@
 
 import CoreData
 import SwiftUI
+import CoreLocation
 
 extension Fact {
 	init?(from entity: FactEntity) {
@@ -83,7 +84,9 @@ extension Observatory {
 	init?(from entity: ObservatoryEntity) {
 		guard let factEntity = entity.fact,
 			  let fact = Fact(from: factEntity),
-			  let location = entity.location,
+			  let gpsLocation = entity.gpsLocation,
+			  let city = entity.city,
+			  let state = entity.state,
 			  let visitationEntity = entity.visitation,
 			  let visitation = Visitation(from: visitationEntity),
 			  let cientificHighlights = entity.cientificHighlight,
@@ -91,7 +94,9 @@ extension Observatory {
 		else { return nil }
 		
 		self.fact = fact
-		self.location = location
+		self.city = city
+		self.state = state
+		self.gpsLocation = CLLocationCoordinate2D(latitude: gpsLocation.latitude, longitude: gpsLocation.longitude)
 		self.visitation = visitation
 		self.cientificHighlight = FuncLib.shared.splitString(fromString: cientificHighlights, by: "\n")
 		self.technologiesAvailable = FuncLib.shared.splitString(fromString: tech, by: "\n")
@@ -250,7 +255,8 @@ extension ObservableEvent {
 			  let fact = Fact(from: factEntity),
 			  let dateEntity = entity.date,
 			  let date = DateTime(from: dateEntity),
-			  let type = entity.type,
+			  let typeRawValue = entity.type,
+			  let type = ObservableEventType(rawValue: typeRawValue),
 			  let explanation = entity.explanation
 		else {
 			return nil

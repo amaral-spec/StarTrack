@@ -1,13 +1,6 @@
 //import SwiftUI
 //import MapKit
 //
-struct Observatory: Identifiable {
-    let id = UUID()
-    let name: String
-    let coordinate: CLLocationCoordinate2D
-    let city: String
-    let state: String
-}
 
 struct ObservatoryDetailView: View {
     let observatory: Observatory

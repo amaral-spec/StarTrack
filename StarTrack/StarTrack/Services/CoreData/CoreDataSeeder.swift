@@ -104,10 +104,17 @@ class CoreDataSeeder {
 	
 	private struct ObservatoryData: Codable {
 		let fact: FactData
-		let location: String
+		let city: String
+		let state: String
+		let gpsLocation: GPSLocationData
 		let visitation: VisitationData
 		let cientificHighlights: String // [String]
 		let technologiesAvailable: String // [String]
+	}
+	
+	private struct GPSLocationData: Codable {
+		let latitude: Double // CLLocationDegrees
+		let longitude: Double // CLLocationDegrees
 	}
 	
 	private struct VisitationData: Codable {
@@ -261,7 +268,12 @@ class CoreDataSeeder {
 			entity.fact?.mascotComment = data.fact.mascotComment
 			
 			// --- Carrega location ---
-			entity.location = data.location
+			entity.city = data.city
+			entity.state = data.state
+			
+			// --- Carrega GPS location ---
+			entity.gpsLocation?.latitude = data.gpsLocation.latitude
+			entity.gpsLocation?.longitude = data.gpsLocation.longitude
 			
 			// --- Carrega visitation ---
 			entity.visitation?.openToPublic = data.visitation.openToPublic

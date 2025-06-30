@@ -28,6 +28,10 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <relationship name="image" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="AccessibleImageEntity"/>
     </entity>
+    <entity name="GPSLocationEntity" representedClassName="GPSLocationEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
     <entity name="HistoricalCosmicEventEntity" representedClassName="HistoricalCosmicEventEntity" syncable="YES" codeGenerationType="class">
         <attribute name="culturalParallels" optional="YES" attributeType="String"/>
         <attribute name="evidence" optional="YES" attributeType="String"/>
@@ -57,9 +61,11 @@
     </entity>
     <entity name="ObservatoryEntity" representedClassName="ObservatoryEntity" syncable="YES" codeGenerationType="class">
         <attribute name="cientificHighlight" optional="YES" attributeType="String"/>
-        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
         <attribute name="technologiesAvailable" optional="YES" attributeType="String"/>
         <relationship name="fact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FactEntity"/>
+        <relationship name="gpsLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GPSLocationEntity"/>
         <relationship name="visitation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VisitationEntity"/>
     </entity>
     <entity name="PhysicalCharacteristicsEntity" representedClassName="PhysicalCharacteristicsEntity" syncable="YES" codeGenerationType="class">
@@ -106,12 +112,13 @@
         <element name="HistoricalCosmicEventEntity" positionX="-78.62335205078125" positionY="-508.5794677734375" width="128" height="119"/>
         <element name="KnowledgeBuildEntity" positionX="773.1424560546875" positionY="300.5326843261719" width="128" height="59"/>
         <element name="MainInfoCelestialBodyEntity" positionX="133.1427001953125" positionY="-163.5643920898438" width="128" height="14"/>
-        <element name="ObservatoryEntity" positionX="636.52099609375" positionY="-63.67498779296875" width="128" height="104"/>
+        <element name="ObservatoryEntity" positionX="636.52099609375" positionY="-63.67498779296875" width="128" height="148"/>
         <element name="PhysicalCharacteristicsEntity" positionX="137.1014404296875" positionY="187.4393310546875" width="128" height="14"/>
         <element name="SpaceMissionEntity" positionX="-45" positionY="54" width="128" height="14"/>
         <element name="TimePeriodEntity" positionX="-30.219482421875" positionY="-178.9583740234375" width="128" height="14"/>
         <element name="VisibilityEntity" positionX="-447.3595581054688" positionY="-390.1600952148438" width="128" height="74"/>
         <element name="VisitationEntity" positionX="335.4428100585938" positionY="172.666259765625" width="154.2923583984375" height="74"/>
         <element name="ObservableEventEntity" positionX="407.1566772460938" positionY="-608.136474609375" width="128" height="103"/>
+        <element name="GPSLocationEntity" positionX="-135" positionY="-99" width="128" height="14"/>
     </elements>
 </model>
