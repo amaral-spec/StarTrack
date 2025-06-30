@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct Observatory: Identifiable {
 	var id: UUID { fact.id }
 	let fact: Fact
-	let location: String
+	let city: String
+	let state: String
+	let gpsLocation: CLLocationCoordinate2D
 	let visitation: Visitation
 	let cientificHighlight: [String]
 	let technologiesAvailable: [String]
