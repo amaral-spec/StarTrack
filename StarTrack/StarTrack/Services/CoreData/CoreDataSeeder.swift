@@ -11,341 +11,360 @@ import CoreData
 // MARK: - O Seeder do Core Data
 // Esta classe irá orquestrar a leitura dos JSONs e a população do Core Data.
 class CoreDataSeeder {
-	
-	private let context: NSManagedObjectContext
-	
-	
-	// MARK: - Estruturas Intermediárias
-	private struct FactData: Codable {
-		let id: UUID
-		let name: String
-		let image: ImageData
-		let mascotComment: String?
-	}
-	
-	private struct ImageData: Codable {
-		let localImage: String
-		let alternativeText: String
-	}
-	
-	private struct CelestialBodyData: Codable {
-		let fact: FactData
-		let popularName: String?
-		let type: String // CelestialBodyType.rawValue
-		let mainInfo: MainInfoData
-		let physicalCharacteristics: PhysicalCharacteristicsData
-		let historyAndObservation: String // [String]
-		let exploringAndMissions: String // [String]
-		let triviaAndMiths: TriviaAndMithsData
-	}
-	
-	private struct MainInfoData: Codable {
-		let location: String
-		let diameter: DecodableMeasurement<UnitLength>?
-		let typeDescriptive: String
-		let visibility: VisibilityData
-		let visibilityDescriptive: String
-		let rotationPeriod: TimePeriodData
-		let translationPeriod: TimePeriodData
-	}
-	
-	private struct PhysicalCharacteristicsData: Codable {
-		let mass: DecodableMeasurement<UnitMass>?
-		let temperature: String?
-		let atmosphere: String?
-		let atmPressure: DecodableMeasurement<UnitPressure>?
-		let surface: String?
-		let gravity: DecodableMeasurement<UnitAcceleration>?
-		let density: DecodableMeasurement<UnitConcentrationMass>?
-		let moons: String?
-	}
-	
-	private struct VisibilityData: Codable {
-		let viewingMethod: String //ViewingMethod.rawValue
-		let observationZone: String
-		let instructions: String //[String]
-	}
-	
-	private struct TimePeriodData: Codable {
-		let value: Double?
-		let unit: String? //TimeUnit.rawValue
-	}
-	
-	private struct TriviaAndMithsData: Codable {
-		let culturalParallels: String // [String]
-		let trivia: String // [String]
-	}
-	
-	private struct HistoricalCosmicEventData: Codable {
-		let fact: FactData
-		let culturalParallels: String // [String]
-		let explanation: String // [String]
-		let evidence: String // [String]
-		let timePeriod: TimePeriodData
-		let type: String // CosmologicalEventType.rawValue
-	}
-	
-	private struct SpaceMissionData: Codable {
-		let fact: FactData
-		let launchLocation: String
-		let missionType: String
-		let distanceTravaled: DecodableMeasurement<UnitLength>
-		let date: DateTimeData
-		let objectives: String // [String]
-		let techEnvolved: String // [String]
-		let results: String // [String]
-		let highlights: String // [String]
-	}
-	
-	private struct DateTimeData: Codable {
-		let startAt: Date
-		let duration: TimeInterval
-	}
-	
-	private struct ObservatoryData: Codable {
-		let fact: FactData
-		let location: String
-		let visitation: VisitationData
-		let cientificHighlights: String // [String]
-		let technologiesAvailable: String // [String]
-	}
-	
-	private struct VisitationData: Codable {
-		let openToPublic: String
-		let tickets: String // [String]
-		let activities: String?
-	}
-	
-	private struct ObservableEventData: Codable {
-		let fact: FactData
-		let date: DateTimeData
-		let type: String // ObservableEventType.rawValue
-		let explanation: String?
-	}
-	
-	private struct DecodableMeasurement<Unit: Dimension>: Codable {
-		let value: Double?
-		let unitSymbol: String?
-		
-		// Mapeia a chave "unit" do JSON para a nossa propriedade "unitSymbol".
-		private enum CodingKeys: String, CodingKey {
-			case value, unitSymbol = "unit"
-		}
+    
+    private let context: NSManagedObjectContext
+    
+    
+    // MARK: - Estruturas Intermediárias
+    private struct FactData: Codable {
+        let id: UUID
+        let name: String
+        let image: ImageData
+        let mascotComment: String?
+    }
+    
+    private struct ImageData: Codable {
+        let localImage: String
+        let alternativeText: String?
+    }
+    
+    private struct CelestialBodyData: Codable {
+        let fact: FactData
+        let popularName: String?
+        let type: String // CelestialBodyType.rawValue
+        let mainInfo: MainInfoData
+        let physicalCharacteristics: PhysicalCharacteristicsData
+        let historyAndObservation: String // [String]
+        let exploringAndMissions: String? // [String]
+        let triviaAndMiths: TriviaAndMithsData
+    }
+    
+    private struct MainInfoData: Codable {
+        let location: String
+        let diameter: DecodableMeasurement<UnitLength>?
+        let typeDescriptive: String
+        let visibility: VisibilityData
+        let visibilityDescriptive: String?
+        let rotationPeriod: TimePeriodData
+        let translationPeriod: TimePeriodData
+    }
+    
+    private struct PhysicalCharacteristicsData: Codable {
+        let mass: DecodableMeasurement<UnitMass>?
+        let temperature: String?
+        let atmosphere: String?
+        let atmPressure: DecodableMeasurement<UnitPressure>?
+        let surface: String?
+        let gravity: DecodableMeasurement<UnitAcceleration>?
+        let density: DecodableMeasurement<UnitConcentrationMass>?
+        let moons: String?
+    }
+    
+    private struct VisibilityData: Codable {
+        let viewingMethod: String //ViewingMethod.rawValue
+        let observationZone: String
+        let instructions: String //[String]
+    }
+    
+    private struct TimePeriodData: Codable {
+        let value: Double?
+        let unit: String? //TimeUnit.rawValue
+    }
+    
+    private struct TriviaAndMithsData: Codable {
+        let culturalParallels: String? // [String]
+        let trivia: String? // [String]
+    }
+    
+    private struct HistoricalCosmicEventData: Codable {
+        let fact: FactData
+        let culturalParallels: String // [String]
+        let explanation: String // [String]
+        let evidence: String // [String]
+        let timePeriod: TimePeriodData
+        let type: String // CosmologicalEventType.rawValue
+    }
+    
+    private struct SpaceMissionData: Codable {
+        let fact: FactData
+        let launchLocation: String
+        let missionType: String
+        let distanceTravaled: DecodableMeasurement<UnitLength>?
+        let date: DateTimeData
+        let objectives: String? // [String]
+        let techEnvolved: String // [String]
+        let results: String // [String]
+        let highlights: String // [String]
+    }
+    
+    private struct DateTimeData: Codable {
+        let startAt: Date
+        let duration: TimeInterval
+    }
+    
+    private struct ObservatoryData: Codable {
+        let fact: FactData
+        let city: String
+        let state: String
+        let gpsLocation: GPSLocationData
+        let visitation: VisitationData
+        let cientificHighlights: String? // [String]
+        let technologiesAvailable: String // [String]
+    }
+    
+    private struct GPSLocationData: Codable {
+        let latitude: Double // CLLocationDegrees
+        let longitude: Double // CLLocationDegrees
+    }
+    
+    private struct VisitationData: Codable {
+        let openToPublic: String
+        let tickets: String // [String]
+        let activities: String?
+    }
+    
+    private struct ObservableEventData: Codable {
+        let fact: FactData
+        let date: DateTimeData
+        let type: String // ObservableEventType.rawValue
+        let explanation: String?
+        let visibility: VisibilityData
+    }
+    
+    private struct DecodableMeasurement<Unit: Dimension>: Codable {
+        let value: Double?
+        let unitSymbol: String?
+        
+        // Mapeia a chave "unit" do JSON para a nossa propriedade "unitSymbol".
+        private enum CodingKeys: String, CodingKey {
+            case value, unitSymbol = "unit"
+        }
 
-		// A lógica de decodificação (JSON -> Struct) é gerada automaticamente pelo Swift.
-		// A lógica de codificação (Struct -> JSON) precisa de ser explícita.
-		func encode(to encoder: Encoder) throws {
-			var container = encoder.container(keyedBy: CodingKeys.self)
-			try container.encode(self.value, forKey: .value)
-			try container.encode(self.unitSymbol, forKey: .unitSymbol)
-		}
-	}
-	
-	// MARK: - Inicializador de Contexto
-	init(context: NSManagedObjectContext) {
-		self.context = context
-	}
-	
-	// MARK: - Leitor de JSON/Populador de CD
-	func seedDatabaseIfNeeded() {
-		let defaults = UserDefaults.standard
-		guard !defaults.bool(forKey: "isDatabaseSeeded") else { return }
-		
-		print("INFO: Populando a base de dados Core Data pela primeira vez...")
-		
-		// --- Carrega todos os ficheiros JSON ---
-		let bodiesData: [CelestialBodyData] = load("celestial_bodies.json")
-		let historicalEventsData: [HistoricalCosmicEventData] = load("historical_cosmic_events.json")
-		let spaceMissionData: [SpaceMissionData] = load("space_mission.json")
-		let observatoryData: [ObservatoryData] = load("observatory.json")
-		let eventsData: [ObservableEventData] = load("events.json")
-		
-		// MARK: - Converte JSON -> CD
-		bodiesData.forEach { data in
-			let entity = CelestialBodyEntity(context: context)
-			
-			// --- Carrega fact ---
-			entity.fact?.id = data.fact.id
-			entity.fact?.name = data.fact.name
-				entity.fact?.image?.localImage = data.fact.image.localImage
-				entity.fact?.image?.alternativeText = data.fact.image.alternativeText
-			entity.fact?.mascotComment = data.fact.mascotComment
-			
-			// --- Carrega campos soltos ---
-			entity.popularName = data.popularName
-			entity.type = data.type
-			
-			// --- Carrega Main Info ---
-			entity.mainInfo?.location = data.mainInfo.location
-			entity.mainInfo?.diameter = uploadDecodableMeasurement(from: data.mainInfo.diameter, in: context)
-			entity.mainInfo?.typeDescriptive = data.mainInfo.typeDescriptive
-				entity.mainInfo?.visibility?.viewingMethod = data.mainInfo.visibility.viewingMethod
-				entity.mainInfo?.visibility?.instructions = data.mainInfo.visibility.instructions
-			entity.mainInfo?.visibilityDescriptive = data.mainInfo.visibilityDescriptive
-			entity.mainInfo?.rotationPeriod = uploadTimePeriod(from: data.mainInfo.rotationPeriod, in: context)
-			entity.mainInfo?.translationPeriod = uploadTimePeriod(from: data.mainInfo.translationPeriod, in: context)
-			
-			// --- Carrega PhysicalCharacteristics ---
-			entity.physicalCharacteristics?.mass = uploadDecodableMeasurement(from: data.physicalCharacteristics.mass, in: context)
-			entity.physicalCharacteristics?.temperature = data.physicalCharacteristics.temperature
-			entity.physicalCharacteristics?.atmosphere = data.physicalCharacteristics.atmosphere
-			entity.physicalCharacteristics?.atmPressure = uploadDecodableMeasurement(from: data.physicalCharacteristics.atmPressure, in: context)
-			entity.physicalCharacteristics?.surface = data.physicalCharacteristics.surface
-			entity.physicalCharacteristics?.gravity = uploadDecodableMeasurement(from: data.physicalCharacteristics.gravity, in: context)
-			entity.physicalCharacteristics?.density = uploadDecodableMeasurement(from: data.physicalCharacteristics.density, in: context)
-			entity.physicalCharacteristics?.moons = data.physicalCharacteristics.moons
-			
-			// --- Carrega TriviaAndMiths ---
-			entity.triviaAndMiths?.culturalParallels = data.triviaAndMiths.culturalParallels
-			entity.triviaAndMiths?.trivia = data.triviaAndMiths.trivia
-		}
-		
-		historicalEventsData.forEach { data in
-			let entity = HistoricalCosmicEventEntity(context: context)
-			
-			// --- Carrega fact ---
-			entity.fact?.id = data.fact.id
-			entity.fact?.name = data.fact.name
-				entity.fact?.image?.localImage = data.fact.image.localImage
-				entity.fact?.image?.alternativeText = data.fact.image.alternativeText
-			entity.fact?.mascotComment = data.fact.mascotComment
-			
-			// --- Carrega CulturalParallels ---
-			entity.culturalParallels = data.culturalParallels
-			
-			// --- Carrega Explanation ---
-			entity.explanation = data.explanation
-			
-			// --- Carrega Evidence ---
-			entity.evidence = data.evidence
-			
-			// --- Carrega TimePeriod ---
-			entity.timePeriod = uploadTimePeriod(from: data.timePeriod, in: context)
-			
-			// --- Carrega Type ---
-			entity.type = data.type
-		}
-		
-		spaceMissionData.forEach { data in
-			let entity = SpaceMissionEntity(context: context)
-			
-			// --- Carrega fact ---
-			entity.fact?.id = data.fact.id
-			entity.fact?.name = data.fact.name
-				entity.fact?.image?.localImage = data.fact.image.localImage
-				entity.fact?.image?.alternativeText = data.fact.image.alternativeText
-			entity.fact?.mascotComment = data.fact.mascotComment
-			
-			entity.launchLocation = data.launchLocation
-			entity.missionType = data.missionType
-			entity.distanceTraveled = uploadDecodableMeasurement(from: data.distanceTravaled, in: context)
-			
-			entity.date?.startAt = data.date.startAt
-			entity.date?.duration = data.date.duration
-			
-			// --- Carrega strings finais ---
-			entity.objectives = data.objectives
-			entity.techEnvolved = data.techEnvolved
-			entity.results = data.results
-			entity.highlights = data.highlights
-		}
-		
-		observatoryData.forEach { data in
-			let entity = ObservatoryEntity(context: context)
-			
-			// --- Carrega fact ---
-			entity.fact?.id = data.fact.id
-			entity.fact?.name = data.fact.name
-				entity.fact?.image?.localImage = data.fact.image.localImage
-				entity.fact?.image?.alternativeText = data.fact.image.alternativeText
-			entity.fact?.mascotComment = data.fact.mascotComment
-			
-			// --- Carrega location ---
-			entity.location = data.location
-			
-			// --- Carrega visitation ---
-			entity.visitation?.openToPublic = data.visitation.openToPublic
-			entity.visitation?.tickets = data.visitation.tickets
-			entity.visitation?.activities = data.visitation.activities
-			
-			// --- Carrega strings finais ---
-			entity.cientificHighlight = data.cientificHighlights
-			entity.technologiesAvailable = data.technologiesAvailable
-		}
-		
-		eventsData.forEach { data in
-			let entity = ObservableEventEntity(context: context)
-			
-			// --- Carrega fact ---
-			entity.fact?.id = data.fact.id
-			entity.fact?.name = data.fact.name
-				entity.fact?.image?.localImage = data.fact.image.localImage
-				entity.fact?.image?.alternativeText = data.fact.image.alternativeText
-			entity.fact?.mascotComment = data.fact.mascotComment
-			
-			entity.date?.startAt = data.date.startAt
-			entity.date?.duration = data.date.duration
-			
-			entity.type = data.type
-			entity.explanation = data.explanation
-		}
-		
-		// MARK: - Salva o contexto
-		do {
-			try context.save()
-			defaults.set(true, forKey: "isDatabaseSeeded")
-			print("SUCCESS: Base de dados Core Data populada e guardada com sucesso.")
-		} catch {
-			print("ERROR: Falha ao guardar o contexto inicial do Core Data. \(error)")
-		}
-	}
-	
-	// MARK: - Funções Auxiliares Privadas
-	
-	private func uploadDecodableMeasurement<Unit: Dimension>(
-		from data: DecodableMeasurement<Unit>?,
-		in context: NSManagedObjectContext
-	) -> DecodableMeasurementEntity? {
-		guard let _data = data,
-			  let value = _data.value,
-			  let unit = _data.unitSymbol
-		else { return nil }
-		
-		let entity = DecodableMeasurementEntity(context: context)
-		entity.value = value
-		entity.unit = unit
-		return entity
-	}
-	
-	private func uploadTimePeriod(
-		from data: TimePeriodData?,
-		in context: NSManagedObjectContext
-	) -> TimePeriodEntity? {
-		guard let _data = data,
-			  let value = _data.value,
-			  let unit = _data.unit
-		else { return nil }
-		
-		let entity = TimePeriodEntity(context: context)
-		entity.value = value
-		entity.unit = unit
-		return entity
-	}
-	
-	// Já não precisa de nenhuma lógica complexa de descodificação de unidades.
-	private func load<T: Decodable>(_ filename: String) -> T {
-		guard let file = Bundle.main.url(forResource: filename, withExtension: nil) else {
-			fatalError("Não foi possível encontrar o ficheiro \(filename) no bundle principal.")
-		}
-		guard let data = try? Data(contentsOf: file) else {
-			fatalError("Não foi possível carregar o ficheiro \(filename) do bundle.")
-		}
-		do {
-			let decoder = JSONDecoder()
-			decoder.dateDecodingStrategy = .iso8601
-			return try decoder.decode(T.self, from: data)
-		} catch {
-			fatalError("Não foi possível descodificar o ficheiro \(filename) como \(T.self):\n\(error)")
-		}
-	}
+        // A lógica de decodificação (JSON -> Struct) é gerada automaticamente pelo Swift.
+        // A lógica de codificação (Struct -> JSON) precisa de ser explícita.
+        func encode(to encoder: Encoder) throws {
+            var container = encoder.container(keyedBy: CodingKeys.self)
+            try container.encode(self.value, forKey: .value)
+            try container.encode(self.unitSymbol, forKey: .unitSymbol)
+        }
+    }
+    
+    // MARK: - Inicializador de Contexto
+    init(context: NSManagedObjectContext) {
+        self.context = context
+    }
+    
+    // MARK: - Leitor de JSON/Populador de CD
+    func seedDatabaseIfNeeded() {
+        let defaults = UserDefaults.standard
+        guard !defaults.bool(forKey: "isDatabaseSeeded") else { return }
+        
+        print("INFO: Populando a base de dados Core Data pela primeira vez...")
+        
+        // --- Carrega todos os ficheiros JSON ---
+        let bodiesData: [CelestialBodyData] = load("celestial_bodies.json")
+        let historicalEventsData: [HistoricalCosmicEventData] = load("historical_cosmic_events.json")
+        let spaceMissionData: [SpaceMissionData] = load("space_mission.json")
+        let observatoryData: [ObservatoryData] = load("observatory.json")
+        let eventsData: [ObservableEventData] = load("events.json")
+        
+        // MARK: - Converte JSON -> CD
+        bodiesData.forEach { data in
+            let entity = CelestialBodyEntity(context: context)
+            
+            // --- Carrega fact ---
+            entity.fact?.id = data.fact.id
+            entity.fact?.name = data.fact.name
+                entity.fact?.image?.localImage = data.fact.image.localImage
+                entity.fact?.image?.alternativeText = data.fact.image.alternativeText
+            entity.fact?.mascotComment = data.fact.mascotComment
+            
+            // --- Carrega campos soltos ---
+            entity.popularName = data.popularName
+            entity.type = data.type
+            
+            // --- Carrega Main Info ---
+            entity.mainInfo?.location = data.mainInfo.location
+            entity.mainInfo?.diameter = uploadDecodableMeasurement(from: data.mainInfo.diameter, in: context)
+            entity.mainInfo?.typeDescriptive = data.mainInfo.typeDescriptive
+                entity.mainInfo?.visibility?.viewingMethod = data.mainInfo.visibility.viewingMethod
+                entity.mainInfo?.visibility?.instructions = data.mainInfo.visibility.instructions
+            entity.mainInfo?.visibilityDescriptive = data.mainInfo.visibilityDescriptive
+            entity.mainInfo?.rotationPeriod = uploadTimePeriod(from: data.mainInfo.rotationPeriod, in: context)
+            entity.mainInfo?.translationPeriod = uploadTimePeriod(from: data.mainInfo.translationPeriod, in: context)
+            
+            // --- Carrega PhysicalCharacteristics ---
+            entity.physicalCharacteristics?.mass = uploadDecodableMeasurement(from: data.physicalCharacteristics.mass, in: context)
+            entity.physicalCharacteristics?.temperature = data.physicalCharacteristics.temperature
+            entity.physicalCharacteristics?.atmosphere = data.physicalCharacteristics.atmosphere
+            entity.physicalCharacteristics?.atmPressure = uploadDecodableMeasurement(from: data.physicalCharacteristics.atmPressure, in: context)
+            entity.physicalCharacteristics?.surface = data.physicalCharacteristics.surface
+            entity.physicalCharacteristics?.gravity = uploadDecodableMeasurement(from: data.physicalCharacteristics.gravity, in: context)
+            entity.physicalCharacteristics?.density = uploadDecodableMeasurement(from: data.physicalCharacteristics.density, in: context)
+            entity.physicalCharacteristics?.moons = data.physicalCharacteristics.moons
+            
+            // --- Carrega TriviaAndMiths ---
+            entity.triviaAndMiths?.culturalParallels = data.triviaAndMiths.culturalParallels
+            entity.triviaAndMiths?.trivia = data.triviaAndMiths.trivia
+        }
+        
+        historicalEventsData.forEach { data in
+            let entity = HistoricalCosmicEventEntity(context: context)
+            
+            // --- Carrega fact ---
+            entity.fact?.id = data.fact.id
+            entity.fact?.name = data.fact.name
+                entity.fact?.image?.localImage = data.fact.image.localImage
+                entity.fact?.image?.alternativeText = data.fact.image.alternativeText
+            entity.fact?.mascotComment = data.fact.mascotComment
+            
+            // --- Carrega CulturalParallels ---
+            entity.culturalParallels = data.culturalParallels
+            
+            // --- Carrega Explanation ---
+            entity.explanation = data.explanation
+            
+            // --- Carrega Evidence ---
+            entity.evidence = data.evidence
+            
+            // --- Carrega TimePeriod ---
+            entity.timePeriod = uploadTimePeriod(from: data.timePeriod, in: context)
+            
+            // --- Carrega Type ---
+            entity.type = data.type
+        }
+        
+        spaceMissionData.forEach { data in
+            let entity = SpaceMissionEntity(context: context)
+            
+            // --- Carrega fact ---
+            entity.fact?.id = data.fact.id
+            entity.fact?.name = data.fact.name
+                entity.fact?.image?.localImage = data.fact.image.localImage
+                entity.fact?.image?.alternativeText = data.fact.image.alternativeText
+            entity.fact?.mascotComment = data.fact.mascotComment
+            
+            entity.launchLocation = data.launchLocation
+            entity.missionType = data.missionType
+            entity.distanceTraveled = uploadDecodableMeasurement(from: data.distanceTravaled, in: context)
+            
+            entity.date?.startAt = data.date.startAt
+            entity.date?.duration = data.date.duration
+            
+            // --- Carrega strings finais ---
+            entity.objectives = data.objectives
+            entity.techEnvolved = data.techEnvolved
+            entity.results = data.results
+            entity.highlights = data.highlights
+        }
+        
+        observatoryData.forEach { data in
+            let entity = ObservatoryEntity(context: context)
+            
+            // --- Carrega fact ---
+            entity.fact?.id = data.fact.id
+            entity.fact?.name = data.fact.name
+                entity.fact?.image?.localImage = data.fact.image.localImage
+                entity.fact?.image?.alternativeText = data.fact.image.alternativeText
+            entity.fact?.mascotComment = data.fact.mascotComment
+            
+            // --- Carrega location ---
+            entity.city = data.city
+            entity.state = data.state
+            
+            // --- Carrega GPS location ---
+            entity.gpsLocation?.latitude = data.gpsLocation.latitude
+            entity.gpsLocation?.longitude = data.gpsLocation.longitude
+            
+            // --- Carrega visitation ---
+            entity.visitation?.openToPublic = data.visitation.openToPublic
+            entity.visitation?.tickets = data.visitation.tickets
+            entity.visitation?.activities = data.visitation.activities
+            
+            // --- Carrega strings finais ---
+            entity.cientificHighlight = data.cientificHighlights
+            entity.technologiesAvailable = data.technologiesAvailable
+        }
+        
+        eventsData.forEach { data in
+            let entity = ObservableEventEntity(context: context)
+            
+            // --- Carrega fact ---
+            entity.fact?.id = data.fact.id
+            entity.fact?.name = data.fact.name
+                entity.fact?.image?.localImage = data.fact.image.localImage
+                entity.fact?.image?.alternativeText = data.fact.image.alternativeText
+            entity.fact?.mascotComment = data.fact.mascotComment
+            
+            // --- Carrrega datas ---
+            entity.date?.startAt = data.date.startAt
+            entity.date?.duration = data.date.duration
+            
+            // --- Carrega visibility ---
+            entity.visibility?.viewingMethod = data.visibility.viewingMethod
+            entity.visibility?.observationZone = data.visibility.observationZone
+            entity.visibility?.instructions = data.visibility.instructions
+            
+            entity.type = data.type
+            entity.explanation = data.explanation
+        }
+        
+        // MARK: - Salva o contexto
+        do {
+            try context.save()
+            defaults.set(true, forKey: "isDatabaseSeeded")
+            print("SUCCESS: Base de dados Core Data populada e guardada com sucesso.")
+        } catch {
+            print("ERROR: Falha ao guardar o contexto inicial do Core Data. \(error)")
+        }
+    }
+    
+    // MARK: - Funções Auxiliares Privadas
+    
+    private func uploadDecodableMeasurement<Unit: Dimension>(
+        from data: DecodableMeasurement<Unit>?,
+        in context: NSManagedObjectContext
+    ) -> DecodableMeasurementEntity? {
+        guard let _data = data,
+              let value = _data.value,
+              let unit = _data.unitSymbol
+        else { return nil }
+        
+        let entity = DecodableMeasurementEntity(context: context)
+        entity.value = value
+        entity.unit = unit
+        return entity
+    }
+    
+    private func uploadTimePeriod(
+        from data: TimePeriodData?,
+        in context: NSManagedObjectContext
+    ) -> TimePeriodEntity? {
+        guard let _data = data,
+              let value = _data.value,
+              let unit = _data.unit
+        else { return nil }
+        
+        let entity = TimePeriodEntity(context: context)
+        entity.value = value
+        entity.unit = unit
+        return entity
+    }
+    
+    // Já não precisa de nenhuma lógica complexa de descodificação de unidades.
+    private func load<T: Decodable>(_ filename: String) -> T {
+        guard let file = Bundle.main.url(forResource: filename, withExtension: nil) else {
+            fatalError("Não foi possível encontrar o ficheiro \(filename) no bundle principal.")
+        }
+        guard let data = try? Data(contentsOf: file) else {
+            fatalError("Não foi possível carregar o ficheiro \(filename) do bundle.")
+        }
+        do {
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            return try decoder.decode(T.self, from: data)
+        } catch {
+            fatalError("Não foi possível descodificar o ficheiro \(filename) como \(T.self):\n\(error)")
+        }
+    }
 }

@@ -1,83 +1,80 @@
 //import SwiftUI
 //import MapKit
 //
-//struct Observatory: Identifiable {
-//    let id = UUID()
-//    let name: String
-//    let coordinate: CLLocationCoordinate2D
-//    let city: String
-//    let state: String
-//}
+
+import SwiftUI
+import MapKit
 
 struct ObservatoryDetailView: View {
     let observatory: Observatory
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
-        NavigationView{
-            VStack(alignment: .leading, spacing: 20) {
-                Text(observatory.name)
-                    .font(.title)
-                    .bold()
-
-                Map(coordinateRegion: .constant(
-                    MKCoordinateRegion(
-                        center: observatory.coordinate,
-                        span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
-                    )),
-                    annotationItems: [observatory]) { _ in
-                    MapMarker(coordinate: observatory.coordinate, tint: .red)
-                }
-                .frame(height: 200)
-                .cornerRadius(10)
-
-                HStack{
-                    Image(systemName: "location.fill")
-                    Text("Localização:")
-                        .font(.headline)
-
-                    Text("\(observatory.city), \(observatory.state)")
-                        .font(.subheadline)
-                }
-                .padding()
-                .padding(.vertical, -10)
-
-                HStack{
-                    Image(systemName: "gearshape.fill")
-                    Text("Tecnologias disponíveis")
-                        .font(.headline)
-                }
-                .padding()
-                .padding(.vertical, -10)
-
-                HStack{
-                    Image(systemName: "star.fill")
-                    Text("Destaque científico")
-                        .font(.headline)
-                }
-                .padding()
-                .padding(.vertical, -10)
-
-                HStack{
-                    Image(systemName: "person.2.fill")
-                    Text("Visitação")
-                        .font(.headline)
-                }
-                .padding()
-                .padding(.vertical, -10)
-
-                Spacer()
-            }
-            .padding()
-            .padding(.top, -50)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Voltar") {
-                        dismiss()
-                    }
-                }
-            }
-        }
+        Text("vai pf")
+//        NavigationView{
+//            VStack(alignment: .leading, spacing: 20) {
+//                Text(observatory.name)
+//                    .font(.title)
+//                    .bold()
+//
+//                Map(coordinateRegion: .constant(
+//                    MKCoordinateRegion(
+//                        center: observatory.gpsLocation,
+//                        span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
+//                    )),
+//                    annotationItems: [observatory]) { _ in
+//                    MapMarker(coordinate: observatory.gpsLocation, tint: .red)
+//                }
+//                .frame(height: 200)
+//                .cornerRadius(10)
+//
+//                HStack{
+//                    Image(systemName: "location.fill")
+//                    Text("Localização:")
+//                        .font(.headline)
+//
+//                    Text("\(observatory.city), \(observatory.state)")
+//                        .font(.subheadline)
+//                }
+//                .padding()
+//                .padding(.vertical, -10)
+//
+//                HStack{
+//                    Image(systemName: "gearshape.fill")
+//                    Text("Tecnologias disponíveis")
+//                        .font(.headline)
+//                }
+//                .padding()
+//                .padding(.vertical, -10)
+//
+//                HStack{
+//                    Image(systemName: "star.fill")
+//                    Text("Destaque científico")
+//                        .font(.headline)
+//                }
+//                .padding()
+//                .padding(.vertical, -10)
+//
+//                HStack{
+//                    Image(systemName: "person.2.fill")
+//                    Text("Visitação")
+//                        .font(.headline)
+//                }
+//                .padding()
+//                .padding(.vertical, -10)
+//
+//                Spacer()
+//            }
+//            .padding()
+//            .padding(.top, -50)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarLeading) {
+//                    Button("Voltar") {
+//                        dismiss()
+//                    }
+//                }
+//            }
+//        }
     }
 }
 
@@ -87,60 +84,30 @@ struct ObservatoriesView_Previews: PreviewProvider {
     }
 }
 
-import SwiftUI
-import MapKit
-
 struct ObservatoriesView: View {
-    @StateObject private var locationManager = LocationManager() // Adiciona o LocationManager
-    let allObservatories = [
-        Observatory(name: "Observatório Abrahão de Moraes",
-                  coordinate: CLLocationCoordinate2D(latitude: -23.0063817758379, longitude: -46.963540446073466),
-                  city: "Valinhos",
-                  state: "São Paulo"),
-        Observatory(name: "Observatório Municipal de Campinas 'Jean Nicolini'",
-                  coordinate: CLLocationCoordinate2D(latitude: -22.900736147804764, longitude: -46.82637550404957),
-                  city: "Campinas",
-                  state: "São Paulo"),
-        Observatory(name: "Observatório Municipal de Americana",
-                  coordinate: CLLocationCoordinate2D(latitude: -22.757266042526126, longitude: -47.35329532690401),
-                  city: "Americana",
-                  state: "São Paulo"),
-        Observatory(name: "Polo Astronômico de Amparo",
-                  coordinate: CLLocationCoordinate2D(latitude: -22.77501696953554, longitude: -46.72219052779235),
-                  city: "Amparo",
-                  state: "São Paulo")
-    ]
+    @StateObject private var locationManager = LocationManager()
     
+    @Environment(\.managedObjectContext) var context
+
     @State private var searchText = ""
     @State private var selectedObservatory: Observatory?
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: -22.911304857516285, longitude: -47.06560557293485),
         span: MKCoordinateSpan(latitudeDelta: 0.04, longitudeDelta: 0.04)
     )
-    
-    private var filteredObservatories: [Observatory] {
-        if searchText.isEmpty {
-            return allObservatories
-        } else {
-            return allObservatories.filter {
-                $0.name.localizedCaseInsensitiveContains(searchText) ||
-                $0.city.localizedCaseInsensitiveContains(searchText) ||
-                $0.state.localizedCaseInsensitiveContains(searchText)
-            }
-        }
-    }
-    
+
     var body: some View {
         NavigationView {
             VStack {
+                let manager = CoreDataManager(context: context)
+                let allObservatories = manager.fetchObservatories()
                 // Barra de pesquisa
                 SearchBar(text: $searchText)
                     .padding(.horizontal)
-                
+
                 // Mapa com pins
-                Map(coordinateRegion: $region,
-                    annotationItems: filteredObservatories) { observatory in
-                    MapAnnotation(coordinate: observatory.coordinate) {
+                Map(coordinateRegion: $region, annotationItems: allObservatories) { observatory in
+                    MapAnnotation(coordinate: observatory.gpsLocation) {
                         VStack(spacing: 0) {
                             Image(systemName: "mappin.circle.fill")
                                 .font(.title)
@@ -148,7 +115,7 @@ struct ObservatoriesView: View {
                                 .onTapGesture {
                                     selectedObservatory = observatory
                                     withAnimation {
-                                        region.center = observatory.coordinate
+                                        region.center = observatory.gpsLocation
                                         region.span = MKCoordinateSpan(
                                             latitudeDelta: 0.04,
                                             longitudeDelta: 0.04
@@ -156,7 +123,7 @@ struct ObservatoriesView: View {
                                     }
                                 }
 
-                            Text(observatory.name)
+                            Text(observatory.fact.name)
                                 .font(.caption2)
                                 .fixedSize()
                                 .padding(5)
@@ -176,24 +143,24 @@ struct ObservatoriesView: View {
                         region.span = MKCoordinateSpan(latitudeDelta: 0.04, longitudeDelta: 0.04)
                     } else if let first = allObservatories.first {
                         // Se a localização do usuário não estiver disponível, centraliza no primeiro observatório
-                        region.center = first.coordinate
+                        region.center = first.gpsLocation
                         region.span = MKCoordinateSpan(latitudeDelta: 0.04, longitudeDelta: 0.04)
                     }
                 }
-                
-                // Lista de observatórios
-                List(filteredObservatories) { observatory in
+
+//                 Lista de observatórios
+                List(allObservatories) { observatory in
                     VStack(alignment: .leading) {
-                        Text(observatory.name)
+                        Text(observatory.fact.name)
                             .font(.headline)
                         Text("\(observatory.city), \(observatory.state)")
-                            .font(.subheadline)
+                            .font(.subheadline)                // lista que vai puxar os dados do banco
                             .foregroundColor(.gray)
                     }
                     .onTapGesture {
                         selectedObservatory = observatory
                         withAnimation {
-                            region.center = observatory.coordinate
+                            region.center = observatory.gpsLocation
                             region.span = MKCoordinateSpan(
                                 latitudeDelta: 0.04,
                                 longitudeDelta: 0.04

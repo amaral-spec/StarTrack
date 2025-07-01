@@ -1,0 +1,98 @@
+[
+ {
+   "fact": {
+      "id": "1e6e6f54-78c3-42b9-a4c3-9f8ebfea5fc1",
+      "name": "Observatório Abrahão de Moraes",
+      "image": {
+         "localImage": "Abrahao",
+         "alternativeText": "A imagem mostra um telescópio moderno da marca Meade apontado para o céu, em um ambiente externo com árvores ao fundo e céu parcialmente nublado. O equipamento possui estrutura robusta, tubo azul-escuro e detalhes pretos, com visor e mecanismos de ajuste visíveis. O ângulo baixo da foto valoriza sua imponência e precisão tecnológica, sugerindo seu uso em observações astronômicas detalhadas tanto por astrônomos amadores quanto profissionais."
+      },
+      "mascotComment": null
+   },
+   "city": "Valinhos",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -23.006437,
+      "longitude": -46.963563
+   },
+   "visitation": {
+      "openToPublic": "Sim",
+      "tickets": "Gratuito",
+      "activities": null
+   },
+   "cientificHighlight": "O Observatório atua como laboratório científico desde 1972, com destaque para pesquisas em Astronomia, Astrobiologia, Geofísica e Ciências Atmosféricas \nProjetos de observação remota, como o Telescópios na Escola (TnE), permitem que escolas realizem observações astronômicas via internet\nEm breve, projetos similares estarão disponíveis para a estação sismográfica (Geofísica na Escola) e para a estação meteorológica (Ciências Atmosféricas na Escola)\nO círculo meridiano CCD é utilizado para medições astronômicas precisas e registro de imagens, contribuindo para o avanço do conhecimento científico",
+   "technologiesAvailable": "Telescópio refrator (círculo meridiano CCD) de 20 cm de diâmetro, automatizado em 1995 e instalado desde 1975, utilizado em pesquisas de Astronomia e Astrobiologia   \nEstação sismográfica e estação geomagnética, empregadas em pesquisas de Geofísica e também em atividades de ensino\nEstação meteorológica automática (em fase de instalação), destinada a pesquisas e ensino em Ciências Atmosféricas\nTelescópios Prometeu e Asterix, utilizados em eventos de observação noturna\nTelescópio Argus, utilizado para observações remotas via internet no projeto Telescópios na Escola (TnE)\nMarco geodésico e ponto de gravidade absoluta, utilizados por empresas e em atividades científicas"
+},
+ {
+   "fact": {
+      "id": "d4554749-b87c-4894-9d94-27538456d649",
+      "name": "Observatório Municipal de Campinas \"Jean Nicolini\"",
+      "image": {
+         "localImage": "Jean_Nicolini",
+         "alternativeText": "A imagem mostra um observatório astronômico sob um céu noturno espetacularmente estrelado, com a Via Láctea visível em destaque atravessando o topo da cena. O edifício tem cúpula escura e base clara, em formato circular, cercado por vegetação e árvores ao fundo. A atmosfera é serena e inspiradora, com tons azulados do céu contrastando com leves tons quentes do solo, possivelmente iluminado por lanternas vermelhas usadas para preservar a adaptação noturna dos visitantes. A cena transmite a grandiosidade do universo e o fascínio pela observação astronômica."
+      },
+      "mascotComment": null
+   },
+   "city": "Campinas",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -22.900312,
+      "longitude": -46.825813
+   },
+   "visitation": {
+      "openToPublic": "Sim",
+      "tickets": "Inteira: R$ 4 \nMeia: R$ 2",
+      "activities": null
+   },
+   "cientificHighlight": "Pioneirismo: Primeiro observatório municipal do Brasil, inaugurado em 1977, e referência nacional em ações educativas regulares em astronomia.\nProjetos de divulgação científica, como o \"Astronomia na Praça\" e \"Observatório vai às escolas\", levando telescópios e conhecimento astronômico à comunidade e escolas da região.\nParticipação ativa em campanhas de observação de eventos astronômicos, como a passagem do Cometa Halley em 1986.\nParceria com a rede EXOSS para monitoramento e pesquisa de meteoros, contribuindo para bancos de dados científicos nacionais e internacionais.\nRecebe cerca de 12.000 visitantes por ano, promovendo exposições, vídeos temáticos, reconhecimento do céu a olho nu e observações de astros como Saturno, Lua, aglomerados estelares e estrelas duplas.",
+   "technologiesAvailable": "Telescópio refletor Newtoniano de 250 mm (Meade Starfinder)\nTelescópio de 400 mm (Carl Zeiss, astrógrafo, maior do Brasil para astrofotografia)\nTelescópio de 500 mm (Carl Zeiss)\nTelescópio Cassegrain de 600 mm (Group Mod.128, o maior disponível ao público visitante)\nEstrutura de cúpulas motorizadas e prédios próprios para abrigar os equipamentos\nSistema de monitoramento de meteoros em parceria com a rede EXOSS, com câmeras para registro e análise científica de fenômenos como meteoros."
+},
+ {
+   "fact": {
+      "id": "bea82a6d-9b77-4519-b798-96b49adfd933",
+      "name": "Observatório Municipal de Americana",
+      "image": {
+         "localImage": "Americana",
+         "alternativeText": "A imagem mostra o prédio de um observatório astronômico à noite, com iluminação artificial amarelada destacando suas paredes claras. No topo do edifício há uma cúpula branca, típica de telescópios astronômicos. Em frente ao prédio, vê-se uma escultura metálica representando esferas celestes e órbitas, remetendo à temática astronômica. Há também um pequeno jardim com uma placa informativa, e o local está bem cuidado e acessível, com rampa de entrada e corrimão. Ao fundo, há árvores e o céu noturno."
+      },
+      "mascotComment": null
+   },
+   "city": "Americana",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -22.757312,
+      "longitude": -47.353313
+   },
+   "visitation": {
+      "openToPublic": "Sim",
+      "tickets": "Gratuito",
+      "activities": null
+   },
+   "cientificHighlight": "Segundo observatório municipal do Brasil, fundado em 4 de agosto de 1985\nModelo de observatório municipal voltado à popularização da ciência\nRealiza observatórios pedagógicos em escolas de Americana e região\nPromove intercâmbios com entidades nacionais e internacionais\nDesenvolve trabalhos científicos sobre fenômenos astronômicos relevantes\nAtua também em atividades de conscientização ambiental, aproveitando sua localização no Complexo Ecológico",
+   "technologiesAvailable": "Luneta objetiva Couder França de 180 mm de diâmetro e 2.230 mm de distância focal\nTelescópio fotográfico Zeiss/Tessar de 140 mm de diâmetro\nTelescópio refletor newtoniano de 180 mm de diâmetro\nDois novos telescópios adquiridos nos últimos anos\nPlanetário Digital moderno, capaz de simular imagens do Sistema Solar, asteróides, cometas e outros sistemas, reproduzindo artificialmente o céu e seus astros\nEstrutura para cursos, salão de exposições, laboratório fotográfico, biblioteca, cobertura e terraço para observações a céu aberto."
+},
+ {
+   "fact": {
+      "id": "4d283871-2435-428b-a386-a13954d4e48a",
+      "name": "Polo Astronômico de Amparo",
+      "image": {
+         "localImage": "Amparo",
+         "alternativeText": "A imagem mostra um terraço de observação astronômica equipado com diversos telescópios modernos, montados sobre bases robustas e alinhados para o céu. Os equipamentos variam em tamanho e tipo, incluindo modelos refletores e refratores, destacando-se um grande telescópio com estrutura aberta e suporte metálico. O ambiente é claro, com piso de cerâmica, céu parcialmente azul com nuvens e uma parede cinza ao fundo, sugerindo um espaço preparado para observações avançadas e registro de imagens astronômicas com precisão."
+      },
+      "mascotComment": null
+   },
+   "city": "Amparo",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -22.775062,
+      "longitude": -46.722313
+   },
+   "visitation": {
+      "openToPublic": "Sim",
+      "tickets": "Inteira: R$ 90\nMeia: R$ 45",
+      "activities": null
+   },
+   "cientificHighlight": "O maior telescópio do estado de São Paulo e do Brasil aberto para visitação pública, permitindo observação direta do céu com explicações detalhadas\nProgramação de observações públicas e atividades educativas para escolas, com professores capacitados e atendimento exclusivo para grupos escolares\nUso de tecnologia avançada no planetário para simulações e educação astronômica imersiva\nLocal estratégico com céu limpo e escuro, ideal para observações astronômicas e divulgação científica",
+   "technologiesAvailable": "Maior telescópio aberto à visitação pública do Brasil, com 650 mm de abertura\nOutros telescópios refletores de 360 mm, 340 mm e 200 mm de abertura\nTelescópio refrator de 150 mm\nDois instrumentos para observação solar\nPlanetário digital moderno com domo de 8 metros, sistema de projeção digital de última geração, que oferece simulações realistas e shows imersivos do universo\nEstrutura ampla com cerca de 60.000 m², incluindo espaços para exposições, café, restaurante, loja e vista panorâmica"
+}
+]

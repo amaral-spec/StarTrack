@@ -1,0 +1,27 @@
+[
+ {
+   "fact": {
+      "id": "f5de2808-9e69-4200-a6ef-d6e2adc29dc4",
+      "name": "Artemis I",
+      "image": {
+         "localImage": "Artemis",
+         "alternativeText": "A imagem mostra o momento do lançamento noturno de um foguete de grande porte, iluminado por fortes luzes e envolto por colunas de fumaça e vapor. O foguete é o SLS (Space Launch System), da missão Artemis da NASA, com seus tanques laranja e branco característicos. Ao lado, uma torre de lançamento e uma torre de água compõem a estrutura de suporte. A cena transmite a potência e grandiosidade de uma missão espacial, simbolizando o retorno da humanidade à exploração lunar."
+      },
+      "mascotComment": null
+   },
+   "launchLocation": "Complexo de Lançamento 39B, Centro Espacial Kennedy, Flórida",
+   "missionType": "Voo de teste não tripulado",
+   "distanceTraveled": {
+      "value": 2250000,
+      "unit": "km"
+   },
+   "date": {
+      "startAt": "2022-11-16T13:00:00Z",
+      "duration": 2199180
+   },
+   "objetives": "Demonstrar o desempenho integrado do foguete SLS (Space Launch System), da espaçonave Orion e dos sistemas terrestres.\nTestar os sistemas de voo da Orion em ambiente espacial.\nGarantir uma reentrada, descida e recuperação seguras antes da primeira missão tripulada, a Artemis II.",
+   "techEnvolved": "Foguete SLS: O mais poderoso já construído pela NASA, com capacidade para missões de longa duração no espaço profundo.\nEspaçonave Orion: Projetada para transportar astronautas além da órbita terrestre baixa, com sistemas de suporte à vida e escudo térmico avançado.\nSistemas Terrestres: Infraestrutura modernizada no Centro Espacial Kennedy para suportar lançamentos do SLS e operações da Orion.",
+   "results": "Validação do desempenho do SLS e da Orion em condições reais de voo.\nColeta de dados críticos sobre sistemas de navegação, propulsão e controle térmico.\nTeste bem-sucedido do escudo térmico da Orion durante a reentrada atmosférica.",
+   "highlights": "Órbita Lunar: A Orion entrou em uma órbita retrógrada distante ao redor da Lua.\nDistância Máxima da Terra: Aproximadamente 430.000 km.\nReentrada e Pouso: A cápsula retornou à Terra em 11 de dezembro de 2022, com uma velocidade de reentrada de 39.590 km/h (Mach 32)."
+}
+]
