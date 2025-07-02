@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6621EB8C2DF7180200381752 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EB8B2DF7180200381752 /* ContentView.swift */; };
-		6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB8D2DF7180400381752 /* Assets.xcassets */; };
-		6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6621EB902DF7180400381752 /* Preview Assets.xcassets */; };
 		6621EB9B2DF7180500381752 /* StarTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EB9A2DF7180500381752 /* StarTrackTests.swift */; };
 		6621EBA52DF7180500381752 /* StarTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBA42DF7180500381752 /* StarTrackUITests.swift */; };
 		6621EBA72DF7180500381752 /* StarTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBA62DF7180500381752 /* StarTrackUITestsLaunchTests.swift */; };
@@ -18,7 +16,6 @@
 		6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */; };
 		E609CA652DFB031100A2A5E2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661AC542DF87199000844EC /* WidgetKit.framework */; };
 		E609CA662DFB031100A2A5E2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661AC562DF87199000844EC /* SwiftUI.framework */; };
-		E609CA692DFB031100A2A5E2 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E609CA682DFB031100A2A5E2 /* Widget.swift */; };
 		E609CA6B2DFB031500A2A5E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E609CA6A2DFB031500A2A5E2 /* Assets.xcassets */; };
 		E609CA6F2DFB031500A2A5E2 /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E609CA642DFB031100A2A5E2 /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E609CA732DFB08BC00A2A5E2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E87C2DF9A16200927339 /* NetworkManager.swift */; };
@@ -61,6 +58,8 @@
 		E6ACD1AD2E0192750041D0E1 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ACD1AB2E0192750041D0E1 /* NetworkMonitor.swift */; };
 		E6B0254F2E0C18BF00BEF1E1 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B0254E2E0C18BF00BEF1E1 /* PerfilView.swift */; };
 		E6B025522E0C1B8F00BEF1E1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B025512E0C1B8F00BEF1E1 /* SearchBar.swift */; };
+		E6EA46EE2E155581004F962D /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E609CA682DFB031100A2A5E2 /* Widget.swift */; };
+		E6EA47002E156149004F962D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6EA46FF2E156149004F962D /* Assets.xcassets */; };
 		E77B45022E0C1EED00EDFB2B /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B45012E0C1EED00EDFB2B /* FavoritesView.swift */; };
 		E7D4FFE32E0065E700CABB2C /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE22E0065E700CABB2C /* CatalogView.swift */; };
 		E7D4FFE52E0065F900CABB2C /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE42E0065F900CABB2C /* CalendarView.swift */; };
@@ -109,8 +108,6 @@
 /* Begin PBXFileReference section */
 		6621EB862DF7180200381752 /* StarTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6621EB8B2DF7180200381752 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		6621EB8D2DF7180400381752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6621EB902DF7180400381752 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6621EB962DF7180500381752 /* StarTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6621EB9A2DF7180500381752 /* StarTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarTrackTests.swift; sourceTree = "<group>"; };
 		6621EBA02DF7180500381752 /* StarTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +158,7 @@
 		E6ACD1AB2E0192750041D0E1 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		E6B0254E2E0C18BF00BEF1E1 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		E6B025512E0C1B8F00BEF1E1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E6EA46FF2E156149004F962D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E77B45012E0C1EED00EDFB2B /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		E7D4FFE22E0065E700CABB2C /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
 		E7D4FFE42E0065F900CABB2C /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -205,6 +203,7 @@
 		6621EB7D2DF7180200381752 = {
 			isa = PBXGroup;
 			children = (
+				E6EA46FF2E156149004F962D /* Assets.xcassets */,
 				6621EB882DF7180200381752 /* StarTrack */,
 				6621EBC22DF71BC900381752 /* Tests */,
 				E609CA672DFB031100A2A5E2 /* Widget */,
@@ -236,17 +235,8 @@
 				6621EBB62DF7185C00381752 /* ViewModel */,
 				6621EBB52DF7185500381752 /* View */,
 				6621EBB42DF7184A00381752 /* Model */,
-				6621EB8F2DF7180400381752 /* Preview Content */,
 			);
 			path = StarTrack;
-			sourceTree = "<group>";
-		};
-		6621EB8F2DF7180400381752 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				6621EB902DF7180400381752 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		6621EB992DF7180500381752 /* StarTrackTests */ = {
@@ -313,7 +303,6 @@
 			isa = PBXGroup;
 			children = (
 				E65420D12E1400FD00C0B550 /* FuncLib.swift */,
-				6621EB8D2DF7180400381752 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -663,9 +652,8 @@
 				6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */,
 				E65420E62E14120800C0B550 /* events.json in Resources */,
 				E65420E72E14120800C0B550 /* space_mission.json in Resources */,
-				6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */,
+				E6EA47002E156149004F962D /* Assets.xcassets in Resources */,
 				E65420EA2E14141A00C0B550 /* celestial_bodies.json in Resources */,
-				6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,10 +750,10 @@
 			files = (
 				E609CA732DFB08BC00A2A5E2 /* NetworkManager.swift in Sources */,
 				E6ACD1AD2E0192750041D0E1 /* NetworkMonitor.swift in Sources */,
-				E609CA692DFB031100A2A5E2 /* Widget.swift in Sources */,
 				E609CA752DFB08C200A2A5E2 /* url helper.swift in Sources */,
 				E609CA742DFB08BE00A2A5E2 /* Constants.swift in Sources */,
 				E609CA762DFB08C500A2A5E2 /* PhotoInfo.swift in Sources */,
+				E6EA46EE2E155581004F962D /* Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -914,7 +902,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StarTrack/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "StarTrack/Preview Content";
 				DEVELOPMENT_TEAM = 7N9YG996K2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -946,7 +934,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StarTrack/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "StarTrack/Preview Content";
 				DEVELOPMENT_TEAM = 7N9YG996K2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

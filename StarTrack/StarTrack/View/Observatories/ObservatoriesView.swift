@@ -186,5 +186,9 @@ struct ObservatoriesView: View {
                 ObservatoryDetailView(observatory: observatory)
             }
         }
+        .onAppear {
+//            let manager = CoreDataManager(context: context)
+//            let allObservatories = manager.fetchObservatories()
+        }
     }
 }
