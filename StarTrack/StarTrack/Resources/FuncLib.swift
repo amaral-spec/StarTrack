@@ -15,7 +15,7 @@ class FuncLib {
 	func splitString(fromString string: String?, by separator: String) -> [String] {
 		guard let str = string else { return [] }
 		
-		return str.components(separatedBy: separator)
+		return str.components(separatedBy: separator).map { $0.trimmingCharacters(in: .whitespaces) }
 	}
 	
 	func measurementBuild<UnitType: Dimension>(
@@ -30,5 +30,10 @@ class FuncLib {
 		let unit = UnitType(symbol: unitSymbol)
 		
 		return Measurement(value: value, unit: unit)
+	}
+	
+	func createEnum<T: RawRepresentable>(from rawValue: String?) -> T? where T.RawValue == String {
+		guard let rawValue = rawValue else { return nil }
+		return T(rawValue: rawValue)
 	}
 }
