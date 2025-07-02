@@ -157,7 +157,9 @@ class CoreDataSeeder {
     // MARK: - Leitor de JSON/Populador de CD
     func seedDatabaseIfNeeded() {
         let defaults = UserDefaults.standard
-        guard !defaults.bool(forKey: "isDatabaseSeeded") else { return }
+        guard !defaults.bool(forKey: "isDatabaseSeeded") else {
+            print("User defaults indica que CD ja foi populado")
+            return }
         
         print("INFO: Populando a base de dados Core Data pela primeira vez...")
         
