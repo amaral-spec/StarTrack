@@ -14,6 +14,8 @@
 		6621EBBB2DF71AD000381752 /* ServicePlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBBA2DF71AD000381752 /* ServicePlaceholder.swift */; };
 		6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBC92DF71F0000381752 /* StarTrackApp.swift */; };
 		6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */; };
+		66B242002E142475004267CA /* StarTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66B241FE2E142475004267CA /* StarTrack.xcdatamodeld */; };
+		66D41FC52E155E2B00C11EA2 /* EntitiesPopulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D41FC42E155E2B00C11EA2 /* EntitiesPopulation.swift */; };
 		E609CA652DFB031100A2A5E2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661AC542DF87199000844EC /* WidgetKit.framework */; };
 		E609CA662DFB031100A2A5E2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661AC562DF87199000844EC /* SwiftUI.framework */; };
 		E609CA6F2DFB031500A2A5E2 /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E609CA642DFB031100A2A5E2 /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -122,6 +124,8 @@
 		6621EBBA2DF71AD000381752 /* ServicePlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePlaceholder.swift; sourceTree = "<group>"; };
 		6621EBC92DF71F0000381752 /* StarTrackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTrackApp.swift; sourceTree = "<group>"; };
 		6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		66B241FF2E142475004267CA /* StarTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarTrack.xcdatamodel; sourceTree = "<group>"; };
+		66D41FC42E155E2B00C11EA2 /* EntitiesPopulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitiesPopulation.swift; sourceTree = "<group>"; };
 		E609CA642DFB031100A2A5E2 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E609CA682DFB031100A2A5E2 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 		E627387A2E16BDD000E99EF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -428,9 +432,14 @@
 				E78787392E16A87A002B22BE /* StarTrack.xcdatamodeld */,
 				E65420DE2E1411CE00C0B550 /* JSON */,
 				E65420DC2E140E9D00C0B550 /* Persistance.swift */,
+<<<<<<< HEAD
+=======
+				66B241FE2E142475004267CA /* StarTrack.xcdatamodeld */,
+>>>>>>> 7d2fcf8 (updated convertion JSON-CD)
 				E6AA1FB92E12DAA0006F9703 /* CoreDataManager.swift */,
 				E6AA1FBA2E12DAA0006F9703 /* CoreDataSeeder.swift */,
 				E6AA1FB82E12DAA0006F9703 /* ModelsInitializers.swift */,
+				66D41FC42E155E2B00C11EA2 /* EntitiesPopulation.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -767,11 +776,13 @@
 				E6AA1FEA2E12DBC1006F9703 /* Visibility.swift in Sources */,
 				E66275472DFAF6D6009F0733 /* API Manager.swift in Sources */,
 				E6AA1FE32E12DBC1006F9703 /* PhysicalCharacteristics.swift in Sources */,
+				66B242002E142475004267CA /* StarTrack.xcdatamodeld in Sources */,
 				E66275462DFAF6D1009F0733 /* Constants.swift in Sources */,
 				6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */,
 				E6AA1FDE2E12DBC1006F9703 /* AccessibleImage.swift in Sources */,
 				E663E8852DF9CAE100927339 /* SelectDateView.swift in Sources */,
 				E6AA1FDF2E12DBC1006F9703 /* Fact.swift in Sources */,
+				66D41FC52E155E2B00C11EA2 /* EntitiesPopulation.swift in Sources */,
 				E7D4FFE72E00660C00CABB2C /* ObservatoriesView.swift in Sources */,
 				E6AA1FE72E12DBC1006F9703 /* SpaceMission.swift in Sources */,
 				E7D4FFE92E00661D00CABB2C /* TabBar.swift in Sources */,
@@ -1192,12 +1203,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+<<<<<<< HEAD
 		E78787392E16A87A002B22BE /* StarTrack.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				E787873A2E16A87A002B22BE /* StarTrack.xcdatamodel */,
 			);
 			currentVersion = E787873A2E16A87A002B22BE /* StarTrack.xcdatamodel */;
+=======
+		66B241FE2E142475004267CA /* StarTrack.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				66B241FF2E142475004267CA /* StarTrack.xcdatamodel */,
+			);
+			currentVersion = 66B241FF2E142475004267CA /* StarTrack.xcdatamodel */;
+>>>>>>> 7d2fcf8 (updated convertion JSON-CD)
 			path = StarTrack.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
