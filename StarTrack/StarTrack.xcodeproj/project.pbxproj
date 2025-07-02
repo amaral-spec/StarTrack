@@ -13,9 +13,19 @@
 		6621EB9B2DF7180500381752 /* StarTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EB9A2DF7180500381752 /* StarTrackTests.swift */; };
 		6621EBA52DF7180500381752 /* StarTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBA42DF7180500381752 /* StarTrackUITests.swift */; };
 		6621EBA72DF7180500381752 /* StarTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBA62DF7180500381752 /* StarTrackUITestsLaunchTests.swift */; };
-		6621EBBB2DF71AD000381752 /* ServicePlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBBA2DF71AD000381752 /* ServicePlaceholder.swift */; };
 		6621EBCB2DF71F0000381752 /* StarTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621EBC92DF71F0000381752 /* StarTrackApp.swift */; };
 		6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */; };
+		E4FF956E2E15553D000CD3D6 /* ServicePlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF95602E15553D000CD3D6 /* ServicePlaceholder.swift */; };
+		E4FF956F2E15553D000CD3D6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF95622E15553D000CD3D6 /* CoreDataManager.swift */; };
+		E4FF95702E15553D000CD3D6 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = E4FF95642E15553D000CD3D6 /* events.json */; };
+		E4FF95712E15553D000CD3D6 /* space_mission.json in Resources */ = {isa = PBXBuildFile; fileRef = E4FF95652E15553D000CD3D6 /* space_mission.json */; };
+		E4FF95722E15553D000CD3D6 /* observatory.json in Resources */ = {isa = PBXBuildFile; fileRef = E4FF95662E15553D000CD3D6 /* observatory.json */; };
+		E4FF95732E15553D000CD3D6 /* historical_cosmic_events.json in Resources */ = {isa = PBXBuildFile; fileRef = E4FF95672E15553D000CD3D6 /* historical_cosmic_events.json */; };
+		E4FF95742E15553D000CD3D6 /* celestial_bodies.json in Resources */ = {isa = PBXBuildFile; fileRef = E4FF95682E15553D000CD3D6 /* celestial_bodies.json */; };
+		E4FF95752E15553D000CD3D6 /* ModelsInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF95692E15553D000CD3D6 /* ModelsInitializers.swift */; };
+		E4FF95762E15553D000CD3D6 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF956A2E15553D000CD3D6 /* Persistance.swift */; };
+		E4FF95772E15553D000CD3D6 /* StarTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4FF956B2E15553D000CD3D6 /* StarTrack.xcdatamodeld */; };
+		E4FF95782E15553D000CD3D6 /* CoreDataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF956D2E15553D000CD3D6 /* CoreDataSeeder.swift */; };
 		E609CA652DFB031100A2A5E2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661AC542DF87199000844EC /* WidgetKit.framework */; };
 		E609CA662DFB031100A2A5E2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661AC562DF87199000844EC /* SwiftUI.framework */; };
 		E609CA692DFB031100A2A5E2 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E609CA682DFB031100A2A5E2 /* Widget.swift */; };
@@ -26,22 +36,12 @@
 		E609CA752DFB08C200A2A5E2 /* url helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8802DF9A3DE00927339 /* url helper.swift */; };
 		E609CA762DFB08C500A2A5E2 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8822DF9ACED00927339 /* PhotoInfo.swift */; };
 		E65420D22E1400FE00C0B550 /* FuncLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420D12E1400FD00C0B550 /* FuncLib.swift */; };
-		E65420D92E14039900C0B550 /* StarTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E65420D72E14039900C0B550 /* StarTrack.xcdatamodeld */; };
-		E65420DD2E140E9D00C0B550 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420DC2E140E9D00C0B550 /* Persistance.swift */; };
-		E65420E42E14120800C0B550 /* historical_cosmic_events.json in Resources */ = {isa = PBXBuildFile; fileRef = E65420DF2E14120700C0B550 /* historical_cosmic_events.json */; };
-		E65420E62E14120800C0B550 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = E65420E12E14120800C0B550 /* events.json */; };
-		E65420E72E14120800C0B550 /* space_mission.json in Resources */ = {isa = PBXBuildFile; fileRef = E65420E22E14120800C0B550 /* space_mission.json */; };
-		E65420E82E14120800C0B550 /* observatory.json in Resources */ = {isa = PBXBuildFile; fileRef = E65420E32E14120800C0B550 /* observatory.json */; };
-		E65420EA2E14141A00C0B550 /* celestial_bodies.json in Resources */ = {isa = PBXBuildFile; fileRef = E65420E92E14141A00C0B550 /* celestial_bodies.json */; };
 		E66275452DFAF6CC009F0733 /* url helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8802DF9A3DE00927339 /* url helper.swift */; };
 		E66275462DFAF6D1009F0733 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E87E2DF9A24700927339 /* Constants.swift */; };
 		E66275472DFAF6D6009F0733 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E87C2DF9A16200927339 /* NetworkManager.swift */; };
 		E66275482DFAF6DE009F0733 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8822DF9ACED00927339 /* PhotoInfo.swift */; };
 		E663E8852DF9CAE100927339 /* SelectDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8842DF9CAE000927339 /* SelectDateView.swift */; };
 		E671D6BD2E0D736C0008F3C6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E671D6BC2E0D736C0008F3C6 /* LocationManager.swift */; };
-		E6AA1FBB2E12DAA0006F9703 /* ModelsInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AA1FB82E12DAA0006F9703 /* ModelsInitializers.swift */; };
-		E6AA1FBC2E12DAA0006F9703 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AA1FB92E12DAA0006F9703 /* CoreDataManager.swift */; };
-		E6AA1FBD2E12DAA0006F9703 /* CoreDataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AA1FBA2E12DAA0006F9703 /* CoreDataSeeder.swift */; };
 		E6AA1FDE2E12DBC1006F9703 /* AccessibleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AA1FC82E12DBC0006F9703 /* AccessibleImage.swift */; };
 		E6AA1FDF2E12DBC1006F9703 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AA1FC92E12DBC0006F9703 /* Fact.swift */; };
 		E6AA1FE02E12DBC1006F9703 /* HistoricalCosmicEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AA1FCB2E12DBC0006F9703 /* HistoricalCosmicEvent.swift */; };
@@ -116,20 +116,23 @@
 		6621EBA02DF7180500381752 /* StarTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6621EBA42DF7180500381752 /* StarTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarTrackUITests.swift; sourceTree = "<group>"; };
 		6621EBA62DF7180500381752 /* StarTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		6621EBBA2DF71AD000381752 /* ServicePlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePlaceholder.swift; sourceTree = "<group>"; };
 		6621EBC92DF71F0000381752 /* StarTrackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTrackApp.swift; sourceTree = "<group>"; };
 		6621EBCA2DF71F0000381752 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E4FF95602E15553D000CD3D6 /* ServicePlaceholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicePlaceholder.swift; sourceTree = "<group>"; };
+		E4FF95622E15553D000CD3D6 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		E4FF95642E15553D000CD3D6 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		E4FF95652E15553D000CD3D6 /* space_mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = space_mission.json; sourceTree = "<group>"; };
+		E4FF95662E15553D000CD3D6 /* observatory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = observatory.json; sourceTree = "<group>"; };
+		E4FF95672E15553D000CD3D6 /* historical_cosmic_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = historical_cosmic_events.json; sourceTree = "<group>"; };
+		E4FF95682E15553D000CD3D6 /* celestial_bodies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = celestial_bodies.json; sourceTree = "<group>"; };
+		E4FF95692E15553D000CD3D6 /* ModelsInitializers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelsInitializers.swift; sourceTree = "<group>"; };
+		E4FF956A2E15553D000CD3D6 /* Persistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		E4FF956C2E15553D000CD3D6 /* StarTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarTrack.xcdatamodel; sourceTree = "<group>"; };
+		E4FF956D2E15553D000CD3D6 /* CoreDataSeeder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataSeeder.swift; sourceTree = "<group>"; };
 		E609CA642DFB031100A2A5E2 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E609CA682DFB031100A2A5E2 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 		E609CA6A2DFB031500A2A5E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E65420D12E1400FD00C0B550 /* FuncLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncLib.swift; sourceTree = "<group>"; };
-		E65420D82E14039900C0B550 /* StarTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarTrack.xcdatamodel; sourceTree = "<group>"; };
-		E65420DC2E140E9D00C0B550 /* Persistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
-		E65420DF2E14120700C0B550 /* historical_cosmic_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = historical_cosmic_events.json; sourceTree = "<group>"; };
-		E65420E12E14120800C0B550 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
-		E65420E22E14120800C0B550 /* space_mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = space_mission.json; sourceTree = "<group>"; };
-		E65420E32E14120800C0B550 /* observatory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = observatory.json; sourceTree = "<group>"; };
-		E65420E92E14141A00C0B550 /* celestial_bodies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = celestial_bodies.json; sourceTree = "<group>"; };
 		E661AC542DF87199000844EC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E661AC562DF87199000844EC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		E663E87C2DF9A16200927339 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -139,9 +142,6 @@
 		E663E8842DF9CAE000927339 /* SelectDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateView.swift; sourceTree = "<group>"; };
 		E671D6BC2E0D736C0008F3C6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		E671D6BE2E0D75A90008F3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		E6AA1FB82E12DAA0006F9703 /* ModelsInitializers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelsInitializers.swift; sourceTree = "<group>"; };
-		E6AA1FB92E12DAA0006F9703 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		E6AA1FBA2E12DAA0006F9703 /* CoreDataSeeder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataSeeder.swift; sourceTree = "<group>"; };
 		E6AA1FC62E12DBC0006F9703 /* Observatory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observatory.swift; sourceTree = "<group>"; };
 		E6AA1FC82E12DBC0006F9703 /* AccessibleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibleImage.swift; sourceTree = "<group>"; };
 		E6AA1FC92E12DBC0006F9703 /* Fact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
@@ -321,8 +321,8 @@
 		6621EBB92DF7190400381752 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				E6AA1FB72E12DA98006F9703 /* CoreData */,
-				6621EBBA2DF71AD000381752 /* ServicePlaceholder.swift */,
+				E4FF95612E15553D000CD3D6 /* CoreData */,
+				E4FF95602E15553D000CD3D6 /* ServicePlaceholder.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -345,24 +345,38 @@
 			path = Launcher;
 			sourceTree = "<group>";
 		};
+		E4FF95612E15553D000CD3D6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E4FF95622E15553D000CD3D6 /* CoreDataManager.swift */,
+				E4FF95632E15553D000CD3D6 /* JSON */,
+				E4FF95692E15553D000CD3D6 /* ModelsInitializers.swift */,
+				E4FF956A2E15553D000CD3D6 /* Persistance.swift */,
+				E4FF956B2E15553D000CD3D6 /* StarTrack.xcdatamodeld */,
+				E4FF956D2E15553D000CD3D6 /* CoreDataSeeder.swift */,
+			);
+			name = CoreData;
+			path = ../../../../../../Downloads/Services/CoreData;
+			sourceTree = "<group>";
+		};
+		E4FF95632E15553D000CD3D6 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				E4FF95642E15553D000CD3D6 /* events.json */,
+				E4FF95652E15553D000CD3D6 /* space_mission.json */,
+				E4FF95662E15553D000CD3D6 /* observatory.json */,
+				E4FF95672E15553D000CD3D6 /* historical_cosmic_events.json */,
+				E4FF95682E15553D000CD3D6 /* celestial_bodies.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		E609CA672DFB031100A2A5E2 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
 				E609CA682DFB031100A2A5E2 /* Widget.swift */,
 			);
 			path = Widget;
-			sourceTree = "<group>";
-		};
-		E65420DE2E1411CE00C0B550 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				E65420E92E14141A00C0B550 /* celestial_bodies.json */,
-				E65420E12E14120800C0B550 /* events.json */,
-				E65420DF2E14120700C0B550 /* historical_cosmic_events.json */,
-				E65420E32E14120800C0B550 /* observatory.json */,
-				E65420E22E14120800C0B550 /* space_mission.json */,
-			);
-			path = JSON;
 			sourceTree = "<group>";
 		};
 		E661AC532DF87199000844EC /* Frameworks */ = {
@@ -372,19 +386,6 @@
 				E661AC562DF87199000844EC /* SwiftUI.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E6AA1FB72E12DA98006F9703 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				E65420DE2E1411CE00C0B550 /* JSON */,
-				E65420DC2E140E9D00C0B550 /* Persistance.swift */,
-				E65420D72E14039900C0B550 /* StarTrack.xcdatamodeld */,
-				E6AA1FB92E12DAA0006F9703 /* CoreDataManager.swift */,
-				E6AA1FBA2E12DAA0006F9703 /* CoreDataSeeder.swift */,
-				E6AA1FB82E12DAA0006F9703 /* ModelsInitializers.swift */,
-			);
-			path = CoreData;
 			sourceTree = "<group>";
 		};
 		E6AA1FC52E12DBC0006F9703 /* Observatory */ = {
@@ -658,14 +659,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E65420E82E14120800C0B550 /* observatory.json in Resources */,
-				E65420E42E14120800C0B550 /* historical_cosmic_events.json in Resources */,
+				E4FF95742E15553D000CD3D6 /* celestial_bodies.json in Resources */,
+				E4FF95702E15553D000CD3D6 /* events.json in Resources */,
 				6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */,
-				E65420E62E14120800C0B550 /* events.json in Resources */,
-				E65420E72E14120800C0B550 /* space_mission.json in Resources */,
+				E4FF95722E15553D000CD3D6 /* observatory.json in Resources */,
 				6621EB912DF7180400381752 /* Preview Assets.xcassets in Resources */,
-				E65420EA2E14141A00C0B550 /* celestial_bodies.json in Resources */,
 				6621EB8E2DF7180400381752 /* Assets.xcassets in Resources */,
+				E4FF95732E15553D000CD3D6 /* historical_cosmic_events.json in Resources */,
+				E4FF95712E15553D000CD3D6 /* space_mission.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,23 +703,25 @@
 				E671D6BD2E0D736C0008F3C6 /* LocationManager.swift in Sources */,
 				E6AA1FE12E12DBC1006F9703 /* MainInfo.swift in Sources */,
 				6621EB8C2DF7180200381752 /* ContentView.swift in Sources */,
+				E4FF956F2E15553D000CD3D6 /* CoreDataManager.swift in Sources */,
+				E4FF95762E15553D000CD3D6 /* Persistance.swift in Sources */,
 				E6AA1FE82E12DBC1006F9703 /* ObservableEvent.swift in Sources */,
 				E6AA1FEB2E12DBC1006F9703 /* TimePeriod.swift in Sources */,
-				E6AA1FBC2E12DAA0006F9703 /* CoreDataManager.swift in Sources */,
 				E6AA1FEC2E12DBC1006F9703 /* DateTime.swift in Sources */,
 				E7D4FFE32E0065E700CABB2C /* CatalogView.swift in Sources */,
 				E6AA1FE22E12DBC1006F9703 /* KnowledgeBuild.swift in Sources */,
 				E6AA1FE62E12DBC1006F9703 /* Visitation.swift in Sources */,
+				E4FF956E2E15553D000CD3D6 /* ServicePlaceholder.swift in Sources */,
 				E7D4FFE52E0065F900CABB2C /* CalendarView.swift in Sources */,
+				E4FF95782E15553D000CD3D6 /* CoreDataSeeder.swift in Sources */,
 				E65420D22E1400FE00C0B550 /* FuncLib.swift in Sources */,
-				6621EBBB2DF71AD000381752 /* ServicePlaceholder.swift in Sources */,
+				E4FF95772E15553D000CD3D6 /* StarTrack.xcdatamodeld in Sources */,
 				E6B025522E0C1B8F00BEF1E1 /* SearchBar.swift in Sources */,
-				E65420D92E14039900C0B550 /* StarTrack.xcdatamodeld in Sources */,
 				E6AA1FE52E12DBC1006F9703 /* Observatory.swift in Sources */,
 				E66275452DFAF6CC009F0733 /* url helper.swift in Sources */,
 				E6B0254F2E0C18BF00BEF1E1 /* PerfilView.swift in Sources */,
+				E4FF95752E15553D000CD3D6 /* ModelsInitializers.swift in Sources */,
 				E6AA1FE92E12DBC1006F9703 /* Notification.swift in Sources */,
-				E6AA1FBD2E12DAA0006F9703 /* CoreDataSeeder.swift in Sources */,
 				E6ACD1AC2E0192750041D0E1 /* NetworkMonitor.swift in Sources */,
 				E6AA1FE02E12DBC1006F9703 /* HistoricalCosmicEvent.swift in Sources */,
 				E6AA1FEA2E12DBC1006F9703 /* Visibility.swift in Sources */,
@@ -732,8 +735,6 @@
 				E7D4FFE72E00660C00CABB2C /* ObservatoriesView.swift in Sources */,
 				E6AA1FE72E12DBC1006F9703 /* SpaceMission.swift in Sources */,
 				E7D4FFE92E00661D00CABB2C /* TabBar.swift in Sources */,
-				E6AA1FBB2E12DAA0006F9703 /* ModelsInitializers.swift in Sources */,
-				E65420DD2E140E9D00C0B550 /* Persistance.swift in Sources */,
 				E6AA1FE42E12DBC1006F9703 /* CelestialBody.swift in Sources */,
 				E77B45022E0C1EED00EDFB2B /* FavoritesView.swift in Sources */,
 			);
@@ -1147,14 +1148,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E65420D72E14039900C0B550 /* StarTrack.xcdatamodeld */ = {
+		E4FF956B2E15553D000CD3D6 /* StarTrack.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E65420D82E14039900C0B550 /* StarTrack.xcdatamodel */,
+				E4FF956C2E15553D000CD3D6 /* StarTrack.xcdatamodel */,
 			);
-			currentVersion = E65420D82E14039900C0B550 /* StarTrack.xcdatamodel */;
-			name = StarTrack.xcdatamodeld;
-			path = ../../../../../../../Downloads/StarTrack.xcdatamodeld;
+			currentVersion = E4FF956C2E15553D000CD3D6 /* StarTrack.xcdatamodel */;
+			path = StarTrack.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
