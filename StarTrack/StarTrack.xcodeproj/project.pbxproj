@@ -215,6 +215,8 @@
 		6621EB7D2DF7180200381752 = {
 			isa = PBXGroup;
 			children = (
+				E62738742E16B99E00E99EF5 /* Preview */,
+				E62738732E16B98C00E99EF5 /* Content */,
 				E6EA46FF2E156149004F962D /* Assets.xcassets */,
 				6621EB882DF7180200381752 /* StarTrack */,
 				6621EBC22DF71BC900381752 /* Tests */,
@@ -353,6 +355,21 @@
 				E609CA682DFB031100A2A5E2 /* Widget.swift */,
 			);
 			path = Widget;
+			sourceTree = "<group>";
+		};
+		E62738732E16B98C00E99EF5 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		E62738742E16B99E00E99EF5 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Preview;
+			path = StarTrack/Preview;
 			sourceTree = "<group>";
 		};
 		E65420DE2E1411CE00C0B550 /* JSON */ = {
