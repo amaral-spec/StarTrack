@@ -22,6 +22,8 @@
 		E609CA742DFB08BE00A2A5E2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E87E2DF9A24700927339 /* Constants.swift */; };
 		E609CA752DFB08C200A2A5E2 /* url helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8802DF9A3DE00927339 /* url helper.swift */; };
 		E609CA762DFB08C500A2A5E2 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663E8822DF9ACED00927339 /* PhotoInfo.swift */; };
+		E62738762E16BBA500E99EF5 /* Content.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E62738752E16BBA500E99EF5 /* Content.rtf */; };
+		E62738782E16BBB800E99EF5 /* Preview.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E62738772E16BBB800E99EF5 /* Preview.rtf */; };
 		E65420D22E1400FE00C0B550 /* FuncLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420D12E1400FD00C0B550 /* FuncLib.swift */; };
 		E65420DD2E140E9D00C0B550 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420DC2E140E9D00C0B550 /* Persistance.swift */; };
 		E65420E42E14120800C0B550 /* historical_cosmic_events.json in Resources */ = {isa = PBXBuildFile; fileRef = E65420DF2E14120700C0B550 /* historical_cosmic_events.json */; };
@@ -125,6 +127,8 @@
 		E609CA642DFB031100A2A5E2 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E609CA682DFB031100A2A5E2 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 		E609CA6A2DFB031500A2A5E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E62738752E16BBA500E99EF5 /* Content.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Content.rtf; sourceTree = "<group>"; };
+		E62738772E16BBB800E99EF5 /* Preview.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Preview.rtf; sourceTree = "<group>"; };
 		E65420D12E1400FD00C0B550 /* FuncLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncLib.swift; sourceTree = "<group>"; };
 		E65420DC2E140E9D00C0B550 /* Persistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		E65420DF2E14120700C0B550 /* historical_cosmic_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = historical_cosmic_events.json; sourceTree = "<group>"; };
@@ -360,6 +364,7 @@
 		E62738732E16B98C00E99EF5 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				E62738752E16BBA500E99EF5 /* Content.rtf */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 		E62738742E16B99E00E99EF5 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
+				E62738772E16BBB800E99EF5 /* Preview.rtf */,
 			);
 			name = Preview;
 			path = StarTrack/Preview;
@@ -707,10 +713,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62738762E16BBA500E99EF5 /* Content.rtf in Resources */,
 				E65420E82E14120800C0B550 /* observatory.json in Resources */,
 				E65420E42E14120800C0B550 /* historical_cosmic_events.json in Resources */,
 				6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */,
 				E65420E62E14120800C0B550 /* events.json in Resources */,
+				E62738782E16BBB800E99EF5 /* Preview.rtf in Resources */,
 				E65420E72E14120800C0B550 /* space_mission.json in Resources */,
 				E6EA47002E156149004F962D /* Assets.xcassets in Resources */,
 				E65420EA2E14141A00C0B550 /* celestial_bodies.json in Resources */,
