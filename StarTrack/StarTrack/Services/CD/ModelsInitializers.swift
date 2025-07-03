@@ -9,6 +9,7 @@ import CoreData
 import SwiftUI
 import CoreLocation
 
+
 extension Fact {
     init?(from entity: FactEntity) {
         guard let id = entity.id,
