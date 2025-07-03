@@ -158,10 +158,10 @@ class CoreDataSeeder {
 		print("INFO: Populando a base de dados Core Data pela primeira vez...")
 		
 		createAndPopulate(CelestialBodyEntity.self, from: "celestial_bodies.json")
-		createAndPopulate(SpaceMissionEntity.self, from: "space_missions.json")
-		createAndPopulate(HistoricalCosmicEventEntity.self, from: "historical_events.json")
-		createAndPopulate(ObservableEventEntity.self, from: "observable_events.json")
-		createAndPopulate(ObservatoryEntity.self, from: "observatories.json")
+		createAndPopulate(SpaceMissionEntity.self, from: "space_mission.json")
+		createAndPopulate(HistoricalCosmicEventEntity.self, from: "historical_cosmic_events.json")
+		createAndPopulate(ObservableEventEntity.self, from: "events.json")
+		createAndPopulate(ObservatoryEntity.self, from: "observatory.json")
 		
 		saveContext()
 	}
