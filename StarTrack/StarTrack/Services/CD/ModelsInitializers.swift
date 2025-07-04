@@ -90,7 +90,7 @@ extension Observatory {
               let state = entity.state,
               let visitationEntity = entity.visitation,
               let visitation = Visitation(from: visitationEntity),
-              let cientificHighlights = entity.cientificHighlight,
+              let cientificHighlights = entity.cientificHighlights, // ESTAMOS TENDO ERRO AQUI!
               let tech = entity.technologiesAvailable
         else { return nil }
         

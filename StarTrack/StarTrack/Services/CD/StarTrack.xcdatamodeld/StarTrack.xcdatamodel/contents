@@ -47,7 +47,6 @@
     <entity name="MainInfoCelestialBodyEntity" representedClassName="MainInfoCelestialBodyEntity" syncable="YES" codeGenerationType="class">
         <attribute name="location" optional="YES" attributeType="String"/>
         <attribute name="typeDescriptive" optional="YES" attributeType="String"/>
-        <attribute name="visibilityDescriptive" optional="YES" attributeType="String"/>
         <relationship name="diameter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DecodableMeasurementEntity"/>
         <relationship name="rotationPeriod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimePeriodEntity"/>
         <relationship name="translationPeriod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimePeriodEntity"/>
@@ -61,7 +60,7 @@
         <relationship name="visibility" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VisibilityEntity"/>
     </entity>
     <entity name="ObservatoryEntity" representedClassName="ObservatoryEntity" syncable="YES" codeGenerationType="class">
-        <attribute name="cientificHighlight" optional="YES" attributeType="String"/>
+        <attribute name="cientificHighlights" optional="YES" attributeType="String"/>
         <attribute name="city" optional="YES" attributeType="String"/>
         <attribute name="state" optional="YES" attributeType="String"/>
         <attribute name="technologiesAvailable" optional="YES" attributeType="String"/>
@@ -115,7 +114,7 @@
         <element name="KnowledgeBuildEntity" positionX="773.1424560546875" positionY="300.5326843261719" width="128" height="59"/>
         <element name="MainInfoCelestialBodyEntity" positionX="133.1427001953125" positionY="-163.5643920898438" width="128" height="14"/>
         <element name="ObservableEventEntity" positionX="407.1566772460938" positionY="-608.136474609375" width="128" height="104"/>
-        <element name="ObservatoryEntity" positionX="636.52099609375" positionY="-63.67498779296875" width="128" height="148"/>
+        <element name="ObservatoryEntity" positionX="636.52099609375" positionY="-63.67498779296875" width="128" height="14"/>
         <element name="PhysicalCharacteristicsEntity" positionX="137.1014404296875" positionY="187.4393310546875" width="128" height="14"/>
         <element name="SpaceMissionEntity" positionX="-45" positionY="54" width="128" height="14"/>
         <element name="TimePeriodEntity" positionX="-30.219482421875" positionY="-178.9583740234375" width="128" height="14"/>

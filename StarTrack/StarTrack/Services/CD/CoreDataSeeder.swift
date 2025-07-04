@@ -85,8 +85,8 @@ enum SeederData {
 	}
 	
 	struct GPSLocationData: Codable {
-		let latitude: Double
-		let longitude: Double
+		let latitude: Double // CLLocationDegree
+		let longitude: Double // CLLocationDegree
 	}
 
 
@@ -94,7 +94,7 @@ enum SeederData {
 		let fact: FactData
 		let launchLocation: String
 		let missionType: String
-		let distanceTravaled: DecodableMeasurement<UnitLength>?
+		let distanceTraveled: DecodableMeasurement<UnitLength>?
 		let date: DateTimeData
 		let objectives: String? // [String]
 		let techEnvolved: String // [String]
@@ -114,15 +114,15 @@ enum SeederData {
 		let state: String
 		let gpsLocation: GPSLocationData
 		let visitation: VisitationData
-		let cientificHighlights: String?
-		let technologiesAvailable: String
+		let cientificHighlight: String // [String]
+		let technologiesAvailable: String // [String]
 	}
 
 	
-	struct ObservableEventData: Codable{
+	struct ObservableEventData: Codable {
 		let fact: FactData
 		let date: DateTimeData
-		let type: String
+		let type: String // ObservableEventType.rawValue
 		let explanation: String?
 		let visibility: VisibilityData
 	}
