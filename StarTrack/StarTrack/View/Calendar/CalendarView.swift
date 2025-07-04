@@ -59,7 +59,7 @@ struct choicesUserView: View {
     }
     .pickerStyle(.segmented)
     .frame(width: 344, height: 32, alignment: .center)
-    .padding(.vertical,24)
+    .padding(.vertical, 10)
 
 if selected == "Eventos" {
                     // Conteúdo do Calendário
@@ -104,10 +104,11 @@ struct CalendarView: View {
                             .font(.system(size: 25))
                             .foregroundColor(.black)
                             .frame(width: 50)
-                            .padding(.top, 90)
+                            .padding(.top)
                     })
                 }
             }
+            
         }
     }
 }

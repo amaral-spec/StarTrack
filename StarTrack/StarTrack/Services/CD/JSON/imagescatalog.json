@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "bigbang",
+        "title": "Big Bangs"
+    },
+    {
+        "id": 2,
+        "name": "black_hole",
+        "title": "Buracos Negros"
+    },
+    {
+        "id": 3,
+        "name": "constellations",
+        "title": "Constelações"
+    },
+    {
+        "id": 4,
+        "name": "exploration",
+        "title": "Explorações"
+        
+    },
+    {
+        "id": 5,
+        "name": "planets",
+        "title": "Planetas"
+    },
+    {
+        "id": 6,
+        "name": "stars",
+        "title": "Estrelas"
+    }
+]
+
