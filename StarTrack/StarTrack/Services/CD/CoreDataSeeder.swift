@@ -19,7 +19,7 @@ enum SeederData {
 
 	struct ImageData: Codable {
 		let localImage: String
-		let alternativeText: String?
+		let alternativeText: String
 	}
 
 	struct CelestialBodyData: Codable {
@@ -38,8 +38,8 @@ enum SeederData {
 		let diameter: DecodableMeasurement<UnitLength>?
 		let typeDescriptive: String
 		let visibility: VisibilityData
-		let rotationPeriod: TimePeriodData
-		let translationPeriod: TimePeriodData
+		let rotationPeriod: TimePeriodData?
+		let translationPeriod: TimePeriodData?
 	}
 
 	struct PhysicalCharacteristicsData: Codable {
@@ -77,8 +77,8 @@ enum SeederData {
 
 	struct HistoricalCosmicEventData: Codable {
 		let fact: FactData
-		let culturalParallels: String // [String]
-		let explanation: String // [String]
+		let culturalParallels: String? // [String]
+		let explanation: String? // [String]
 		let evidence: String // [String]
 		let timePeriod: TimePeriodData
 		let type: String // CosmologicalEventType.rawValue
@@ -202,7 +202,7 @@ class CoreDataSeeder {
 			decoder.dateDecodingStrategy = .iso8601
 			return try decoder.decode(T.self, from: data)
 		} catch {
-			fatalError("Não foi possível descodificar o ficheiro \(filename) como \(T.self):\n\(error)")
+			fatalError("Não foi possível decodificar o ficheiro \(filename) como \(T.self):\n\(error)")
 		}
 	}
 }

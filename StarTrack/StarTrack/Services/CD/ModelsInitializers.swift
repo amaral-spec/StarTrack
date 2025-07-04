@@ -45,8 +45,9 @@ extension DateTime {
 }
 
 extension TimePeriod {
-    init?(from entity: TimePeriodEntity) {
-        guard let unitRawValue = entity.unit,
+    init?(from entity: TimePeriodEntity?) {
+        guard let entity = entity,
+			  let unitRawValue = entity.unit,
               let unit = TimeUnit(rawValue: unitRawValue)
         else { return nil }
         
@@ -58,7 +59,7 @@ extension TimePeriod {
 extension VisibilityInfo {
     init?(from entity: VisibilityEntity) {
         guard let viewRawType = entity.viewingMethod,
-              let viewingMethod = ViewingMethod.init(rawValue: viewRawType),
+              let viewingMethod = ViewingMethod(rawValue: viewRawType),
               let observationZone = entity.observationZone,
               let instructions = entity.instructions
         else { return nil }
@@ -90,7 +91,7 @@ extension Observatory {
               let state = entity.state,
               let visitationEntity = entity.visitation,
               let visitation = Visitation(from: visitationEntity),
-              let cientificHighlights = entity.cientificHighlights, // ESTAMOS TENDO ERRO AQUI!
+              let cientificHighlights = entity.cientificHighlights,
               let tech = entity.technologiesAvailable
         else { return nil }
         
@@ -132,10 +133,6 @@ extension SpaceMission {
               let fact = Fact(from: factEntity),
               let launchLocation = entity.launchLocation,
               let missionType = entity.missionType,
-              let distanceTraveled = FuncLib.shared.measurementBuild(
-                value: entity.distanceTraveled?.value,
-                unitSymbol: entity.distanceTraveled?.unit,
-                as: UnitLength.self),
               let dateEntity = entity.date,
               let date = DateTime(from: dateEntity),
               let objectives = entity.objectives,
@@ -147,7 +144,10 @@ extension SpaceMission {
         self.fact = fact
         self.launchLocation = launchLocation
         self.missionType = missionType
-        self.distanceTraveled = distanceTraveled
+        self.distanceTraveled = FuncLib.shared.measurementBuild(
+				value: entity.distanceTraveled?.value,
+				unitSymbol: entity.distanceTraveled?.unit,
+				as: UnitLength.self)
         self.date = date
         self.objectives = FuncLib.shared.splitString(fromString: objectives, by: "\n")
         self.results = FuncLib.shared.splitString(fromString: results, by: "\n")
@@ -161,11 +161,7 @@ extension MainInfo {
         guard let location = entity.location,
               let typeDescriptive = entity.typeDescriptive,
               let visibilityEntity = entity.visibility,
-              let visibility = VisibilityInfo(from: visibilityEntity),
-              let rotationEntity = entity.rotationPeriod,
-              let rotation = TimePeriod(from: rotationEntity),
-              let translationEntity = entity.translationPeriod,
-              let translation = TimePeriod(from: translationEntity)
+              let visibility = VisibilityInfo(from: visibilityEntity)
         else { return nil }
         
         self.location = location
@@ -175,48 +171,43 @@ extension MainInfo {
                as: UnitLength.self)
         self.typeDescriptive = typeDescriptive
         self.visibility = visibility
-        self.rotationPeriod = rotation
-        self.translationPeriod = translation
+		self.rotationPeriod = TimePeriod(from: entity.rotationPeriod)
+		self.translationPeriod = TimePeriod(from: entity.translationPeriod)
     }
 }
 
 extension PhysicalCharacteristics {
     init?(from entity: PhysicalCharacteristicsEntity) {
-        guard let temperature = entity.temperature,
-              let atmosphere = entity.atmosphere,
-              let surface = entity.surface,
-              let moons = entity.moons
-        else { return nil }
-        
         self.mass = FuncLib.shared.measurementBuild(
             value: entity.mass?.value,
             unitSymbol: entity.mass?.unit,
             as: UnitMass.self)
-        self.temperature = temperature
-        self.atmosphere = atmosphere
-        self.atmPressure = FuncLib.shared.measurementBuild(
-            value: entity.atmPressure?.value,
-               unitSymbol: entity.atmPressure?.unit,
-               as: UnitPressure.self)
-        self.surface = surface
-        self.gravity = FuncLib.shared.measurementBuild(
-            value: entity.gravity?.value,
-               unitSymbol: entity.gravity?.unit,
-               as: UnitAcceleration.self)
-        self.density = FuncLib.shared.measurementBuild(
-            value: entity.density?.value,
-               unitSymbol: entity.density?.unit,
-               as: UnitConcentrationMass.self)
-        self.moons = moons
+		self.atmPressure = FuncLib.shared.measurementBuild(
+			value: entity.atmPressure?.value,
+			   unitSymbol: entity.atmPressure?.unit,
+			   as: UnitPressure.self)
+		self.gravity = FuncLib.shared.measurementBuild(
+			value: entity.gravity?.value,
+			   unitSymbol: entity.gravity?.unit,
+			   as: UnitAcceleration.self)
+		self.density = FuncLib.shared.measurementBuild(
+			value: entity.density?.value,
+			   unitSymbol: entity.density?.unit,
+			   as: UnitConcentrationMass.self)
+		self.temperature = entity.temperature
+		self.atmosphere = entity.atmosphere
+		self.surface = entity.surface
+		self.moons = entity.moons
     }
 }
 
 extension KnowledgeBuild {
     init?(from entity: KnowledgeBuildEntity) {
-        guard let culturalParallels = entity.culturalParallels,
-              let trivia = entity.trivia
-        else { return nil }
-        
+		let culturalParallels = entity.culturalParallels ?? ""
+		let trivia = entity.trivia ?? ""
+		
+		if culturalParallels.isEmpty && trivia.isEmpty { return nil }
+		
         self.culturalParallels = FuncLib.shared.splitString(fromString: culturalParallels, by: "\n")
         self.trivia = FuncLib.shared.splitString(fromString: trivia, by: "\n")
     }
@@ -226,27 +217,26 @@ extension CelestialBody {
     init?(from entity: CelestialBodyEntity) {
         guard let factEntity = entity.fact,
               let fact = Fact(from: factEntity),
-              let popularName = entity.popularName,
               let typeRawValue = entity.type,
               let type = CelestialBodyType(rawValue: typeRawValue),
               let mainInfoEntity = entity.mainInfo,
               let mainInfo = MainInfo(from: mainInfoEntity),
               let physicalCharEntity = entity.physicalCharacteristics,
               let physicalChar = PhysicalCharacteristics(from: physicalCharEntity),
-              let historyAndObservation = entity.historyAndObservation,
-              let exploringAndMission = entity.exploringAndMissions,
-              let triviaAndMithsEntity = entity.triviaAndMiths,
-              let triviaAndMiths = KnowledgeBuild(from: triviaAndMithsEntity)
+              let triviaAndMithsEntity = entity.triviaAndMiths
         else { return nil }
+		
+		let historyAndObservation = entity.historyAndObservation ?? ""
+		let exploringAndMission = entity.exploringAndMissions ?? ""
         
         self.fact = fact
-        self.popularName = popularName
+		self.popularName = entity.popularName
         self.type = type
         self.mainInfo = mainInfo
         self.physicalCharacteristics = physicalChar
         self.historyAndObservation = FuncLib.shared.splitString(fromString: historyAndObservation, by: "\n")
         self.exploringAndMissions = FuncLib.shared.splitString(fromString: exploringAndMission, by: "\n")
-        self.triviaAndMiths = triviaAndMiths
+        self.triviaAndMiths = KnowledgeBuild(from: triviaAndMithsEntity)
     }
 }
 
@@ -259,16 +249,13 @@ extension ObservableEvent {
               let visibilityEntity = entity.visibility,
               let visibility = VisibilityInfo(from: visibilityEntity),
               let typeRawValue = entity.type,
-              let type = ObservableEventType(rawValue: typeRawValue),
-              let explanation = entity.explanation
-        else {
-            return nil
-        }
+              let type = ObservableEventType(rawValue: typeRawValue)
+        else { return nil }
         
         self.fact = fact
         self.date = date
         self.type = type
-        self.explanation = explanation
+        self.explanation = entity.explanation
         self.visibility = visibility
     }
 }

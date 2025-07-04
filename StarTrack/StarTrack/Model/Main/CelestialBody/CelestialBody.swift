@@ -36,6 +36,6 @@ struct CelestialBody: Identifiable {
 	let physicalCharacteristics: PhysicalCharacteristics
 	let historyAndObservation: [String]
 	let exploringAndMissions: [String]
-	let triviaAndMiths: KnowledgeBuild
+	let triviaAndMiths: KnowledgeBuild?
 }
 

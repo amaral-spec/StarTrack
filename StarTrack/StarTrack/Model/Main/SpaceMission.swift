@@ -28,7 +28,7 @@ struct SpaceMission: Identifiable {
 	var id: UUID { fact.id }
 	let launchLocation: String
 	let missionType: String
-	let distanceTraveled: Measurement<UnitLength>
+	let distanceTraveled: Measurement<UnitLength>?
 	let date: DateTime
 	let objectives: [String]
 	let results: [String]
