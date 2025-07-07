@@ -37,24 +37,28 @@ struct Card:View{
 
 struct CatalogView: View {
     @StateObject private var viewModel = ImageVModel()
+    @State private var searchText: String = ""
+    
+    var filteredImages: [ImageJson] {
+            if searchText.isEmpty {
+                return viewModel.images
+            } else {
+                return viewModel.images.filter { $0.title.localizedCaseInsensitiveContains(searchText) }
+            }
+        }
     
     var body: some View{
         
         NavigationView{
             VStack(alignment: .leading ){
-                VStack(spacing: -5){
-                    
-                    TextField(" Pesquisar", text: .constant(""))
-                        .frame(width: 343, height: 36, alignment: .leading)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding()
-                }
-                
+                    SearchBar(text: $searchText)
+                    .padding(.horizontal)
+                    .padding(.top)
                 ScrollView(){
                     VStack(alignment: .leading, spacing: 20){
                         Text("O que quer explorar?")
-                        ForEach(viewModel.images.chunked(into: 2), id: \.self) { linha in
+                            .font(.headline)
+                        ForEach(filteredImages.chunked(into: 2), id: \.self) { linha in
                             HStack(spacing: 23) {
                                 ForEach(linha) { immage  in
                                     NavigationLink(destination: ScreenSession()) {
