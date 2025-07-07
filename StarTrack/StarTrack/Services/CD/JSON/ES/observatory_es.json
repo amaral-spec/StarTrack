@@ -1,0 +1,98 @@
+[
+ {
+   "fact": {
+      "id": "1e6e6f54-78c3-42b9-a4c3-9f8ebfea5fc1",
+      "name": "Observatorio Abraham de Moraes",
+      "image": {
+         "localImage": "Abrahao",
+         "alternativeText": "La imagen muestra un telescopio Meade moderno apuntando al cielo, en un entorno exterior con árboles al fondo y un cielo parcialmente nublado. El equipo tiene una estructura robusta, un tubo azul oscuro y detalles negros, con un visor y mecanismos de ajuste visibles. El ángulo bajo de la foto resalta su majestuosidad y precisión tecnológica, lo que sugiere su uso en observaciones astronómicas detalladas tanto por astrónomos aficionados como profesionales."
+      },
+      "mascotComment": null
+   },
+   "city": "Valinhos",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -23.006437,
+      "longitude": -46.963563
+   },
+   "visitation": {
+      "openToPublic": "Sí",
+      "tickets": "Gratis",
+      "activities": null
+   },
+   "cientificHighlight": "El Observatorio funciona como laboratorio científico desde 1972, con énfasis en la investigación en astronomía, astrobiología, geofísica y ciencias atmosféricas.\nLos proyectos de observación remota, como Telescopios en la Escuela (TnE), permiten a las escuelas realizar observaciones astronómicas a través de internet.\nProyectos similares estarán disponibles próximamente para la estación sismográfica (Geofísica en la Escuela) y la estación meteorológica (Ciencias Atmosféricas en la Escuela).\nEl círculo meridiano del CCD se utiliza para realizar mediciones astronómicas precisas y la grabación de imágenes, lo que contribuye al avance del conocimiento científico.",
+   "technologiesAvailable": "Telescopio refractor (CCD con círculo meridiano) de 20 cm de diámetro, automatizado en 1995 e instalado desde 1975, utilizado en investigaciones astronómicas y astrobiológicas.\nEstación sismográfica y estación geomagnética, utilizadas en investigaciones geofísicas y en actividades docentes.\nEstación meteorológica automática (en fase de instalación), destinada a la investigación y docencia en ciencias atmosféricas.\nTelescopios Prometeo y Astérix, utilizados en observaciones nocturnas.\nTelescopio Argus, utilizado para observaciones remotas a través de internet en el proyecto Telescopios en la Escuela (TnE).\nMarcador geodético y punto de gravedad absoluta, utilizados por empresas y en actividades científicas."
+},
+ {
+   "fact": {
+      "id": "d4554749-b87c-4894-9d94-27538456d649",
+      "name": "Observatorio Municipal de Campinas \"Jean Nicolini\"",
+      "image": {
+         "localImage": "Jean_Nicolini",
+         "alternativeText": "La imagen muestra un observatorio astronómico bajo un cielo nocturno espectacularmente estrellado, con la Vía Láctea visible en la parte superior. El edificio tiene una cúpula oscura y una base clara, de forma circular, rodeado de vegetación y árboles al fondo. La atmósfera es serena e inspiradora, con los tonos azules del cielo contrastando con los cálidos tonos del suelo, posiblemente iluminados por faroles rojos utilizados para preservar la adaptación nocturna de los visitantes. La escena transmite la grandeza del universo y la fascinación de la observación astronómica."
+      },
+      "mascotComment": null
+   },
+   "city": "Campinas",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -22.900312,
+      "longitude": -46.825813
+   },
+   "visitation": {
+      "openToPublic": "Sí",
+      "tickets": "Completo: R$4\nMedia: R$2",
+      "activities": null
+   },
+   "cientificHighlight": "Pionero: El primer observatorio municipal de Brasil, inaugurado en 1977, es un referente nacional en actividades educativas regulares en astronomía.\nProyectos de divulgación científica, como \"Astronomía en la Plaza\" y \"El Observatorio va a las escuelas\", acercan telescopios y conocimientos astronómicos a la comunidad y a las escuelas de la región.\nParticipación activa en campañas de observación de eventos astronómicos, como el paso del cometa Halley en 1986.\nColaboración con la red EXOSS para el monitoreo e investigación de meteoros, contribuyendo a bases de datos científicas nacionales e internacionales.\nRecibe aproximadamente 12.000 visitantes al año, promoviendo exposiciones, videos temáticos, reconocimiento del cielo a simple vista y observaciones de estrellas como Saturno, la Luna, cúmulos estelares y estrellas dobles.",
+   "technologiesAvailable": "Telescopio reflector newtoniano de 250 mm (Meade Starfinder)\nTelescopio de 400 mm (Carl Zeiss, astrógrafo, el más grande de Brasil para astrofotografía)\nTelescopio de 500 mm (Carl Zeiss)\nTelescopio Cassegrain de 600 mm (Grupo Mod.128, el más grande disponible para el público visitante)\nEstructura de cúpula motorizada y edificios para albergar el equipo\nSistema de monitoreo de meteoros en colaboración con la red EXOSS, con cámaras para la grabación y el análisis científico de fenómenos como los meteoros."
+},
+ {
+   "fact": {
+      "id": "bea82a6d-9b77-4519-b798-96b49adfd933",
+      "name": "Observatorio Municipal de Americana",
+      "image": {
+         "localImage": "Americana",
+         "alternativeText": "La imagen muestra un observatorio astronómico de noche, con una iluminación artificial amarillenta que realza sus paredes claras. En la parte superior del edificio se encuentra una cúpula blanca, típica de los telescopios astronómicos. Delante del edificio, hay una escultura de metal que representa esferas y órbitas celestes, en referencia al tema astronómico. También hay un pequeño jardín con un panel informativo, y el recinto está bien cuidado y es accesible, con rampa de entrada y pasamanos. Al fondo, se ven árboles y el cielo nocturno."
+      },
+      "mascotComment": null
+   },
+   "city": "Americana",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -22.757312,
+      "longitude": -47.353313
+   },
+   "visitation": {
+      "openToPublic": "Sí",
+      "tickets": "Gratis",
+      "activities": null
+   },
+   "cientificHighlight": "Segundo observatorio municipal de Brasil, fundado el 4 de agosto de 1985.\nModelo de observatorio municipal enfocado en la divulgación científica.\nRealiza observatorios educativos en escuelas de Americana y alrededores.\nPromueve intercambios con entidades nacionales e internacionales.\nDesarrolla trabajo científico sobre fenómenos astronómicos relevantes.\nTambién trabaja en actividades de concienciación ambiental, aprovechando su ubicación en el Complejo Ecológico.",
+   "technologiesAvailable": "Telescopio objetivo Couder França de 180 mm de diámetro y 2230 mm de distancia focal\nTelescopio fotográfico Zeiss/Tessar de 140 mm de diámetro\nTelescopio reflector newtoniano de 180 mm de diámetro\nDos nuevos telescopios adquiridos en los últimos años\nPlanetario digital moderno, capaz de simular imágenes del Sistema Solar, asteroides, cometas y otros sistemas, reproduciendo artificialmente el cielo y sus estrellas\nEstructura para cursos, sala de exposiciones, laboratorio de fotografía, biblioteca, azotea y terraza para observaciones al aire libre."
+},
+ {
+   "fact": {
+      "id": "4d283871-2435-428b-a386-a13954d4e48a",
+      "name": "Centro Astronómico Amparo",
+      "image": {
+         "localImage": "Amparo",
+         "alternativeText": "La imagen muestra una plataforma de observación astronómica equipada con varios telescopios modernos, montados sobre bases robustas y alineados con el cielo. El equipo varía en tamaño y tipo, incluyendo modelos reflectores y refractores, destacando un gran telescopio de estructura abierta y soporte metálico. El entorno es luminoso, con suelo de cerámica, un cielo parcialmente azul con nubes y una pared gris al fondo, lo que sugiere un espacio preparado para observaciones avanzadas y la grabación de imágenes astronómicas con precisión."
+      },
+      "mascotComment": null
+   },
+   "city": "Amparo",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -22.775062,
+      "longitude": -46.722313
+   },
+   "visitation": {
+      "openToPublic": "Sí",
+      "tickets": "Completo: R$ 90\nMedia: R$ 45",
+      "activities": null
+   },
+   "cientificHighlight": "El telescopio más grande del estado de São Paulo y de Brasil está abierto al público, lo que permite la observación directa del cielo con explicaciones detalladas.\nProgramación de observaciones públicas y actividades educativas para escuelas, con profesores capacitados y atención exclusiva para grupos escolares.\nUso de tecnología avanzada en el planetario para simulaciones y educación astronómica inmersiva.\nUbicación estratégica con cielos despejados y oscuros, ideal para observaciones astronómicas y divulgación científica.",
+   "technologiesAvailable": "El mayor telescopio abierto al público en Brasil, con una apertura de 650 mm.\nOtros telescopios reflectores con aperturas de 360 ​​mm, 340 mm y 200 mm.\nTelescopio refractor de 150 mm.\nDos instrumentos para la observación solar.\nModerno planetario digital con cúpula de 8 metros y un sistema de proyección digital de última generación que ofrece simulaciones realistas y espectáculos inmersivos del universo.\nEspaciosa estructura de aproximadamente 60.000 m², que incluye espacios para exposiciones, cafetería, restaurante, tienda y vista panorámica."
+}
+]

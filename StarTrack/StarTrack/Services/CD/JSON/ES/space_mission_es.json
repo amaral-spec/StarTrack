@@ -1,0 +1,27 @@
+[
+ {
+   "fact": {
+      "id": "f5de2808-9e69-4200-a6ef-d6e2adc29dc4",
+      "name": "Artemis I",
+      "image": {
+         "localImage": "Artemis",
+         "alternativeText": "La imagen muestra el lanzamiento nocturno de un gran cohete, iluminado por luces brillantes y rodeado de columnas de humo y vapor. El cohete es el SLS (Sistema de Lanzamiento Espacial), de la misión Artemis de la NASA, con sus característicos tanques naranjas y blancos. Junto a él, una torre de lanzamiento y una torre de agua conforman la estructura de soporte. La escena transmite el poder y la grandeza de una misión espacial, simbolizando el regreso de la humanidad a la exploración lunar."
+      },
+      "mascotComment": null
+   },
+   "launchLocation": "Complejo de lanzamiento 39B, Centro Espacial Kennedy, Florida",
+   "missionType": "Vuelo de prueba no tripulado",
+   "distanceTraveled": {
+      "value": 2250000,
+      "unit": "km"
+   },
+   "date": {
+      "startAt": "2022-11-16T13:00:00Z",
+      "duration": 2199180
+   },
+   "objetives": "Demostrar el rendimiento integrado del cohete del Sistema de Lanzamiento Espacial (SLS), la nave espacial Orión y los sistemas terrestres.\nProbar los sistemas de vuelo de Orión en un entorno espacial.\nGarantizar la seguridad del reingreso, el descenso y la recuperación antes de la primera misión tripulada, Artemis II.",
+   "techEnvolved": "Cohete SLS: El cohete más potente jamás construido por la NASA, capaz de realizar misiones de larga duración al espacio profundo.\nNave espacial Orión: Diseñada para transportar astronautas más allá de la órbita baja terrestre, con sistemas de soporte vital y un escudo térmico avanzado.\nSistemas terrestres: Infraestructura modernizada en el Centro Espacial Kennedy para apoyar los lanzamientos del SLS y las operaciones de Orión.",
+   "results": "Validación del rendimiento del SLS y Orión en condiciones reales de vuelo.\nRecopilación de datos críticos sobre los sistemas de navegación, propulsión y control térmico.\nPrueba exitosa del escudo térmico de Orión durante la reentrada atmosférica.",
+   "highlights": "Órbita lunar: Orión entró en una órbita retrógrada distante alrededor de la Luna.\nDistancia máxima desde la Tierra: Aproximadamente 430.000 km.\nReentrada y aterrizaje: La cápsula regresó a la Tierra el 11 de diciembre de 2022, con una velocidad de reentrada de 39.590 km/h (Mach 32)."
+}
+]

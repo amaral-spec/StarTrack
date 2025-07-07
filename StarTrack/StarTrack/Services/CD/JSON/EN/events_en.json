@@ -1,0 +1,112 @@
+[
+ {
+   "fact": {
+      "id": "63772d6b-14e6-4b5b-a1fb-7380defeb286",
+      "name": "Piscis Austrinid Meteor Shower",
+      "image": {
+         "localImage": "Piscis Austrinid",
+         "alternativeText": "Night sky over a mountainous landscape. Several parallel light trails mark the movement of the stars, captured with long exposure, creating an effect of bright bands crossing the image."
+      },
+      "mascotComment": "\"Those streaks in the sky aren't magic — they're stars dancing as time passes! The Piscis Austrinid meteor shower has the sky all animated!\""
+   },
+   "date": {
+      "startAt": "2025-07-15T19:24:00-03:00",
+      "duration": 2199180
+   },
+   "type": "observable_event_meteor_shower",
+   "explanation": "Meteor showers originating from the debris trail that the Earth crosses in the constellation Piscis Austrinus. A peak of up to ~5 meteors/hour (ZHR) is expected under ideal skies, but in São Paulo the expectation is up to 4/h during the peak due to the position of the radiant",
+   "visibility": {
+      "viewingMethod": "viewing_method_naked_eye",
+      "observationZone": "São Paulo (UTC−3). On the night of the peak, the radiant rises at ~19:24 and remains visible until dawn (~06:17). Between 02:00 and 03:00 in the morning, when the radiant is close to the zenith (~83° above the horizon)",
+      "instructions": "Find a dark area, away from street lights.\n\nAfter 7:24 p.m., the radiant will be in the east; wait until about 2 a.m. for the ideal position.\n\nLook about 30–40° in any direction from the radiant to catch the meteors with the largest streaks.\n\nBring a chair or blanket, avoid looking at the Moon or lights, and be patient — wait at least 30 minutes for visual adaptation.\n\nThe estimated rate for São Paulo at peak is up to 4 meteors per hour."
+   }
+},
+ {
+   "fact": {
+      "id": "9efd87d7-d43e-4449-9303-9c055e2f154a",
+      "name": "Close approach of the Moon and M45 (Pleiades)",
+      "image": {
+         "localImage": "Lua e M45",
+         "alternativeText": "Night sky with many bright stars; the Moon is highlighted in the lower center, with the star cluster M45 just above it, represented by a grouping of white dots"
+      },
+      "mascotComment": "\"Look at this beautiful encounter! The Moon is all charming and the Pleiades cluster shining together. The starry sky is also about friendship!\""
+   },
+   "date": {
+      "startAt": "2025-07-20T02:42:00-03:00",
+      "duration": 12360
+   },
+   "type": "observable_event_conjunction",
+   "explanation": "The Moon and the star cluster M45 (Pleiades), both in the constellation Taurus, will be visually close in the sky, with an angular separation of 46.3 arcmin. Although they are very close, they will not be in the same field of view of a telescope, but can be seen with the naked eye or binoculars.",
+   "visibility": {
+      "viewingMethod": "viewing_method_naked_eye",
+      "observationZone": "Visible to the naked eye in São Paulo, looking northeast. Between 3 am and 6 am, when the pair reaches an altitude of about 35°",
+      "instructions": "Find a dark location with good visibility to the northeast.\n\nBring binoculars if possible — although it is visible to the naked eye, the details of M45 are much clearer with magnification.\n\nStart observing at 3 a.m., but the closest approach will be at 7:55 a.m., just before daylight makes it impossible to see.\n\nThe Moon will be at magnitude -11.1, and M45 at magnitude 1.3, both easy to spot in the night sky.\n\nSince the pair will be separated by 46.3 arcmin, look carefully — they will not be overlapping, but very close together."
+   }
+},
+ {
+   "fact": {
+      "id": "6e4571ab-f8b9-4320-854e-fea5e9560211",
+      "name": "Alpha Capricorn Meteor Shower",
+      "image": {
+         "localImage": "Alfa-Capricórnidas",
+         "alternativeText": "Night sky with a shooting star crossing the diagonal of the image, leaving a bright multicolored trail (green and red), amidst several stars visible on a dark blue background."
+      },
+      "mascotComment": "\"Wow! Did you see that bright streak in the sky? That was an Alpha Capricorn passing by quickly. It's like the sky gave us a little wink!\""
+   },
+   "date": {
+      "startAt": "2025-07-03T00:00:00Z",
+      "duration": 3715200
+   },
+   "type": "observable_event_meteor_shower",
+   "explanation": "Annual meteor shower associated with comet 169P/NEAT, characterized by slow-moving, moderately bright meteors, with occasional chances of bolides (very bright meteors). Its activity rate is modest, but it is one of the few showers visible during the winter in the southern hemisphere.",
+   "visibility": {
+      "viewingMethod": "viewing_method_naked_eye",
+      "observationZone": "Visible to the naked eye in Brasília and other regions of the southern hemisphere.\nRadiant located in the constellation of Capricorn, visible throughout the night from the moment it gets dark.",
+      "instructions": "Find a dark place with a clear view of the sky (preferably without buildings or tall trees).\n\nThe shower will be active all night, but the best time to see it is between midnight and 4 a.m.\n\nNo telescope is necessary: ​​the meteors are visible to the naked eye.\n\nLie down or recline comfortably, looking at a dark area of ​​the sky between 30° and 40° from the radiant (not directly at it).\n\nBring warm clothing and patience — the average rate is up to 4 meteors per hour in real-world observing conditions."
+   }
+},
+ {
+   "fact": {
+      "id": "bb223881-d22d-4cdc-9847-937d0c3832bd",
+      "name": "Asteroid 63 Ausonia at opposition",
+      "image": {
+         "localImage": "Asteroide 63",
+         "alternativeText": "Diffuse white object with an irregular shape, similar to a peanut, on a completely black background. Represents an asteroid seen at low resolution."
+      },
+      "mascotComment": "\"That weird little guy is asteroid 63 Ausonia! It may not be very photogenic, but it carries millions of years of Solar System history!\""
+   },
+   "date": {
+      "startAt": "2025-08-02T19:35:00-03:00",
+      "duration": 34740
+   },
+   "type": "observable_event_transit",
+   "explanation": "Asteroid 63 Ausonia will be at opposition, located in the constellation Capricornus, reaching its highest altitude in the sky and maximum brightness in 2025. This position places it opposite the Sun and close to Earth, making it brighter and more visible throughout the night. It is necessary to use a telescope with at least 4 inches of aperture for observation, as its magnitude of 9.3 makes it invisible to the naked eye.",
+   "visibility": {
+      "viewingMethod": "viewing_method_telescope",
+      "observationZone": "Brasilia (ideal visibility). Maximum altitude of 83° above the southern horizon at 00:24 local time.",
+      "instructions": "Use a telescope with a minimum aperture of 4 inches. Find a location with little light pollution for best visibility. The asteroid will be high in the sky at midnight, making it easy to see. Binoculars and naked-eye observation are not sufficient due to the object's faint brightness."
+   }
+},
+ {
+   "fact": {
+      "id": "39810732-53bd-46ad-891f-d900eb290057",
+      "name": "Close approach to the Moon, Saturn and Neptune",
+      "image": {
+         "localImage": "Lua, Saturno e Netuno",
+         "alternativeText": "Starry sky seen from the horizon, with trees and hills in the lower part. The Moon is close to the planet Saturn, both identified with labels in the center of the image. Uranus appears further to the right, close to the horizon marked with the letter \"E\"."
+      },
+      "mascotComment": "\"It looks like a reunion of planets! The Moon brought Saturn and Uranus to the party today. Say goodbye to them before they hide again!\""
+   },
+   "date": {
+      "startAt": "2025-09-08T19:46:00-03:00",
+      "duration": 35820
+   },
+   "type": "observable_event_conjunction",
+   "explanation": "On September 8, 2025, the Moon, Saturn, and Neptune will be close together in the sky, visible to the naked eye from Brasília. They will pass between 3 and 30 arc minutes apart in the constellation Pisces. The Moon, in its nearly full phase (16 days), will be very bright (mag -12.7), Saturn at magnitude 0.6, and Neptune, fainter, at magnitude 7.8. The trio will be visible in the night sky, reaching a maximum altitude of 76° on the northern horizon at 01:02. Despite their proximity, they will be too far apart to fit into the field of view of a telescope, but they can be observed together with binoculars.",
+   "visibility": {
+      "viewingMethod": "viewing_method_binoculars",
+      "observationZone": "Brasília and nearby regions. Northern horizon, maximum altitude at 76°.",
+      "instructions": "Observe the trio with the naked eye or with binoculars, preferably between 19:46 and 05:43, with the sky dark and the horizon clear to the north. Avoid places with light pollution. The event occurs in the constellation of Pisces."
+   }
+}
+]

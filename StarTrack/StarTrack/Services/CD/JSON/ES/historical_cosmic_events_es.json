@@ -1,0 +1,21 @@
+[
+ {
+   "fact": {
+      "id": "c1d25026-3657-49c1-a88c-d3594804d13b",
+      "name": "Big Bang",
+      "image": {
+         "localImage": "bigbang",
+         "alternativeText": "Diagrama de la línea de tiempo de la expansión del universo, de izquierda a derecha. A la izquierda, el Big Bang se muestra como un punto de luz. Le siguen las fases denominadas «Edad Oscura», «Primeras Estrellas», «Desarrollo de Galaxias y Planetas» y, finalmente, «Expansión Acelerada». Una cuadrícula espacio-temporal se superpone a la imagen, mostrando la expansión a lo largo de 13.700 millones de años."
+      },
+      "mascotComment": "No fue BOOM 💥 sino PFFFFF (expansión silenciosa y muy caliente)!"
+   },
+   "culturalParallels": "Mitología hindú: el universo cíclico: creación y destrucción (similar al modelo de los ciclos cósmicos).\nMitología maya: el nacimiento del mundo desde el \"corazón del cielo\" evoca la idea del origen de algo invisible.\nParalelo bíblico: \"Hágase la luz\": aproximación simbólica del surgimiento del universo visible.",
+   "explanation": "El Big Bang no fue una explosión común, sino el comienzo de la expansión del espacio y el tiempo.\nTodo lo que conocemos —materia, energía, espacio y tiempo— surgió de un estado extremadamente caliente y denso.\nLa física solo puede describir esto a partir de 10⁴³ segundos (tiempo de Planck).\nDespués de este momento, el universo comenzó a expandirse rápidamente.\nLas leyes físicas emergen con el tiempo.",
+   "evidence": "Fondo Cósmico de Microondas (CMB): Rastro térmico del Big Bang, detectado por satélites como COBE, WMAP y Planck.\nDesplazamiento al rojo: Las galaxias se están distanciando, evidencia de una expansión continua.\nDistribución de elementos: Las proporciones de helio e hidrógeno en el universo confirman los modelos de nucleosíntesis temprana.",
+   "timePeriod": {
+      "value": 0,
+      "unit": "time_unit_seconds"
+   },
+   "type": "cosmological_event_big_bang"
+}
+]

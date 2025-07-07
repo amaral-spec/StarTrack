@@ -1,0 +1,98 @@
+[
+ {
+   "fact": {
+      "id": "1e6e6f54-78c3-42b9-a4c3-9f8ebfea5fc1",
+      "name": "Abraham de Moraes Observatory",
+      "image": {
+         "localImage": "Abrahao",
+         "alternativeText": "The image shows a modern Meade telescope pointing at the sky, in an outdoor environment with trees in the background and a partially cloudy sky. The equipment has a robust structure, a dark blue tube and black details, with a viewfinder and visible adjustment mechanisms. The low angle of the photo highlights its grandeur and technological precision, suggesting its use in detailed astronomical observations by both amateur and professional astronomers."
+      },
+      "mascotComment": null
+   },
+   "city": "Valinhos",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -23.006437,
+      "longitude": -46.963563
+   },
+   "visitation": {
+      "openToPublic": "Yes",
+      "tickets": "Free",
+      "activities": null
+   },
+   "cientificHighlight": "The Observatory has been operating as a scientific laboratory since 1972, with emphasis on research in Astronomy, Astrobiology, Geophysics and Atmospheric Sciences\nRemote observation projects, such as Telescopes at School (TnE), allow schools to carry out astronomical observations via the internet\nSimilar projects will soon be available for the seismographic station (Geophysics at School) and the meteorological station (Atmospheric Sciences at School)\nThe CCD meridian circle is used for precise astronomical measurements and image recording, contributing to the advancement of scientific knowledge",
+   "technologiesAvailable": "Refractor telescope (CCD meridian circle) with a diameter of 20 cm, automated in 1995 and installed since 1975, used in Astronomy and Astrobiology research\nSeismographic station and geomagnetic station, used in Geophysics research and also in teaching activities\nAutomatic meteorological station (in the installation phase), intended for research and teaching in Atmospheric Sciences\nPrometheus and Asterix telescopes, used in night observation events\nArgus telescope, used for remote observations via the internet in the Telescopes at School (TnE) project\nGeodetic marker and absolute gravity point, used by companies and in scientific activities"
+},
+ {
+   "fact": {
+      "id": "d4554749-b87c-4894-9d94-27538456d649",
+      "name": "Municipal Observatory of Campinas \"Jean Nicolini\"",
+      "image": {
+         "localImage": "Jean_Nicolini",
+         "alternativeText": "The image shows an astronomical observatory under a spectacularly starry night sky, with the Milky Way visible across the top of the scene. The building has a dark dome and a light base, in a circular shape, surrounded by vegetation and trees in the background. The atmosphere is serene and inspiring, with the blue tones of the sky contrasting with the warm tones of the ground, possibly illuminated by red lanterns used to preserve the nocturnal adaptation of visitors. The scene conveys the grandeur of the universe and the fascination of astronomical observation."
+      },
+      "mascotComment": null
+   },
+   "city": "Campinas",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -22.900312,
+      "longitude": -46.825813
+   },
+   "visitation": {
+      "openToPublic": "Yes",
+      "tickets": "Full: R$4\nHalf: R$2",
+      "activities": null
+   },
+   "cientificHighlight": "Pioneering: The first municipal observatory in Brazil, opened in 1977, and a national reference in regular educational activities in astronomy.\nScientific outreach projects, such as \"Astronomy in the Square\" and \"Observatory goes to schools\", bringing telescopes and astronomical knowledge to the community and schools in the region.\nActive participation in campaigns to observe astronomical events, such as the passage of Halley's Comet in 1986.\nPartnership with the EXOSS network for monitoring and researching meteors, contributing to national and international scientific databases.\nReceives approximately 12,000 visitors per year, promoting exhibitions, themed videos, recognition of the sky with the naked eye and observations of stars such as Saturn, the Moon, star clusters and double stars.",
+   "technologiesAvailable": "250 mm Newtonian reflector telescope (Meade Starfinder)\n400 mm telescope (Carl Zeiss, astrograph, largest in Brazil for astrophotography)\n500 mm telescope (Carl Zeiss)\n600 mm Cassegrain telescope (Group Mod.128, the largest available to the visiting public)\nMotorized dome structure and buildings to house the equipment\nMeteor monitoring system in partnership with the EXOSS network, with cameras for recording and scientific analysis of phenomena such as meteors."
+},
+ {
+   "fact": {
+      "id": "bea82a6d-9b77-4519-b798-96b49adfd933",
+      "name": "Americana Municipal Observatory",
+      "image": {
+         "localImage": "Americana",
+         "alternativeText": "The image shows an astronomical observatory building at night, with yellowish artificial lighting highlighting its light walls. At the top of the building is a white dome, typical of astronomical telescopes. In front of the building, there is a metal sculpture representing celestial spheres and orbits, referring to the astronomical theme. There is also a small garden with an information board, and the site is well-kept and accessible, with an entrance ramp and handrail. In the background, there are trees and the night sky."
+      },
+      "mascotComment": null
+   },
+   "city": "Americana",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -22.757312,
+      "longitude": -47.353313
+   },
+   "visitation": {
+      "openToPublic": "Yes",
+      "tickets": "Free",
+      "activities": null
+   },
+   "cientificHighlight": "Second municipal observatory in Brazil, founded on August 4, 1985\nMunicipal observatory model focused on popularizing science\nCarries out educational observatories in schools in Americana and the surrounding area\nPromotes exchanges with national and international entities\nDevelops scientific work on relevant astronomical phenomena\nAlso works on environmental awareness activities, taking advantage of its location in the Ecological Complex",
+   "technologiesAvailable": "Couder França objective telescope with a diameter of 180 mm and a focal length of 2,230 mm\nZeiss/Tessar photographic telescope with a diameter of 140 mm\nNewtonian reflector telescope with a diameter of 180 mm\nTwo new telescopes acquired in recent years\nModern Digital Planetarium, capable of simulating images of the Solar System, asteroids, comets and other systems, artificially reproducing the sky and its stars\nStructure for courses, exhibition hall, photography laboratory, library, roof and terrace for open-air observations."
+},
+ {
+   "fact": {
+      "id": "4d283871-2435-428b-a386-a13954d4e48a",
+      "name": "Amparo Astronomical Center",
+      "image": {
+         "localImage": "Amparo",
+         "alternativeText": "The image shows an astronomical observation deck equipped with several modern telescopes, mounted on sturdy bases and aligned with the sky. The equipment varies in size and type, including reflector and refractor models, with a large telescope with an open structure and metal support standing out. The environment is bright, with a ceramic floor, a partially blue sky with clouds and a gray wall in the background, suggesting a space prepared for advanced observations and recording of astronomical images with precision."
+      },
+      "mascotComment": null
+   },
+   "city": "Amparo",
+   "state": "SP",
+   "gpsLocation": {
+      "latitude": -22.775062,
+      "longitude": -46.722313
+   },
+   "visitation": {
+      "openToPublic": "Yes",
+      "tickets": "Full: R$ 90\nHalf: R$ 45",
+      "activities": null
+   },
+   "cientificHighlight": "The largest telescope in the state of São Paulo and Brazil is open to the public, allowing direct observation of the sky with detailed explanations\nProgramming of public observations and educational activities for schools, with trained teachers and exclusive service for school groups\nUse of advanced technology in the planetarium for simulations and immersive astronomical education\nStrategic location with clear, dark skies, ideal for astronomical observations and scientific dissemination",
+   "technologiesAvailable": "Largest telescope open to the public in Brazil, with 650 mm aperture\nOther reflector telescopes with 360 mm, 340 mm and 200 mm aperture\n150 mm refractor telescope\nTwo instruments for solar observation\nModern digital planetarium with 8-meter dome, state-of-the-art digital projection system, which offers realistic simulations and immersive shows of the universe\nSpacious structure with approximately 60,000 m², including exhibition spaces, café, restaurant, shop and panoramic view"
+}
+]

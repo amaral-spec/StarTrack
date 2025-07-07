@@ -1,0 +1,27 @@
+[
+ {
+   "fact": {
+      "id": "f5de2808-9e69-4200-a6ef-d6e2adc29dc4",
+      "name": "Artemis I",
+      "image": {
+         "localImage": "Artemis",
+         "alternativeText": "The image shows the nighttime launch of a large rocket, illuminated by bright lights and surrounded by columns of smoke and steam. The rocket is the SLS (Space Launch System), from NASA's Artemis mission, with its characteristic orange and white tanks. Next to it, a launch tower and a water tower make up the support structure. The scene conveys the power and grandeur of a space mission, symbolizing humanity's return to lunar exploration."
+      },
+      "mascotComment": null
+   },
+   "launchLocation": "Launch Complex 39B, Kennedy Space Center, Florida",
+   "missionType": "Unmanned test flight",
+   "distanceTraveled": {
+      "value": 2250000,
+      "unit": "km"
+   },
+   "date": {
+      "startAt": "2022-11-16T13:00:00Z",
+      "duration": 2199180
+   },
+   "objetives": "Demonstrate the integrated performance of the Space Launch System (SLS) rocket, Orion spacecraft and ground systems.\nTest Orion flight systems in a space environment.\nEnsure safe reentry, descent and recovery prior to the first crewed mission, Artemis II.",
+   "techEnvolved": "SLS rocket: The most powerful rocket ever built by NASA, capable of long-duration deep-space missions.\nOrion spacecraft: Designed to carry astronauts beyond low-Earth orbit, with life-support systems and an advanced heat shield.\nGround Systems: Modernized infrastructure at Kennedy Space Center to support SLS launches and Orion operations.",
+   "results": "Validation of SLS and Orion performance under real flight conditions.\nCollection of critical data on navigation, propulsion, and thermal control systems.\nSuccessful testing of Orion's heat shield during atmospheric reentry.",
+   "highlights": "Lunar Orbit: Orion entered a distant retrograde orbit around the Moon.\nMaximum Distance from Earth: Approximately 430,000 km.\nReentry and Landing: The capsule returned to Earth on December 11, 2022, with a reentry velocity of 39,590 km/h (Mach 32)."
+}
+]
