@@ -65,6 +65,7 @@
 		E6AA1FEC2E12DBC1006F9703 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AA1FDC2E12DBC1006F9703 /* DateTime.swift */; };
 		E6B0254F2E0C18BF00BEF1E1 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B0254E2E0C18BF00BEF1E1 /* PerfilView.swift */; };
 		E6B025522E0C1B8F00BEF1E1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B025512E0C1B8F00BEF1E1 /* SearchBar.swift */; };
+		E6E8C77A2E1801BE004A9F8B /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8C7792E1801BE004A9F8B /* CalendarModel.swift */; };
 		E6EA46EE2E155581004F962D /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E609CA682DFB031100A2A5E2 /* Widget.swift */; };
 		E77B45022E0C1EED00EDFB2B /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B45012E0C1EED00EDFB2B /* FavoritesView.swift */; };
 		E7BE2CA22E18004300787D50 /* imagescatalog.json in Resources */ = {isa = PBXBuildFile; fileRef = E7BE2CA12E18004300787D50 /* imagescatalog.json */; };
@@ -174,6 +175,7 @@
 		E6AA1FDC2E12DBC1006F9703 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		E6B0254E2E0C18BF00BEF1E1 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		E6B025512E0C1B8F00BEF1E1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E6E8C7792E1801BE004A9F8B /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
 		E77B45012E0C1EED00EDFB2B /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		E7BE2CA12E18004300787D50 /* imagescatalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = imagescatalog.json; sourceTree = "<group>"; };
 		E7BE2CA42E18023F00787D50 /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 		6621EBB42DF7184A00381752 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E6E8C77B2E180898004A9F8B /* Calendar */,
 				E68AEBFA2E16A5040024CC87 /* Observatory */,
 				E6AA1FCA2E12DBC0006F9703 /* Main */,
 				E6AA1FC72E12DBC0006F9703 /* Root */,
@@ -552,6 +555,14 @@
 			path = NasaPhotoInfo;
 			sourceTree = "<group>";
 		};
+		E6E8C77B2E180898004A9F8B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				E6E8C7792E1801BE004A9F8B /* CalendarModel.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		E7D4FFDF2E00659F00CABB2C /* Observatories */ = {
 			isa = PBXGroup;
 			children = (
@@ -748,6 +759,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66DE5A632E16C58400880BD6 /* CoreDataSeeder.swift in Sources */,
+				E6E8C77A2E1801BE004A9F8B /* CalendarModel.swift in Sources */,
 				E68AEC182E16A72A0024CC87 /* Weather API.swift in Sources */,
 				E68AEC1E2E16A81F0024CC87 /* NetworkMonitor.swift in Sources */,
 				E66275482DFAF6DE009F0733 /* PhotoInfo.swift in Sources */,
