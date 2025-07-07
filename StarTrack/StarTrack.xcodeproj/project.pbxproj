@@ -79,6 +79,9 @@
 		E6E8C77A2E1801BE004A9F8B /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8C7792E1801BE004A9F8B /* CalendarModel.swift */; };
 		E6EA46EE2E155581004F962D /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E609CA682DFB031100A2A5E2 /* Widget.swift */; };
 		E77B45022E0C1EED00EDFB2B /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B45012E0C1EED00EDFB2B /* FavoritesView.swift */; };
+		E7BE2CA22E18004300787D50 /* imagescatalog.json in Resources */ = {isa = PBXBuildFile; fileRef = E7BE2CA12E18004300787D50 /* imagescatalog.json */; };
+		E7BE2CA52E18023F00787D50 /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE2CA42E18023F00787D50 /* ModelView.swift */; };
+		E7BE2CA72E18076300787D50 /* ScreenSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE2CA62E18076300787D50 /* ScreenSession.swift */; };
 		E7D4FFE32E0065E700CABB2C /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE22E0065E700CABB2C /* CatalogView.swift */; };
 		E7D4FFE52E0065F900CABB2C /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE42E0065F900CABB2C /* CalendarView.swift */; };
 		E7D4FFE72E00660C00CABB2C /* ObservatoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE62E00660C00CABB2C /* ObservatoriesView.swift */; };
@@ -191,6 +194,9 @@
 		E6B025512E0C1B8F00BEF1E1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		E6E8C7792E1801BE004A9F8B /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
 		E77B45012E0C1EED00EDFB2B /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		E7BE2CA12E18004300787D50 /* imagescatalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = imagescatalog.json; sourceTree = "<group>"; };
+		E7BE2CA42E18023F00787D50 /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
+		E7BE2CA62E18076300787D50 /* ScreenSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSession.swift; sourceTree = "<group>"; };
 		E7D4FFE22E0065E700CABB2C /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
 		E7D4FFE42E0065F900CABB2C /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		E7D4FFE62E00660C00CABB2C /* ObservatoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservatoriesView.swift; sourceTree = "<group>"; };
@@ -378,6 +384,7 @@
 				66DE5A532E16C3BC00880BD6 /* observatory.json */,
 				66DE5A552E16C3BC00880BD6 /* historical_cosmic_events.json */,
 				66DE5A562E16C3BC00880BD6 /* celestial_bodies.json */,
+				E7BE2CA12E18004300787D50 /* imagescatalog.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -599,6 +606,8 @@
 			isa = PBXGroup;
 			children = (
 				E7D4FFE22E0065E700CABB2C /* CatalogView.swift */,
+				E7BE2CA42E18023F00787D50 /* ModelView.swift */,
+				E7BE2CA62E18076300787D50 /* ScreenSession.swift */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -737,6 +746,7 @@
 				66DE5A692E16C58F00880BD6 /* events.json in Resources */,
 				6621EBCC2DF71F0000381752 /* Launch Screen.storyboard in Resources */,
 				E627387D2E16BE3A00E99EF5 /* Assets.xcassets in Resources */,
+				E7BE2CA22E18004300787D50 /* imagescatalog.json in Resources */,
 				66DE5A682E16C58F00880BD6 /* space_mission.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -816,10 +826,12 @@
 				66DE5A642E16C58400880BD6 /* Persistance.swift in Sources */,
 				66DE5A662E16C58A00880BD6 /* StarTrack.xcdatamodeld in Sources */,
 				E6AA1FE72E12DBC1006F9703 /* SpaceMission.swift in Sources */,
+				E7BE2CA52E18023F00787D50 /* ModelView.swift in Sources */,
 				E7D4FFE92E00661D00CABB2C /* TabBar.swift in Sources */,
 				E68AEC152E16A72A0024CC87 /* url helper.swift in Sources */,
 				E6AA1FE42E12DBC1006F9703 /* CelestialBody.swift in Sources */,
 				66DE5A622E16C58400880BD6 /* CoreDataManager.swift in Sources */,
+				E7BE2CA72E18076300787D50 /* ScreenSession.swift in Sources */,
 				E77B45022E0C1EED00EDFB2B /* FavoritesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
