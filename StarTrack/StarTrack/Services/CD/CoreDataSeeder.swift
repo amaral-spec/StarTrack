@@ -8,6 +8,13 @@
 import Foundation
 import CoreData
 
+// MARK: - Idiomas oferecidos
+enum SupportedLanguage: String, CaseIterable {
+	case en // English
+	case pt // Portuguese
+	case es // Spanish
+}
+
 // MARK: - Estruturas Intermediárias
 enum SeederData {
 	struct FactData: Codable, Identifiable {
@@ -143,12 +150,74 @@ enum SeederData {
 class CoreDataSeeder {
 	
 	private let context: NSManagedObjectContext
+	private let persistentStoreCoordinator: NSPersistentStoreCoordinator
 	
-	init(context: NSManagedObjectContext) {
+	init(context: NSManagedObjectContext, coordinator: NSPersistentStoreCoordinator) {
 		self.context = context
+		self.persistentStoreCoordinator = coordinator
 	}
 	
-	func seedDatabaseIfNeeded() {
+	func determineAppLanguage() -> SupportedLanguage {
+		let userLanguageCode = String((Locale.preferredLanguages.first ?? "en").prefix(2))
+		
+		for supportedLang in SupportedLanguage.allCases {
+			
+			if userLanguageCode == supportedLang.rawValue {
+				print("Idioma do usuario encontrado: \(supportedLang)")
+				return supportedLang
+			}
+		}
+		
+		print("Idioma do usuario ('\(userLanguageCode)') não é suportado. Settando ingles como padrao")
+		return .en
+	}
+	
+	func handleSeedingOnAppLaunch() {
+		let defaults = UserDefaults.standard
+		
+		print("Determinando o idioma da aplicação...")
+		let appLanguage = determineAppLanguage().rawValue
+		print("O idioma selecionado para a aplicação é: \(appLanguage)")
+		
+		let seededLanguage = defaults.string(forKey: "seededLanguageIdentifier")
+		
+		// Se a base de dados já foi populada E o idioma mudou...
+		if seededLanguage != nil && appLanguage != seededLanguage {
+			print("INFO: Idioma do dispositivo mudou. A repopular a base de dados para '\(appLanguage)'...")
+			wipeAndReseedDatabase(for: appLanguage)
+			
+		// Se a base de dados nunca foi populada...
+		} else if seededLanguage == nil {
+			print("INFO: Populando a base de dados pela primeira vez para o idioma '\(appLanguage)'...")
+			seedDatabase(for: appLanguage)
+		} else {
+			print("INFO: A base de dados já está populada com o idioma correto ('\(appLanguage)'). Nenhuma ação necessária.")
+		}
+	}
+	
+	private func wipeAndReseedDatabase(for languageCode: String) {
+		guard let storeURL = persistentStoreCoordinator.persistentStores.first?.url else {
+			print("ERROR: Não foi possível obter o URL da store do Core Data para apagar.")
+			return
+		}
+		
+		do {
+			try persistentStoreCoordinator.destroyPersistentStore(at: storeURL, ofType: NSSQLiteStoreType, options: nil)
+			print("SUCCESS: Store do Core Data apagada com sucesso.")
+			
+			// 2. Recarrega a store vazia.
+			try persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
+			print("SUCCESS: Store do Core Data recarregada.")
+			
+			// 3. Executa o seeder novamente.
+			seedDatabase(for: languageCode)
+			
+		} catch {
+			print("FATAL ERROR: Falha crítica ao apagar e recriar a store do Core Data. \(error)")
+		}
+	}
+	
+	private func seedDatabase(for languageCode: String) {
 		let defaults = UserDefaults.standard
 		guard !defaults.bool(forKey: "isDatabaseSeeded") else {
 			print("INFO: A base de dados Core Data já foi populada anteriormente.")
@@ -157,13 +226,13 @@ class CoreDataSeeder {
 		
 		print("INFO: Populando a base de dados Core Data pela primeira vez...")
 		
-		createAndPopulate(CelestialBodyEntity.self, from: "celestial_bodies.json")
-		createAndPopulate(SpaceMissionEntity.self, from: "space_mission.json")
-		createAndPopulate(HistoricalCosmicEventEntity.self, from: "historical_cosmic_events.json")
-		createAndPopulate(ObservableEventEntity.self, from: "events.json")
-		createAndPopulate(ObservatoryEntity.self, from: "observatory.json")
+		createAndPopulate(CelestialBodyEntity.self, from: "celestial_bodies_\(languageCode).json")
+		createAndPopulate(SpaceMissionEntity.self, from: "space_mission_\(languageCode).json")
+		createAndPopulate(HistoricalCosmicEventEntity.self, from: "historical_cosmic_events_\(languageCode).json")
+		createAndPopulate(ObservableEventEntity.self, from: "events_\(languageCode).json")
+		createAndPopulate(ObservatoryEntity.self, from: "observatory_\(languageCode).json")
 		
-		saveContext()
+		saveContext(for: languageCode)
 	}
 	
 	private func createAndPopulate<Entity: PopulatableEntity>(
@@ -179,11 +248,11 @@ class CoreDataSeeder {
 	
 	// MARK: - Funções Privadas Auxiliares
 	
-	private func saveContext() {
+	private func saveContext(for languageCode: String) {
 		do {
 			try context.save()
-			UserDefaults.standard.set(true, forKey: "isDatabaseSeeded")
-			print("SUCCESS: Base de dados Core Data populada e guardada com sucesso.")
+			UserDefaults.standard.set(languageCode, forKey: "seededLanguageIdentifier")
+			print("SUCCESS: Base de dados populada e guardada com sucesso para o idioma '\(languageCode)'.")
 		} catch {
 			let nsError = error as NSError
 			print("ERROR: Falha ao guardar o contexto inicial do Core Data. \(nsError), \(nsError.userInfo)")
