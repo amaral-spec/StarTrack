@@ -70,7 +70,6 @@ struct CatalogView: View {
                 
             }
             .navigationBarTitle("Catálogo")
-            
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     NavigationLink(destination: PerfilView(), label: {

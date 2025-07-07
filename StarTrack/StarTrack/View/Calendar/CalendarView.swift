@@ -115,7 +115,7 @@ struct CalendarView: View {
                             .font(.system(size: 25))
                             .foregroundColor(.black)
                             .frame(width: 50)
-                            .padding(.top)
+                            .padding(.top, 90)
                     })
                 }
             }
