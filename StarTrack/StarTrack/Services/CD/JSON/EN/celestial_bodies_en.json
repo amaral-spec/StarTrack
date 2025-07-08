@@ -1,0 +1,1180 @@
+[
+ {
+   "fact": {
+      "id": "81e9f212-6d80-4e22-9ad6-53c892288b4f",
+      "name": "Mercury",
+      "image": {
+         "localImage": "mercury",
+         "alternativeText": "Image of the planet Mercury with a grayish, cratered surface similar to that of the Moon, highlighted against the dark background of space."
+      },
+      "mascotComment": "If I ran as fast as Mercury orbits the Sun, I would run 4 times a year! Thank goodness I don't get dizzy 😵‍💫"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+      "location": "Solar System",
+      "diameter": {
+         "value": 4879,
+         "unit": "km"
+      },
+      "typeDescriptive": "rocky planet",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "At dawn or dusk, look for a spot close to the Sun"
+      },
+      "rotationPeriod": {
+         "value": 59,
+         "unit": "time_unit_days"
+      },
+      "translationPeriod": {
+         "value": 88,
+         "unit": "time_unit_days"
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 3.3e+23,
+         "unit": "kg"
+      },
+      "temperature": "From -173°C to +427°C",
+      "atmosphere": "Exosphere with traces of helium, sodium, oxygen",
+      "atmPressure": {
+         "value": 1e-10,
+         "unit": "atm"
+      },
+      "surface": "Full of craters, similar to the Moon",
+      "gravity": {
+         "value": 3.7,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": 5430,
+         "unit": "g/L"
+      },
+      "moons": "It does not have"
+   },
+   "historyAndObservation": "Known since ancient times, visible to the naked eye.\n\nIt has been confused with two celestial bodies: “Hermes” at dawn and “Apollo” at dusk.\n\nDifficult to observe because it is always close to the Sun in the sky.\n\nBest seen during its maximum elongation (when it is furthest away from the Sun).",
+   "exploringAndMissions": "Mariner 10 (1974–75): first visit.\nMESSENGER (2004–2015): mapped the surface and revealed secrets of the internal structure.\nBepiColombo (ongoing): joint ESA/JAXA mission, expected to enter orbit in 2025.",
+   "triviaAndMiths": {
+      "culturalParallels": "Romans: Mercury was the messenger of the gods, which is why the fastest planet was named after it.",
+      "trivia": "Despite being the closest to the Sun, it is not the hottest (that title belongs to Venus).\nIts core occupies 85% of the planet's radius!"
+   }
+},
+ {
+   "fact": {
+      "id": "8ba6c47c-1d43-4836-850e-88f685dd6bd0",
+      "name": "Venus",
+      "image": {
+         "localImage": "venus",
+         "alternativeText": "Photo of Venus with a yellowish color and dense, opaque atmosphere, with no visible details on the surface, surrounded by clouds of sulfuric acid."
+      },
+      "mascotComment": "Venus is like a cosmic oven with acid clouds... best visited only with a special suit! But it shines beautifully in the sky!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+      "location": "Solar System",
+      "diameter": {
+         "value": 12104,
+         "unit": "km"
+      },
+      "typeDescriptive": "rocky planet",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "Visible at dawn or dusk, close to the horizon; it is the brightest after the Sun and the Moon."
+      },
+      "rotationPeriod": {
+         "value": 243,
+         "unit": "time_unit_days"
+      },
+      "translationPeriod": {
+         "value": 225,
+         "unit": "time_unit_days"
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 4.86e+24,
+         "unit": "kg"
+      },
+      "temperature": "From 462°C to 467°C",
+      "atmosphere": "96.5% carbon dioxide, 3.5% nitrogen, with sulfuric acid clouds",
+      "atmPressure": {
+         "value": 92,
+         "unit": "atm"
+      },
+      "surface": "Covered by basaltic plains, with many volcanoes, few elevated reliefs and traces of recent volcanic activity (about 500 million years ago)",
+      "gravity": {
+         "value": 8.87,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": 8870,
+         "unit": "g/L"
+      },
+      "moons": "It does not have"
+   },
+   "historyAndObservation": "Known since ancient times, visible to the naked eye.\nCalled the “morning star” or “evening star” because it appears bright near the Sun at dawn or dusk. Always shrouded in thick clouds, which made studying its surface difficult until the era of space probes.\nObserved by several ancient cultures, often associated with gods of love and beauty.",
+   "exploringAndMissions": "Venera (USSR, 1961–1984): First probes to land and transmit data from the hostile surface of Venus.\nMagellan (NASA, 1989–1994): Mapped the surface with radar, revealing geological details.\nVenus Express (ESA, 2006–2014): Studied atmosphere and climate.\nAkatsuki (JAXA, in operation): Observes atmosphere and meteorology.\nBepiColombo (ESA/JAXA, ongoing): Will perform flybys of Venus on its way to Mercury",
+   "triviaAndMiths": {
+      "culturalParallels": "Romans: Venus was the goddess of love and beauty, naming the brightest planet in the night sky",
+      "trivia": "Despite being Earth's \"twin\" in size and mass, conditions on Venus are extremely hostile, with temperatures that melt lead and crushing pressure\nRetrograde rotation: it rotates in the opposite direction to most planets in the Solar System\nA day on Venus is longer than its year!"
+   }
+},
+ {
+   "fact": {
+      "id": "addf7e1c-4827-471e-9826-da0381cb83cd",
+      "name": "Earth",
+      "image": {
+         "localImage": "earth",
+         "alternativeText": "Image of Earth from space, showing continents, oceans and white clouds above the vibrant blue atmosphere."
+      },
+      "mascotComment": "It's our home!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+      "location": "Solar System",
+      "diameter": {
+         "value": 6371,
+         "unit": "km"
+      },
+      "typeDescriptive": "rocky planet",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "Look for a very bright “star” in the eastern sky after 8pm — it moves slowly throughout the week"
+      },
+      "rotationPeriod": {
+         "value": 23.93,
+         "unit": "time_unit_hours"
+      },
+      "translationPeriod": {
+         "value": 364.25,
+         "unit": "time_unit_days"
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 5.97e+27,
+         "unit": "kg"
+      },
+      "temperature": "Average 15°C (ranges from about -89°C to +58°C in natural extremes)",
+      "atmosphere": "78% nitrogen, 21% oxygen, traces of argon, carbon dioxide and other gases",
+      "atmPressure": {
+         "value": 1,
+         "unit": "atm"
+      },
+      "surface": "71% covered by water and 29% by continents, with seven continental masses and four oceans; active plate tectonics",
+      "gravity": {
+         "value": 9.8,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": 5510,
+         "unit": "g/L"
+      },
+      "moons": "A natural satellite — the Moon, 384,400 km away"
+   },
+   "historyAndObservation": "The only known planet with life, studied since ancient times and the basis of all human civilizations.\nObserved and monitored by thousands of satellites and scientific missions, such as those of NASA, which monitor climate, oceans, atmosphere and environmental changes.\nThe surface is dynamic, with cycles of erosion, sedimentation, mountain formation and soil renewal.\nThe atmosphere is divided into five main layers: troposphere, stratosphere, mesosphere, thermosphere and exosphere, each with distinct characteristics.",
+   "exploringAndMissions": "Numerous manned and unmanned missions to Earth orbit and the Moon.\nObservation satellites monitor climate, vegetation, oceans, pollution, natural disasters and environmental changes in real time.\nSpace stations, such as the ISS, serve as laboratories for research on Earth and space.",
+   "triviaAndMiths": {
+      "culturalParallels": "Romans: The name comes from the Roman goddess Tellus (or Terra Mater), a deity who represented Mother Earth, fertility and the soil that sustains life.",
+      "trivia": "Earth is the largest of the rocky planets in the Solar System and the only one known to have abundant liquid water on its surface.\nThe name “Earth” derives from Latin and does not follow the tradition of names of Greco-Roman gods.\nThe planet is called the “blue dot” when viewed from space, an expression popularized by the Voyager 1 mission.\nIts oxygen-rich atmosphere is the result of biological activity over billions of years.\nThe water cycle and plate tectonics are processes unique among known planets."
+   }
+},
+ {
+   "fact": {
+      "id": "22764b76-9ef2-42b2-aad0-b37e8ece0dbf",
+      "name": "Mars",
+      "image": {
+         "localImage": "mars",
+         "alternativeText": "Photo of Mars with its reddish and arid surface, marked by mountains, craters and deep valleys."
+      },
+      "mascotComment": "If I were to go to Mars, I would have to wear a super suit to withstand the cold and the thin atmosphere! But just imagine seeing a blue sunset on the red planet!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+      "location": "Solar System",
+      "diameter": {
+         "value": 6794,
+         "unit": "km"
+      },
+      "typeDescriptive": "rocky planet",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "It has a reddish coloration"
+      },
+      "rotationPeriod": {
+         "value": 24.02,
+         "unit": "time_unit_hours"
+      },
+      "translationPeriod": {
+         "value": 687,
+         "unit": "time_unit_days"
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 6.42e+23,
+         "unit": "kg"
+      },
+      "temperature": "Average of -62.77°C",
+      "atmosphere": "95% carbon dioxide, plus nitrogen and argon",
+      "atmPressure": {
+         "value": 0.006,
+         "unit": "atm"
+      },
+      "surface": "Solid and rocky, rich in iron oxides (reddish coloration); polar ice caps of water and carbon dioxide; large volcanoes (such as Olympus Mons) and extensive canyons (such as Valles Marineris); no currently active tectonic plates",
+      "gravity": {
+         "value": 3.71,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": 3900,
+         "unit": "g/L"
+      },
+      "moons": "Two natural satellites — Phobos and Deimos, probably captured asteroids"
+   },
+   "historyAndObservation": "Known since ancient times, it has been observed by several cultures.\nCalled the “red planet” due to the color of the soil\nThe target of intense research into the possibility of past and present life\nModern observations made by telescopes and orbital and surface missions (rovers)",
+   "exploringAndMissions": "Historic missions: Viking 1 and 2 (NASA, 1976), the first to land and send data from the surface\nMars Pathfinder, Spirit, Opportunity, Curiosity, Perseverance (NASA rovers): analysis of the soil, atmosphere and search for signs of life.\nMars Express (ESA), Mars Reconnaissance Orbiter, MAVEN, InSight (NASA): mapping, study of the atmosphere, interior and climate.",
+   "triviaAndMiths": {
+      "culturalParallels": "Romans: Mars was the god of war, naming the planet after its reddish color, associated with blood",
+      "trivia": "Mars has polar ice caps, seasons and days of similar length to Earth\nDespite its similarity to Earth, it is much colder, arid and has a thinner atmosphere\nPhobos, the closest moon, is approaching Mars and may break apart in the future.\nMartian meteorites have already been found on Earth"
+   }
+},
+ {
+   "fact": {
+      "id": "b108f9c9-a8e8-43b8-8edc-d29cfb493400",
+      "name": "Jupiter",
+      "image": {
+         "localImage": "jupiter",
+         "alternativeText": "Image of Jupiter with colored bands in shades of brown, white and beige, in addition to the iconic Great Red Spot, a giant storm."
+      },
+      "mascotComment": "Jupiter is a true giant! With storms bigger than Earth and a monstrous magnetic field, it is the king of the Solar System — and a light show for scientists!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+      "location": "Solar System",
+      "diameter": {
+         "value": 142984,
+         "unit": "km"
+      },
+      "typeDescriptive": "gas giant planet",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "Look for a very bright “star” in the eastern sky after 8 p.m."
+      },
+      "rotationPeriod": {
+         "value": 9.03,
+         "unit": "time_unit_hours"
+      },
+      "translationPeriod": {
+         "value": 11.86,
+         "unit": "time_unit_earthYears"
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 1.9e+27,
+         "unit": "kg"
+      },
+      "temperature": "-145°C",
+      "atmosphere": "Bands of clouds called zones and belts, with winds of up to thousands of km/h; Great Red Spot — giant cyclonic storm",
+      "atmPressure": {
+         "value": 1000,
+         "unit": "atm"
+      },
+      "surface": "No solid surface — gradual transition from atmosphere to liquid and gaseous layers",
+      "gravity": {
+         "value": 24.79,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": 1330,
+         "unit": "g/L"
+      },
+      "moons": "At least 97 confirmed, including Io, Europa, Ganymede and Callisto"
+   },
+   "historyAndObservation": "Observed since ancient times, it was the first planet to be studied with a telescope by Galileo in 1610, who discovered its largest moons.\nSpace missions, such as the Pioneer, Voyager, Galileo and Juno probes, have revealed details of the atmosphere, internal structure and magnetosphere.\nThe Juno mission, in orbit since 2016, has provided unprecedented data on the composition, atmospheric dynamics and gravitational field of the planet.",
+   "exploringAndMissions": "Pioneer 10 and 11 (1970s): First probes to fly by Jupiter.\nVoyager 1 and 2 (1979): Detailed images of the atmosphere and moons.\nGalileo (1995–2003): Orbiter that studied the planet and its moons.\nJuno (2016–present): Orbiter mission investigating the planet's internal structure, magnetic field, and deep atmosphere.",
+   "triviaAndMiths": {
+      "culturalParallels": "Romans: Named after the Roman god Jupiter, king of the gods, reflecting his status as the largest planet",
+      "trivia": "The Great Red Spot has been a continuous storm for at least 300 years.\nIts magnetosphere is so powerful that it generates radio emissions detectable from Earth, surpassing the Sun in some frequencies.\nGanymede, one of its moons, is larger than the planet Mercury.\nThe planet emits more heat than it receives from the Sun due to internal gravitational contraction."
+   }
+},
+ {
+   "fact": {
+      "id": "c30c446c-8870-45ef-ac23-2ebd729e5d73",
+      "name": "Saturn",
+      "image": {
+         "localImage": "saturn",
+         "alternativeText": "Photo of Saturn highlighting its impressive rings formed by particles of ice and rock, with the golden planet in the center."
+      },
+      "mascotComment": "Saturn is the king of the rings! With its fast-moving winds and mysterious moons, it’s one of the most fascinating planets to explore — even if I do need a warm coat to brave the cold!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+      "location": "Solar System",
+      "diameter": {
+         "value": 116464,
+         "unit": "km"
+      },
+      "typeDescriptive": "gas giant planet",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "It appears as a yellowish dot in the eastern or southeastern sky between 8 pm and 10 pm."
+      },
+      "rotationPeriod": {
+         "value": 10.11,
+         "unit": "time_unit_hours"
+      },
+      "translationPeriod": {
+         "value": 29.4,
+         "unit": "time_unit_earthYears"
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 5.68e+26,
+         "unit": "kg"
+      },
+      "temperature": "Average of -138°C in the upper atmosphere",
+      "atmosphere": "Bands of clouds in yellowish, brown and white tones;",
+      "atmPressure": {
+         "value": 1400,
+         "unit": "atm"
+      },
+      "surface": "No solid surface — outer layers composed of gases and liquids; dense, solid core surrounded by liquid metallic and molecular hydrogen",
+      "gravity": {
+         "value": 11.19,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": 687,
+         "unit": "g/L"
+      },
+      "moons": "At least 146 confirmed; highlights include Titan (with thick atmosphere and methane lakes) and Enceladus (water geysers and astrobiological potential)"
+   },
+   "historyAndObservation": "Observed since ancient times, Saturn was the first planet with rings to be discovered, initially by Galileo in 1610, who saw them as “ears”. Space missions such as Pioneer 11, Voyager 1 and 2, and especially Cassini-Huygens (1997–2017) have provided detailed information about its atmosphere, rings, and moons. Cassini was the first to orbit Saturn and landed the Huygens probe on Titan, revealing unprecedented data about its surface and atmosphere.",
+   "exploringAndMissions": "Pioneer 11 (1979): first flyby of Saturn.\nVoyager 1 and 2 (1980–1981): detailed images of the rings and moons.\nCassini-Huygens (1997–2017): orbital mission that revolutionized knowledge about Saturn and its moons.",
+   "triviaAndMiths": {
+      "culturalParallels": "Romans: Named after Saturn, the Roman god of agriculture and weather.",
+      "trivia": "Despite being the second largest planet, its density is the lowest in the Solar System.\nSaturn radiates more energy than it receives from the Sun, due to internal processes such as helium precipitation.\nIts ring system is the most extensive and brightest in the Solar System, visible even with amateur telescopes.\nTitan is larger than the planet Mercury and has a dense atmosphere rich in nitrogen."
+   }
+},
+ {
+   "fact": {
+      "id": "f1dc57eb-9f94-4bf2-9987-0e3273936094",
+      "name": "Uranus",
+      "image": {
+         "localImage": "uranus",
+         "alternativeText": "Image of Uranus in uniform blue-green tone, without great visible details, rotating on its side with faint rings around it."
+      },
+      "mascotComment": "Uranus is the coldest and most unusual planet in the Solar System, rotating on its side and with discreet rings — a true blue mystery in the sky!"
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+      "location": "Solar System",
+      "diameter": {
+         "value": 51800,
+         "unit": "km"
+      },
+      "typeDescriptive": "gas giant planet",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "It is a pale blue-green dot"
+      },
+      "rotationPeriod": {
+         "value": 17.23,
+         "unit": "time_unit_hours"
+      },
+      "translationPeriod": {
+         "value": 84,
+         "unit": "time_unit_earthYears"
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 8.68e+25,
+         "unit": "kg"
+      },
+      "temperature": "Average of approximately -197 °C",
+      "atmosphere": "Blue-green due to absorption of red light by methane; composed of layers of gases overlying a fluid mantle",
+      "atmPressure": {
+         "value": 100,
+         "unit": "atm"
+      },
+      "surface": "Does not have — gradual transition between gases and liquids; deep mantle called “water-ammonia ocean”",
+      "gravity": {
+         "value": 8.87,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": 1270,
+         "unit": "g/L"
+      },
+      "moons": "27 known, named after works by Shakespeare and Pope (e.g. Titania, Ariel, Miranda)"
+   },
+   "historyAndObservation": "Discovered in 1781 by William Herschel, it was the first planet identified using a telescope.\n\nVisible to the naked eye under favorable conditions, but with low brightness and a bluish color.\n\nObserved in detail by the Voyager 2 probe in 1986, which revealed its atmosphere, rings and moons.\n\nModern telescopes and the Hubble Space Telescope continue to study the planet.",
+   "exploringAndMissions": "Voyager 2 (1986): the only mission to visit Uranus, providing essential images and data on its atmosphere, rings, and moons.\nFuture missions proposed to further study its composition, magnetosphere, and satellite system.",
+   "triviaAndMiths": {
+      "culturalParallels": "Romans: Named after Uranus, the Greek god of the sky.",
+      "trivia": "Uranus is the planet with the most extreme axial tilt in the Solar System, causing it to spin practically on its side.\nIts atmosphere is the coldest in the Solar System, with temperatures that can reach -224°C.\nUranus' rings were the second to be discovered, after Saturn's, and are much dimmer.\nUranus' moons have literary names, unlike most planetary satellites."
+   }
+},
+ {
+   "fact": {
+      "id": "a3800d07-9b7a-45f2-95d7-054451c44a20",
+      "name": "Neptune",
+      "image": {
+         "localImage": "neptune",
+         "alternativeText": "Photo of Neptune with intense blue coloration and atmosphere with subtle bands, sometimes with dark spots that indicate storms."
+      },
+      "mascotComment": "Neptune is the blue giant of the Solar System, with winds that could knock anyone over and a moon that looks like a frozen volcano! A planet full of icy surprises right at the end of our cosmic backyard."
+   },
+   "popularName": null,
+   "type": "body_type_planet",
+   "mainInfo": {
+      "location": "Solar System",
+      "diameter": {
+         "value": 49244,
+         "unit": "km"
+      },
+      "typeDescriptive": "gas giant planet",
+      "visibility": {
+         "viewingMethod": "viewing_method_telescope",
+         "observationZone": ".",
+         "instructions": "Invisible to the naked eye"
+      },
+      "rotationPeriod": {
+         "value": 16,
+         "unit": "time_unit_hours"
+      },
+      "translationPeriod": {
+         "value": 165,
+         "unit": "time_unit_earthYears"
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 1.02e+27,
+         "unit": "kg"
+      },
+      "temperature": "Average of -201 °C",
+      "atmosphere": "Unstable and turbulent, with the fastest winds in the Solar System (up to 2,000 km/h)",
+      "atmPressure": {
+         "value": 100000,
+         "unit": "atm"
+      },
+      "surface": "It has no solid surface; internal structure with a rocky core the size of Earth, surrounded by a mantle of water, ammonia and methane in the form of “hot ice”",
+      "gravity": {
+         "value": 11.15,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": 1638,
+         "unit": "g/L"
+      },
+      "moons": "At least 14 known, including Triton (geologically active, with nitrogen geysers)"
+   },
+   "historyAndObservation": "Discovered in 1846 by Johann Galle, after mathematical predictions based on disturbances in the orbit of Uranus.\nInitially observed by Galileo in 1612, but without recognition as a planet.\nStudyed in detail by the Voyager 2 probe in 1989, which revealed its rings, moons and atmosphere.",
+   "exploringAndMissions": "Voyager 2 (1989): the only mission to visit Neptune, providing essential images and data about the planet, its rings and moons.",
+   "triviaAndMiths": {
+      "culturalParallels": "Romans: Named after Neptune, the Roman god of the sea, reflecting its blue color and turbulent atmosphere",
+      "trivia": "Neptune's magnetic field is about 27 times stronger than Earth's, tilted about 47° from its axis of rotation.\nNeptune has the fastest winds in the Solar System, with speeds that can exceed 2,000 km/h.\nThe Great Dark Spot, a storm similar to Jupiter's Great Red Spot, has been observed before, but has disappeared and reappeared in different locations."
+   }
+},
+ {
+   "fact": {
+      "id": "07579eb4-61f0-4d03-b687-38e2e72397c2",
+      "name": "Sun",
+      "image": {
+         "localImage": "sun",
+         "alternativeText": "Detailed image of the Sun with a surface in orange and yellow tones, showing solar flares and active regions in high relief, contrasting with the black background of space."
+      },
+      "mascotComment": "Did you know that the energy the Sun emits in 1 second would be enough to supply the Earth for 500 thousand years?"
+   },
+   "popularName": null,
+   "type": "body_type_star",
+   "mainInfo": {
+      "location": "Center of the solar system",
+      "diameter": {
+         "value": 1392700,
+         "unit": "km"
+      },
+      "typeDescriptive": "Yellow dwarf star",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "Never look directly at the Sun without adequate protection (such as solar filters designed for astronomical observation), as this can cause permanent damage to your eyesight."
+      },
+      "rotationPeriod": {
+         "value": null,
+         "unit": null
+      },
+      "translationPeriod": {
+         "value": null,
+         "unit": null
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 3.956e+60,
+         "unit": "kg"
+      },
+      "temperature": "Surface (photosphere): ~5,550 °C\nCore: ~15,000,000 °C",
+      "atmosphere": null,
+      "atmPressure": {
+         "value": null,
+         "unit": null
+      },
+      "surface": null,
+      "gravity": {
+         "value": 274,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": null,
+         "unit": null
+      },
+      "moons": null
+   },
+   "historyAndObservation": "The Sun has always been visible, there was no \"discovery\".\nIt takes about 8 minutes and 20 seconds for the Sun's light to reach Earth.\nThe Sun is about 4.6 billion years old and has fuel for another 5 billion years.\nDespite its importance, it is an average star among billions in the Milky Way.\nIt can be seen with the naked eye, but should never be looked at directly.-",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+      "culturalParallels": null,
+      "trivia": null
+   }
+},
+ {
+   "fact": {
+      "id": "c1efdc3e-5c47-4313-87b5-12421410a9c6",
+      "name": "Sirius A",
+      "image": {
+         "localImage": "sirius",
+         "alternativeText": "Bright blue and white image of a star with a cross-shaped diffraction effect, indicating great light intensity; completely dark background."
+      },
+      "mascotComment": "The brightest star in the sky comes running ahead like a cosmic lighthouse — it's impossible not to notice all that brightness! 🐾✨"
+   },
+   "popularName": null,
+   "type": "body_type_star",
+   "mainInfo": {
+      "location": "Constellation Canis Major (Canis Major)",
+      "diameter": {
+         "value": 2375000,
+         "unit": "km"
+      },
+      "typeDescriptive": "Hot white dwarf star",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "Look towards the constellation Canis Major (Canis Major), below Orion, following the line of the three Marys (Orion's belt) down and to the left."
+      },
+      "rotationPeriod": {
+         "value": null,
+         "unit": null
+      },
+      "translationPeriod": {
+         "value": null,
+         "unit": null
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 3.978e+30,
+         "unit": "kg"
+      },
+      "temperature": "~9,940 °C",
+      "atmosphere": null,
+      "atmPressure": {
+         "value": null,
+         "unit": null
+      },
+      "surface": null,
+      "gravity": {
+         "value": 196,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": null,
+         "unit": null
+      },
+      "moons": null
+   },
+   "historyAndObservation": "Known since ancient times by various civilizations (Egyptians, Greeks, African peoples, indigenous peoples).\nConsidered the brightest star in the night sky (apparent magnitude -1.46).\nWidely used for navigation and marking astronomical calendars.",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+      "culturalParallels": "Egyptians: Sirius (called Sothis) marked the flooding of the Nile, signaling the beginning of the new year.\n\nBrazilian indigenous peoples: attributed great importance to Sirius in planting cycles.\n\nGreeks: was part of Orion's hunting dogs.",
+      "trivia": "Its glow sometimes appears to shimmer in various colors because of the turbulence of the Earth's atmosphere."
+   }
+},
+ {
+   "fact": {
+      "id": "2b230324-a6ba-4ff4-b210-f944d47ea134",
+      "name": "Betelgeuse",
+      "image": {
+         "localImage": "betelgeuse",
+         "alternativeText": "The image shows a diffuse stellar disk with hues ranging from intense red at the edges to bright yellow-white in the center, indicating the hottest regions. The background is completely black, highlighting the brightness of the star."
+      },
+      "mascotComment": "Betelgeuse is so big that if it were in the place of the Sun, it would swallow Earth, Mars and maybe even Jupiter! And the craziest part: one day it will explode in an incredible cosmic spectacle — but don't worry, we're far enough away!"
+   },
+   "popularName": null,
+   "type": "body_type_star",
+   "mainInfo": {
+      "location": "Orion Constellation",
+      "diameter": {
+         "value": 1200000000,
+         "unit": "km"
+      },
+      "typeDescriptive": "Red supergiant star",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "Find the constellation Orion (the Three Marys help) — Betelgeuse is the reddish star on the \"left shoulder\" of the hunter figure"
+      },
+      "rotationPeriod": {
+         "value": null,
+         "unit": null
+      },
+      "translationPeriod": {
+         "value": null,
+         "unit": null
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 2.984e+31,
+         "unit": "kg"
+      },
+      "temperature": "~3,500 °C",
+      "atmosphere": null,
+      "atmPressure": {
+         "value": null,
+         "unit": null
+      },
+      "surface": null,
+      "gravity": {
+         "value": 1.37,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": null,
+         "unit": null
+      },
+      "moons": null
+   },
+   "historyAndObservation": "Known since ancient times; name comes from Arabic (Yad al-Jawzā’, “the hand of Gemini” or “hand of Orion”)\nOne of the brightest stars in the sky (normally the 10th brightest, but it varies)\nIt presents variability in brightness, which has generated recent speculation about a possible supernova explosion\nObserved with modern telescopes and even directly with interferometry, which allowed obtaining images of the stellar disk",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+      "culturalParallels": "Greeks: composes the hunter Orion\n",
+      "trivia": "Indigenous peoples of Australia, Hawaii, the Mayans and others also recognized the constellation Orion with its own meanings\nThe recent variation in brightness in 2019 caught the attention of the scientific world — the “dimming” was likely caused by a cloud of stardust\n"
+   }
+},
+ {
+   "fact": {
+      "id": "565a828e-1263-4e13-8108-86b87da8e803",
+      "name": "Antares",
+      "image": {
+         "localImage": "antares",
+         "alternativeText": "Orange, slightly blurred image of a red giant star, with a diffuse appearance and smooth texture, standing out against the black background of space."
+      },
+      "mascotComment": "Antares looks like a red jewel shining in the night sky! And did you know that it is so big that if it were placed in the place of the Sun, it would swallow the Earth?"
+   },
+   "popularName": null,
+   "type": "body_type_star",
+   "mainInfo": {
+      "location": "Scorpio Constellation",
+      "diameter": {
+         "value": 1200000000,
+         "unit": "km"
+      },
+      "typeDescriptive": "Red supergiant star",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "It appears in the winter and spring of the southern hemisphere, in the constellation of Scorpio, near the eastern horizon just after sunset."
+      },
+      "rotationPeriod": {
+         "value": null,
+         "unit": null
+      },
+      "translationPeriod": {
+         "value": null,
+         "unit": null
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 2.387e+31,
+         "unit": "kg"
+      },
+      "temperature": "~3,500 °C",
+      "atmosphere": null,
+      "atmPressure": {
+         "value": null,
+         "unit": null
+      },
+      "surface": null,
+      "gravity": {
+         "value": 0.1,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": null,
+         "unit": null
+      },
+      "moons": null
+   },
+   "historyAndObservation": "Known since ancient times; the name \"Antares\" comes from the Greek \"anti-Ares\" (rival of Mars), due to its reddish color\nIt is the brightest star in the constellation of Scorpio and one of the brightest in the night sky\nObserved in many cultures as an important star in calendars and astronomical myths-",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+      "culturalParallels": "Greeks: represents the heart of the scorpion; the scorpion would have killed Orion, and for this reason, the constellations of Scorpio and Orion never appear together in the sky\n",
+      "trivia": "In many ancient cultures, it was associated with war, blood and protection\nLike Betelgeuse, Antares is nearing the end of its stellar life and could explode as a supernova sometime in the next few million years\nIt is a variable star, meaning its brightness changes slightly over time"
+   }
+},
+ {
+   "fact": {
+      "id": "47dc41d1-347b-4a18-8401-ae3b1c7ce943",
+      "name": "Vega",
+      "image": {
+         "localImage": "vega",
+         "alternativeText": "Simple image of a bright, blurry reddish star with an intense center and soft edges, on a dark background with no other visible objects."
+      },
+      "mascotComment": "Vega shines blue like an icy jewel in the summer sky, enchanting anyone who looks up! 💎🌌"
+   },
+   "popularName": null,
+   "type": "body_type_star",
+   "mainInfo": {
+      "location": "Lyra Constellation",
+      "diameter": {
+         "value": 2362000,
+         "unit": "km"
+      },
+      "typeDescriptive": "Blue-white star",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "In the southern hemisphere, it can be seen in winter, low on the northern horizon."
+      },
+      "rotationPeriod": {
+         "value": null,
+         "unit": null
+      },
+      "translationPeriod": {
+         "value": null,
+         "unit": null
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 4.177e+30,
+         "unit": "kg"
+      },
+      "temperature": "~9,600 °C",
+      "atmosphere": null,
+      "atmPressure": {
+         "value": null,
+         "unit": null
+      },
+      "surface": null,
+      "gravity": {
+         "value": 21,
+         "unit": "m/s²"
+      },
+      "density": {
+         "value": null,
+         "unit": null
+      },
+      "moons": null
+   },
+   "historyAndObservation": "Vega is one of the brightest stars in the night sky and was the pole star about 12,000 years ago. It was the first star (after the Sun) to be photographed and have its spectrum recorded. Together with Altair and Deneb, it forms the famous Summer Triangle (visible in the winter in the southern hemisphere)",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+      "culturalParallels": "Greeks: Vega represents Orpheus' harp, placed in the sky by Apollo\nChinese and Japanese: represents the celestial princess Orihime, separated from her beloved by a river (the Milky Way), only being able to see him once a year (Tanabata festival)",
+      "trivia": "Vega is considered a standard model for calibrating the brightness of other stars (magnitudes)\nA dust disk is suspected to be present around it, which may indicate planetary formation"
+   }
+},
+ {
+   "fact": {
+      "id": "93385fc3-331c-4ce9-a003-96652172c3f3",
+      "name": "Southern Cross",
+      "image": {
+         "localImage": "cruzeiro do sul",
+         "alternativeText": "Photo of the night sky with several small stars visible. In the center, the characteristic cross formation stands out, composed of four very bright main stars and a fifth less visible one, forming the Southern Cross, a famous constellation in the southern hemisphere."
+      },
+      "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_constellation",
+   "mainInfo": {
+      "location": "Southern celestial hemisphere",
+      "diameter": {
+         "value": null,
+         "unit": null
+      },
+      "typeDescriptive": "Constellation",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "- Look for the cross shape, with four bright main stars\n- To find geographic south, project the line of the cross (from Gacrux to Acrux) about 4.5 times the length of the cross downwards"
+      },
+      "rotationPeriod": {
+         "value": null,
+         "unit": null
+      },
+      "translationPeriod": {
+         "value": null,
+         "unit": null
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": null,
+         "unit": null
+      },
+      "temperature": null,
+      "atmosphere": null,
+      "atmPressure": {
+         "value": null,
+         "unit": null
+      },
+      "surface": null,
+      "gravity": {
+         "value": null,
+         "unit": null
+      },
+      "density": {
+         "value": null,
+         "unit": null
+      },
+      "moons": null
+   },
+   "historyAndObservation": "Very important to South American indigenous cultures, such as the Tupi-Guarani\nOfficially recognized as a constellation only in the 16th century\nPresent on several flags (Brazil, Australia, New Zealand, Papua New Guinea, Samoa)\n",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+      "culturalParallels": "Indigenous peoples: Associated with figures such as the “sky rhea” (in Brazil) or the cross of ancestors",
+      "trivia": "Navigation: Historically used by Portuguese and Spanish navigators to find their way at sea\nIt is the most emblematic constellation of the Southern Hemisphere, a national symbol in countries such as Brazil"
+   }
+},
+ {
+   "fact": {
+      "id": "e0b3c792-8439-4176-ba59-339e6c006a76",
+      "name": "Canis Major",
+      "image": {
+         "localImage": "cao maior",
+         "alternativeText": "Image of a starry sky at dusk, with a group of stars forming the constellation Canis Major. The stars are connected by imaginary lines in the shape of a “hook” or inverted “L”. The brightest star (Sirius) stands out clearly."
+      },
+      "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_constellation",
+   "mainInfo": {
+      "location": "Southern celestial hemisphere",
+      "diameter": {
+         "value": null,
+         "unit": null
+      },
+      "typeDescriptive": "Constellation",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "Find Orion's belt (the Three Marys) and follow the line towards the south of the sky — Sirius is the brightest star on this path"
+      },
+      "rotationPeriod": {
+         "value": null,
+         "unit": null
+      },
+      "translationPeriod": {
+         "value": null,
+         "unit": null
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": null,
+         "unit": null
+      },
+      "temperature": null,
+      "atmosphere": null,
+      "atmPressure": {
+         "value": null,
+         "unit": null
+      },
+      "surface": null,
+      "gravity": {
+         "value": null,
+         "unit": null
+      },
+      "density": {
+         "value": null,
+         "unit": null
+      },
+      "moons": null
+   },
+   "historyAndObservation": "Name associated with the great dog that accompanies the hunter Orion in the sky",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+      "culturalParallels": "Greek mythology: Canis Major was Orion's hunting dog\nEgyptian mythology: Sirius was associated with the goddess Isis and the fertility brought by the flooding of the Nile\nBrazilian indigenous cultures: The constellation represents a hunting dog, linked to myths about hunting and protection",
+      "trivia": null
+   }
+},
+ {
+   "fact": {
+      "id": "6cf2fb20-54b0-493b-8eb7-7f9dc5faeae1",
+      "name": "Orion",
+      "image": {
+         "localImage": "orion",
+         "alternativeText": "Very starry sky with emphasis on the constellation Orion. The most notable stars are three aligned in the center (Orion's Belt). The image also shows the Orion Nebula (whitish region surrounded by a rectangle), with bluish stars around it."
+      },
+      "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_constellation",
+   "mainInfo": {
+      "location": "Celestial equatorial region",
+      "diameter": {
+         "value": null,
+         "unit": null
+      },
+      "typeDescriptive": "Constellation",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "- Look for the three aligned stars (Orion's Belt) almost in the middle of the night sky\n- Points to other constellations: the belt line points to Sirius (in Canis Major) and Aldebaran (in Taurus)"
+      },
+      "rotationPeriod": {
+         "value": null,
+         "unit": null
+      },
+      "translationPeriod": {
+         "value": null,
+         "unit": null
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": null,
+         "unit": null
+      },
+      "temperature": null,
+      "atmosphere": null,
+      "atmPressure": {
+         "value": null,
+         "unit": null
+      },
+      "surface": null,
+      "gravity": {
+         "value": null,
+         "unit": null
+      },
+      "density": {
+         "value": null,
+         "unit": null
+      },
+      "moons": null
+   },
+   "historyAndObservation": "Known since ancient times by several civilizations\nOne of the easiest constellations to identify\nThe “Three Marys” are one of the most recognizable star patterns in the sky\nWidely used as a reference point to locate other stars and constellations",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+      "culturalParallels": "Greek Mythology: Orion was a giant, proud hunter, killed by a scorpion (the constellation of Scorpio rises when Orion sets)\nEgyptian Mythology: Associated with the god Osiris, and aligned with the pyramids of Giza\nBrazilian indigenous cultures: In several, the “Three Marys” are seen as specific mythological instruments or figures",
+      "trivia": null
+   }
+},
+ {
+   "fact": {
+      "id": "3179b104-6d35-41e3-a971-58f5a7ac9ada",
+      "name": "Southern Triangle",
+      "image": {
+         "localImage": "triangulo austral",
+         "alternativeText": "Starry sky with many small stars. Three brighter stars, close together, form a triangle highlighted in the lower center of the image"
+      },
+      "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_constellation",
+   "mainInfo": {
+      "location": "Southern celestial hemisphere",
+      "diameter": {
+         "value": null,
+         "unit": null
+      },
+      "typeDescriptive": "Constellation",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "It is located near Cruzeiro do Sul"
+      },
+      "rotationPeriod": {
+         "value": null,
+         "unit": null
+      },
+      "translationPeriod": {
+         "value": null,
+         "unit": null
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": null,
+         "unit": null
+      },
+      "temperature": null,
+      "atmosphere": null,
+      "atmPressure": {
+         "value": null,
+         "unit": null
+      },
+      "surface": null,
+      "gravity": {
+         "value": null,
+         "unit": null
+      },
+      "density": {
+         "value": null,
+         "unit": null
+      },
+      "moons": null
+   },
+   "historyAndObservation": "Created in the 16th century by European navigators (Plancius and Keyser) during explorations of the southern hemisphere.\nThe name means “Southern Triangle”, in contrast to the Triangle of the northern hemisphere.\nMade official in Bayer's star atlas in 1603.",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+      "culturalParallels": null,
+      "trivia": "It was often used as a navigation point by explorers in the south.\nDue to its striking and isolated shape, it is a constellation often used to teach beginners how to identify figures in the sky."
+   }
+},
+ {
+   "fact": {
+      "id": "6668cf19-e53c-4f86-a680-92a5168540e3",
+      "name": "Scorpius",
+      "image": {
+         "localImage": "scorpius",
+         "alternativeText": "Image of the constellation Scorpius, with stars connected by thin lines forming the curved silhouette of the celestial scorpion. The stars are more concentrated in the lower left and extend in a curve to the upper right of the image."
+      },
+      "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_constellation",
+   "mainInfo": {
+      "location": "Southern celestial hemisphere",
+      "diameter": {
+         "value": null,
+         "unit": null
+      },
+      "typeDescriptive": "Constellation",
+      "visibility": {
+         "viewingMethod": "viewing_method_naked_eye",
+         "observationZone": ".",
+         "instructions": "Look east in the early evening, or north in the late evening, and look for a curved sequence of stars with a bright reddish star in the center — Antares."
+      },
+      "rotationPeriod": {
+         "value": null,
+         "unit": null
+      },
+      "translationPeriod": {
+         "value": null,
+         "unit": null
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 1.989e+30,
+         "unit": "kg"
+      },
+      "temperature": null,
+      "atmosphere": null,
+      "atmPressure": {
+         "value": null,
+         "unit": null
+      },
+      "surface": null,
+      "gravity": {
+         "value": null,
+         "unit": null
+      },
+      "density": {
+         "value": null,
+         "unit": null
+      },
+      "moons": null
+   },
+   "historyAndObservation": "It represents a scorpion with an arched body and a curved tail.\nIt is one of the 88 modern constellations and one of the most prominent in the zodiac.\nIt is present in classic works of astronomy, such as Ptolemy's Almagest.",
+   "exploringAndMissions": null,
+   "triviaAndMiths": {
+      "culturalParallels": "Greek mythology: The scorpion was sent by Gaia (or Artemis) to kill the hunter Orion. After Orion's death, they were both placed in the sky, but on opposite sides — when Scorpio rises, Orion sets.",
+      "trivia": "Name: “Antares” means “rival of Ares” (Mars), due to its similarity in color and brightness to the red planet.\nScorpio is the only constellation in the zodiac with a shape that truly resembles the animal it represents."
+   }
+},
+ {
+   "fact": {
+      "id": "9732cd89-c53e-4fb5-9750-4a88942b61cc",
+      "name": "M87*",
+      "image": {
+         "localImage": "saggitarius",
+         "alternativeText": "The image shows a bright ring of light in shades of orange and yellow, with a dark center — the \"shadow\" of the black hole. The background is black, enhancing the contrast."
+      },
+      "mascotComment": null
+   },
+   "popularName": null,
+   "type": "body_type_black_hole",
+   "mainInfo": {
+      "location": "Center of the Milky Way",
+      "diameter": {
+         "value": 44000000,
+         "unit": "km"
+      },
+      "typeDescriptive": "Supermassive black hole",
+      "visibility": {
+         "viewingMethod": "viewing_method_telescope",
+         "observationZone": ".",
+         "instructions": "Requires advanced telescopes and radio/infrared wave-gathering instruments"
+      },
+      "rotationPeriod": {
+         "value": null,
+         "unit": null
+      },
+      "translationPeriod": {
+         "value": null,
+         "unit": null
+      }
+   },
+   "physicalCharacteristics": {
+      "mass": {
+         "value": 8.553e+36,
+         "unit": "kg"
+      },
+      "temperature": "~10⁶ K (event horizon)",
+      "atmosphere": null,
+      "atmPressure": {
+         "value": null,
+         "unit": null
+      },
+      "surface": null,
+      "gravity": {
+         "value": null,
+         "unit": null
+      },
+      "density": {
+         "value": 1200000000000,
+         "unit": "g/L"
+      },
+      "moons": null
+   },
+   "historyAndObservation": "Sagittarius A* was identified as a strong radio source in 1974. \nSubsequent observations, particularly of the motions of nearby stars, confirmed that it is a supermassive black hole. \nIn 2022, the Event Horizon Telescope (EHT) revealed the first direct image of its shadow.",
+   "exploringAndMissions": "Event Horizon Telescope (EHT) – captured the first image in 2022\nGRAVITY (ESO) – tracked stars orbiting the black hole\nResults: Direct evidence of the existence of the supermassive black hole at the center of our galaxy",
+   "triviaAndMiths": {
+      "culturalParallels": "Brazilian indigenous cultures associate the central region of the Milky Way with the \"Dark Cloud\" or the \"Celestial Jaguar\"",
+      "trivia": "A star (S2) orbits the black hole every 16 years at speeds of up to 3% of the speed of light!\nDespite being a giant, Sagittarius A* is “quiet” (inactive) compared to active black holes in other galaxies"
+   }
+}
+]

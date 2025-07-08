@@ -1,0 +1,112 @@
+[
+ {
+   "fact": {
+      "id": "63772d6b-14e6-4b5b-a1fb-7380defeb286",
+      "name": "Lluvia de meteoros Austrínidas Piscis",
+      "image": {
+         "localImage": "Piscis Austrinid",
+         "alternativeText": "Cielo nocturno sobre un paisaje montañoso. Varias estelas de luz paralelas marcan el movimiento de las estrellas, capturadas con larga exposición, creando un efecto de bandas brillantes que cruzan la imagen."
+      },
+      "mascotComment": "Esas rayas en el cielo no son magia, ¡son estrellas que danzan con el paso del tiempo! ¡La lluvia de meteoros Austrínidas de Piscis tiene el cielo lleno de vida!"
+   },
+   "date": {
+      "startAt": "2025-07-15T19:24:00-03:00",
+      "duration": 2199180
+   },
+   "type": "observable_event_meteor_shower",
+   "explanation": "Lluvias de meteoros originadas por la estela de escombros que la Tierra cruza en la constelación de Piscis Austrinus. Se espera un pico de hasta ~5 meteoros/hora (ZHR) en condiciones ideales, pero en São Paulo se espera hasta 4 meteoros/hora durante el pico debido a la posición del radiante.",
+   "visibility": {
+      "viewingMethod": "viewing_method_naked_eye",
+      "observationZone": "São Paulo (UTC−3). En la noche del pico, el radiante sale a las ~19:24 y permanece visible hasta el amanecer (~06:17). Entre las 02:00 y las 03:00 de la madrugada, cuando el radiante está cerca del cenit (~83° sobre el horizonte).",
+      "instructions": "Busque un lugar oscuro, lejos del alumbrado público.\n\nDespués de las 19:24, el radiante estará en el este; espere hasta las 2:00 para encontrar la posición ideal.\n\nMire a unos 30-40° en cualquier dirección desde el radiante para ver los meteoros con las rayas más grandes.\n\nTraiga una silla o una manta, evite mirar la Luna o las luces y tenga paciencia: espere al menos 30 minutos para que la vista se adapte.\n\nSe estima que la tasa de meteoros en São Paulo en su punto máximo es de hasta 4 meteoros por hora."
+   }
+},
+ {
+   "fact": {
+      "id": "9efd87d7-d43e-4449-9303-9c055e2f154a",
+      "name": "Aproximación de la Luna y M45 (Pléyades)",
+      "image": {
+         "localImage": "Lua e M45",
+         "alternativeText": "Cielo nocturno con muchas estrellas brillantes; la Luna está resaltada en el centro inferior, con el cúmulo estelar M45 justo encima, representado por una agrupación de puntos blancos."
+      },
+      "mascotComment": "¡Mira este hermoso encuentro! La Luna es encantadora y las Pléyades brillan juntas. ¡El cielo estrellado también representa la amistad!"
+   },
+   "date": {
+      "startAt": "2025-07-20T02:42:00-03:00",
+      "duration": 12360
+   },
+   "type": "observable_event_conjunction",
+   "explanation": "La Luna y el cúmulo estelar M45 (Pléyades), ambos en la constelación de Tauro, estarán visualmente cerca en el cielo, con una separación angular de 46,3 arcmin. Aunque están muy cerca, no estarán en el mismo campo de visión con un telescopio, pero podrán verse a simple vista o con binoculares.",
+   "visibility": {
+      "viewingMethod": "viewing_method_naked_eye",
+      "observationZone": "Visible a simple vista en São Paulo, mirando hacia el noreste. Entre las 3 y las 6 de la mañana, cuando la pareja alcanza una altitud de unos 35°.",
+      "instructions": "Busque un lugar oscuro con buena visibilidad hacia el noreste.\n\nSi es posible, lleve binoculares. Aunque es visible a simple vista, los detalles de M45 se ven mucho más claros con aumento.\n\nComience a observar a las 3:00 a. m., pero su aproximación más cercana será a las 7:55 a. m., justo antes de que la luz del día lo haga imposible de ver.\n\nLa Luna tendrá una magnitud de -11,1 y M45 una magnitud de 1,3; ambas serán fáciles de detectar en el cielo nocturno.\n\nDado que ambos estarán separados por 46,3 minutos de arco, observe con atención: no se superpondrán, sino que estarán muy cerca."
+   }
+},
+ {
+   "fact": {
+      "id": "6e4571ab-f8b9-4320-854e-fea5e9560211",
+      "name": "Lluvia de meteoros de Alfa Capricornio",
+      "image": {
+         "localImage": "Alfa-Capricórnidas",
+         "alternativeText": "Cielo nocturno con una estrella fugaz que cruza la diagonal de la imagen, dejando una estela multicolor brillante (verde y rojo), en medio de varias estrellas visibles sobre un fondo azul oscuro."
+      },
+      "mascotComment": "¡Guau! ¿Viste ese rayo brillante en el cielo? Era un Capricornio Alfa pasando rápidamente. ¡Es como si el cielo nos hubiera guiñado un ojo!"
+   },
+   "date": {
+      "startAt": "2025-07-03T00:00:00Z",
+      "duration": 3715200
+   },
+   "type": "observable_event_meteor_shower",
+   "explanation": "Lluvia de meteoros anual asociada al cometa 169P/NEAT, caracterizada por meteoros de movimiento lento y moderadamente brillantes, con ocasionales bólidos (meteoros muy brillantes). Su actividad es moderada, pero es una de las pocas lluvias visibles durante el invierno en el hemisferio sur.",
+   "visibility": {
+      "viewingMethod": "viewing_method_naked_eye",
+      "observationZone": "Visible a simple vista en Brasilia y otras regiones del hemisferio sur. Radiante ubicado en la constelación de Capricornio, visible durante toda la noche desde el anochecer.",
+      "instructions": "Busca un lugar oscuro con una vista despejada del cielo (preferiblemente sin edificios ni árboles altos).\n\nLa lluvia de meteoros estará activa toda la noche, pero el mejor momento para verla es entre la medianoche y las 4 a. m.\n\nNo es necesario usar telescopio: los meteoros son visibles a simple vista.\n\nRecuéstate o recuéstate cómodamente, observando una zona oscura del cielo a una distancia de entre 30° y 40° del radiante (no directamente a él).\n\nLleva ropa de abrigo y paciencia: la velocidad promedio es de hasta 4 meteoros por hora en condiciones reales de observación."
+   }
+},
+ {
+   "fact": {
+      "id": "bb223881-d22d-4cdc-9847-937d0c3832bd",
+      "name": "El asteroide 63 Ausonia en oposición",
+      "image": {
+         "localImage": "Asteroide 63",
+         "alternativeText": "Objeto blanco difuso de forma irregular, similar a un cacahuete, sobre un fondo completamente negro. Representa un asteroide visto a baja resolución."
+      },
+      "mascotComment": "¡Ese bicho raro es el asteroide 63 Ausonia! Puede que no sea muy fotogénico, ¡pero contiene millones de años de historia del Sistema Solar!"
+   },
+   "date": {
+      "startAt": "2025-08-02T19:35:00-03:00",
+      "duration": 34740
+   },
+   "type": "observable_event_transit",
+   "explanation": "El asteroide 63 Ausonia, ubicado en la constelación de Capricornio, se encontrará en oposición y alcanzará su mayor altitud y brillo en 2025. Esta posición lo sitúa frente al Sol y cerca de la Tierra, lo que lo hace más brillante y visible durante la noche. Es necesario utilizar un telescopio con una apertura mínima de 10 cm para su observación, ya que su magnitud de 9,3 lo hace invisible a simple vista.",
+   "visibility": {
+      "viewingMethod": "viewing_method_telescope",
+      "observationZone": "Brasilia (visibilidad ideal). Altitud máxima de 83° sobre el horizonte sur a las 00:24 hora local.",
+      "instructions": "Utilice un telescopio con una apertura mínima de 10 cm. Busque un lugar con poca contaminación lumínica para una mejor visibilidad. El asteroide estará alto en el cielo a medianoche, lo que facilita su observación. Los binoculares y la observación a simple vista no son suficientes debido al tenue brillo del objeto."
+   }
+},
+ {
+   "fact": {
+      "id": "39810732-53bd-46ad-891f-d900eb290057",
+      "name": "Aproximación a la Luna, Saturno y Neptuno",
+      "image": {
+         "localImage": "Lua, Saturno e Netuno",
+         "alternativeText": "Cielo estrellado visto desde el horizonte, con árboles y colinas en la parte inferior. La Luna está cerca del planeta Saturno, ambos identificados con etiquetas en el centro de la imagen. Urano aparece más a la derecha, cerca del horizonte, marcado con la letra \"E\"."
+      },
+      "mascotComment": "¡Parece una reunión de planetas! La Luna trajo a Saturno y Urano a la fiesta de hoy. ¡Despídanse de ellos antes de que se escondan de nuevo!"
+   },
+   "date": {
+      "startAt": "2025-09-08T19:46:00-03:00",
+      "duration": 35820
+   },
+   "type": "observable_event_conjunction",
+   "explanation": "El 8 de septiembre de 2025, la Luna, Saturno y Neptuno estarán muy cerca en el cielo, visibles a simple vista desde Brasilia. Pasarán a una distancia de entre 3 y 30 minutos de arco en la constelación de Piscis. La Luna, en su fase casi llena (16 días), brillará mucho (magnitud -12,7), Saturno tendrá una magnitud de 0,6 y Neptuno, más débil, una magnitud de 7,8. El trío será visible en el cielo nocturno, alcanzando una altitud máxima de 76° en el horizonte norte a la 01:02. A pesar de su proximidad, estarán demasiado separados para ser visibles con un telescopio, pero podrán observarse juntos con binoculares.",
+   "visibility": {
+      "viewingMethod": "viewing_method_binoculars",
+      "observationZone": "Brasilia y regiones cercanas. Horizonte norte, altitud máxima a 76°.",
+      "instructions": "Observe el trío a simple vista o con binoculares, preferiblemente entre las 19:46 y las 05:43, con el cielo oscuro y el horizonte despejado hacia el norte. Evite lugares con contaminación lumínica. El evento ocurre en la constelación de Piscis."
+   }
+}
+]

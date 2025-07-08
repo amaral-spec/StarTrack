@@ -33,7 +33,7 @@ struct PersistenceController {
 			}
 		})
 		
-		// Chama o seeder para popular os dados se for a primeira vez
+		// Gerencia o seeding do app ao abrir o app
 		let seeder = CoreDataSeeder(context: container.viewContext)
 		seeder.seedDatabaseIfNeeded()
 	}

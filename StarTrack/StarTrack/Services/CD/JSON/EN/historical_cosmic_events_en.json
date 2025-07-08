@@ -1,0 +1,21 @@
+[
+ {
+   "fact": {
+      "id": "c1d25026-3657-49c1-a88c-d3594804d13b",
+      "name": "Big Bang",
+      "image": {
+         "localImage": "bigbang",
+         "alternativeText": "A diagram of the timeline of the expansion of the universe, extending from left to right. On the left, the Big Bang is shown as a point of light. This is followed by phases labelled 'Dark Ages', 'First Stars', 'Development of Galaxies and Planets' and finally 'Accelerated Expansion'. A space-time grid is superimposed on the image, showing the expansion over 13.7 billion years."
+      },
+      "mascotComment": "It wasn't BOOM 💥 but PFFFFF (silent and very hot expansion)!"
+   },
+   "culturalParallels": "Hindu mythology: the cyclical universe — creation and destruction (similar to the model of cosmic cycles)\nMayan mythology: birth of the world from the “heart of heaven” — echoes the idea of ​​origin from something invisible.\nBiblical parallel: “Let there be light” — symbolic approximation of the emergence of the visible universe.",
+   "explanation": "The Big Bang was not an ordinary explosion, but rather the beginning of the expansion of space and time.\nEverything we know—matter, energy, space, and time—emerged from an extremely hot and dense state.\nPhysics can only describe this from 10⁴³ seconds (Planck time).\nAfter this moment, the universe began to expand rapidly.\nPhysical laws emerge over time.",
+   "evidence": "Cosmic Microwave Background (CMB): Thermal trace of the Big Bang, detected by satellites such as COBE, WMAP and Planck.\nRedshift: Galaxies are moving apart — evidence of continued expansion.\nElement distribution: Proportions of helium and hydrogen in the universe confirm models of early nucleosynthesis.",
+   "timePeriod": {
+      "value": 0,
+      "unit": "time_unit_seconds"
+   },
+   "type": "cosmological_event_big_bang"
+ }
+]
