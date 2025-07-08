@@ -128,6 +128,7 @@ struct ObservatoriesView: View {
                 // Barra de pesquisa
                 SearchBar(text: $searchText)
                     .padding(.horizontal)
+                    .padding(.top)
 
                 // Mapa com pins
                 Map(coordinateRegion: $region, annotationItems: allObservatories) { observatory in

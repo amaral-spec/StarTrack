@@ -73,8 +73,12 @@
 		E6AA1FEC2E12DBC1006F9703 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AA1FDC2E12DBC1006F9703 /* DateTime.swift */; };
 		E6B0254F2E0C18BF00BEF1E1 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B0254E2E0C18BF00BEF1E1 /* PerfilView.swift */; };
 		E6B025522E0C1B8F00BEF1E1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B025512E0C1B8F00BEF1E1 /* SearchBar.swift */; };
+		E6E8C77A2E1801BE004A9F8B /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8C7792E1801BE004A9F8B /* CalendarModel.swift */; };
 		E6EA46EE2E155581004F962D /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E609CA682DFB031100A2A5E2 /* Widget.swift */; };
 		E77B45022E0C1EED00EDFB2B /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B45012E0C1EED00EDFB2B /* FavoritesView.swift */; };
+		E7BE2CA22E18004300787D50 /* imagescatalog.json in Resources */ = {isa = PBXBuildFile; fileRef = E7BE2CA12E18004300787D50 /* imagescatalog.json */; };
+		E7BE2CA52E18023F00787D50 /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE2CA42E18023F00787D50 /* ModelView.swift */; };
+		E7BE2CA72E18076300787D50 /* ScreenSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE2CA62E18076300787D50 /* ScreenSession.swift */; };
 		E7D4FFE32E0065E700CABB2C /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE22E0065E700CABB2C /* CatalogView.swift */; };
 		E7D4FFE52E0065F900CABB2C /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE42E0065F900CABB2C /* CalendarView.swift */; };
 		E7D4FFE72E00660C00CABB2C /* ObservatoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4FFE62E00660C00CABB2C /* ObservatoriesView.swift */; };
@@ -187,7 +191,11 @@
 		E6AA1FDC2E12DBC1006F9703 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		E6B0254E2E0C18BF00BEF1E1 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		E6B025512E0C1B8F00BEF1E1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E6E8C7792E1801BE004A9F8B /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
 		E77B45012E0C1EED00EDFB2B /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		E7BE2CA12E18004300787D50 /* imagescatalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = imagescatalog.json; sourceTree = "<group>"; };
+		E7BE2CA42E18023F00787D50 /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
+		E7BE2CA62E18076300787D50 /* ScreenSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSession.swift; sourceTree = "<group>"; };
 		E7D4FFE22E0065E700CABB2C /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
 		E7D4FFE42E0065F900CABB2C /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		E7D4FFE62E00660C00CABB2C /* ObservatoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservatoriesView.swift; sourceTree = "<group>"; };
@@ -323,6 +331,10 @@
 		6621EBB42DF7184A00381752 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+
+				E6E8C77B2E180898004A9F8B /* Calendar */,
+				E68AEBFA2E16A5040024CC87 /* Observatory */,
+
 				E6AA1FCA2E12DBC0006F9703 /* Main */,
 				E6AA1FC72E12DBC0006F9703 /* Root */,
 				E6AA1FD92E12DBC1006F9703 /* Utils */,
@@ -403,6 +415,13 @@
 				661D58F02E1C09CA0094FDDA /* EN */,
 				661D58F12E1C09D80094FDDA /* ES */,
 				661D58F22E1C09E20094FDDA /* PT */,
+
+				66DE5A542E16C3BC00880BD6 /* events.json */,
+				66DE5A522E16C3BC00880BD6 /* space_mission.json */,
+				66DE5A532E16C3BC00880BD6 /* observatory.json */,
+				66DE5A552E16C3BC00880BD6 /* historical_cosmic_events.json */,
+				66DE5A562E16C3BC00880BD6 /* celestial_bodies.json */,
+				E7BE2CA12E18004300787D50 /* imagescatalog.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -584,6 +603,14 @@
 			path = NasaPhotoInfo;
 			sourceTree = "<group>";
 		};
+		E6E8C77B2E180898004A9F8B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				E6E8C7792E1801BE004A9F8B /* CalendarModel.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		E7D4FFDF2E00659F00CABB2C /* Observatories */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,6 +633,8 @@
 			isa = PBXGroup;
 			children = (
 				E7D4FFE22E0065E700CABB2C /* CatalogView.swift */,
+				E7BE2CA42E18023F00787D50 /* ModelView.swift */,
+				E7BE2CA62E18076300787D50 /* ScreenSession.swift */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -755,6 +784,8 @@
 				661D58E92E1C09BF0094FDDA /* observatory_es.json in Resources */,
 				661D58EC2E1C09BF0094FDDA /* observatory_en.json in Resources */,
 				661D58E32E1C09BF0094FDDA /* space_mission_es.json in Resources */,
+				E7BE2CA22E18004300787D50 /* imagescatalog.json in Resources */,
+				66DE5A682E16C58F00880BD6 /* space_mission.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,6 +818,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66DE5A632E16C58400880BD6 /* CoreDataSeeder.swift in Sources */,
+				E6E8C77A2E1801BE004A9F8B /* CalendarModel.swift in Sources */,
 				E68AEC182E16A72A0024CC87 /* Weather API.swift in Sources */,
 				E68AEC1E2E16A81F0024CC87 /* NetworkMonitor.swift in Sources */,
 				E66275482DFAF6DE009F0733 /* PhotoInfo.swift in Sources */,
@@ -823,10 +855,12 @@
 				66DE5A642E16C58400880BD6 /* Persistance.swift in Sources */,
 				66DE5A662E16C58A00880BD6 /* StarTrack.xcdatamodeld in Sources */,
 				E6AA1FE72E12DBC1006F9703 /* SpaceMission.swift in Sources */,
+				E7BE2CA52E18023F00787D50 /* ModelView.swift in Sources */,
 				E7D4FFE92E00661D00CABB2C /* TabBar.swift in Sources */,
 				E68AEC152E16A72A0024CC87 /* url helper.swift in Sources */,
 				E6AA1FE42E12DBC1006F9703 /* CelestialBody.swift in Sources */,
 				66DE5A622E16C58400880BD6 /* CoreDataManager.swift in Sources */,
+				E7BE2CA72E18076300787D50 /* ScreenSession.swift in Sources */,
 				E77B45022E0C1EED00EDFB2B /* FavoritesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1011,6 +1045,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StarTrack/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Lumen;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Precisamos da sua localização para mostrar observatórios próximos a você.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1043,6 +1078,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StarTrack/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Lumen;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Precisamos da sua localização para mostrar observatórios próximos a você.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -13,19 +13,25 @@ struct TabBar: View {
             CatalogView()
                 .tabItem{
                     Image(systemName: "book")
+                        
+                    Text("Catálogo")
                 }
                 .tag(0)
             CalendarView()
                 .tabItem{
                     Image(systemName: "calendar")
+                        
+                    Text("Calendário")
                 }
                 .tag(1)
             ObservatoriesView()
                 .tabItem{
                     Image(systemName: "moon.stars")
+                    Text("Observatórios")
                 }
                 .tag(2)
         }
+        .accentColor(Color("ColorSchemeStroke"))
     }
 }
 
