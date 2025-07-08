@@ -7,11 +7,22 @@
 
 import SwiftUI
 
-struct ImageJson: Identifiable, Decodable, Hashable {
-   
+struct Catalog: Decodable, Identifiable, Hashable {
     let id: Int
     let name: String
     let title: String
+    let content: [Content]?
+}
+
+struct Content: Decodable, Identifiable, Hashable {
+    let id: Int
+    let name: String
+    let title: String
+}
+
+struct ImageCatalog: Decodable {
+        let catalog: [Catalog]
+
 }
 
 extension Array {
@@ -24,22 +35,26 @@ extension Array {
 
 
 class ImageVModel: ObservableObject {
-    @Published var images: [ImageJson] = []
+    @Published var catalog: [Catalog] = []
+
+    
+
+    
     
     func loadImages() {
-            if let url = Bundle.main.url(forResource: "imagescatalog", withExtension: "json"),
-               let data = try? Data(contentsOf: url),
-               let decoded = try? JSONDecoder().decode([ImageJson].self, from: data) {
-                self.images = decoded
-            }
+        if let url = Bundle.main.url(forResource: "imagescatalog", withExtension: "json"),
+                   let data = try? Data(contentsOf: url),
+                   let decoded = try? JSONDecoder().decode(ImageCatalog.self, from: data) {
+
+            self.catalog = decoded.catalog
+
         }
+    }
     
     
     init() {
         loadImages()
         print("Imagens sendo carregadas")
     }
-    
-    
 }
 

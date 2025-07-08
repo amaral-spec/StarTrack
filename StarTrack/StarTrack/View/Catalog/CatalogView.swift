@@ -15,28 +15,29 @@ struct Card:View{
     
     var body: some View{
         
-        ZStack(alignment: .bottomLeading){
-            
-            Image(imageName)
-                .resizable()
+        
+        ZStack(alignment: .bottomLeading) {
+                    Image(imageName)
+                        .resizable()
+                        .aspectRatio(1, contentMode: .fill)
+                        .frame(width: 160, height: 160)
+                        .clipped()
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color("ColorSchemeStroke"), lineWidth: 1)
+                        )
+
+                   
+                    Text(title)
+                        .font(.headline.bold()) // Negrito
+                        .foregroundColor(.white)
+                        .padding(5)
+                        .cornerRadius(5)
+                        .padding([.leading, .bottom], 7)
+                }
                 .frame(width: 160, height: 160)
-                .aspectRatio(1, contentMode: .fill)
-                .clipped()
-                //.cornerRadius(10)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color("ColorSchemeStroke"), lineWidth: 1)
-                )
-                
-            
-            VStack{
-                Text(title)
-                    .font(.title2)
-                    .foregroundColor(.white)
-                    .padding(18)
             }
-        }
-    }
 }
 
 
@@ -44,17 +45,29 @@ struct CatalogView: View {
     @StateObject private var viewModel = ImageVModel()
     @State private var searchText: String = ""
     
-    var filteredImages: [ImageJson] {
+    var filteredImages: [Catalog] {
             if searchText.isEmpty {
-                return viewModel.images
+                return viewModel.catalog
             } else {
-                return viewModel.images.filter { $0.title.localizedCaseInsensitiveContains(searchText) }
+                return viewModel.catalog.filter { $0.title.localizedCaseInsensitiveContains(searchText) }
             }
         }
     
     var body: some View{
         
-        NavigationView{
+       
+//            VStack {
+//                Text("Total de cards: \(filteredImages.count)")
+//                ForEach(filteredImages) { image in
+//                    Text(image.title)
+//                        .padding()
+//                        .background(Color.yellow)
+//                }
+//            }
+//        }    BLoco de teste, para ver se os cards aparecem
+
+        
+            NavigationView{
             VStack(alignment: .leading ){
                     SearchBar(text: $searchText)
                     .padding(.horizontal)
@@ -74,9 +87,9 @@ struct CatalogView: View {
                         }
                     }
                     .padding(24)
-                    
+
                 }
-                
+
             }
             .navigationBarTitle("Catálogo")
             .toolbar {
@@ -91,7 +104,7 @@ struct CatalogView: View {
                 }
             }
         }
-        
+
     }
 }
 
