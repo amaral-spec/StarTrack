@@ -79,7 +79,7 @@ struct CatalogView: View {
                         ForEach(filteredImages.chunked(into: 2), id: \.self) { linha in
                             HStack(spacing: 23) {
                                 ForEach(linha) { immage  in
-                                    NavigationLink(destination: ScreenSession()) {
+                                    NavigationLink(destination: ScreenSession(catalogItem: immage)) {
                                         Card(imageName: immage.name, title: immage.title)
                                     }
                                 }
@@ -87,7 +87,6 @@ struct CatalogView: View {
                         }
                     }
                     .padding(24)
-
                 }
 
             }
