@@ -136,7 +136,7 @@ extension SpaceMissionEntity: PopulatableEntity {
 		self.techEnvolved = data.techEnvolved
 		self.results = data.results
 		self.highlights = data.highlights
-		self.distanceTraveled = DecodableMeasurementEntity.create(from: data.distanceTravaled, in: self.managedObjectContext)
+		self.distanceTraveled = DecodableMeasurementEntity.create(from: data.distanceTraveled, in: self.managedObjectContext)
 		self.date = createAndPopulate(from: data.date, in: self.managedObjectContext)
 	}
 }
@@ -157,7 +157,7 @@ extension ObservatoryEntity: PopulatableEntity {
 		self.fact = createAndPopulate(from: data.fact, in: self.managedObjectContext)
 		self.city = data.city
 		self.state = data.state
-		self.cientificHighlight = data.cientificHighlights
+		self.cientificHighlights = data.cientificHighlight
 		self.technologiesAvailable = data.technologiesAvailable
 		self.gpsLocation = createAndPopulate(from: data.gpsLocation, in: self.managedObjectContext)
 		self.visitation = createAndPopulate(from: data.visitation, in: self.managedObjectContext)

@@ -11,70 +11,70 @@ struct ObservatoryDetailView: View {
 
     var body: some View {
         Text("vai pf")
-//        NavigationView{
-//            VStack(alignment: .leading, spacing: 20) {
-//                Text(observatory.name)
-//                    .font(.title)
-//                    .bold()
-//
-//                Map(coordinateRegion: .constant(
-//                    MKCoordinateRegion(
-//                        center: observatory.gpsLocation,
-//                        span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
-//                    )),
-//                    annotationItems: [observatory]) { _ in
-//                    MapMarker(coordinate: observatory.gpsLocation, tint: .red)
-//                }
-//                .frame(height: 200)
-//                .cornerRadius(10)
-//
-//                HStack{
-//                    Image(systemName: "location.fill")
-//                    Text("Localização:")
-//                        .font(.headline)
-//
-//                    Text("\(observatory.city), \(observatory.state)")
-//                        .font(.subheadline)
-//                }
-//                .padding()
-//                .padding(.vertical, -10)
-//
-//                HStack{
-//                    Image(systemName: "gearshape.fill")
-//                    Text("Tecnologias disponíveis")
-//                        .font(.headline)
-//                }
-//                .padding()
-//                .padding(.vertical, -10)
-//
-//                HStack{
-//                    Image(systemName: "star.fill")
-//                    Text("Destaque científico")
-//                        .font(.headline)
-//                }
-//                .padding()
-//                .padding(.vertical, -10)
-//
-//                HStack{
-//                    Image(systemName: "person.2.fill")
-//                    Text("Visitação")
-//                        .font(.headline)
-//                }
-//                .padding()
-//                .padding(.vertical, -10)
-//
-//                Spacer()
-//            }
-//            .padding()
-//            .padding(.top, -50)
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarLeading) {
-//                    Button("Voltar") {
-//                        dismiss()
-//                    }
-//                }
-//            }
-//        }
+        NavigationView{
+            VStack(alignment: .leading, spacing: 20) {
+                Text(observatory.fact.name)
+                    .font(.title)
+                    .bold()
+
+                Map(coordinateRegion: .constant(
+                    MKCoordinateRegion(
+                        center: observatory.gpsLocation,
+                        span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
+                    )),
+                    annotationItems: [observatory]) { _ in
+                    MapMarker(coordinate: observatory.gpsLocation, tint: .red)
+                }
+                .frame(height: 200)
+                .cornerRadius(10)
+
+                HStack{
+                    Image(systemName: "location.fill")
+                    Text("Localização:")
+                        .font(.headline)
+
+                    Text("\(observatory.city), \(observatory.state)")
+                        .font(.subheadline)
+                }
+                .padding()
+                .padding(.vertical, -10)
+
+                HStack{
+                    Image(systemName: "gearshape.fill")
+                    Text("Tecnologias disponíveis")
+                        .font(.headline)
+                }
+                .padding()
+                .padding(.vertical, -10)
+
+                HStack{
+                    Image(systemName: "star.fill")
+                    Text("Destaque científico")
+                        .font(.headline)
+                }
+                .padding()
+                .padding(.vertical, -10)
+
+                HStack{
+                    Image(systemName: "person.2.fill")
+                    Text("Visitação")
+                        .font(.headline)
+                }
+                .padding()
+                .padding(.vertical, -10)
+
+                Spacer()
+            }
+            .padding()
+            .padding(.top, -50)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Voltar") {
+                        dismiss()
+                    }
+                }
+            }
+        }
     }
 }
 

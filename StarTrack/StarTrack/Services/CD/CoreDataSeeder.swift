@@ -19,7 +19,7 @@ enum SeederData {
 
 	struct ImageData: Codable {
 		let localImage: String
-		let alternativeText: String?
+		let alternativeText: String
 	}
 
 	struct CelestialBodyData: Codable {
@@ -38,8 +38,8 @@ enum SeederData {
 		let diameter: DecodableMeasurement<UnitLength>?
 		let typeDescriptive: String
 		let visibility: VisibilityData
-		let rotationPeriod: TimePeriodData
-		let translationPeriod: TimePeriodData
+		let rotationPeriod: TimePeriodData?
+		let translationPeriod: TimePeriodData?
 	}
 
 	struct PhysicalCharacteristicsData: Codable {
@@ -77,16 +77,16 @@ enum SeederData {
 
 	struct HistoricalCosmicEventData: Codable {
 		let fact: FactData
-		let culturalParallels: String // [String]
-		let explanation: String // [String]
+		let culturalParallels: String? // [String]
+		let explanation: String? // [String]
 		let evidence: String // [String]
 		let timePeriod: TimePeriodData
 		let type: String // CosmologicalEventType.rawValue
 	}
 	
 	struct GPSLocationData: Codable {
-		let latitude: Double
-		let longitude: Double
+		let latitude: Double // CLLocationDegree
+		let longitude: Double // CLLocationDegree
 	}
 
 
@@ -94,7 +94,7 @@ enum SeederData {
 		let fact: FactData
 		let launchLocation: String
 		let missionType: String
-		let distanceTravaled: DecodableMeasurement<UnitLength>?
+		let distanceTraveled: DecodableMeasurement<UnitLength>?
 		let date: DateTimeData
 		let objectives: String? // [String]
 		let techEnvolved: String // [String]
@@ -114,15 +114,15 @@ enum SeederData {
 		let state: String
 		let gpsLocation: GPSLocationData
 		let visitation: VisitationData
-		let cientificHighlights: String?
-		let technologiesAvailable: String
+		let cientificHighlight: String // [String]
+		let technologiesAvailable: String // [String]
 	}
 
 	
-	struct ObservableEventData: Codable{
+	struct ObservableEventData: Codable {
 		let fact: FactData
 		let date: DateTimeData
-		let type: String
+		let type: String // ObservableEventType.rawValue
 		let explanation: String?
 		let visibility: VisibilityData
 	}
@@ -202,7 +202,7 @@ class CoreDataSeeder {
 			decoder.dateDecodingStrategy = .iso8601
 			return try decoder.decode(T.self, from: data)
 		} catch {
-			fatalError("Não foi possível descodificar o ficheiro \(filename) como \(T.self):\n\(error)")
+			fatalError("Não foi possível decodificar o ficheiro \(filename) como \(T.self):\n\(error)")
 		}
 	}
 }

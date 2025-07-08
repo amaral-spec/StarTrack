@@ -5,8 +5,7 @@
 //  Created by Gabriel Rugeri on 17/06/25.
 //
 
-import SwiftUI
-import CloudKit
+import Foundation
 
 struct AccessibleImage {
 	let alternativeText: String
@@ -14,10 +13,4 @@ struct AccessibleImage {
 	// Propriedade para imagens locais (guardadas nos Assets).
 	// Será preenchida se a imagem vier do Core Data.
 	let localImage: String
-	
-	// Inicializador para uma IMAGEM LOCAL (Core Data).
-	init(alternativeText: String, localImage: String) {
-		self.alternativeText = alternativeText
-		self.localImage = localImage
-	}
 }
