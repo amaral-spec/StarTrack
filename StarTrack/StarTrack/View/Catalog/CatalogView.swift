@@ -31,7 +31,8 @@ struct Card:View{
             
             VStack{
                 Text(title)
-                    .font(.title2)
+                    .font(.headline)
+                    .font(.system(size: 10))
                     .foregroundColor(.white)
                     .padding(18)
             }
