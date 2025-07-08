@@ -2,16 +2,6 @@
     "catalog": [
         {
             "id": 1,
-            "name": "bigbang",
-            "title": "Origem e Evolução"
-        },
-        {
-            "id": 2,
-            "name": "black_hole",
-            "title": "Buracos Negros"
-        },
-        {
-            "id": 3,
             "name": "constellations",
             "title": "Constelações",
             "content": [
@@ -43,7 +33,7 @@
             ]
         },
         {
-            "id": 4,
+            "id": 2,
             "name": "exploration",
             "title": "Explorações",
             "content": [
@@ -55,7 +45,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": 3,
             "name": "planets",
             "title": "Planetas",
             "content": [
@@ -97,7 +87,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": 4,
             "name": "stars",
             "title": "Estrelas",
             "content": [
@@ -127,6 +117,16 @@
                     "title": "Vega"
                 }
             ]
+        },
+        {
+            "id": 5,
+            "name": "bigbang",
+            "title": "Origem e Evolução"
+        },
+        {
+            "id": 6,
+            "name": "black_hole",
+            "title": "Buracos Negros"
         }
     ]
 }
