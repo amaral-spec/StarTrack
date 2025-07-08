@@ -8,73 +8,97 @@ import MapKit
 struct ObservatoryDetailView: View {
     let observatory: Observatory
     @Environment(\.dismiss) var dismiss
+	
+	@State private var isLocationExpanded = false
+	@State private var isTechnologiesExpanded = false
+	@State private var isHighlightExpanded = false
+	@State private var isVisitationExpanded = false
 
     var body: some View {
-        Text("vai pf")
-//        NavigationView{
-//            VStack(alignment: .leading, spacing: 20) {
-//                Text(observatory.name)
-//                    .font(.title)
-//                    .bold()
-//
-//                Map(coordinateRegion: .constant(
-//                    MKCoordinateRegion(
-//                        center: observatory.gpsLocation,
-//                        span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
-//                    )),
-//                    annotationItems: [observatory]) { _ in
-//                    MapMarker(coordinate: observatory.gpsLocation, tint: .red)
-//                }
-//                .frame(height: 200)
-//                .cornerRadius(10)
-//
-//                HStack{
-//                    Image(systemName: "location.fill")
-//                    Text("Localização:")
-//                        .font(.headline)
-//
-//                    Text("\(observatory.city), \(observatory.state)")
-//                        .font(.subheadline)
-//                }
-//                .padding()
-//                .padding(.vertical, -10)
-//
-//                HStack{
-//                    Image(systemName: "gearshape.fill")
-//                    Text("Tecnologias disponíveis")
-//                        .font(.headline)
-//                }
-//                .padding()
-//                .padding(.vertical, -10)
-//
-//                HStack{
-//                    Image(systemName: "star.fill")
-//                    Text("Destaque científico")
-//                        .font(.headline)
-//                }
-//                .padding()
-//                .padding(.vertical, -10)
-//
-//                HStack{
-//                    Image(systemName: "person.2.fill")
-//                    Text("Visitação")
-//                        .font(.headline)
-//                }
-//                .padding()
-//                .padding(.vertical, -10)
-//
-//                Spacer()
-//            }
-//            .padding()
-//            .padding(.top, -50)
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarLeading) {
-//                    Button("Voltar") {
-//                        dismiss()
-//                    }
-//                }
-//            }
-//        }
+        NavigationView{
+            VStack(alignment: .leading, spacing: 20) {
+				Text(observatory.fact.name)
+                    .font(.title)
+                    .bold()
+
+                Map(coordinateRegion: .constant(
+                    MKCoordinateRegion(
+                        center: observatory.gpsLocation,
+                        span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
+                    )),
+                    annotationItems: [observatory]) { _ in
+                    MapMarker(coordinate: observatory.gpsLocation, tint: .red)
+                }
+                .frame(height: 200)
+                .cornerRadius(10)
+
+                HStack{
+                    Image(systemName: "location.fill")
+                    Text("Localização:")
+                        .font(.headline)
+				}
+				VStack{
+                    Text("\(observatory.city), \(observatory.state)")
+                        .font(.subheadline)
+						.padding(-10)
+						.padding(.horizontal, 25)
+                }
+                .padding()
+                .padding(.vertical, -15)
+
+                HStack{
+                    Image(systemName: "gearshape.fill")
+                    Text("Tecnologias disponíveis")
+						.font(.headline)
+				}
+				VStack{
+					Text("\(observatory.technologiesAvailable.joined(separator: ", "))")
+						.font(.subheadline)
+						.padding(-10)
+						.padding(.horizontal, 25)
+                }
+                .padding()
+                .padding(.vertical, -15)
+
+                HStack{
+                    Image(systemName: "star.fill")
+                    Text("Destaque científico")
+						.font(.headline)
+				}
+				VStack{
+					Text("\(observatory.cientificHighlight.joined(separator: ", "))")
+						.font(.subheadline)
+						.padding(-10)
+						.padding(.horizontal, 25)
+                }
+                .padding()
+                .padding(.vertical, -15)
+
+                HStack{
+                    Image(systemName: "person.2.fill")
+                    Text("Visitação")
+                        .font(.headline)
+				}
+				VStack{
+					Text("\(observatory.visitation.openToPublic)")
+						.font(.subheadline)
+						.padding(-10)
+						.padding(.horizontal, 25)
+                }
+                .padding()
+                .padding(.vertical, -15)
+
+            }
+            .padding()
+            .padding(.top, -50)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Voltar") {
+                        dismiss()
+                    }
+                }
+            }
+        }
     }
 }
 
