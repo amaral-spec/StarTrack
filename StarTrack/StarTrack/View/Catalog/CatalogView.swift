@@ -22,11 +22,16 @@ struct Card:View{
                 .frame(width: 160, height: 160)
                 .aspectRatio(1, contentMode: .fill)
                 .clipped()
-                .cornerRadius(10)
+                //.cornerRadius(10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color("ColorSchemeStroke"), lineWidth: 1)
+                )
                 
             
             VStack{
                 Text(title)
+                    .font(.title2)
                     .foregroundColor(.white)
                     .padding(18)
             }

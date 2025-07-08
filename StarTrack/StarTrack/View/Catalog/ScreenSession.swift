@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ScreenSession: View {
     var body: some View {
-        Text("Screen of the Session")
+        ScrollCardView()
+        
     }
 }
 

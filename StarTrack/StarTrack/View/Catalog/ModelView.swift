@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ImageJson: Identifiable, Decodable, Hashable {
+   
     let id: Int
     let name: String
     let title: String

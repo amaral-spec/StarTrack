@@ -26,6 +26,9 @@ struct CardCalendar:View {
                 .frame(width: 350, height: 106)
                 .cornerRadius(10)
                 .clipped()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color("ColorSchemeStroke"), lineWidth: 1)) // Cor setada no assets, para bordas e TabBar
 
 
             VStack(alignment: .leading){
