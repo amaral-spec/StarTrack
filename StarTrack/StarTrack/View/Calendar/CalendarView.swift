@@ -63,8 +63,7 @@ struct choicesUserView: View {
         }
     }
     .pickerStyle(.segmented)
-
-    .frame(width: 350, height: 32, alignment: .center)
+    .frame(width: 350, height: 10, alignment: .center)
     .padding(.vertical,24)
 
 
