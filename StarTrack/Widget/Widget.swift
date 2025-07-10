@@ -93,7 +93,7 @@ struct WidgetEntryView : View {
     var body: some View {
         GeometryReader { geometry in //Pega o tamanho certinho do container, o widget nesse cado
             ZStack(alignment: .bottomLeading) {
-                if networkMonitor.isConnected {
+              if networkMonitor.isConnected {
                     entry.image
                         .resizable()
                         .scaledToFill()
@@ -118,9 +118,11 @@ struct WidgetEntryView : View {
             .frame(width: geometry.size.width, height: geometry.size.height)
             .clipped()
             .cornerRadius(10)
-        }.ignoresSafeArea()
+        }
+        .ignoresSafeArea()
     }
 }
+
 
 @main
 struct MyWidget: Widget {

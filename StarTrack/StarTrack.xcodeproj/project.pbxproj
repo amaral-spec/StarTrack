@@ -76,6 +76,7 @@
 		E6B025522E0C1B8F00BEF1E1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B025512E0C1B8F00BEF1E1 /* SearchBar.swift */; };
 		E6E8C77A2E1801BE004A9F8B /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8C7792E1801BE004A9F8B /* CalendarModel.swift */; };
 		E6EA46EE2E155581004F962D /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E609CA682DFB031100A2A5E2 /* Widget.swift */; };
+		E70CC72A2E1FF0B8009622A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E627387C2E16BE3A00E99EF5 /* Assets.xcassets */; };
 		E77B45022E0C1EED00EDFB2B /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B45012E0C1EED00EDFB2B /* FavoritesView.swift */; };
 		E7BE2CA22E18004300787D50 /* imagescatalog.json in Resources */ = {isa = PBXBuildFile; fileRef = E7BE2CA12E18004300787D50 /* imagescatalog.json */; };
 		E7BE2CA52E18023F00787D50 /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE2CA42E18023F00787D50 /* ModelView.swift */; };
@@ -798,7 +799,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				E614075E2E1FF0C6006060D8 /* Assets.xcassets in Resources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
