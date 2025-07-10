@@ -158,7 +158,6 @@ class CoreDataSeeder {
 	}
 	
 	func determineAppLanguage() -> SupportedLanguage {
-		return .es
 		let userLanguageCode = String((Locale.preferredLanguages.first ?? "en").prefix(2))
 		
 		for supportedLang in SupportedLanguage.allCases {

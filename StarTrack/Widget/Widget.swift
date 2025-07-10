@@ -93,7 +93,7 @@ struct WidgetEntryView : View {
     var body: some View {
         GeometryReader { geometry in //Pega o tamanho certinho do container, o widget nesse cado
             ZStack(alignment: .bottomLeading) {
-//                if networkMonitor.isConnected {
+              if networkMonitor.isConnected {
                     entry.image
                         .resizable()
                         .scaledToFill()
@@ -106,21 +106,23 @@ struct WidgetEntryView : View {
                         .shadow(color: Color.black.opacity(0.8), radius: 3, x: 0, y: 1)
                         .padding(.leading, 12)
                         .padding(.bottom, 8)
-//                } else {
-//                    //código para o widget sem conexão com a internet
-//                    Image(getImageForWidgetSize())
-//                        .resizable()
-//                        .scaledToFill() // teste com as imagens da ana
-//                        .frame(width: geometry.size.width, height: geometry.size.height)
-//                        .clipped()
-//                }
+                } else {
+                    //código para o widget sem conexão com a internet
+                    Image(getImageForWidgetSize())
+                        .resizable()
+                        .scaledToFill() // teste com as imagens da ana
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .clipped()
+                }
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
             .clipped()
             .cornerRadius(10)
-        }.ignoresSafeArea()
+        }
+        .ignoresSafeArea()
     }
 }
+
 
 @main
 struct MyWidget: Widget {
